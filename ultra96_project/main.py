@@ -1,5 +1,5 @@
 import paho.mqtt.client as mqtt
-from driver import MockPYNQDriver  # swap with real PYNQDriver later
+from driver import MockPYNQDriver  # @jon swap with real PYNQDriver later
 import json
 import os
 
@@ -8,11 +8,11 @@ load_dotenv()
 
 
 # Initialize driver
-driver = MockPYNQDriver()
+driver = MockPYNQDriver() # @jon need to replace here also
 
 # MQTT configuration
 BROKER_HOST = "localhost"
-BROKER_PORT = 1883  # Reverse tunnel port
+BROKER_PORT = 1883
 SENSOR_TOPIC = "fruitninja/imu/window"
 GESTURE_TOPIC = "fruitninja/gesture/detected"
 
@@ -26,17 +26,19 @@ def parse_sensor_payload(payload):
     try:
         data = json.loads(payload.decode("utf-8"))
     except Exception:
-        data = payload  # fallback for mock
+        data = payload  # fallback for mock but can also use this and parse in run if you want
     return data
 
 def on_message(client:mqtt.Client, userdata, msg):
     sensor_data = parse_sensor_payload(msg.payload)
     gesture = driver.run(sensor_data)
     
+    # this whole thing can be deleted and we should just json.dumps(gesture)
+    # json structure returned from driver.run should be {"gesture":str, "confidence":int}
     gesture_msg = {
         "gesture": gesture,
-        "confidence": 0.93  # placeholder
-    }   
+        "confidence": 0.93
+    }  
 
     client.publish(GESTURE_TOPIC, json.dumps(gesture_msg), qos=1)
 

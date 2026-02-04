@@ -2,3 +2,4 @@ passwordfile
 ultra96_project/.env
 ultra96_project/.venv
 ultra96_project/__pycache__/
+.DS_Store
