@@ -17,7 +17,7 @@ class MockPYNQDriver:
         # Initialize overlay / IP cores (for the real PYNQ you would load bitstream)
         print("[Driver] Initialized mock PYNQ driver")
 
-    def run(self, input_data) -> dict(str, float):
+    def run(self, input_data):
         time.sleep(0.01)
 
         # Return a random gesture (replace with actual driver output)
