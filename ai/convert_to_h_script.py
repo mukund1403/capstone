@@ -1,7 +1,6 @@
 import tensorflow as tf
 import numpy as np
 
-# Load your model
 model = tf.keras.models.load_model('shape_recognition_model.h5')
 
 with open('weights.h', 'w') as f:
@@ -15,9 +14,7 @@ with open('weights.h', 'w') as f:
         name = layer.name.replace("/", "_").replace(":", "_")
         print(f"Processing layer: {layer.name} ({len(weights)} parameters)")
 
-        # Generic extraction based on parameter count
         for i, w in enumerate(weights):
-            # Clean up the name for C++ variable compatibility
             var_name = f"{name}_param_{i}"
             
             # Map common indices for your report/understanding:
