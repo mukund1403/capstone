@@ -7,13 +7,14 @@ public class FruitSpawn : MonoBehaviour
 {
     private float lowestYPoint = -5;
 
-    public float spawnRate = 4;
+    [SerializeField] private float spawnRate;
     private float timer;
 
     private bool isActive;
 
     [SerializeField] private GameObject lemonPrefab, pearPrefab, strawberryPrefab, applePrefab, watermelonPrefab, peachPrefab;
     private GameObject[] fruits;
+    [SerializeField] private Camera cam;
 
     private enum Direction
     {
@@ -92,11 +93,12 @@ public class FruitSpawn : MonoBehaviour
 
     private void ThrowFromBottom()
     {
+        Vector3 camPos = cam.transform.position;
         float force = 11;
         GameObject fruitChosen = fruits[Random.Range(0, fruits.Length)];
         if (fruitChosen != null)
         {
-            GameObject spawnedFruit = Instantiate(fruitChosen, new Vector3(Random.Range(-3, 3), -5, 5), transform.rotation);
+            GameObject spawnedFruit = Instantiate(fruitChosen, new Vector3(Random.Range(camPos.x-3, camPos.x+3), -5, 7), transform.rotation);
             spawnedFruit.SetActive(true);
             applyPhysics(spawnedFruit, force, Direction.Up);
             //GameObject spawnedFruit = Instantiate(fruitChosen, new Vector3(Random.Range(-1, 1), 0, 5), transform.rotation);
