@@ -18,7 +18,7 @@ class MockPYNQDriver:
         print("[Driver] Initialized mock PYNQ driver")
 
     def run(self, input_data):
-        time.sleep(0.01)
+        time.sleep(0.01) # MUST REMOVE! this is just to simulate delay when predicting
 
         # Return a random gesture (replace with actual driver output)
         gesture = random.choice(["idle", "wave", "fist", "point"])
