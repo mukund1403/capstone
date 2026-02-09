@@ -311,7 +311,10 @@ namespace M2MqttUnity
             yield return new WaitForEndOfFrame();
             yield return new WaitForEndOfFrame();
 
-            client.Settings.TimeoutOnConnection = timeoutOnConnection;
+            //
+            //
+            //
+            //client.Settings.TimeoutOnConnection = timeoutOnConnection;
             string clientId = Guid.NewGuid().ToString();
             try
             {

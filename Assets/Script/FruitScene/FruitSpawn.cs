@@ -50,6 +50,7 @@ public class FruitSpawn : MonoBehaviour
         {
             isActive = true;
         }
+        MqttPubTest();
     }
 
     // Update is called once per frame
@@ -113,5 +114,10 @@ public class FruitSpawn : MonoBehaviour
 
     private void ThrowFromRight()
     {
+    }
+
+    private void MqttPubTest()
+    {
+        MqttApi.BuzzSuccess();
     }
 }
