@@ -1,0 +1,765 @@
+Execute       source -notrace -encoding utf-8 C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcl8.6/clock.tcl 
+Execute         source -encoding utf-8 C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcl8/8.5/msgcat-1.6.1.tm 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/0compatibility/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/amazon-s3/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/asn/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/base32/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/base64/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/bee/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/bench/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/bibtex/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/cache/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/clay/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/clock/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/cmdline/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/comm/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/control/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/coroutine/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/counter/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/crc/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/cron/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/csv/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/debug/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/defer/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/dicttool/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/dns/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/docstrip/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/doctools/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/doctools2base/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/doctools2idx/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/doctools2toc/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/dtplite/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/fileutil/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/ftp/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/ftpd/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/fumagic/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/generator/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/gpx/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/grammar_aycock/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/grammar_fa/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/grammar_me/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/grammar_peg/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/hook/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/html/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/htmlparse/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/http/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/httpd/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/httpwget/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/ident/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/imap4/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/inifile/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/interp/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/irc/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/javascript/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/jpeg/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/json/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/lambda/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/lazyset/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/ldap/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/log/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/map/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/mapproj/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/markdown/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/math/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/md4/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/md5/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/md5crypt/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/mime/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/mkdoc/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/multiplexer/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/namespacex/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/ncgi/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/nettool/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/nmea/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/nns/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/nntp/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/ntp/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/oauth/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/oodialect/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/oometa/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/ooutil/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/otp/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/page/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/pluginmgr/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/png/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/pop3/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/pop3d/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/practcl/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/processman/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/profiler/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/pt/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/rcs/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/report/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/rest/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/ripemd/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/sasl/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/sha1/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/simulation/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/smtpd/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/snit/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/soundex/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/stooop/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/string/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/stringprep/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/struct/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/tar/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/tepam/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/term/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/textutil/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/tie/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/tiff/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/tool/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/transfer/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/treeql/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/try/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/udpcluster/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/uev/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/units/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/uri/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/uuid/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/valtype/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/virtchannel_base/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/virtchannel_core/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/virtchannel_transform/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/websocket/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/wip/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/yaml/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/zip/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/0compatibility/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/amazon-s3/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/asn/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/base32/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/base64/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/bee/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/bench/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/bibtex/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/cache/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/clay/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/clock/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/cmdline/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/comm/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/control/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/coroutine/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/counter/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/crc/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/cron/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/csv/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/debug/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/defer/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/dicttool/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/dns/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/docstrip/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/doctools/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/doctools2base/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/doctools2idx/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/doctools2toc/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/dtplite/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/fileutil/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/ftp/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/ftpd/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/fumagic/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/generator/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/gpx/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/grammar_aycock/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/grammar_fa/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/grammar_me/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/grammar_peg/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/hook/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/html/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/htmlparse/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/http/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/httpd/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/httpwget/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/ident/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/imap4/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/inifile/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/interp/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/irc/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/javascript/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/jpeg/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/json/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/lambda/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/lazyset/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/ldap/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/log/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/map/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/mapproj/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/markdown/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/math/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/md4/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/md5/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/md5crypt/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/mime/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/mkdoc/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/multiplexer/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/namespacex/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/ncgi/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/nettool/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/nmea/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/nns/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/nntp/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/ntp/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/oauth/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/oodialect/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/oometa/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/ooutil/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/otp/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/page/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/pluginmgr/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/png/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/pop3/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/pop3d/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/practcl/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/processman/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/profiler/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/pt/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/rcs/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/report/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/rest/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/ripemd/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/sasl/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/sha1/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/simulation/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/smtpd/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/snit/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/soundex/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/stooop/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/string/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/stringprep/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/struct/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/tar/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/tepam/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/term/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/textutil/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/tie/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/tiff/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/tool/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/transfer/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/treeql/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/try/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/udpcluster/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/uev/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/units/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/uri/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/uuid/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/valtype/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/virtchannel_base/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/virtchannel_core/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/virtchannel_transform/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/websocket/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/wip/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/yaml/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/zip/pkgIndex.tcl 
+Command           ap_source done; 0.104 sec.
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tdom/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcl8.6/opt0.4/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcl8.6/pkgs/win/thread2.8.7/pkgIndex.tcl 
+Command         ap_source done; 0.246 sec.
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/0compatibility/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/amazon-s3/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/asn/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/base32/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/base64/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/bee/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/bench/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/bibtex/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/cache/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/clay/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/clock/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/cmdline/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/comm/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/control/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/coroutine/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/counter/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/crc/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/cron/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/csv/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/debug/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/defer/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/dicttool/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/dns/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/docstrip/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/doctools/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/doctools2base/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/doctools2idx/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/doctools2toc/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/dtplite/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/fileutil/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/ftp/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/ftpd/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/fumagic/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/generator/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/gpx/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/grammar_aycock/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/grammar_fa/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/grammar_me/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/grammar_peg/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/hook/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/html/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/htmlparse/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/http/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/httpd/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/httpwget/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/ident/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/imap4/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/inifile/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/interp/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/irc/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/javascript/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/jpeg/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/json/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/lambda/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/lazyset/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/ldap/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/log/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/map/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/mapproj/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/markdown/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/math/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/md4/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/md5/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/md5crypt/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/mime/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/mkdoc/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/multiplexer/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/namespacex/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/ncgi/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/nettool/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/nmea/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/nns/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/nntp/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/ntp/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/oauth/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/oodialect/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/oometa/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/ooutil/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/otp/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/page/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/pluginmgr/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/png/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/pop3/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/pop3d/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/practcl/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/processman/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/profiler/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/pt/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/rcs/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/report/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/rest/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/ripemd/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/sasl/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/sha1/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/simulation/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/smtpd/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/snit/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/soundex/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/stooop/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/string/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/stringprep/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/struct/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/tar/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/tepam/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/term/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/textutil/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/tie/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/tiff/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/tool/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/transfer/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/treeql/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/try/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/udpcluster/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/uev/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/units/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/uri/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/uuid/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/valtype/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/virtchannel_base/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/virtchannel_core/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/virtchannel_transform/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/websocket/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/wip/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/yaml/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/zip/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/0compatibility/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/amazon-s3/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/asn/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/base32/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/base64/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/bee/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/bench/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/bibtex/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/cache/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/clay/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/clock/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/cmdline/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/comm/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/control/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/coroutine/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/counter/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/crc/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/cron/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/csv/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/debug/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/defer/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/dicttool/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/dns/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/docstrip/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/doctools/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/doctools2base/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/doctools2idx/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/doctools2toc/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/dtplite/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/fileutil/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/ftp/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/ftpd/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/fumagic/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/generator/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/gpx/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/grammar_aycock/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/grammar_fa/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/grammar_me/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/grammar_peg/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/hook/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/html/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/htmlparse/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/http/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/httpd/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/httpwget/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/ident/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/imap4/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/inifile/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/interp/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/irc/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/javascript/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/jpeg/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/json/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/lambda/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/lazyset/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/ldap/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/log/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/map/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/mapproj/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/markdown/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/math/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/md4/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/md5/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/md5crypt/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/mime/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/mkdoc/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/multiplexer/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/namespacex/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/ncgi/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/nettool/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/nmea/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/nns/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/nntp/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/ntp/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/oauth/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/oodialect/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/oometa/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/ooutil/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/otp/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/page/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/pluginmgr/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/png/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/pop3/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/pop3d/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/practcl/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/processman/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/profiler/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/pt/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/rcs/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/report/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/rest/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/ripemd/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/sasl/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/sha1/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/simulation/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/smtpd/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/snit/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/soundex/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/stooop/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/string/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/stringprep/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/struct/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/tar/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/tepam/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/term/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/textutil/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/tie/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/tiff/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/tool/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/transfer/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/treeql/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/try/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/udpcluster/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/uev/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/units/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/uri/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/uuid/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/valtype/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/virtchannel_base/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/virtchannel_core/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/virtchannel_transform/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/websocket/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/wip/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/yaml/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/zip/pkgIndex.tcl 
+Command         ap_source done; 0.104 sec.
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tdom/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcl8.6/opt0.4/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcl8.6/pkgs/win/thread2.8.7/pkgIndex.tcl 
+Command       ap_source done; 0.494 sec.
+INFO-FLOW: Workspace C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls opened at Fri Feb 20 11:04:42 +0800 2026
+Execute       send_msg_by_id INFO @200-1505@%s%s default  vivado 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Execute       send_msg_by_id INFO @200-2174@%s%s component hls_config.cfg 
+INFO: [HLS 200-2174] Applying component config ini file hls_config.cfg
+Execute       apply_ini hls_config.cfg 
+Execute         send_msg_by_id INFO @200-1465@%s 'syn.file=../../software/cnn_gesture_hls.cpp' from hls_config.cfg(8) 
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../../software/cnn_gesture_hls.cpp' from hls_config.cfg(8)
+Execute         add_files C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp' to the project
+Execute         send_msg_by_id INFO @200-1465@%s 'syn.file=../../software/weights.h' from hls_config.cfg(9) 
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../../software/weights.h' from hls_config.cfg(9)
+Execute         add_files C:/Users/Jonathan/Desktop/capstone/ai/software/weights.h 
+INFO: [HLS 200-10] Adding design file 'C:/Users/Jonathan/Desktop/capstone/ai/software/weights.h' to the project
+Execute         send_msg_by_id INFO @200-1465@%s 'syn.top=cnn_gesture_top' from hls_config.cfg(7) 
+INFO: [HLS 200-1465] Applying config ini 'syn.top=cnn_gesture_top' from hls_config.cfg(7)
+Execute         set_top cnn_gesture_top 
+Execute         send_msg_by_id INFO @200-1465@%s 'flow_target=vivado' from hls_config.cfg(4) 
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from hls_config.cfg(4)
+Execute         send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute         send_msg_by_id INFO @200-1465@%s 'part=xczu3eg-sbva484-2-i' from hls_config.cfg(1) 
+INFO: [HLS 200-1465] Applying config ini 'part=xczu3eg-sbva484-2-i' from hls_config.cfg(1)
+Execute         set_part xczu3eg-sbva484-2-i 
+Execute           create_platform xczu3eg-sbva484-2-i -board  
+DBG:HLSDevice: Trying to load device library: C:/AMDDesignTools/2025.2/Vitis\lib\win64.o\xv_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: C:/AMDDesignTools/2025.2/Vivado/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xczu3eg-sbva484-2-i'
+Command           create_platform done; 1.675 sec.
+Execute           source C:/AMDDesignTools/2025.2/Vitis/common/technology/xilinx/common/xilinx.gen 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/common/technology/xilinx/interface/plb46.gen 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/common/technology/xilinx/interface/axi4.gen 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute               source C:/AMDDesignTools/2025.2/Vitis/common/technology/xilinx/interface/saxilite.gen 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/common/technology/xilinx/ip/dds_compiler.gen 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/common/technology/xilinx/ip/util.gen 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/common/technology/xilinx/ip/xfft.gen 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/common/technology/xilinx/ip/xfir.gen 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/common/technology/xilinx/DSP48/dsp48.gen 
+Command           ap_source done; 0.214 sec.
+Execute           ap_part_info -name xczu3eg-sbva484-2-i -data info 
+Execute           config_compile -quiet -complex-mul-dsp=0 
+Command         set_part done; 1.917 sec.
+Execute         send_msg_by_id INFO @200-1465@%s 'package.output.format=ip_catalog' from hls_config.cfg(5) 
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from hls_config.cfg(5)
+Execute         config_export -format=ip_catalog 
+Command       apply_ini done; 1.961 sec.
+Execute       write_component -config C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/hls_config.cfg 
+Execute         send_msg_by_id INFO @200-2176@%s C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/vitis-comp.json 
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/vitis-comp.json
+Command     open_solution done; 2.563 sec.
+Command   open_component done; 2.571 sec.
+Execute   apply_ini C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/config.cmdline -iscmdline 
+Execute   ::AP::init_summary_file csynth 
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute   csynth_design 
+Execute     AP::msg_collection_file -open C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db/be_messages.xml 
+Execute     ap_part_info -name xczu3eg-sbva484-2-i -data info 
+INFO-FLOW: run_clang cnn_gesture_hls.cpp.xilinx-performance-pragma-detector exec: C:/AMDDesignTools/2025.2/Vitis/win64/tools/clang-16/bin/xilinx-performance-pragma-detector C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp -- -fhls -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot -I C:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -target fpga64-xilinx-mingw32 --sysroot C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt {-hls-platform-db-name=C:/AMDDesignTools/2025.2/Vitis\common/technology\xilinx/common/platform.db} -hls-platform-name=zynquplus_medium -device-resource-info=BRAM_432.000000_DSP_360.000000_FF_141120.000000_LUT_70560.000000_SLICE_8820.000000_URAM_0.000000 -device-name-info=xczu3eg-sbva484-2-i > C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db/cnn_gesture_hls.cpp.xilinx-performance-pragma-detector.out.log 2> C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db/cnn_gesture_hls.cpp.xilinx-performance-pragma-detector.err.log
+INFO-FLOW: run_clang result=success num-err-msgs=0 num-stderr-lines=1
+Execute     elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -from_csynth_design=1 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 2 seconds. CPU system time: 2 seconds. Elapsed time: 13.598 seconds; current allocated memory: 154.875 MB.
+Execute       send_msg_by_id INFO @200-2191@%s%s C-Synthesis clang-16 
+INFO: [HLS 200-2191] C-Synthesis will use clang-16 as the compiler
+Execute       set_directive_top cnn_gesture_top -name=cnn_gesture_top 
+INFO: [HLS 200-10] Analyzing design file 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp' ... 
+INFO-FLOW: Compiling one TU...
+INFO-FLOW: Handling C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp as C++
+Execute       ap_part_info -name xczu3eg-sbva484-2-i -data info 
+INFO-FLOW: Running: GCC PP 39
+INFO-FLOW: Source preprocessing
+INFO-FLOW: run_clang cnn_gesture_hls.cpp.clang exec: C:/AMDDesignTools/2025.2/Vitis/win64/tools/clang-16/bin/clang C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp -foptimization-record-file=C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db/cnn_gesture_hls.cpp.clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll|inline -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info --sysroot C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt -fhls -fno-exceptions -insert-hls-directive=C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db/all.directive.json -hls-directive-location -E -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Xclang -no-opaque-pointers -Xclang -fmerge-all-constants -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -Wdump-hls-pragmas -Wno-error=dump-hls-pragmas -hls-clock-period=10 -fno-threadsafe-statics -fno-use-cxa-atexit -target fpga64-xilinx-mingw32 -fno-threadsafe-statics -fno-use-cxa-atexit -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot -I C:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -o C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db/cnn_gesture_hls.pp.0.cpp {-hls-platform-db-name=C:/AMDDesignTools/2025.2/Vitis\common/technology\xilinx/common/platform.db} -hls-platform-name=zynquplus_medium -device-resource-info=BRAM_432.000000_DSP_360.000000_FF_141120.000000_LUT_70560.000000_SLICE_8820.000000_URAM_0.000000 -device-name-info=xczu3eg-sbva484-2-i > C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db/cnn_gesture_hls.cpp.clang.out.log 2> C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db/cnn_gesture_hls.cpp.clang.err.log
+INFO-FLOW: run_clang result=success num-err-msgs=0 num-stderr-lines=0
+INFO-FLOW: Done: GCC PP 39 time: 0.7 seconds 
+INFO-FLOW: Source syntax check for synthesis
+INFO-FLOW: run_clang clang exec: C:/AMDDesignTools/2025.2/Vitis/win64/tools/clang-16/bin/clang -foptimization-record-file=C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db/clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll|inline -mllvm -pass-remarks=reflow|pasta|unroll|inline -fsyntax-only -fhls -target fpga64-xilinx-linux-gnu C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db/cnn_gesture_hls.pp.0.cpp {-hls-platform-db-name=C:/AMDDesignTools/2025.2/Vitis\common/technology\xilinx/common/platform.db} -hls-platform-name=zynquplus_medium -device-resource-info=BRAM_432.000000_DSP_360.000000_FF_141120.000000_LUT_70560.000000_SLICE_8820.000000_URAM_0.000000 -device-name-info=xczu3eg-sbva484-2-i > C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db/clang.out.log 2> C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db/clang.err.log
+INFO-FLOW: run_clang result=success num-err-msgs=0 num-stderr-lines=0
+Execute       clang_tidy xilinx-systemc-detector -desc systemc-detector C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db/cnn_gesture_hls.pp.0.cpp  -target fpga -directive=C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec C:/AMDDesignTools/2025.2/Vitis/win64/tools/clang-16/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-systemc-detector -import-directive=C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db/.systemc_flag -fix-errors C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db/cnn_gesture_hls.pp.0.cpp -- - -target fpga -fhls -ferror-limit=0
+Command       clang_tidy done; 5.142 sec.
+INFO-FLOW: Running: clang-tidy CDT preprocess 39
+Execute       clang_tidy xilinx-directive2pragma -desc directive2pragma C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db/cnn_gesture_hls.pp.0.cpp  -target fpga -directive=C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db/all.directive.json 
+INFO-FLOW: exec C:/AMDDesignTools/2025.2/Vitis/win64/tools/clang-16/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-directive2pragma -import-directive=C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db/all.directive.json -fix-errors C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db/cnn_gesture_hls.pp.0.cpp -- - -target fpga -fhls -ferror-limit=0
+Command       clang_tidy done; 5.766 sec.
+INFO-FLOW: Done: clang-tidy CDT preprocess 39 time: 5.8 seconds 
+INFO-FLOW: Calling xilinx-label-all-loops ... 
+INFO-FLOW: Calling xilinx-aggregate-on-hls-vector ... 
+Execute       clang_tidy -errorcheck -desc loop-label xilinx-label-all-loops,xilinx-aggregate-on-hls-vector,,xilinx-warn-mayneed-no-ctor-attribute C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db/cnn_gesture_hls.pp.0.cpp  -target fpga 
+INFO-FLOW: run_clang loop-label exec: C:/AMDDesignTools/2025.2/Vitis/win64/tools/clang-16/bin/clang-tidy -export-fixes=C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db/cnn_gesture_hls.pp.0.cpp.clang-tidy.loop-label.diag.yml -header-filter=.* --checks=-*,xilinx-label-all-loops,xilinx-aggregate-on-hls-vector,,xilinx-warn-mayneed-no-ctor-attribute -fix-errors C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db/cnn_gesture_hls.pp.0.cpp -- - -target fpga -fhls -ferror-limit=0 > C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db/cnn_gesture_hls.pp.0.cpp.clang-tidy.loop-label.out.log 2> C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db/cnn_gesture_hls.pp.0.cpp.clang-tidy.loop-label.err.log
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/yaml/yaml.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/cmdline/cmdline.tcl 
+INFO-FLOW: run_clang result=success num-err-msgs=0 num-stderr-lines=758
+Command       clang_tidy done; 12.889 sec.
+INFO-FLOW: run_clang cnn_gesture_hls.pp.0.cpp.xilinx-dataflow-lawyer exec: C:/AMDDesignTools/2025.2/Vitis/win64/tools/clang-16/bin/xilinx-dataflow-lawyer -export-fixes=C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db/cnn_gesture_hls.pp.0.cpp.xilinx-dataflow-lawyer.diag.yml C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db/cnn_gesture_hls.pp.0.cpp -- - -target fpga -fhls -ferror-limit=0 -fstrict-dataflow > C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db/cnn_gesture_hls.pp.0.cpp.xilinx-dataflow-lawyer.out.log 2> C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db/cnn_gesture_hls.pp.0.cpp.xilinx-dataflow-lawyer.err.log
+INFO-FLOW: run_clang result=success num-err-msgs=0 num-stderr-lines=0
+Execute       ap_part_info -name xczu3eg-sbva484-2-i -data info 
+INFO-FLOW: compiling source code to llvm bc
+INFO-FLOW: run_clang cnn_gesture_hls.pp.0.cpp.clang exec: C:/AMDDesignTools/2025.2/Vitis/win64/tools/clang-16/bin/clang -foptimization-record-file=C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db/cnn_gesture_hls.pp.0.cpp.clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll|inline -mllvm -pass-remarks=reflow|pasta|unroll|inline -flto -fno-exceptions -Wno-error=c++11-narrowing -fno-limit-debug-info -fhls -hls-emit-hint-scope C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db/cnn_gesture_hls.pp.0.cpp -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Xclang -no-opaque-pointers -Xclang -fmerge-all-constants -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -Wdump-hls-pragmas -Wno-error=dump-hls-pragmas -hls-clock-period=10 -fno-threadsafe-statics -fno-use-cxa-atexit -target fpga64-xilinx-linux-gnu -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot -I C:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -g -o C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db/cnn_gesture_hls.pre.g.bc {-hls-platform-db-name=C:/AMDDesignTools/2025.2/Vitis\common/technology\xilinx/common/platform.db} -hls-platform-name=zynquplus_medium -device-resource-info=BRAM_432.000000_DSP_360.000000_FF_141120.000000_LUT_70560.000000_SLICE_8820.000000_URAM_0.000000 -device-name-info=xczu3eg-sbva484-2-i > C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db/cnn_gesture_hls.pp.0.cpp.clang.out.log 2> C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db/cnn_gesture_hls.pp.0.cpp.clang.err.log
+INFO-FLOW: run_clang result=success num-err-msgs=0 num-stderr-lines=0
+INFO-FLOW: converting llvm 16.0.4 bc to downstrem bc
+INFO-FLOW: run_clang cnn_gesture_hls.bc.llvm-converter exec: C:/AMDDesignTools/2025.2/Vitis/win64/tools/clang-16/bin/llvm-converter -opaque-pointers=0 C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db/cnn_gesture_hls.pre.g.bc -o C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db/cnn_gesture_hls.bc > C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db/cnn_gesture_hls.bc.llvm-converter.out.log 2> C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db/cnn_gesture_hls.bc.llvm-converter.err.log
+INFO-FLOW: run_clang result=success num-err-msgs=0 num-stderr-lines=0
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 39.775 seconds; current allocated memory: 161.695 MB.
+INFO-FLOW: Linking Debug ...
+INFO-FLOW: Linking dut bc code.
+Execute       run_link_or_opt -out C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db/a.g.ld.0.bc -args C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db/cnn_gesture_hls.bc 
+INFO-FLOW: run_clang a.g.ld.0.bc.llvm-link exec: C:/AMDDesignTools/2025.2/Vitis/win64/tools/clang-3.9-csynth/bin/llvm-link C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db/cnn_gesture_hls.bc -o C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db/a.g.ld.0.bc > C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db/a.g.ld.0.bc.llvm-link.out.log 2> C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db/a.g.ld.0.bc.llvm-link.err.log
+INFO-FLOW: run_clang result=success num-err-msgs=0 num-stderr-lines=0
+Command       run_link_or_opt done; 0.178 sec.
+Execute       run_link_or_opt -opt -out C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db/a.g.ld.1.lower.bc -args C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db/a.g.ld.0.bc -reflow-lower-math-intrinsics 
+INFO-FLOW: run_clang a.g.ld.1.lower.bc.opt exec: C:/AMDDesignTools/2025.2/Vitis/win64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll|inline -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db/a.g.ld.1.lower.bc.opt.diag.yml C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db/a.g.ld.0.bc -reflow-lower-math-intrinsics -o C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db/a.g.ld.1.lower.bc > C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db/a.g.ld.1.lower.bc.opt.out.log 2> C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db/a.g.ld.1.lower.bc.opt.err.log
+INFO-FLOW: run_clang result=success num-err-msgs=0 num-stderr-lines=0
+INFO-FLOW: Running: gen_design_size_report post-opt
+INFO-FLOW: Done: gen_design_size_report post-opt time: 0 seconds 
+Command       run_link_or_opt done; 0.208 sec.
+INFO-FLOW: Linking math bc lib
+Execute       run_link_or_opt -out C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db/a.g.ld.2.m1.bc -args C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db/a.g.ld.1.lower.bc -only-needed C:/AMDDesignTools/2025.2/Vitis/win64/lib/libhlsm_39.bc C:/AMDDesignTools/2025.2/Vitis/win64/lib/libhlsmc++_39.bc 
+INFO-FLOW: run_clang a.g.ld.2.m1.bc.llvm-link exec: C:/AMDDesignTools/2025.2/Vitis/win64/tools/clang-3.9-csynth/bin/llvm-link C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db/a.g.ld.1.lower.bc -only-needed C:/AMDDesignTools/2025.2/Vitis/win64/lib/libhlsm_39.bc C:/AMDDesignTools/2025.2/Vitis/win64/lib/libhlsmc++_39.bc -o C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db/a.g.ld.2.m1.bc > C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db/a.g.ld.2.m1.bc.llvm-link.out.log 2> C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db/a.g.ld.2.m1.bc.llvm-link.err.log
+INFO-FLOW: run_clang result=success num-err-msgs=0 num-stderr-lines=0
+Command       run_link_or_opt done; 2.093 sec.
+Execute       run_link_or_opt -opt -out C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db/a.g.ld.3.fpc.bc -args C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=cnn_gesture_top -reflow-float-conversion 
+INFO-FLOW: run_clang a.g.ld.3.fpc.bc.opt exec: C:/AMDDesignTools/2025.2/Vitis/win64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll|inline -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db/a.g.ld.3.fpc.bc.opt.diag.yml C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=cnn_gesture_top -reflow-float-conversion -o C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db/a.g.ld.3.fpc.bc > C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db/a.g.ld.3.fpc.bc.opt.out.log 2> C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db/a.g.ld.3.fpc.bc.opt.err.log
+INFO-FLOW: run_clang result=success num-err-msgs=0 num-stderr-lines=0
+INFO-FLOW: Running: gen_design_size_report post-opt
+INFO-FLOW: Done: gen_design_size_report post-opt time: 0 seconds 
+Command       run_link_or_opt done; 0.943 sec.
+Execute       run_link_or_opt -out C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db/a.g.ld.4.m2.bc -args C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db/a.g.ld.3.fpc.bc -only-needed C:/AMDDesignTools/2025.2/Vitis/win64/lib/libfloatconversion_39.bc 
+INFO-FLOW: run_clang a.g.ld.4.m2.bc.llvm-link exec: C:/AMDDesignTools/2025.2/Vitis/win64/tools/clang-3.9-csynth/bin/llvm-link C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db/a.g.ld.3.fpc.bc -only-needed C:/AMDDesignTools/2025.2/Vitis/win64/lib/libfloatconversion_39.bc -o C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db/a.g.ld.4.m2.bc > C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db/a.g.ld.4.m2.bc.llvm-link.out.log 2> C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db/a.g.ld.4.m2.bc.llvm-link.err.log
+INFO-FLOW: run_clang result=success num-err-msgs=0 num-stderr-lines=0
+Execute       run_link_or_opt -opt -out C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db/a.g.ld.5.gdce.bc -args C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db/a.g.ld.4.m2.bc -reflow-globaldce -hls-top-function-name=cnn_gesture_top 
+INFO-FLOW: run_clang a.g.ld.5.gdce.bc.opt exec: C:/AMDDesignTools/2025.2/Vitis/win64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll|inline -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db/a.g.ld.5.gdce.bc.opt.diag.yml C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db/a.g.ld.4.m2.bc -reflow-globaldce -hls-top-function-name=cnn_gesture_top -o C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db/a.g.ld.5.gdce.bc > C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db/a.g.ld.5.gdce.bc.opt.out.log 2> C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db/a.g.ld.5.gdce.bc.opt.err.log
+INFO-FLOW: run_clang result=success num-err-msgs=0 num-stderr-lines=0
+INFO-FLOW: Running: gen_design_size_report post-opt
+INFO-FLOW: Done: gen_design_size_report post-opt time: 0 seconds 
+Execute       send_msg_by_id INFO @200-777@%s Vivado 
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+Execute       is_m_axi_addr64 
+INFO-FLOW: Doing LTO.
+INFO-FLOW: run_clang reflow (background poll_ms 5000) exec: C:/AMDDesignTools/2025.2/Vitis/win64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db/a.g.ld.0.bc.clang.reflow.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll|inline -mllvm -pass-remarks=reflow|pasta|unroll|inline -fhls -mllvm -hls-top-function-name=cnn_gesture_top -mllvm -hls-db-dir -mllvm C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db -emit-llvm -c -target fpga64-xilinx-none -mllvm -xcl-xmlinfo=C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db/kernel.internal.xml -mllvm -top-io-mapping-info=C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db/top-io-fe.xml -mllvm -hls-bitcode-version=3.1 -mllvm -reflow-enable-slave-interface-default-setting=true -mllvm -gen-kernel-xml=false -mllvm -default-maxi-offset=slave -mllvm -reflow-unroll-size-threshold=10000 -mllvm -reflow-unroll-cost-threshold=1000000 -mllvm -maxi-latency=0 -mllvm -hls-maxi-data-size-in-bits=8 -mllvm -hls-maxi-max-data-size-in-bits=1024 -mllvm -hls-max-widen-size-in-bits=0 -mllvm -xcl-kernel-max-mem-ports=0 -mllvm -maxi-read-trans=16 -mllvm -maxi-write-trans=16 -mllvm -maxi-read-burst-len=16 -mllvm -maxi-write-burst-len=16 -mllvm -reflow-enable-saxi-64bits=0 -mllvm -reflow-basic-block-instr-threshold=200000 -mllvm -reflow-auto-pipeline-threshold=64 -mllvm -reflow-enable-maxi-auto-id-channel=0 -mllvm -reflow-bdd-simplify-threshold=1048576 -mllvm -reflow-fanout-threshold=16 -mllvm -reflow-force-aggressive-unroll=0 -mllvm -reflow-aggressive-unroll-adjust-factor=1.000000 -mllvm -reflow-complete-threshold=4 -mllvm -reflow-array-promotion-threshold=64 -mllvm -reflow-enable-critical-path-for-performance=1 -mllvm -assume-maxi-align=1 -mllvm -reflow-enable-dataflow-strict-mode-checking=1 -ftime-report -mllvm -time-passes -mllvm -reflow-auto-array-partition-mode=default -mllvm -reflow-enable-auto-small-array-partition=true -mllvm -reflow-enable-auto-array-promotion=true -mllvm -reflow-enable-auto-array-partition-for-flatten=true -mllvm -reflow-enable-auto-parallel-performance-driven=true -mllvm -reflow-enable-partition-for-automation=true -mllvm -reflow-aggregate-bitwidth-threshold=4096 -mllvm -reflow-reserved-saxilite-registers=0 -mllvm -enable-reflow-auto-loop-pipeline -mllvm -reflow-max-unroll-threshold=409600 -mllvm -auto-unroll-tripcount-threshold=0 -mllvm -reflow-assume-no-address-wrap=true -mllvm -reflow-enable-occurrence-inference=true -mllvm -reflow-emit-hint-scope=true -mllvm -reflow-enable-codegen-with-if=true -mllvm -reflow-enable-dataflow-canon=true -mllvm -reflow-enable-dataflow-canon2=true -mllvm -reflow-dump-extra-complexity-metric=true -mllvm -reflow-enable-dse-loop-nest-extraction=false -mllvm -hls -mllvm -disable-inlined-alloca-merging=true -mllvm -default-clock-period=10 -mllvm -use_read_first_ram_in_loop=1 -mllvm -default-clock-uncertainty=2.7 -x ir C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db/a.g.ld.5.gdce.bc -o C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db/a.g.lto.bc {-hls-platform-db-name=C:/AMDDesignTools/2025.2/Vitis\common/technology\xilinx/common/platform.db} -hls-platform-name=zynquplus_medium -device-resource-info=BRAM_432.000000_DSP_360.000000_FF_141120.000000_LUT_70560.000000_SLICE_8820.000000_URAM_0.000000 -device-name-info=xczu3eg-sbva484-2-i 2> C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db/a.g.ld.0.bc.clang.reflow.err.log bg_poll_cmd: ::AP::poll_clang_39_closed_source
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 14,469 Compile/Link (C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/syn/report/csynth_design_size.rpt:2) 
+INFO: [HLS 200-1995] There were 14,469 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details (C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/syn/report/csynth_design_size.rpt:2)
+Execute       send_msg_by_id WARNING @200-1995@%s%s%s 203,028 Unroll/Inline (C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/syn/report/csynth_design_size.rpt:2) 
+WARNING: [HLS 200-1995] There were 203,028 instructions in the design after the 'Unroll/Inline' phase of compilation. See the Design Size Report for more details (C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/syn/report/csynth_design_size.rpt:2)
+Execute       send_msg_by_id WARNING @200-1995@%s%s%s 115,767 Unroll/Inline (step 2) (C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/syn/report/csynth_design_size.rpt:2) 
+WARNING: [HLS 200-1995] There were 115,767 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details (C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/syn/report/csynth_design_size.rpt:2)
+Execute       send_msg_by_id WARNING @200-1995@%s%s%s 111,999 Unroll/Inline (step 3) (C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/syn/report/csynth_design_size.rpt:2) 
+WARNING: [HLS 200-1995] There were 111,999 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details (C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/syn/report/csynth_design_size.rpt:2)
+Execute       send_msg_by_id WARNING @200-1995@%s%s%s 102,647 Unroll/Inline (step 4) (C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/syn/report/csynth_design_size.rpt:2) 
+WARNING: [HLS 200-1995] There were 102,647 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details (C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/syn/report/csynth_design_size.rpt:2)
+Execute       send_msg_by_id WARNING @200-1995@%s%s%s 102,664 Array/Struct (C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/syn/report/csynth_design_size.rpt:2) 
+WARNING: [HLS 200-1995] There were 102,664 instructions in the design after the 'Array/Struct' phase of compilation. See the Design Size Report for more details (C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/syn/report/csynth_design_size.rpt:2)
+Execute       send_msg_by_id WARNING @200-1995@%s%s%s 102,644 Array/Struct (step 2) (C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/syn/report/csynth_design_size.rpt:2) 
+WARNING: [HLS 200-1995] There were 102,644 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details (C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/syn/report/csynth_design_size.rpt:2)
+Execute       send_msg_by_id WARNING @200-1995@%s%s%s 102,656 Array/Struct (step 3) (C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/syn/report/csynth_design_size.rpt:2) 
+WARNING: [HLS 200-1995] There were 102,656 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details (C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/syn/report/csynth_design_size.rpt:2)
+Execute       send_msg_by_id WARNING @200-1995@%s%s%s 102,674 Array/Struct (step 4) (C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/syn/report/csynth_design_size.rpt:2) 
+WARNING: [HLS 200-1995] There were 102,674 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details (C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/syn/report/csynth_design_size.rpt:2)
+Execute       send_msg_by_id WARNING @200-1995@%s%s%s 102,676 Array/Struct (step 5) (C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/syn/report/csynth_design_size.rpt:2) 
+WARNING: [HLS 200-1995] There were 102,676 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details (C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/syn/report/csynth_design_size.rpt:2)
+Execute       send_msg_by_id WARNING @200-1995@%s%s%s 102,640 Performance (C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/syn/report/csynth_design_size.rpt:2) 
+WARNING: [HLS 200-1995] There were 102,640 instructions in the design after the 'Performance' phase of compilation. See the Design Size Report for more details (C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/syn/report/csynth_design_size.rpt:2)
+Execute       send_msg_by_id WARNING @200-1995@%s%s%s 102,638 Performance (step 2) (C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/syn/report/csynth_design_size.rpt:2) 
+WARNING: [HLS 200-1995] There were 102,638 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details (C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/syn/report/csynth_design_size.rpt:2)
+Execute       send_msg_by_id WARNING @200-1995@%s%s%s 113,341 Performance (step 3) (C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/syn/report/csynth_design_size.rpt:2) 
+WARNING: [HLS 200-1995] There were 113,341 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details (C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/syn/report/csynth_design_size.rpt:2)
+Execute       send_msg_by_id WARNING @200-1995@%s%s%s 104,000 Performance (step 4) (C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/syn/report/csynth_design_size.rpt:2) 
+WARNING: [HLS 200-1995] There were 104,000 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details (C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/syn/report/csynth_design_size.rpt:2)
+Execute       send_msg_by_id WARNING @200-1995@%s%s%s 104,014 HW Transforms (C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/syn/report/csynth_design_size.rpt:2) 
+WARNING: [HLS 200-1995] There were 104,014 instructions in the design after the 'HW Transforms' phase of compilation. See the Design Size Report for more details (C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/syn/report/csynth_design_size.rpt:2)
+Execute       send_msg_by_id WARNING @200-1995@%s%s%s 104,069 HW Transforms (step 2) (C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/syn/report/csynth_design_size.rpt:2) 
+WARNING: [HLS 200-1995] There were 104,069 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details (C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 214-131] Inlining function 'exp_reduce_::exp(float)' into 'hls::exp(float)' (C:\scratch\2025.2\hls_product\665\2025.2\src\shared\hls\clib\hlsmath\src\c++\expfloat.cpp:17:9)
+INFO: [HLS 214-131] Inlining function 'hls::exp(float)' into 'softmax(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp:205:27)
+INFO: [HLS 214-131] Inlining function 'conv1_block(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [32])' into 'cnn_gesture_top(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp:234:5)
+INFO: [HLS 214-131] Inlining function 'maxpool1(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [32], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [32])' into 'cnn_gesture_top(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp:235:5)
+INFO: [HLS 214-131] Inlining function 'conv2_block(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [32], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [64])' into 'cnn_gesture_top(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp:237:5)
+INFO: [HLS 214-131] Inlining function 'maxpool2(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [64], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [64])' into 'cnn_gesture_top(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp:238:5)
+INFO: [HLS 214-131] Inlining function 'flatten(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [64], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)' into 'cnn_gesture_top(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp:240:5)
+INFO: [HLS 214-131] Inlining function 'dense1(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)' into 'cnn_gesture_top(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp:241:5)
+INFO: [HLS 214-131] Inlining function 'dense2_logits(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)' into 'cnn_gesture_top(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp:242:5)
+INFO: [HLS 214-131] Inlining function 'softmax(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)' into 'cnn_gesture_top(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp:243:5)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_185_2' is marked as complete unroll implied by the pipeline pragma (C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp:185:27)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_166_2' is marked as complete unroll implied by the pipeline pragma (C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp:166:27)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_99_3' is marked as complete unroll implied by the pipeline pragma (C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp:99:30)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_102_4' is marked as complete unroll implied by the pipeline pragma (C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp:102:39)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_44_3' is marked as complete unroll implied by the pipeline pragma (C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp:44:30)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_47_4' is marked as complete unroll implied by the pipeline pragma (C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp:47:38)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_185_2' (C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp:185:27) in function 'cnn_gesture_top' completely with a factor of 128 (C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp:218:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_166_2' (C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp:166:27) in function 'cnn_gesture_top' completely with a factor of 1600 (C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp:218:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_99_3' (C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp:99:30) in function 'cnn_gesture_top' completely with a factor of 3 (C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp:218:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_102_4' (C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp:102:39) in function 'cnn_gesture_top' completely with a factor of 32 (C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp:218:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_44_3' (C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp:44:30) in function 'cnn_gesture_top' completely with a factor of 3 (C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp:218:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_47_4' (C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp:47:38) in function 'cnn_gesture_top' completely with a factor of 6 (C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp:218:0)
+INFO: [HLS 214-178] Inlining function 'hls::sqrt(float)' into 'cnn_gesture_top(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp:218:0)
+INFO: [HLS 214-178] Inlining function 'relu(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>)' into 'cnn_gesture_top(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp:218:0)
+INFO: [HLS 214-248] Applying array_partition to 'input': Cyclic partitioning with factor 2 on dimension 2. (C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp:218:0)
+INFO: [HLS 214-248] Applying array_partition to 'output': Complete partitioning on dimension 1. (C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp:218:0)
+WARNING: [HLS 214-322] Unsuported scalar variable on pragma 'ap_memory Interface', ignore it. (C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp:220:1)
+INFO: [HLS 214-241] Aggregating bram variable 'input_1' with compact=bit mode in 16-bits (C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp:218:0)
+INFO: [HLS 214-241] Aggregating bram variable 'input_0' with compact=bit mode in 16-bits (C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp:218:0)
+INFO: [HLS 214-376] Pipelining loop< VITIS_LOOP_198_1> at C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp:198:23 due to pipeline_loops threshold
+INFO: [HLS 214-376] Pipelining loop< VITIS_LOOP_204_2> at C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp:204:23 due to pipeline_loops threshold
+INFO: [HLS 214-376] Pipelining loop< VITIS_LOOP_209_3> at C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp:209:23 due to pipeline_loops threshold
+INFO: [HLS 214-437] Disabling loop flattening for loop 'VITIS_LOOP_39_1'. (C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp:39:22)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=cyclic factor=3 dim=1' for array 'pool1_out' due to pipeline pragma (C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp:96:1)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=2' for array 'pool1_out' due to pipeline pragma (C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp:96:1)
+INFO: [HLS 214-248] Applying array_partition to 'pool1_out': Cyclic partitioning with factor 3 on dimension 1. Complete partitioning on dimension 2. (C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp:227:12)
+INFO-FLOW: run_clang result=success num-err-msgs=0 num-stderr-lines=89
+INFO-FLOW: DBG:PUTS: copy_raw_kernel_xml ap_link_39: kernel.xml not generated: C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db/kernel.internal.xml
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 268.056 seconds; current allocated memory: 163.539 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.003 seconds; current allocated memory: 163.539 MB.
+Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
+Execute         cleanup_all_models 
+INFO: [HLS 200-10] Starting code transformations ...
+INFO-FLOW: Running Standard Transforms...
+Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -reassociate -gvn -reassociate -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top cnn_gesture_top -deadargelim -mem2reg -instcombine -dce -presyn-prepare -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -promote-dbg-pointer -norm-name C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db/a.g.0.bc -o C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db/a.g.1.bc -f -phase std-opt 
+Command         transform done; 39.111 sec.
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 38 seconds. CPU system time: 1 seconds. Elapsed time: 39.15 seconds; current allocated memory: 508.742 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO-FLOW: Checking Synthesizability 1/2..
+Execute         transform -hls -syn-check -check-rec-only -scalarrepl -norm-name -dce -mem2reg -instcombine -directive-preproc -mem2reg -dse -dce -dce -pag -array-normalize -instcombine -dce -array-seg-normalize -instcombine -dce -data-pack -instcombine -dce -inst-simplify -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -resolve-double-ptr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -directive-preproc -mem2reg -dse -dce -globaldce C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db/a.g.1.bc -o C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db/a.g.2.prechk.bc -f 
+Command         transform done; 19.548 sec.
+INFO-FLOW: Checking Synthesizability 2/2..
+Execute         transform -syn-check C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db/a.g.2.prechk.bc -o C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db/a.g.2.bc -f -phase syn-check 
+Command         transform done; 0.455 sec.
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 20 seconds. CPU system time: 0 seconds. Elapsed time: 20.004 seconds; current allocated memory: 795.254 MB.
+INFO-FLOW: Compiler optimizing ...
+INFO-FLOW: Share syncheck's 1.bc for syn flow: copy C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db/a.g.1.bc to C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db/a.o.1.bc
+INFO-FLOW: Presyn 1...
+Execute         transform -hls -tmp C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db -interface-port-rename -directive-preproc -mem2reg -dse -dce -scalarrepl -norm-name -deadargelim -dce -hls-dead-arg-elim -deadargelim -mem2reg -instcombine -dce -simplifycfg -dce -resource-proc -clib-intrinsic-prepare -dce -func-buffer -dce -pag -array-normalize -func-legal -instcombine -gvn -constprop -dce -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -ptrArgReplace -mem2reg -dce -array-seg-normalize -deadargelim -instcombine -dce -directive-preproc -mem2reg -dse -dce -pointer-simplify -dce -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -find-region -instcombine -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -loop-simplify -loop-bound -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -duplicate-dataflow-processes -globaldce -instcombine -array-partition -prepare-dynamic-array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -dce -global-constprop -deadargelim -mem2reg -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -mem-intrinsic-preproc -dce -global-internalize -global-privatize -mem2reg -globaldce -lcssa -loop-simplify -phi-select-elim -promote-global-argument -ptrArgReplace -mem2reg -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -dce -norm-name -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -accesses-merge -function-inline -complex-op-raise -inst-simplify -globaldce -func-legal -dce -loop-bound -arraycheck -bitwidthmin2 -bitwidthmin2 -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -duplicate-dataflow-processes -check-dataflow-syntax -legalize-stream-variable -globaldce -extract-subproc -global-constprop -deadargelim -globaldce -legalize-global -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -hls-dead-arg-elim -deadargelim -canonicalize-dataflow -directive-preproc -dce -globaldce -scalar-preprocessing -scalar-propagation2 -scalar-stream -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -clean-array-spec -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -hls-display -norm-name C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db/a.o.1.bc -o C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db/a.o.1.tmp.bc -f 
+Command         transform done; 88.239 sec.
+INFO-FLOW: Presyn 2...
+Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin2 -bitwidthmin2 -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -barrier -norm-name C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db/a.o.1.tmp.bc -o C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db/a.o.2.bc -f -phase presyn 
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp:48:34) to (C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp:51:17) in function 'cnn_gesture_top'... converting 37 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp:42:19) to (C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp:46:30) in function 'cnn_gesture_top'... converting 37 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp:42:19) to (C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp:51:17) in function 'cnn_gesture_top'... converting 37 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp:42:19) to (C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp:40:26) in function 'cnn_gesture_top'... converting 39 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp:103:34) to (C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp:106:17) in function 'cnn_gesture_top'... converting 193 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp:97:19) to (C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp:101:30) in function 'cnn_gesture_top'... converting 193 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp:97:19) to (C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp:106:17) in function 'cnn_gesture_top'... converting 193 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp:97:19) to (C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp:95:26) in function 'cnn_gesture_top'... converting 39 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp:163:1) to (C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp:162:23) in function 'cnn_gesture_top'... converting 9607 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp:182:1) to (C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp:181:23) in function 'cnn_gesture_top'... converting 775 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp:203:12) to (C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp:204:23) in function 'cnn_gesture_top'... converting 9 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'cnn_gesture_top' (C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp:8:23)...1876 expression(s) balanced.
+Command         transform done; 68.936 sec.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 149 seconds. CPU system time: 6 seconds. Elapsed time: 157.187 seconds; current allocated memory: 1.046 GB.
+Execute         transform -hls -auto-function-inline -globaldce -ptrArgReplace -mem2reg -dce -reset-lda -loop-simplify -indvars -aggr-aa -licm -loop-dep -loop-bound -licm -loop-simplify -loop-sink-hoist -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg-lite -loop-simplify -array-burst -promote-global-argument -dce -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -inst-simplify -cfgopt -simplifycfg-lite -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -deadargelim -dce -canonicalize-dataflow -dce -deadargelim -globaldce -mem2reg -bram-byte-enable -inst-simplify -inst-rectify -instcombine -adce -deadargelim -load-elim -read-loop-dep -loop-simplify -loop-rewind-sink-hoist -loop-outline -hls-dead-arg-elim -directive-preproc -bitwidthmin2 -bitwidthmin2 -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable-spec-prop -mul2addshift -deadargelim -inst-simplify -dce -mem2reg -instcombine -gvn -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg-lite -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -complex-op-raise -inst-simplify -inst-rectify -instcombine -gvn -adce -deadargelim -float-op-raise -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg-lite -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg-lite -loop-simplify -mergereturn -inst-simplify -inst-rectify -globaldce -dce -load-elim -bitop-lower -float-op-raise -fma-raise -loop-rewind -pointer-simplify -dce -cfgopt -dce -loop-bound -loop-dep -read-loop-dep -dce -dyn-mem-reuse -dce -recurrence-min -dce -share-scalar-alloca -deadargelim -dce -check-stream -norm-name -legalize -inst-clarity -bitwidth -dce -validate-dataflow -dump-loop-dep-to-ir -check-all-ssdm -drop-inferred-ii -dump-complexity-metric C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db/a.o.2.bc -o C:/Users/Jonathan/Desktop/capstone/ai/hardware/hls_component/cnn_gesture_top/hls/.autopilot/db/a.o.3.bc -f -phase build-ssdm 

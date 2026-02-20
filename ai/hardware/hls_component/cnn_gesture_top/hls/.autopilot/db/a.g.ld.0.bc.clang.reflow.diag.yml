@@ -1,0 +1,1152 @@
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                   Line: 48, Column: 34 }
+Function:        _ZL11conv1_blockPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA32_S2_
+Args:            
+  - Callee:          'conv_index(int, int, int, int, int)'
+    DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                       Line: 24, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'conv1_block(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [32])'
+    DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                       Line: 36, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                   Line: 66, Column: 50 }
+Function:        _ZL11conv1_blockPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA32_S2_
+Args:            
+  - Callee:          'hls::sqrt(float)'
+    DebugLoc:        { File: 'C:\scratch\2025.2\hls_product\665\2025.2\src\shared\hls\clib\hlsmath\src\c++\sqrtfloat.cpp', 
+                       Line: 6, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'conv1_block(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [32])'
+    DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                       Line: 36, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                   Line: 58, Column: 26 }
+Function:        _ZL11conv1_blockPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA32_S2_
+Args:            
+  - Callee:          'relu(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                       Line: 18, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'conv1_block(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [32])'
+    DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                       Line: 36, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                   Line: 103, Column: 34 }
+Function:        _ZL11conv2_blockPA32_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA64_S2_
+Args:            
+  - Callee:          'conv_index(int, int, int, int, int)'
+    DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                       Line: 24, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'conv2_block(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [32], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [64])'
+    DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                       Line: 91, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                   Line: 117, Column: 50 }
+Function:        _ZL11conv2_blockPA32_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA64_S2_
+Args:            
+  - Callee:          'hls::sqrt(float)'
+    DebugLoc:        { File: 'C:\scratch\2025.2\hls_product\665\2025.2\src\shared\hls\clib\hlsmath\src\c++\sqrtfloat.cpp', 
+                       Line: 6, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'conv2_block(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [32], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [64])'
+    DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                       Line: 91, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                   Line: 110, Column: 26 }
+Function:        _ZL11conv2_blockPA32_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA64_S2_
+Args:            
+  - Callee:          'relu(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                       Line: 18, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'conv2_block(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [32], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [64])'
+    DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                       Line: 91, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                   Line: 171, Column: 21 }
+Function:        _ZL6dense1P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_
+Args:            
+  - Callee:          'relu(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                       Line: 18, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'dense1(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                       Line: 157, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                   Line: 167, Column: 22 }
+Function:        _ZL6dense1P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_
+Args:            
+  - Callee:          'dense_index(int, int, int)'
+    DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                       Line: 29, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'dense1(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                       Line: 157, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                   Line: 186, Column: 22 }
+Function:        _ZL13dense2_logitsP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_
+Args:            
+  - Callee:          'dense_index(int, int, int)'
+    DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                       Line: 29, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'dense2_logits(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                       Line: 178, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'C:\scratch\2025.2\hls_product\665\2025.2\src\shared\hls\clib\hlsmath\src\c++\expfloat.cpp', 
+                   Line: 17, Column: 9 }
+Function:        _ZN3hls3expEf
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'exp_reduce_::exp(float)'
+    DebugLoc:        { File: 'C:\scratch\2025.2\hls_product\665\2025.2\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp', 
+                       Line: 15, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'hls::exp(float)'
+    DebugLoc:        { File: 'C:\scratch\2025.2\hls_product\665\2025.2\src\shared\hls\clib\hlsmath\src\c++\expfloat.cpp', 
+                       Line: 15, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                   Line: 205, Column: 27 }
+Function:        _ZL7softmaxP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'hls::exp(float)'
+    DebugLoc:        { File: 'C:\scratch\2025.2\hls_product\665\2025.2\src\shared\hls\clib\hlsmath\src\c++\expfloat.cpp', 
+                       Line: 15, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'softmax(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                       Line: 194, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                   Line: 234, Column: 5 }
+Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'conv1_block(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [32])'
+    DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                       Line: 36, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'cnn_gesture_top(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                       Line: 218, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                   Line: 235, Column: 5 }
+Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'maxpool1(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [32], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [32])'
+    DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                       Line: 75, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'cnn_gesture_top(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                       Line: 218, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                   Line: 237, Column: 5 }
+Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'conv2_block(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [32], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [64])'
+    DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                       Line: 91, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'cnn_gesture_top(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                       Line: 218, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                   Line: 238, Column: 5 }
+Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'maxpool2(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [64], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [64])'
+    DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                       Line: 126, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'cnn_gesture_top(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                       Line: 218, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                   Line: 240, Column: 5 }
+Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'flatten(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [64], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                       Line: 142, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'cnn_gesture_top(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                       Line: 218, Column: 0 }
+  - String:          ''''
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                   Line: 110, Column: 26 }
+Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+Args:            
+  - Callee:          'relu(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                       Line: 18, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'cnn_gesture_top(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                       Line: 218, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                   Line: 241, Column: 5 }
+Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'dense1(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                       Line: 157, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'cnn_gesture_top(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                       Line: 218, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                   Line: 242, Column: 5 }
+Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'dense2_logits(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                       Line: 178, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'cnn_gesture_top(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                       Line: 218, Column: 0 }
+  - String:          ''''
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                   Line: 186, Column: 22 }
+Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+Args:            
+  - Callee:          'dense_index(int, int, int)'
+    DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                       Line: 29, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'cnn_gesture_top(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                       Line: 218, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                   Line: 243, Column: 5 }
+Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'softmax(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                       Line: 194, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'cnn_gesture_top(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                       Line: 218, Column: 0 }
+  - String:          ''''
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                   Line: 48, Column: 34 }
+Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+Args:            
+  - Callee:          'conv_index(int, int, int, int, int)'
+    DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                       Line: 24, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'cnn_gesture_top(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                       Line: 218, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                   Line: 66, Column: 50 }
+Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+Args:            
+  - Callee:          'hls::sqrt(float)'
+    DebugLoc:        { File: 'C:\scratch\2025.2\hls_product\665\2025.2\src\shared\hls\clib\hlsmath\src\c++\sqrtfloat.cpp', 
+                       Line: 6, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'cnn_gesture_top(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                       Line: 218, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                   Line: 185, Column: 27 }
+Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_185_2
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                   Line: 166, Column: 27 }
+Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_166_2
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                   Line: 99, Column: 30 }
+Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_99_3
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                   Line: 102, Column: 39 }
+Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_102_4
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                   Line: 44, Column: 30 }
+Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_44_3
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                   Line: 47, Column: 38 }
+Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_47_4
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                   Line: 218, Column: 0 }
+Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_185_2
+  - String:          ''' ('
+  - LoopLoc:         'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp:185:27'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          cnn_gesture_top
+  - String:          ''' completely with a factor of '
+  - Factor:          '128'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                   Line: 218, Column: 0 }
+Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_166_2
+  - String:          ''' ('
+  - LoopLoc:         'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp:166:27'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          cnn_gesture_top
+  - String:          ''' completely with a factor of '
+  - Factor:          '1600'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                   Line: 218, Column: 0 }
+Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_99_3
+  - String:          ''' ('
+  - LoopLoc:         'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp:99:30'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          cnn_gesture_top
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                   Line: 218, Column: 0 }
+Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_102_4
+  - String:          ''' ('
+  - LoopLoc:         'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp:102:39'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          cnn_gesture_top
+  - String:          ''' completely with a factor of '
+  - Factor:          '32'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                   Line: 218, Column: 0 }
+Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_102_4
+  - String:          ''' ('
+  - LoopLoc:         'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp:102:39'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          cnn_gesture_top
+  - String:          ''' completely with a factor of '
+  - Factor:          '32'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                   Line: 218, Column: 0 }
+Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_102_4
+  - String:          ''' ('
+  - LoopLoc:         'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp:102:39'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          cnn_gesture_top
+  - String:          ''' completely with a factor of '
+  - Factor:          '32'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                   Line: 218, Column: 0 }
+Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_44_3
+  - String:          ''' ('
+  - LoopLoc:         'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp:44:30'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          cnn_gesture_top
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                   Line: 218, Column: 0 }
+Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_47_4
+  - String:          ''' ('
+  - LoopLoc:         'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp:47:38'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          cnn_gesture_top
+  - String:          ''' completely with a factor of '
+  - Factor:          '6'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                   Line: 218, Column: 0 }
+Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_47_4
+  - String:          ''' ('
+  - LoopLoc:         'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp:47:38'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          cnn_gesture_top
+  - String:          ''' completely with a factor of '
+  - Factor:          '6'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                   Line: 218, Column: 0 }
+Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_47_4
+  - String:          ''' ('
+  - LoopLoc:         'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp:47:38'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          cnn_gesture_top
+  - String:          ''' completely with a factor of '
+  - Factor:          '6'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                   Line: 48, Column: 34 }
+Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+Args:            
+  - Callee:          'conv_index(int, int, int, int, int)'
+    DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                       Line: 24, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'cnn_gesture_top(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                       Line: 218, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                   Line: 66, Column: 50 }
+Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+Args:            
+  - Callee:          'hls::sqrt(float)'
+    DebugLoc:        { File: 'C:\scratch\2025.2\hls_product\665\2025.2\src\shared\hls\clib\hlsmath\src\c++\sqrtfloat.cpp', 
+                       Line: 6, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'cnn_gesture_top(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                       Line: 218, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                   Line: 167, Column: 22 }
+Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+Args:            
+  - Callee:          'dense_index(int, int, int)'
+    DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                       Line: 29, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'cnn_gesture_top(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                       Line: 218, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                   Line: 171, Column: 21 }
+Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+Args:            
+  - Callee:          'relu(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                       Line: 18, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'cnn_gesture_top(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                       Line: 218, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+Function:        apatb_cnn_gesture_top_ir
+Args:            
+  - Callee:          'cnn_gesture_top(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                       Line: 218, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          apatb_cnn_gesture_top_ir
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                   Line: 218, Column: 0 }
+Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'hls::sqrt(float)'
+    DebugLoc:        { File: 'C:\scratch\2025.2\hls_product\665\2025.2\src\shared\hls\clib\hlsmath\src\c++\sqrtfloat.cpp', 
+                       Line: 6, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'cnn_gesture_top(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                       Line: 218, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                   Line: 218, Column: 0 }
+Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'relu(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                       Line: 18, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'cnn_gesture_top(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                       Line: 218, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                   Line: 218, Column: 0 }
+Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          input
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '2'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                   Line: 218, Column: 0 }
+Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          output
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-check-pragma-conflict-variable
+Name:            VariablePragmaScalarWarn
+DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                   Line: 220, Column: 1 }
+Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+Args:            
+  - String:          'Unsuported scalar variable on pragma '''
+  - Name:            ap_memory Interface
+  - String:          ''', '
+  - String:          ignore it.
+...
+--- !Passed
+Pass:            reflow-check-pragma-conflict-variable
+Name:            VariablePragmaScalarWarn
+DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                   Line: 220, Column: 1 }
+Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+Args:            
+  - String:          'Unsuported scalar variable on pragma '''
+  - Name:            ap_memory Interface
+  - String:          ''', '
+  - String:          ignore it.
+...
+--- !Passed
+Pass:            reflow-check-pragma-conflict-variable
+Name:            VariablePragmaScalarWarn
+DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                   Line: 220, Column: 1 }
+Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+Args:            
+  - String:          'Unsuported scalar variable on pragma '''
+  - Name:            ap_memory Interface
+  - String:          ''', '
+  - String:          ignore it.
+...
+--- !Passed
+Pass:            reflow-check-pragma-conflict-variable
+Name:            VariablePragmaScalarWarn
+DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                   Line: 220, Column: 1 }
+Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+Args:            
+  - String:          'Unsuported scalar variable on pragma '''
+  - Name:            ap_memory Interface
+  - String:          ''', '
+  - String:          ignore it.
+...
+--- !Passed
+Pass:            reflow-check-pragma-conflict-variable
+Name:            VariablePragmaScalarWarn
+DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                   Line: 220, Column: 1 }
+Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+Args:            
+  - String:          'Unsuported scalar variable on pragma '''
+  - Name:            ap_memory Interface
+  - String:          ''', '
+  - String:          ignore it.
+...
+--- !Passed
+Pass:            reflow-check-pragma-conflict-variable
+Name:            VariablePragmaScalarWarn
+DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                   Line: 220, Column: 1 }
+Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+Args:            
+  - String:          'Unsuported scalar variable on pragma '''
+  - Name:            ap_memory Interface
+  - String:          ''', '
+  - String:          ignore it.
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                   Line: 218, Column: 0 }
+Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        bram
+  - String:          ' variable '''
+  - Name:            input_1
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '16'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                   Line: 218, Column: 0 }
+Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        bram
+  - String:          ' variable '''
+  - Name:            input_0
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '16'
+  - String:          '-bits'
+...
+--- !HLSReportInfo
+Pass:            reflow-auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'Pipelining loop< '
+  - LoopName:        VITIS_LOOP_198_1
+  - String:          '> at '
+  - LoopLoc:         'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp:198:23'
+  - String:          ' due to pipeline_loops threshold'
+...
+--- !Passed
+Pass:            reflow-auto-loop-pipeline
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                   Line: 198, Column: 23 }
+Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+Args:            
+  - PragmaType:      pipeline
+  - String:          ' '
+  - PragmaOptions:   ' '
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  cnn_gesture_top
+  - String:          ' '
+  - PragmaInferReason: config_compile -pipeline_loops 64
+  - LoopName:        VITIS_LOOP_198_1
+  - String:          ' '
+  - LoopLoc:         'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp:198:23'
+    DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                       Line: 198, Column: 23 }
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            reflow-auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'Pipelining loop< '
+  - LoopName:        VITIS_LOOP_204_2
+  - String:          '> at '
+  - LoopLoc:         'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp:204:23'
+  - String:          ' due to pipeline_loops threshold'
+...
+--- !Passed
+Pass:            reflow-auto-loop-pipeline
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                   Line: 204, Column: 23 }
+Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+Args:            
+  - PragmaType:      pipeline
+  - String:          ' '
+  - PragmaOptions:   ' '
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  cnn_gesture_top
+  - String:          ' '
+  - PragmaInferReason: config_compile -pipeline_loops 64
+  - LoopName:        VITIS_LOOP_204_2
+  - String:          ' '
+  - LoopLoc:         'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp:204:23'
+    DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                       Line: 204, Column: 23 }
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            reflow-auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'Pipelining loop< '
+  - LoopName:        VITIS_LOOP_209_3
+  - String:          '> at '
+  - LoopLoc:         'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp:209:23'
+  - String:          ' due to pipeline_loops threshold'
+...
+--- !Passed
+Pass:            reflow-auto-loop-pipeline
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                   Line: 209, Column: 23 }
+Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+Args:            
+  - PragmaType:      pipeline
+  - String:          ' '
+  - PragmaOptions:   ' '
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  cnn_gesture_top
+  - String:          ' '
+  - PragmaInferReason: config_compile -pipeline_loops 64
+  - LoopName:        VITIS_LOOP_209_3
+  - String:          ' '
+  - LoopLoc:         'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp:209:23'
+    DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                       Line: 209, Column: 23 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-loop-flatten-cost-model
+Name:            FlattenOffInference
+DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                   Line: 39, Column: 22 }
+Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+Args:            
+  - String:          'Disabling loop flattening for loop '''
+  - LoopName:        VITIS_LOOP_39_1
+  - String:          '''.'
+...
+--- !Passed
+Pass:            reflow-loop-flatten-cost-model
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                   Line: 39, Column: 22 }
+Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+Args:            
+  - PragmaType:      loop_flatten
+  - String:          ' '
+  - PragmaOptions:   'off '
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  cnn_gesture_top
+  - String:          ' '
+  - PragmaSrcLoc:    'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp:41:1'
+    DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                       Line: 41, Column: 1 }
+  - LoopName:        VITIS_LOOP_39_1
+  - String:          ' '
+  - LoopLoc:         'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp:39:22'
+    DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                       Line: 39, Column: 22 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                   Line: 227, Column: 12 }
+Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=cyclic factor=3 variable=pool1_out'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  cnn_gesture_top
+  - String:          ' '
+  - VarLoc:          'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp:227:12'
+  - String:          ' '
+  - PragmaSrcLoc:    'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp:96:1'
+    DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                       Line: 96, Column: 1 }
+  - VarName:         pool1_out
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                   Line: 96, Column: 1 }
+Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            cyclic
+  - String:          ' factor='
+  - Factor:          '3'
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            pool1_out
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                   Line: 227, Column: 12 }
+Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=2 type=complete  variable=pool1_out'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  cnn_gesture_top
+  - String:          ' '
+  - VarLoc:          'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp:227:12'
+  - String:          ' '
+  - PragmaSrcLoc:    'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp:96:1'
+    DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                       Line: 96, Column: 1 }
+  - VarName:         pool1_out
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                   Line: 96, Column: 1 }
+Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '2'
+  - String:          ''' for array '''
+  - Name:            pool1_out
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                   Line: 227, Column: 12 }
+Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          pool1_out
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '3'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                   Line: 48, Column: 34 }
+Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+Args:            
+  - Callee:          'conv_index(int, int, int, int, int)'
+    DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                       Line: 24, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'cnn_gesture_top(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                       Line: 218, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                   Line: 167, Column: 22 }
+Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+Args:            
+  - Callee:          'dense_index(int, int, int)'
+    DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                       Line: 29, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'cnn_gesture_top(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: 'C:/Users/Jonathan/Desktop/capstone/ai/software/cnn_gesture_hls.cpp', 
+                       Line: 218, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...

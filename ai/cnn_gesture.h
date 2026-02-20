@@ -1,29 +1,39 @@
-#ifndef cnn_gesture
-#define cnn_gesture
+// gesture_model.h - ONLY the architecture, NO weights!
+#ifndef GESTURE_MODEL_H
+#define GESTURE_MODEL_H
 
 #include <ap_fixed.h>
 
-#define TIMESTEPS 100 // 100 samples (imu polling at 100Hz)
-#define INPUT_FEATURES 6
-#define KERNEL_SIZE 3
+// ========== MODEL CONFIGURATION ==========
+// MUST match your Python model!
+#define INPUT_TIMESTEPS 100    // 100 samples
+#define INPUT_FEATURES 6       // 6 IMU channels
 
-// Layer 1
-#define CONV1_FILTERS 32
-#define CONV1_KERNEL 3
-#define CONV1_OUTPUT_LEN 100
+// Layer 1: Conv1D
+#define CONV1_FILTERS 32       // 32 filters
+#define CONV1_KERNEL 3         // kernel_size=3
+#define POOL1_SIZE 2           // pool_size=2
 
-// Layer 2
-#define CONV2_FILTERS 62
-#define CONV2_KERNEL 3
-#define CONV2_OUTPUT_LEN 50
+// Layer 2: Conv1D  
+#define CONV2_FILTERS 64       // 64 filters
+#define CONV2_KERNEL 3         // kernel_size=3
+#define POOL2_SIZE 2           // pool_size=2
 
-// Output
-#define CLUSTERS 6
+// Layer 3: Dense
+#define DENSE1_UNITS 128       // 128 units
 
-typedef ap_fixed<16, 8> fixed16_t; // 16 bit, 8 int 8 fractional bits
+// Layer 4: Output
+#define OUTPUT_UNITS 6         // 6 gestures
 
-struct ModelWeight {
-  fixed16_6 conv1_weights[CONV1_FILTERS][];
-};
+// ========== DATA TYPES ==========
+typedef ap_fixed<16, 6> fixed16_t;  // 16-bit fixed point
+
+// ========== FUNCTION DECLARATION ==========
+void gesture_recognition_top(
+    fixed16_t imu_data[INPUT_FEATURES],
+    fixed16_t predictions[OUTPUT_UNITS],
+    bool start_new_gesture,
+    bool& prediction_ready
+);
 
 #endif

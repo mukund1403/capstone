@@ -1,0 +1,72 @@
+================================================================
+== Design Size Report
+================================================================
+
+* Total Instructions per Compilation Phase
++---------------+----------------------------+--------------+----------------------------------------------------------------------------------------+
+| Phase         | Step                       | Instructions | Description                                                                            |
++---------------+----------------------------+--------------+----------------------------------------------------------------------------------------+
+| Compile/Link  |                            |  14,469      | After all functions are compiled and linked into a single design                       |
+|               |                            |              |                                                                                        |
+| Unroll/Inline |                            |              | After user unroll and inline pragmas are applied                                       |
+|               | (1) unroll                 | 203,028 *    | user unroll pragmas are applied                                                        |
+|               | (2) simplification         | 115,767 *    | simplification of applied user unroll pragmas                                          |
+|               | (3) inline                 | 111,999 *    | user inline pragmas are applied                                                        |
+|               | (4) simplification         | 102,647 *    | simplification of applied user inline pragmas                                          |
+|               |                            |              |                                                                                        |
+| Array/Struct  |                            |              | After user array partition and struct aggregate/disaggregate pragmas are applied       |
+|               | (1) array partition        | 102,664 *    | user array partition pragmas are applied                                               |
+|               | (2) simplification         | 102,644 *    | simplification of applied user array partition & struct aggregate/disaggregate pragmas |
+|               | (3) aggregate/disaggregate | 102,656 *    | user struct aggregate/disaggregate pragmas are applied                                 |
+|               | (4) array reshape          | 102,674 *    | apply array reshape pragmas                                                            |
+|               | (5) access patterns        | 102,676 *    | array access pattern optmizations                                                      |
+|               |                            |              |                                                                                        |
+| Performance   |                            |              | After transformations are applied to meet performance pragma targets                   |
+|               | (1) loop simplification    | 102,640 *    | loop and instruction simplification                                                    |
+|               | (2) parallelization        | 102,638 *    | loops are unrolled or pipelined to meet performance targets                            |
+|               | (3) array partition        | 113,341 *    | arrays are partitioned to meet performance targets                                     |
+|               | (4) simplification         | 104,000 *    | simplification of design after performance transformations                             |
+|               |                            |              |                                                                                        |
+| HW Transforms |                            |              | After hardware transfomations                                                          |
+|               | (1) lowering               | 104,014 *    | initial conversion to HW specific instructions                                         |
+|               | (2) optimizations          | 104,069 *    | high level synthesis optimizations                                                     |
++---------------+----------------------------+--------------+----------------------------------------------------------------------------------------+
+    * - Exceeded design size warning message threshold
+
+* Instructions per Function for each Compilation Phase
++-------------------+-------------------------+--------------+---------------------+---------------------+---------------------+---------------------+
+| Function          | Location                | Compile/Link | Unroll/Inline       | Array/Struct        | Performance         | HW Transforms       |
++-------------------+-------------------------+--------------+---------------------+---------------------+---------------------+---------------------+
+| + cnn_gesture_top | cnn_gesture_hls.cpp:215 | 14,469       | 102,647 *           | 102,676 *           | 104,000 *           | 104,069 *           |
+|  + conv1_block    | cnn_gesture_hls.cpp:33  | 5,141        |                     |                     |                     |                     |
+|     conv_index    | cnn_gesture_hls.cpp:24  |     5        |                     |                     |                     |                     |
+|     relu          | cnn_gesture_hls.cpp:18  |   148        |                     |                     |                     |                     |
+|     sqrt          | sqrtfloat.cpp:6         |     2        |                     |                     |                     |                     |
+|    maxpool1       | cnn_gesture_hls.cpp:72  |    67        |                     |                     |                     |                     |
+|  + conv2_block    | cnn_gesture_hls.cpp:88  | 5,141        |                     |                     |                     |                     |
+|     conv_index    | cnn_gesture_hls.cpp:24  |     5        |                     |                     |                     |                     |
+|     relu          | cnn_gesture_hls.cpp:18  |   148        |                     |                     |                     |                     |
+|     sqrt          | sqrtfloat.cpp:6         |     2        |                     |                     |                     |                     |
+|    maxpool2       | cnn_gesture_hls.cpp:123 |    67        |                     |                     |                     |                     |
+|    flatten        | cnn_gesture_hls.cpp:139 |    30        |                     |                     |                     |                     |
+|  + dense1         | cnn_gesture_hls.cpp:154 | 1,463        |                     |                     |                     |                     |
+|     dense_index   | cnn_gesture_hls.cpp:29  |     3        |                     |                     |                     |                     |
+|     relu          | cnn_gesture_hls.cpp:18  |   148        |                     |                     |                     |                     |
+|  + dense2_logits  | cnn_gesture_hls.cpp:175 | 1,313        |                     |                     |                     |                     |
+|     dense_index   | cnn_gesture_hls.cpp:29  |     3        |                     |                     |                     |                     |
+|  + softmax        | cnn_gesture_hls.cpp:194 | 1,185        |                     |                     |                     |                     |
+|   + exp           | expfloat.cpp:15         |     4        |                     |                     |                     |                     |
+|      exp          | hls_exp_float.cpp:15    |     2        |                     |                     |                     |                     |
+|    conv_index     | cnn_gesture_hls.cpp:24  |              |    570 (114 calls)  |    570 (114 calls)  |    570 (114 calls)  |    570 (114 calls)  |
+|    dense_index    | cnn_gesture_hls.cpp:29  |              |  5,184 (1728 calls) |  5,184 (1728 calls) |  5,184 (1728 calls) |  5,184 (1728 calls) |
++-------------------+-------------------------+--------------+---------------------+---------------------+---------------------+---------------------+
+    * - Exceeded design size warning message threshold
+
+* Design Size Message Settings
++---------------------------------------------+--------+------------------------------------------------------------------+
+| Message Setting                             | Value  | Description                                                      |
++---------------------------------------------+--------+------------------------------------------------------------------+
+| config_compile -design_size_maximum_warning | 100000 | Show a warning when total design instructions exceeds this value |
++---------------------------------------------+--------+------------------------------------------------------------------+
+
+

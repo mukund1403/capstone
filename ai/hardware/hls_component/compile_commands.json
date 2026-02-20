@@ -1,0 +1,15 @@
+[
+  {
+    "directory": "C:\\Users\\Jonathan\\Desktop\\capstone\\ai\\hardware\\hls_component",
+    "arguments": [
+      "C:\\AMDDesignTools\\2025.2\\Vitis\\win64\\tools\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\AMDDesignTools\\2025.2\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\AMDDesignTools\\2025.2\\Vitis\\common\\technology\\autopilot",
+      "-fhlstoplevel=cnn_gesture_top",
+      "-c",
+      "C:\\Users\\Jonathan\\Desktop\\capstone\\ai\\software\\cnn_gesture_hls.cpp"
+    ],
+    "file": "C:\\Users\\Jonathan\\Desktop\\capstone\\ai\\software\\cnn_gesture_hls.cpp"
+  }
+]

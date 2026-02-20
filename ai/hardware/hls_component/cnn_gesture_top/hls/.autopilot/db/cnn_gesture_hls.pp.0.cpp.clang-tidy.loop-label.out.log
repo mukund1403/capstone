@@ -1,0 +1,755 @@
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:2265:5: remark: Added loop label VITIS_LOOP_676_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^
+    VITIS_LOOP_676_1: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:2265:5: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:2279:5: remark: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^
+    VITIS_LOOP_690_1: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:2279:5: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:2293:5: remark: Added loop label VITIS_LOOP_704_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^
+    VITIS_LOOP_704_1: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:2293:5: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:5801:7: remark: Added loop label VITIS_LOOP_1251_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^
+      VITIS_LOOP_1251_1: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:5801:7: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:51880:5: remark: Added loop label VITIS_LOOP_61_1:   [xilinx-label-all-loops]
+    for (int n=0; n<Nmax; n++){
+    ^
+    VITIS_LOOP_61_1: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:51880:5: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:51926:5: remark: Added loop label VITIS_LOOP_117_1:   [xilinx-label-all-loops]
+    for (int n=0; n<Nmax; n++){
+    ^
+    VITIS_LOOP_117_1: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:51926:5: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:52089:9: remark: Added loop label VITIS_LOOP_289_1:   [xilinx-label-all-loops]
+        for(int i=0;i<W-1;i++){
+        ^
+        VITIS_LOOP_289_1: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:52089:9: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:52241:9: remark: Added loop label VITIS_LOOP_449_1:   [xilinx-label-all-loops]
+        for(int i=0;i<W-1;i++){
+        ^
+        VITIS_LOOP_449_1: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:52241:9: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:52421:5: remark: Added loop label VITIS_LOOP_629_1:   [xilinx-label-all-loops]
+    for(int i=0;i<W+1;i++){
+    ^
+    VITIS_LOOP_629_1: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:52421:5: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:52425:5: remark: Added loop label VITIS_LOOP_633_2:   [xilinx-label-all-loops]
+    for(int i=0;i<W+1;i++){
+    ^
+    VITIS_LOOP_633_2: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:52425:5: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:52535:5: remark: Added loop label VITIS_LOOP_743_1:   [xilinx-label-all-loops]
+    for (int n=0; n<Nmax; n++){
+    ^
+    VITIS_LOOP_743_1: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:52535:5: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:52625:7: remark: Added loop label VITIS_LOOP_840_1:   [xilinx-label-all-loops]
+      for(int i=0;i<W-1;i++){
+      ^
+      VITIS_LOOP_840_1: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:52625:7: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:52644:7: remark: Added loop label VITIS_LOOP_859_2:   [xilinx-label-all-loops]
+      for(int i=0;i<W-1;i++){
+      ^
+      VITIS_LOOP_859_2: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:52644:7: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:52937:5: remark: Added loop label VITIS_LOOP_1176_1:   [xilinx-label-all-loops]
+    for(int i=0; i<Nmax; i++) {
+    ^
+    VITIS_LOOP_1176_1: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:52937:5: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:53020:5: remark: Added loop label VITIS_LOOP_1259_1:   [xilinx-label-all-loops]
+    for(int i=0; i<Nmax; i++) {
+    ^
+    VITIS_LOOP_1259_1: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:53020:5: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:53426:13: remark: Added loop label VITIS_LOOP_68_1:   [xilinx-label-all-loops]
+            for (int j = 3; j >= I_+1; j--) {
+            ^
+            VITIS_LOOP_68_1: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:53426:13: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:53432:17: remark: Added loop label VITIS_LOOP_74_2:   [xilinx-label-all-loops]
+                for (int j = 3; j >= I_+1; j--){
+                ^
+                VITIS_LOOP_74_2: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:53432:17: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:53436:17: remark: Added loop label VITIS_LOOP_78_3:   [xilinx-label-all-loops]
+                for (int j = I_; j >= 0; j--){
+                ^
+                VITIS_LOOP_78_3: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:53436:17: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:53483:13: remark: Added loop label VITIS_LOOP_145_4:   [xilinx-label-all-loops]
+            for (int j = 9; j >= I_+4; j--) {
+            ^
+            VITIS_LOOP_145_4: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:53483:13: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:53489:17: remark: Added loop label VITIS_LOOP_151_5:   [xilinx-label-all-loops]
+                for (int j = 9; j >= I_+4; j--){
+                ^
+                VITIS_LOOP_151_5: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:53489:17: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:53493:17: remark: Added loop label VITIS_LOOP_155_6:   [xilinx-label-all-loops]
+                for (int j = I_+3; j >= 0; j--){
+                ^
+                VITIS_LOOP_155_6: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:53493:17: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:53508:9: remark: Added loop label VITIS_LOOP_170_7:   [xilinx-label-all-loops]
+        for (int j = 14; j < 22; j++){
+        ^
+        VITIS_LOOP_170_7: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:53508:9: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:53516:17: remark: Added loop label VITIS_LOOP_178_8:   [xilinx-label-all-loops]
+                for (int j = 0; j < 22; j++){
+                ^
+                VITIS_LOOP_178_8: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:53516:17: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:53581:13: remark: Added loop label VITIS_LOOP_243_9:   [xilinx-label-all-loops]
+            for (int j = 21; j >= I_+10; j--) {
+            ^
+            VITIS_LOOP_243_9: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:53581:13: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:53587:17: remark: Added loop label VITIS_LOOP_249_10:   [xilinx-label-all-loops]
+                for (int j = 21; j >= I_+10; j--) {
+                ^
+                VITIS_LOOP_249_10: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:53587:17: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:53591:17: remark: Added loop label VITIS_LOOP_253_11:   [xilinx-label-all-loops]
+                for (int j = I_+9; j >= 0; j--) {
+                ^
+                VITIS_LOOP_253_11: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:53591:17: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:53606:9: remark: Added loop label VITIS_LOOP_268_12:   [xilinx-label-all-loops]
+        for (int j = 27; j < 46; j++){
+        ^
+        VITIS_LOOP_268_12: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:53606:9: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:53614:17: remark: Added loop label VITIS_LOOP_276_13:   [xilinx-label-all-loops]
+                for (int j = 0; j < 46; j++) {
+                ^
+                VITIS_LOOP_276_13: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:53614:17: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:53843:13: remark: Added loop label VITIS_LOOP_505_14:   [xilinx-label-all-loops]
+            for (int j = 45; j >= I_+22; j--) {
+            ^
+            VITIS_LOOP_505_14: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:53843:13: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:53849:17: remark: Added loop label VITIS_LOOP_511_15:   [xilinx-label-all-loops]
+                for (int j = 45; j >= I_+22; j--){
+                ^
+                VITIS_LOOP_511_15: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:53849:17: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:53853:17: remark: Added loop label VITIS_LOOP_515_16:   [xilinx-label-all-loops]
+                for (int j = I_+21; j >= 0; j--) {
+                ^
+                VITIS_LOOP_515_16: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:53853:17: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:53863:9: remark: Added loop label VITIS_LOOP_525_17:   [xilinx-label-all-loops]
+        for (int j = 32-F_; j < 32+I_; j++){
+        ^
+        VITIS_LOOP_525_17: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:53863:9: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:53867:9: remark: Added loop label VITIS_LOOP_529_18:   [xilinx-label-all-loops]
+        for (int j = 32+I_; j <= 64; j++){
+        ^
+        VITIS_LOOP_529_18: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:53867:9: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:53877:9: remark: Added loop label VITIS_LOOP_539_19:   [xilinx-label-all-loops]
+        for (int j = 37; j < 64; j++) {
+        ^
+        VITIS_LOOP_539_19: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:53877:9: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:53885:17: remark: Added loop label VITIS_LOOP_547_20:   [xilinx-label-all-loops]
+                for (int j = 0; j < 64; j++){
+                ^
+                VITIS_LOOP_547_20: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:53885:17: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:54246:13: remark: Added loop label VITIS_LOOP_908_21:   [xilinx-label-all-loops]
+            for (int j = 63; j >= I_+31; j--) {
+            ^
+            VITIS_LOOP_908_21: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:54246:13: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:54252:17: remark: Added loop label VITIS_LOOP_914_22:   [xilinx-label-all-loops]
+                for (int j = 63; j >= I_+31; j--) {
+                ^
+                VITIS_LOOP_914_22: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:54252:17: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:54256:17: remark: Added loop label VITIS_LOOP_918_23:   [xilinx-label-all-loops]
+                for (int j = I_+30; j >= 0; j--) {
+                ^
+                VITIS_LOOP_918_23: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:54256:17: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:54372:13: remark: Added loop label VITIS_LOOP_1034_1:   [xilinx-label-all-loops]
+            for (int j = 4; j >= I_+1; j--) {
+            ^
+            VITIS_LOOP_1034_1: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:54372:13: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:54378:17: remark: Added loop label VITIS_LOOP_1040_2:   [xilinx-label-all-loops]
+                for (int j = 4; j >= I_+1; j--) {
+                ^
+                VITIS_LOOP_1040_2: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:54378:17: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:54382:17: remark: Added loop label VITIS_LOOP_1044_3:   [xilinx-label-all-loops]
+                for (int j = I_; j >= 0; j--) {
+                ^
+                VITIS_LOOP_1044_3: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:54382:17: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:54469:13: remark: Added loop label VITIS_LOOP_1131_4:   [xilinx-label-all-loops]
+            for (int j = 10; j >= I_+4; j--) {
+            ^
+            VITIS_LOOP_1131_4: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:54469:13: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:54475:17: remark: Added loop label VITIS_LOOP_1137_5:   [xilinx-label-all-loops]
+                for (int j = 10; j >= I_+4; j--) {
+                ^
+                VITIS_LOOP_1137_5: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:54475:17: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:54479:17: remark: Added loop label VITIS_LOOP_1141_6:   [xilinx-label-all-loops]
+                for (int j = I_+3; j >= 0; j--) {
+                ^
+                VITIS_LOOP_1141_6: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:54479:17: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:54498:9: remark: Added loop label VITIS_LOOP_1160_7:   [xilinx-label-all-loops]
+        for (int j = wf+3; j < w-1; j++) {
+        ^
+        VITIS_LOOP_1160_7: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:54498:9: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:54505:17: remark: Added loop label VITIS_LOOP_1167_8:   [xilinx-label-all-loops]
+                for (int j = 0; j < 22; j++) {
+                ^
+                VITIS_LOOP_1167_8: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:54505:17: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:54621:13: remark: Added loop label VITIS_LOOP_1283_9:   [xilinx-label-all-loops]
+            for (int j = 22; j >= I_+10; j--) {
+            ^
+            VITIS_LOOP_1283_9: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:54621:13: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:54627:17: remark: Added loop label VITIS_LOOP_1289_10:   [xilinx-label-all-loops]
+                for (int j = 22; j >= I_+10; j--){
+                ^
+                VITIS_LOOP_1289_10: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:54627:17: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:54631:17: remark: Added loop label VITIS_LOOP_1293_11:   [xilinx-label-all-loops]
+                for (int j = I_+9; j >= 0; j--) {
+                ^
+                VITIS_LOOP_1293_11: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:54631:17: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:54651:9: remark: Added loop label VITIS_LOOP_1313_12:   [xilinx-label-all-loops]
+        for (int j = wf+4; j < w-1; j++){
+        ^
+        VITIS_LOOP_1313_12: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:54651:9: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:54658:17: remark: Added loop label VITIS_LOOP_1320_13:   [xilinx-label-all-loops]
+                for (int j = 0; j < 46; j++) {
+                ^
+                VITIS_LOOP_1320_13: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:54658:17: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:54920:13: remark: Added loop label VITIS_LOOP_1582_14:   [xilinx-label-all-loops]
+            for (int j = 46; j >= I_+22; j--) {
+            ^
+            VITIS_LOOP_1582_14: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:54920:13: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:54926:17: remark: Added loop label VITIS_LOOP_1588_15:   [xilinx-label-all-loops]
+                for (int j = 46; j >= I_+22; j--) {
+                ^
+                VITIS_LOOP_1588_15: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:54926:17: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:54930:17: remark: Added loop label VITIS_LOOP_1592_16:   [xilinx-label-all-loops]
+                for (int j = I_+21; j >= 0; j--) {
+                ^
+                VITIS_LOOP_1592_16: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:54930:17: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:54954:9: remark: Added loop label VITIS_LOOP_1616_17:   [xilinx-label-all-loops]
+        for (int j = wf+5; j < w-1; j++){
+        ^
+        VITIS_LOOP_1616_17: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:54954:9: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:54961:17: remark: Added loop label VITIS_LOOP_1623_18:   [xilinx-label-all-loops]
+                for (int j = 0; j < 64; j++) {
+                ^
+                VITIS_LOOP_1623_18: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:54961:17: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:55391:13: remark: Added loop label VITIS_LOOP_2053_19:   [xilinx-label-all-loops]
+            for (int j = 64; j >= I_+31; j--) {
+            ^
+            VITIS_LOOP_2053_19: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:55391:13: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:55397:17: remark: Added loop label VITIS_LOOP_2059_20:   [xilinx-label-all-loops]
+                for (int j = 64; j >= I_+31; j--) {
+                ^
+                VITIS_LOOP_2059_20: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:55397:17: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:55401:17: remark: Added loop label VITIS_LOOP_2063_21:   [xilinx-label-all-loops]
+                for (int j = I_+30; j >= 0; j--) {
+                ^
+                VITIS_LOOP_2063_21: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:55401:17: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:55530:13: remark: Added loop label VITIS_LOOP_2192_1:   [xilinx-label-all-loops]
+            for(int j=3; j>=I+1; j--) {
+            ^
+            VITIS_LOOP_2192_1: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:55530:13: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:55537:17: remark: Added loop label VITIS_LOOP_2199_2:   [xilinx-label-all-loops]
+                for(int j=3; j>=I+1; j--) {
+                ^
+                VITIS_LOOP_2199_2: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:55537:17: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:55541:17: remark: Added loop label VITIS_LOOP_2203_3:   [xilinx-label-all-loops]
+                for(int j=I; j>=0; j--) {
+                ^
+                VITIS_LOOP_2203_3: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:55541:17: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:55588:13: remark: Added loop label VITIS_LOOP_2250_4:   [xilinx-label-all-loops]
+            for(int j=7; j>=3+I; j--) {
+            ^
+            VITIS_LOOP_2250_4: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:55588:13: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:55595:17: remark: Added loop label VITIS_LOOP_2257_5:   [xilinx-label-all-loops]
+                for(int j=7; j>=3+I; j--) {
+                ^
+                VITIS_LOOP_2257_5: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:55595:17: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:55599:17: remark: Added loop label VITIS_LOOP_2261_6:   [xilinx-label-all-loops]
+                for(int j=I+2; j>=0; j--) {
+                ^
+                VITIS_LOOP_2261_6: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:55599:17: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:55617:9: remark: Added loop label VITIS_LOOP_2279_7:   [xilinx-label-all-loops]
+        for(int j=11; j<16; j++) {
+        ^
+        VITIS_LOOP_2279_7: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:55617:9: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:55672:13: remark: Added loop label VITIS_LOOP_2334_8:   [xilinx-label-all-loops]
+            for(int j=15; j>=7+I; j--) {
+            ^
+            VITIS_LOOP_2334_8: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:55672:13: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:55679:17: remark: Added loop label VITIS_LOOP_2341_9:   [xilinx-label-all-loops]
+                for(int j=15; j>=7+I; j--) {
+                ^
+                VITIS_LOOP_2341_9: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:55679:17: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:55683:17: remark: Added loop label VITIS_LOOP_2345_10:   [xilinx-label-all-loops]
+                for(int j=6+I; j>=0; j--) {
+                ^
+                VITIS_LOOP_2345_10: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:55683:17: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:55701:9: remark: Added loop label VITIS_LOOP_2363_11:   [xilinx-label-all-loops]
+        for(int j=20; j<32; j++) {
+        ^
+        VITIS_LOOP_2363_11: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:55701:9: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:55790:13: remark: Added loop label VITIS_LOOP_2452_12:   [xilinx-label-all-loops]
+            for(int j=31; j>=I+15; j--) {
+            ^
+            VITIS_LOOP_2452_12: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:55790:13: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:55797:17: remark: Added loop label VITIS_LOOP_2459_13:   [xilinx-label-all-loops]
+                for(int j=31; j>=I+15; j--) {
+                ^
+                VITIS_LOOP_2459_13: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:55797:17: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:55801:17: remark: Added loop label VITIS_LOOP_2463_14:   [xilinx-label-all-loops]
+                for(int j=I+14; j>=0; j--) {
+                ^
+                VITIS_LOOP_2463_14: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:55801:17: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:55811:9: remark: Added loop label VITIS_LOOP_2473_15:   [xilinx-label-all-loops]
+        for(int j=32-F; j<32+I; j++) {
+        ^
+        VITIS_LOOP_2473_15: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:55811:9: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:55815:9: remark: Added loop label VITIS_LOOP_2477_16:   [xilinx-label-all-loops]
+        for(int j=32+I; j<=64; j++) {
+        ^
+        VITIS_LOOP_2477_16: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:55815:9: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:55826:9: remark: Added loop label VITIS_LOOP_2488_17:   [xilinx-label-all-loops]
+        for(int j=37; j<64; j++) {
+        ^
+        VITIS_LOOP_2488_17: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:55826:9: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:55834:17: remark: Added loop label VITIS_LOOP_2496_18:   [xilinx-label-all-loops]
+                for(int j=0; j<64; j++) {
+                ^
+                VITIS_LOOP_2496_18: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:55834:17: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:56159:13: remark: Added loop label VITIS_LOOP_2821_19:   [xilinx-label-all-loops]
+            for(int j=63; j>=I+31; j--) {
+            ^
+            VITIS_LOOP_2821_19: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:56159:13: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:56166:17: remark: Added loop label VITIS_LOOP_2828_20:   [xilinx-label-all-loops]
+                for(int j=63; j>=I+31; j--) {
+                ^
+                VITIS_LOOP_2828_20: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:56166:17: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:56170:17: remark: Added loop label VITIS_LOOP_2832_21:   [xilinx-label-all-loops]
+                for(int j=I+30; j>=0; j--) {
+                ^
+                VITIS_LOOP_2832_21: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:56170:17: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:56258:4: remark: Added loop label VITIS_LOOP_2920_1:   [xilinx-label-all-loops]
+   for(int j = 5; j>=I_+2; j--) {
+   ^
+   VITIS_LOOP_2920_1: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:56258:4: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:56265:5: remark: Added loop label VITIS_LOOP_2927_2:   [xilinx-label-all-loops]
+    for(int j = 5; j>=I_+2; j--) {
+    ^
+    VITIS_LOOP_2927_2: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:56265:5: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:56269:5: remark: Added loop label VITIS_LOOP_2931_3:   [xilinx-label-all-loops]
+    for(int j = I_+1; j>=0; j--) {
+    ^
+    VITIS_LOOP_2931_3: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:56269:5: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:56284:3: remark: Added loop label VITIS_LOOP_2946_4:   [xilinx-label-all-loops]
+  for(int j = 11; j >=7; j--) {
+  ^
+  VITIS_LOOP_2946_4: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:56284:3: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:56316:4: remark: Added loop label VITIS_LOOP_2978_5:   [xilinx-label-all-loops]
+   for(int j = 11; j >= I_+5; j--) {
+   ^
+   VITIS_LOOP_2978_5: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:56316:4: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:56323:5: remark: Added loop label VITIS_LOOP_2985_6:   [xilinx-label-all-loops]
+    for(int j = 11; j>= I_+5; j--) {
+    ^
+    VITIS_LOOP_2985_6: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:56323:5: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:56327:5: remark: Added loop label VITIS_LOOP_2989_7:   [xilinx-label-all-loops]
+    for(int j = I_+4; j>=0; j--) {
+    ^
+    VITIS_LOOP_2989_7: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:56327:5: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:56342:3: remark: Added loop label VITIS_LOOP_3004_8:   [xilinx-label-all-loops]
+  for(int j = 25; j>=15; j--) {
+  ^
+  VITIS_LOOP_3004_8: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:56342:3: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:56392:4: remark: Added loop label VITIS_LOOP_3054_9:   [xilinx-label-all-loops]
+   for(int j = 25; j>= I_+12; j--) {
+   ^
+   VITIS_LOOP_3054_9: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:56392:4: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:56399:5: remark: Added loop label VITIS_LOOP_3061_10:   [xilinx-label-all-loops]
+    for(int j = 25; j>=I_+12; j--) {
+    ^
+    VITIS_LOOP_3061_10: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:56399:5: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:56403:5: remark: Added loop label VITIS_LOOP_3065_11:   [xilinx-label-all-loops]
+    for(int j = I_+11; j>=0; j--) {
+    ^
+    VITIS_LOOP_3065_11: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:56403:5: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:56418:3: remark: Added loop label VITIS_LOOP_3080_12:   [xilinx-label-all-loops]
+  for(int j = 51; j >= 29; j--) {
+  ^
+  VITIS_LOOP_3080_12: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:56418:3: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:56555:4: remark: Added loop label VITIS_LOOP_3217_13:   [xilinx-label-all-loops]
+   for(int j = 51; j >= 25 + I_; j--) {
+   ^
+   VITIS_LOOP_3217_13: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:56555:4: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:56562:5: remark: Added loop label VITIS_LOOP_3224_14:   [xilinx-label-all-loops]
+    for(int j = 51; j>=25 + I_; j--) {
+    ^
+    VITIS_LOOP_3224_14: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:56562:5: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:56566:5: remark: Added loop label VITIS_LOOP_3228_15:   [xilinx-label-all-loops]
+    for(int j = 24 + I_; j >= 0; j--) {
+    ^
+    VITIS_LOOP_3228_15: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:56566:5: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:56581:3: remark: Added loop label VITIS_LOOP_3243_16:   [xilinx-label-all-loops]
+  for(int j = 63; j >= 36; j--) {
+  ^
+  VITIS_LOOP_3243_16: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:56581:3: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:56741:4: remark: Added loop label VITIS_LOOP_3403_17:   [xilinx-label-all-loops]
+   for(int j = 63; j >= 31 + I_; j--) {
+   ^
+   VITIS_LOOP_3403_17: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:56741:4: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:56748:5: remark: Added loop label VITIS_LOOP_3410_18:   [xilinx-label-all-loops]
+    for(int j = 63; j >= 31 + I_; j--) {
+    ^
+    VITIS_LOOP_3410_18: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:56748:5: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:56752:5: remark: Added loop label VITIS_LOOP_3414_19:   [xilinx-label-all-loops]
+    for(int j = 30 + I_; j >= 0; j--) {
+    ^
+    VITIS_LOOP_3414_19: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:56752:5: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:57467:13: remark: Added loop label VITIS_LOOP_703_1:   [xilinx-label-all-loops]
+            for (b_exp = I_-1; b_exp >= -F_; b_exp--) {
+            ^
+            VITIS_LOOP_703_1: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:57467:13: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:57685:13: remark: Added loop label VITIS_LOOP_921_1:   [xilinx-label-all-loops]
+            for (b_exp = I_-1; b_exp >= -F_; b_exp--) {
+            ^
+            VITIS_LOOP_921_1: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:57685:13: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:58102:13: remark: Added loop label VITIS_LOOP_1345_1:   [xilinx-label-all-loops]
+            for (b_exp = I_-1; b_exp >= -F_; b_exp--) {
+            ^
+            VITIS_LOOP_1345_1: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:58102:13: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:58425:9: remark: Added loop label VITIS_LOOP_243_1:   [xilinx-label-all-loops]
+        for ( int pos = msbr-1; pos >= 0; pos-- ) {
+        ^
+        VITIS_LOOP_243_1: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:58425:9: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:58453:9: remark: Added loop label VITIS_LOOP_271_2:   [xilinx-label-all-loops]
+        for ( int pos = -1; pos >= -F_-1; pos-- ) {
+        ^
+        VITIS_LOOP_271_2: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:58453:9: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:59157:13: remark: Added loop label VITIS_LOOP_48_1:   [xilinx-label-all-loops]
+            for (int j = 0; j < W_-1; j++){
+            ^
+            VITIS_LOOP_48_1: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:59157:13: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:59210:5: remark: Added loop label VITIS_LOOP_109_2:   [xilinx-label-all-loops]
+    for (int j = F_l+F_+I_m-1; j < F_l+W_+5; j++){
+    ^
+    VITIS_LOOP_109_2: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:59210:5: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:59224:13: remark: Added loop label VITIS_LOOP_123_3:   [xilinx-label-all-loops]
+            for (int j = WO_m-1; j >= W_-1; j--) {
+            ^
+            VITIS_LOOP_123_3: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:59224:13: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:59254:13: remark: Added loop label VITIS_LOOP_153_4:   [xilinx-label-all-loops]
+            for (int j = W_-2; j >= 0; j--){
+            ^
+            VITIS_LOOP_153_4: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:59254:13: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:59339:12: remark: Added loop label VITIS_LOOP_281_1:   [xilinx-label-all-loops]
+           for(int i = wf_log+we_log-2; i > WI_e - 2; --i) {
+           ^
+           VITIS_LOOP_281_1: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:59339:12: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:59359:16: remark: Added loop label VITIS_LOOP_301_2:   [xilinx-label-all-loops]
+               for (int j = WO_e-1; j >= W_-1; j--) {
+               ^
+               VITIS_LOOP_301_2: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:59359:16: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:59373:20: remark: Added loop label VITIS_LOOP_315_3:   [xilinx-label-all-loops]
+                   for(int i = 0; i < W_-1; ++i) {
+                   ^
+                   VITIS_LOOP_315_3: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:59373:20: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:59466:12: remark: Added loop label VITIS_LOOP_433_1:   [xilinx-label-all-loops]
+           for (int j =WO_d-1; j >= W_-1; j--) {
+           ^
+           VITIS_LOOP_433_1: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:59466:12: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:59480:15: remark: Added loop label VITIS_LOOP_447_2:   [xilinx-label-all-loops]
+              for(int i = 0; i < W_-1; ++i) {
+              ^
+              VITIS_LOOP_447_2: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:59480:15: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:59600:13: remark: Added loop label VITIS_LOOP_33_1:   [xilinx-label-all-loops]
+            for (int i = 0; i < W_-1; i++){
+            ^
+            VITIS_LOOP_33_1: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:59600:13: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:59724:13: remark: Added loop label VITIS_LOOP_183_1:   [xilinx-label-all-loops]
+            for (int i = 0; i < W_-1; i++){
+            ^
+            VITIS_LOOP_183_1: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:59724:13: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:59779:13: remark: Added loop label VITIS_LOOP_248_1:   [xilinx-label-all-loops]
+            for (int i = 0; i < W_-1; i++){
+            ^
+            VITIS_LOOP_248_1: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:59779:13: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:60046:5: remark: Added loop label VITIS_LOOP_44_1:   [xilinx-label-all-loops]
+    for(int l = loop_nm; l > 0; --l){
+    ^
+    VITIS_LOOP_44_1: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:60046:5: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:60297:5: remark: Added loop label VITIS_LOOP_16_1:   [xilinx-label-all-loops]
+    for (int i=0; i<W_;i++)
+    ^
+    VITIS_LOOP_16_1: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:60297:5: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:60308:5: remark: Added loop label VITIS_LOOP_27_1:   [xilinx-label-all-loops]
+    for (int i=0; i<W_;i++)
+    ^
+    VITIS_LOOP_27_1: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:60308:5: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:60319:5: remark: Added loop label VITIS_LOOP_38_1:   [xilinx-label-all-loops]
+    for (int i=0; i<I_;i++)
+    ^
+    VITIS_LOOP_38_1: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:60319:5: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:60330:5: remark: Added loop label VITIS_LOOP_49_1:   [xilinx-label-all-loops]
+    for (int i=0; i<I_;i++)
+    ^
+    VITIS_LOOP_49_1: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:60330:5: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:60341:5: remark: Added loop label VITIS_LOOP_60_1:   [xilinx-label-all-loops]
+    for (int i=0; i<W_;i++)
+    ^
+    VITIS_LOOP_60_1: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:60341:5: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:60352:5: remark: Added loop label VITIS_LOOP_71_1:   [xilinx-label-all-loops]
+    for (int i=0; i<W_;i++)
+    ^
+    VITIS_LOOP_71_1: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:60352:5: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:60363:5: remark: Added loop label VITIS_LOOP_82_1:   [xilinx-label-all-loops]
+    for (int i=0; i<I_;i++)
+    ^
+    VITIS_LOOP_82_1: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:60363:5: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:60374:5: remark: Added loop label VITIS_LOOP_93_1:   [xilinx-label-all-loops]
+    for (int i=0; i<I_;i++)
+    ^
+    VITIS_LOOP_93_1: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:60374:5: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:62733:12: remark: Added loop label VITIS_LOOP_26_1:   [xilinx-label-all-loops]
+           for(int i = 0; i < W_-1; ++i) {
+           ^
+           VITIS_LOOP_26_1: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:62733:12: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:62797:7: remark: Added loop label VITIS_LOOP_40_1:   [xilinx-label-all-loops]
+      for(int pos = msbr - 1 ; pos >= -F-1; pos--) {
+      ^
+      VITIS_LOOP_40_1: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:62797:7: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:62914:9: remark: Added loop label VITIS_LOOP_49_1:   [xilinx-label-all-loops]
+        for(int pos = msbr - 1; pos >= 0; pos--) {
+        ^
+        VITIS_LOOP_49_1: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:62914:9: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:62939:5: remark: Added loop label VITIS_LOOP_81_2:   [xilinx-label-all-loops]
+    for(int pos = -1; pos >= -F-1; pos--) {
+    ^
+    VITIS_LOOP_81_2: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:62939:5: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:63009:8: remark: Added loop label VITIS_LOOP_169_3:   [xilinx-label-all-loops]
+       for(int i = 0; i < W - 1; ++i) {
+       ^
+       VITIS_LOOP_169_3: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:63009:8: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:65307:5: remark: Added loop label VITIS_LOOP_39_1:   [xilinx-label-all-loops]
+    for (int t = 0; t < 100; t++) {
+    ^
+    VITIS_LOOP_39_1: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:65307:5: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:65308:9: remark: Added loop label VITIS_LOOP_40_2:   [xilinx-label-all-loops]
+        for (int f = 0; f < 32; f++) {
+        ^
+        VITIS_LOOP_40_2: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:65308:9: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:65312:13: remark: Added loop label VITIS_LOOP_44_3:   [xilinx-label-all-loops]
+            for (int k = 0; k < 3; k++) {
+            ^
+            VITIS_LOOP_44_3: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:65312:13: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:65315:21: remark: Added loop label VITIS_LOOP_47_4:   [xilinx-label-all-loops]
+                    for (int c = 0; c < 6; c++) {
+                    ^
+                    VITIS_LOOP_47_4: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:65315:21: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:65346:5: remark: Added loop label VITIS_LOOP_78_1:   [xilinx-label-all-loops]
+    for (int t = 0; t < 100 / 2; t++) {
+    ^
+    VITIS_LOOP_78_1: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:65346:5: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:65347:9: remark: Added loop label VITIS_LOOP_79_2:   [xilinx-label-all-loops]
+        for (int f = 0; f < 32; f++) {
+        ^
+        VITIS_LOOP_79_2: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:65347:9: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:65362:5: remark: Added loop label VITIS_LOOP_94_1:   [xilinx-label-all-loops]
+    for (int t = 0; t < 100 / 2; t++) {
+    ^
+    VITIS_LOOP_94_1: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:65362:5: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:65363:9: remark: Added loop label VITIS_LOOP_95_2:   [xilinx-label-all-loops]
+        for (int f = 0; f < 64; f++) {
+        ^
+        VITIS_LOOP_95_2: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:65363:9: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:65367:13: remark: Added loop label VITIS_LOOP_99_3:   [xilinx-label-all-loops]
+            for (int k = 0; k < 3; k++) {
+            ^
+            VITIS_LOOP_99_3: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:65367:13: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:65370:21: remark: Added loop label VITIS_LOOP_102_4:   [xilinx-label-all-loops]
+                    for (int c = 0; c < 32; c++) {
+                    ^
+                    VITIS_LOOP_102_4: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:65370:21: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:65397:5: remark: Added loop label VITIS_LOOP_129_1:   [xilinx-label-all-loops]
+    for (int t = 0; t < 100 / 4; t++) {
+    ^
+    VITIS_LOOP_129_1: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:65397:5: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:65398:9: remark: Added loop label VITIS_LOOP_130_2:   [xilinx-label-all-loops]
+        for (int f = 0; f < 64; f++) {
+        ^
+        VITIS_LOOP_130_2: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:65398:9: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:65414:5: remark: Added loop label VITIS_LOOP_146_1:   [xilinx-label-all-loops]
+    for (int t = 0; t < 100 / 4; t++) {
+    ^
+    VITIS_LOOP_146_1: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:65414:5: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:65415:9: remark: Added loop label VITIS_LOOP_147_2:   [xilinx-label-all-loops]
+        for (int c = 0; c < 64; c++) {
+        ^
+        VITIS_LOOP_147_2: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:65415:9: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:65430:5: remark: Added loop label VITIS_LOOP_162_1:   [xilinx-label-all-loops]
+    for (int o = 0; o < 128; o++) {
+    ^
+    VITIS_LOOP_162_1: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:65430:5: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:65434:9: remark: Added loop label VITIS_LOOP_166_2:   [xilinx-label-all-loops]
+        for (int i = 0; i < in_dim; i++) {
+        ^
+        VITIS_LOOP_166_2: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:65434:9: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:65449:5: remark: Added loop label VITIS_LOOP_181_1:   [xilinx-label-all-loops]
+    for (int o = 0; o < 6; o++) {
+    ^
+    VITIS_LOOP_181_1: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:65449:5: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:65453:9: remark: Added loop label VITIS_LOOP_185_2:   [xilinx-label-all-loops]
+        for (int i = 0; i < 128; i++) {
+        ^
+        VITIS_LOOP_185_2: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:65453:9: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:65466:5: remark: Added loop label VITIS_LOOP_198_1:   [xilinx-label-all-loops]
+    for (int i = 1; i < 6; i++) {
+    ^
+    VITIS_LOOP_198_1: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:65466:5: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:65472:5: remark: Added loop label VITIS_LOOP_204_2:   [xilinx-label-all-loops]
+    for (int i = 0; i < 6; i++) {
+    ^
+    VITIS_LOOP_204_2: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:65472:5: note: FIX-IT applied suggested code changes
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:65477:5: remark: Added loop label VITIS_LOOP_209_3:   [xilinx-label-all-loops]
+    for (int i = 0; i < 6; i++) {
+    ^
+    VITIS_LOOP_209_3: 
+C:\Users\Jonathan\Desktop\capstone\ai\hardware\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp:65477:5: note: FIX-IT applied suggested code changes
