@@ -1,0 +1,157 @@
+<ENTRY>
+{
+ "thisFile": "C:/Users\\Jonathan\\Desktop\\capstone\\ai\\vitis_hls\\hls_component\\cnn_gesture_top\\cnn_gesture_top.hlsrun_csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "02/23/26 23:17:45",
+ "timestampMillis": "1771859865180",
+ "buildStep": {
+  "cmdId": "43e33eeb-3358-455b-9f81-9a50bf85734b",
+  "name": "vitis-run",
+  "logFile": "C:/Users\\Jonathan\\Desktop\\capstone\\ai\\vitis_hls\\hls_component\\cnn_gesture_top\\logs\\cnn_gesture_top.steps.log",
+  "commandLine": "C:/AMDDesignTools/2025.2/Vitis/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --csim --config C:\\Users\\Jonathan\\Desktop\\capstone\\ai\\vitis_hls\\hls_component\\hls_config.cfg --work_dir cnn_gesture_top ",
+  "args": [
+   "--mode",
+   "hls",
+   "--csim",
+   "--config",
+   "C:\\Users\\Jonathan\\Desktop\\capstone\\ai\\vitis_hls\\hls_component\\hls_config.cfg",
+   "--work_dir",
+   "cnn_gesture_top"
+  ],
+  "iniFiles": [],
+  "cwd": "C:\\Users\\Jonathan\\Desktop\\capstone\\ai\\vitis_hls\\hls_component"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/23/26 23:17:45",
+ "timestampMillis": "1771859865180",
+ "status": {
+  "cmdId": "43e33eeb-3358-455b-9f81-9a50bf85734b",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "02/23/26 23:17:49",
+ "timestampMillis": "1771859869910",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "cnn_gesture_top",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "C:/Users\\Jonathan\\Desktop\\capstone\\ai\\vitis_hls\\cnn_gesture_hls.cpp",
+     "C:/Users\\Jonathan\\Desktop\\capstone\\ai\\vitis_hls\\weights.h"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2025.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "02/23/26 23:17:49",
+ "timestampMillis": "1771859869911",
+ "buildStep": {
+  "cmdId": "6c1294f6-3a4a-4626-be23-7ebc7b7be5cd",
+  "name": "",
+  "logFile": "C:/Users\\Jonathan\\Desktop\\capstone\\ai\\vitis_hls\\hls_component\\cnn_gesture_top\\hls\\hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "C:\\Users\\Jonathan\\Desktop\\capstone\\ai\\vitis_hls\\hls_component"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/23/26 23:17:49",
+ "timestampMillis": "1771859869911",
+ "status": {
+  "cmdId": "6c1294f6-3a4a-4626-be23-7ebc7b7be5cd",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/23/26 23:17:58",
+ "timestampMillis": "1771859878247",
+ "status": {
+  "cmdId": "6c1294f6-3a4a-4626-be23-7ebc7b7be5cd",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/23/26 23:17:58",
+ "timestampMillis": "1771859878381",
+ "status": {
+  "cmdId": "43e33eeb-3358-455b-9f81-9a50bf85734b",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/23/26 23:17:58",
+ "timestampMillis": "1771859878382",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/23/26 23:17:58",
+ "timestampMillis": "1771859878382",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

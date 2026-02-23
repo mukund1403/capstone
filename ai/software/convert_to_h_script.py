@@ -1,9 +1,14 @@
 import tensorflow as tf
 import numpy as np
+import os
 
-model = tf.keras.models.load_model('best_dummy_model.h5')
+# Get the directory of the current script
 
-with open('weights.h', 'w') as f:
+script_dir = os.path.dirname(os.path.abspath(__file__))
+model_path = os.path.join(script_dir, 'best_dummy_model.h5')
+output_path = os.path.join(script_dir, 'weights.h')
+model = tf.keras.models.load_model(model_path)
+with open(output_path, 'w') as f:
     f.write("#ifndef WEIGHTS_H\n#define WEIGHTS_H\n\n")
     
     for layer in model.layers:

@@ -1,0 +1,74 @@
+{
+  "0": {
+    "basicblocks": 355,
+    "calls": "2 3 1 2 3 1 4 3 4",
+    "control_depth": 4,
+    "def_use_depth": 20,
+    "file": "cnn_gesture_hls.cpp",
+    "fileloc": 208,
+    "instructions": 1204,
+    "loads": {
+      "G": 16,
+      "L": 52,
+      "T": 1
+    },
+    "memory_accesses": 49,
+    "name": "cnn_gesture_top",
+    "stores": {
+      "L": 12,
+      "T": 1
+    },
+    "total_instructions": 2482
+  },
+  "1": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "sqrtfloat.cpp",
+    "fileloc": 6,
+    "instructions": 2,
+    "memory_accesses": 0,
+    "name": "sqrt",
+    "total_instructions": 2
+  },
+  "2": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 4,
+    "file": "cnn_gesture_hls.cpp",
+    "fileloc": 24,
+    "instructions": 5,
+    "memory_accesses": 0,
+    "name": "conv_index",
+    "total_instructions": 5
+  },
+  "3": {
+    "basicblocks": 10,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "cnn_gesture_hls.cpp",
+    "fileloc": 18,
+    "instructions": 14,
+    "memory_accesses": 0,
+    "name": "relu",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 14
+  },
+  "4": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 2,
+    "file": "cnn_gesture_hls.cpp",
+    "fileloc": 29,
+    "instructions": 3,
+    "memory_accesses": 0,
+    "name": "dense_index",
+    "total_instructions": 3
+  }
+}

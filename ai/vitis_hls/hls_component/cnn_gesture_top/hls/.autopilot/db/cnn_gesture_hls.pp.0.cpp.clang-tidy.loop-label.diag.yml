@@ -1,0 +1,1816 @@
+---
+MainSourceFile:  'C:/Users/Jonathan/Desktop/capstone/ai/vitis_hls/hls_component/cnn_gesture_top/hls/.autopilot/db/cnn_gesture_hls.pp.0.cpp'
+Diagnostics:
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_676_1:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\ap_int_ref.h'
+      FileOffset:      676
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          280381
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_676_1: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_690_1:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\ap_int_ref.h'
+      FileOffset:      690
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          280852
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_690_1: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_704_1:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\ap_int_ref.h'
+      FileOffset:      704
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          281324
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_704_1: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_1251_1:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\ap_fixed_base.h'
+      FileOffset:      1251
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          626311
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_1251_1: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_61_1:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_cordic_apfixed.h'
+      FileOffset:      61
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2289936
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_61_1: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_117_1:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_cordic_apfixed.h'
+      FileOffset:      117
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2290759
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_117_1: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_289_1:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_cordic_apfixed.h'
+      FileOffset:      289
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2293430
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_289_1: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_449_1:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_cordic_apfixed.h'
+      FileOffset:      449
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2296166
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_449_1: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_629_1:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_cordic_apfixed.h'
+      FileOffset:      629
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2299336
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_629_1: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_633_2:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_cordic_apfixed.h'
+      FileOffset:      633
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2299422
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_633_2: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_743_1:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_cordic_apfixed.h'
+      FileOffset:      743
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2301736
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_743_1: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_840_1:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_cordic_apfixed.h'
+      FileOffset:      840
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2303234
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_840_1: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_859_2:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_cordic_apfixed.h'
+      FileOffset:      859
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2303471
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_859_2: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_1176_1:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_cordic_apfixed.h'
+      FileOffset:      1176
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2309729
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_1176_1: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_1259_1:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_cordic_apfixed.h'
+      FileOffset:      1259
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2311332
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_1259_1: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_68_1:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_exp_apfixed.h'
+      FileOffset:      68
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2319224
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_68_1: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_74_2:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_exp_apfixed.h'
+      FileOffset:      74
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2319389
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_74_2: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_78_3:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_exp_apfixed.h'
+      FileOffset:      78
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2319505
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_78_3: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_145_4:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_exp_apfixed.h'
+      FileOffset:      145
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2321347
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_145_4: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_151_5:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_exp_apfixed.h'
+      FileOffset:      151
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2321512
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_151_5: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_155_6:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_exp_apfixed.h'
+      FileOffset:      155
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2321628
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_155_6: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_170_7:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_exp_apfixed.h'
+      FileOffset:      170
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2322028
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_170_7: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_178_8:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_exp_apfixed.h'
+      FileOffset:      178
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2322270
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_178_8: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_243_9:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_exp_apfixed.h'
+      FileOffset:      243
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2325692
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_243_9: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_249_10:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_exp_apfixed.h'
+      FileOffset:      249
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2325859
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_249_10: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_253_11:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_exp_apfixed.h'
+      FileOffset:      253
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2325978
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_253_11: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_268_12:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_exp_apfixed.h'
+      FileOffset:      268
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2326379
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_268_12: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_276_13:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_exp_apfixed.h'
+      FileOffset:      276
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2326628
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_276_13: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_505_14:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_exp_apfixed.h'
+      FileOffset:      505
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2342200
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_505_14: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_511_15:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_exp_apfixed.h'
+      FileOffset:      511
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2342367
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_511_15: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_515_16:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_exp_apfixed.h'
+      FileOffset:      515
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2342485
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_515_16: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_525_17:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_exp_apfixed.h'
+      FileOffset:      525
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2342681
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_525_17: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_529_18:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_exp_apfixed.h'
+      FileOffset:      529
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2342790
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_529_18: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_539_19:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_exp_apfixed.h'
+      FileOffset:      539
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2343086
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_539_19: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_547_20:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_exp_apfixed.h'
+      FileOffset:      547
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2343352
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_547_20: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_908_21:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_exp_apfixed.h'
+      FileOffset:      908
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2375608
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_908_21: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_914_22:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_exp_apfixed.h'
+      FileOffset:      914
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2375775
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_914_22: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_918_23:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_exp_apfixed.h'
+      FileOffset:      918
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2375894
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_918_23: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_1034_1:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_exp_apfixed.h'
+      FileOffset:      1034
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2378606
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_1034_1: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_1040_2:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_exp_apfixed.h'
+      FileOffset:      1040
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2378771
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_1040_2: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_1044_3:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_exp_apfixed.h'
+      FileOffset:      1044
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2378888
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_1044_3: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_1131_4:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_exp_apfixed.h'
+      FileOffset:      1131
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2382377
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_1131_4: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_1137_5:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_exp_apfixed.h'
+      FileOffset:      1137
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2382543
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_1137_5: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_1141_6:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_exp_apfixed.h'
+      FileOffset:      1141
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2382661
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_1141_6: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_1160_7:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_exp_apfixed.h'
+      FileOffset:      1160
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2383160
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_1160_7: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_1167_8:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_exp_apfixed.h'
+      FileOffset:      1167
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2383413
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_1167_8: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_1283_9:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_exp_apfixed.h'
+      FileOffset:      1283
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2388878
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_1283_9: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_1289_10:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_exp_apfixed.h'
+      FileOffset:      1289
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2389045
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_1289_10: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_1293_11:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_exp_apfixed.h'
+      FileOffset:      1293
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2389163
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_1293_11: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_1313_12:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_exp_apfixed.h'
+      FileOffset:      1313
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2389691
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_1313_12: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_1320_13:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_exp_apfixed.h'
+      FileOffset:      1320
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2389951
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_1320_13: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_1582_14:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_exp_apfixed.h'
+      FileOffset:      1582
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2407246
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_1582_14: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_1588_15:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_exp_apfixed.h'
+      FileOffset:      1588
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2407413
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_1588_15: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_1592_16:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_exp_apfixed.h'
+      FileOffset:      1592
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2407532
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_1592_16: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_1616_17:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_exp_apfixed.h'
+      FileOffset:      1616
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2408025
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_1616_17: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_1623_18:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_exp_apfixed.h'
+      FileOffset:      1623
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2408303
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_1623_18: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_2053_19:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_exp_apfixed.h'
+      FileOffset:      2053
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2446761
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_2053_19: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_2059_20:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_exp_apfixed.h'
+      FileOffset:      2059
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2446928
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_2059_20: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_2063_21:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_exp_apfixed.h'
+      FileOffset:      2063
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2447047
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_2063_21: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_2192_1:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_exp_apfixed.h'
+      FileOffset:      2192
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2449677
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_2192_1: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_2199_2:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_exp_apfixed.h'
+      FileOffset:      2199
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2449855
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_2199_2: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_2203_3:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_exp_apfixed.h'
+      FileOffset:      2203
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2449966
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_2203_3: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_2250_4:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_exp_apfixed.h'
+      FileOffset:      2250
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2451594
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_2250_4: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_2257_5:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_exp_apfixed.h'
+      FileOffset:      2257
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2451771
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_2257_5: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_2261_6:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_exp_apfixed.h'
+      FileOffset:      2261
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2451882
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_2261_6: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_2279_7:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_exp_apfixed.h'
+      FileOffset:      2279
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2452274
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_2279_7: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_2334_8:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_exp_apfixed.h'
+      FileOffset:      2334
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2454751
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_2334_8: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_2341_9:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_exp_apfixed.h'
+      FileOffset:      2341
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2454933
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_2341_9: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_2345_10:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_exp_apfixed.h'
+      FileOffset:      2345
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2455045
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_2345_10: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_2363_11:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_exp_apfixed.h'
+      FileOffset:      2363
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2455445
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_2363_11: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_2452_12:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_exp_apfixed.h'
+      FileOffset:      2452
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2460897
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_2452_12: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_2459_13:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_exp_apfixed.h'
+      FileOffset:      2459
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2461080
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_2459_13: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_2463_14:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_exp_apfixed.h'
+      FileOffset:      2463
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2461193
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_2463_14: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_2473_15:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_exp_apfixed.h'
+      FileOffset:      2473
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2461383
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_2473_15: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_2477_16:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_exp_apfixed.h'
+      FileOffset:      2477
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2461485
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_2477_16: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_2488_17:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_exp_apfixed.h'
+      FileOffset:      2488
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2461778
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_2488_17: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_2496_18:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_exp_apfixed.h'
+      FileOffset:      2496
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2461976
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_2496_18: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_2821_19:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_exp_apfixed.h'
+      FileOffset:      2821
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2496465
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_2821_19: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_2828_20:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_exp_apfixed.h'
+      FileOffset:      2828
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2496648
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_2828_20: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_2832_21:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_exp_apfixed.h'
+      FileOffset:      2832
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2496761
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_2832_21: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_2920_1:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_exp_apfixed.h'
+      FileOffset:      2920
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2498566
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_2920_1: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_2927_2:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_exp_apfixed.h'
+      FileOffset:      2927
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2498677
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_2927_2: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_2931_3:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_exp_apfixed.h'
+      FileOffset:      2931
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2498752
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_2931_3: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_2946_4:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_exp_apfixed.h'
+      FileOffset:      2946
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2499044
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_2946_4: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_2978_5:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_exp_apfixed.h'
+      FileOffset:      2978
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2500260
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_2978_5: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_2985_6:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_exp_apfixed.h'
+      FileOffset:      2985
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2500374
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_2985_6: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_2989_7:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_exp_apfixed.h'
+      FileOffset:      2989
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2500451
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_2989_7: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_3004_8:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_exp_apfixed.h'
+      FileOffset:      3004
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2500750
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_3004_8: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_3054_9:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_exp_apfixed.h'
+      FileOffset:      3054
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2504085
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_3054_9: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_3061_10:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_exp_apfixed.h'
+      FileOffset:      3061
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2504199
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_3061_10: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_3065_11:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_exp_apfixed.h'
+      FileOffset:      3065
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2504276
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_3065_11: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_3080_12:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_exp_apfixed.h'
+      FileOffset:      3080
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2504576
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_3080_12: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_3217_13:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_exp_apfixed.h'
+      FileOffset:      3217
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2523890
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_3217_13: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_3224_14:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_exp_apfixed.h'
+      FileOffset:      3224
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2524007
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_3224_14: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_3228_15:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_exp_apfixed.h'
+      FileOffset:      3228
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2524086
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_3228_15: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_3243_16:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_exp_apfixed.h'
+      FileOffset:      3243
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2524377
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_3243_16: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_3403_17:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_exp_apfixed.h'
+      FileOffset:      3403
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2549989
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_3403_17: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_3410_18:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_exp_apfixed.h'
+      FileOffset:      3410
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2550106
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_3410_18: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_3414_19:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_exp_apfixed.h'
+      FileOffset:      3414
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2550187
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_3414_19: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_703_1:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_log_apfixed.h'
+      FileOffset:      703
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2584278
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_703_1: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_921_1:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_log_apfixed.h'
+      FileOffset:      921
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2592685
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_921_1: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_1345_1:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_log_apfixed.h'
+      FileOffset:      1345
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2611680
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_1345_1: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_243_1:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_sqrt_apfixed.h'
+      FileOffset:      243
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2626665
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_243_1: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_271_2:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_sqrt_apfixed.h'
+      FileOffset:      271
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2627197
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_271_2: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_48_1:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_pow_apfixed.h'
+      FileOffset:      48
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2643209
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_48_1: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_109_2:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_pow_apfixed.h'
+      FileOffset:      109
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2644376
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_109_2: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_123_3:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_pow_apfixed.h'
+      FileOffset:      123
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2644692
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_123_3: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_153_4:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_pow_apfixed.h'
+      FileOffset:      153
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2645217
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_153_4: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_281_1:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_pow_apfixed.h'
+      FileOffset:      281
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2647090
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_281_1: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_301_2:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_pow_apfixed.h'
+      FileOffset:      301
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2647470
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_301_2: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_315_3:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_pow_apfixed.h'
+      FileOffset:      315
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2647796
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_315_3: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_433_1:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_pow_apfixed.h'
+      FileOffset:      433
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2649649
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_433_1: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_447_2:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_pow_apfixed.h'
+      FileOffset:      447
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2649988
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_447_2: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_33_1:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_diff_apfixed.h'
+      FileOffset:      33
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2652681
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_33_1: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_183_1:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_diff_apfixed.h'
+      FileOffset:      183
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2655603
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_183_1: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_248_1:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_diff_apfixed.h'
+      FileOffset:      248
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2656912
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_248_1: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_44_1:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_frexp_apfixed.h'
+      FileOffset:      44
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2662576
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_44_1: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_16_1:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_all_any_apfixed.h'
+      FileOffset:      16
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2667901
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_16_1: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_27_1:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_all_any_apfixed.h'
+      FileOffset:      27
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2668079
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_27_1: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_38_1:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_all_any_apfixed.h'
+      FileOffset:      38
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2668243
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_38_1: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_49_1:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_all_any_apfixed.h'
+      FileOffset:      49
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2668408
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_49_1: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_60_1:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_all_any_apfixed.h'
+      FileOffset:      60
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2668585
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_60_1: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_71_1:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_all_any_apfixed.h'
+      FileOffset:      71
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2668763
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_71_1: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_82_1:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_all_any_apfixed.h'
+      FileOffset:      82
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2668927
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_82_1: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_93_1:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_all_any_apfixed.h'
+      FileOffset:      93
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2669092
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_93_1: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_26_1:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_mad_apfixed.h'
+      FileOffset:      26
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2740843
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_26_1: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_40_1:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_cbrt_apfixed.h'
+      FileOffset:      40
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2742613
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_40_1: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_49_1:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_hypot_apfixed.h'
+      FileOffset:      49
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2747152
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_49_1: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_81_2:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_hypot_apfixed.h'
+      FileOffset:      81
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2747887
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_81_2: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_169_3:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\hls_hypot_apfixed.h'
+      FileOffset:      169
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          2749576
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_169_3: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_39_1:  '
+      FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\cnn_gesture_hls.cpp'
+      FileOffset:      39
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          5637599
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_39_1: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_40_2:  '
+      FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\cnn_gesture_hls.cpp'
+      FileOffset:      40
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          5637639
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_40_2: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_43_3:  '
+      FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\cnn_gesture_hls.cpp'
+      FileOffset:      43
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          5637710
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_43_3: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_46_4:  '
+      FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\cnn_gesture_hls.cpp'
+      FileOffset:      46
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          5637842
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_46_4: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_77_1:  '
+      FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\cnn_gesture_hls.cpp'
+      FileOffset:      77
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          5638689
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_77_1: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_78_2:  '
+      FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\cnn_gesture_hls.cpp'
+      FileOffset:      78
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          5638733
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_78_2: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_92_1:  '
+      FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\cnn_gesture_hls.cpp'
+      FileOffset:      92
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          5639026
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_92_1: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_93_2:  '
+      FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\cnn_gesture_hls.cpp'
+      FileOffset:      93
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          5639070
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_93_2: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_96_3:  '
+      FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\cnn_gesture_hls.cpp'
+      FileOffset:      96
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          5639141
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_96_3: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_99_4:  '
+      FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\cnn_gesture_hls.cpp'
+      FileOffset:      99
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          5639277
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_99_4: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_126_1:  '
+      FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\cnn_gesture_hls.cpp'
+      FileOffset:      126
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          5640138
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_126_1: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_127_2:  '
+      FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\cnn_gesture_hls.cpp'
+      FileOffset:      127
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          5640182
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_127_2: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_142_1:  '
+      FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\cnn_gesture_hls.cpp'
+      FileOffset:      142
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          5640491
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_142_1: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_143_2:  '
+      FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\cnn_gesture_hls.cpp'
+      FileOffset:      143
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          5640535
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_143_2: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_157_1:  '
+      FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\cnn_gesture_hls.cpp'
+      FileOffset:      157
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          5640771
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_157_1: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_160_2:  '
+      FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\cnn_gesture_hls.cpp'
+      FileOffset:      160
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          5640858
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_160_2: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_175_1:  '
+      FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\cnn_gesture_hls.cpp'
+      FileOffset:      175
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          5641153
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_175_1: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_178_2:  '
+      FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\cnn_gesture_hls.cpp'
+      FileOffset:      178
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          5641240
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_178_2: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_191_1:  '
+      FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\cnn_gesture_hls.cpp'
+      FileOffset:      191
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          5641538
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_191_1: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_197_2:  '
+      FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\cnn_gesture_hls.cpp'
+      FileOffset:      197
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          5641669
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_197_2: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_202_3:  '
+      FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\cnn_gesture_hls.cpp'
+      FileOffset:      202
+      Replacements:
+        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
+          Offset:          5641798
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_202_3: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
+...

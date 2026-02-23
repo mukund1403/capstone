@@ -1,10 +1,13 @@
 import numpy as np
 import tensorflow as tf
+from pathlib import Path
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Conv1D, MaxPooling1D, Flatten, Dense, Dropout, BatchNormalization, Input
 from tensorflow.keras.callbacks import EarlyStopping, ModelCheckpoint
 import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
+
+OUTPUT_DIR = Path(__file__).resolve().parent
 
 
 def create_shape_model(input_shape=(100, 6), num_classes=6):
@@ -107,7 +110,7 @@ callbacks = [
         verbose=1
     ),
     ModelCheckpoint(
-        'best_dummy_model.h5',
+        str(OUTPUT_DIR / 'best_dummy_model.h5'),
         monitor='val_accuracy',
         save_best_only=True,
         verbose=1
@@ -128,9 +131,8 @@ val_loss, val_acc = model.evaluate(X_val, y_val, verbose=0)
 print(f"\nValidation Accuracy: {val_acc:.4f}")
 print(f"Validation Loss: {val_loss:.4f}")
 
-# Save trained model (.h5 based on dummy-trained weights)
-model.save('shape_recognition_model.h5')
-print("Model saved as shape_recognition_model.h5")
+# Keep a single model artifact via ModelCheckpoint: best_dummy_model.h5
+print("Using best checkpoint only: best_dummy_model.h5")
 
 # Plot training history
 plt.figure(figsize=(12, 4))
@@ -154,13 +156,21 @@ plt.legend()
 plt.grid(True)
 
 plt.tight_layout()
-plt.savefig('training_history_dummy.png', dpi=300)
+plt.savefig(OUTPUT_DIR / 'training_history_dummy.png', dpi=300)
 print("Saved training plot as training_history_dummy.png")
 
 print("\nTesting predictions on new dummy samples...")
 X_test, y_test = create_dummy_data(n_samples=10, timesteps=100, n_classes=6)
+# Use checkpoint model so exported golden outputs match weights.h export source.
+model = tf.keras.models.load_model(OUTPUT_DIR / 'best_dummy_model.h5')
 predictions = model.predict(X_test)
 predicted_classes = np.argmax(predictions, axis=1)
+
+# Export reference inputs/outputs for HLS/C++ testbench comparison.
+np.savetxt(OUTPUT_DIR / 'reference_input.txt', X_test.reshape(X_test.shape[0], -1), fmt='%.6f')
+np.savetxt(OUTPUT_DIR / 'reference_logits.txt', predictions, fmt='%.6f')
+print("Saved reference inputs to reference_input.txt")
+print("Saved reference logits to reference_logits.txt")
 
 for i in range(10):
     true_class = y_test[i]

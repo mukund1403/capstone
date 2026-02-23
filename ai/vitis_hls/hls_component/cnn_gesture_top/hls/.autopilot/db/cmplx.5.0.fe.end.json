@@ -1,0 +1,239 @@
+{
+    "1": {
+        "name": "cnn_gesture_top_Pipeline_VITIS_LOOP_197_2",
+        "file": "..\/cnn_gesture_hls.cpp",
+        "fileloc": "236",
+        "instructions": "93",
+        "total_instructions": "93",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "7",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "4"
+        },
+        "stores": {
+            "L": "5"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "0": {
+        "name": "cnn_gesture_top",
+        "file": "..\/cnn_gesture_hls.cpp",
+        "fileloc": "208",
+        "instructions": "194",
+        "total_instructions": "6073",
+        "calls": "6 7 2 5 9 3 10 4 1 8",
+        "basicblocks": "7",
+        "memory_accesses": "0",
+        "control_depth": "0",
+        "def_use_depth": "2",
+        "loads": {
+            "G": "2",
+            "L": "7"
+        },
+        "stores": {
+            "L": "6"
+        },
+        "loops": {
+            "L": "2"
+        }
+    },
+    "2": {
+        "name": "cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3",
+        "file": "..\/cnn_gesture_hls.cpp",
+        "fileloc": "230",
+        "instructions": "4074",
+        "total_instructions": "4074",
+        "calls": "",
+        "basicblocks": "6",
+        "memory_accesses": "1107",
+        "control_depth": "2",
+        "def_use_depth": "2",
+        "loads": {
+            "G": "1061",
+            "L": "38"
+        },
+        "stores": {
+            "L": "13"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "3": {
+        "name": "cnn_gesture_top_Pipeline_VITIS_LOOP_160_2",
+        "file": "..\/cnn_gesture_hls.cpp",
+        "fileloc": "234",
+        "instructions": "71",
+        "total_instructions": "71",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "6",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "G": "1",
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "4": {
+        "name": "cnn_gesture_top_Pipeline_VITIS_LOOP_191_1",
+        "file": "..\/cnn_gesture_hls.cpp",
+        "fileloc": "236",
+        "instructions": "25",
+        "total_instructions": "25",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "5",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "4"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "5": {
+        "name": "cnn_gesture_top_Pipeline_VITIS_LOOP_126_1_VITIS_LOOP_127_2",
+        "file": "..\/cnn_gesture_hls.cpp",
+        "fileloc": "231",
+        "instructions": "44",
+        "total_instructions": "44",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "9",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "5"
+        },
+        "stores": {
+            "L": "7"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "6": {
+        "name": "cnn_gesture_top_Pipeline_VITIS_LOOP_39_1_VITIS_LOOP_40_2",
+        "file": "..\/cnn_gesture_hls.cpp",
+        "fileloc": "227",
+        "instructions": "1273",
+        "total_instructions": "1273",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "67",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "G": "41",
+            "L": "3",
+            "T": "18"
+        },
+        "stores": {
+            "L": "7"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "7": {
+        "name": "cnn_gesture_top_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2",
+        "file": "..\/cnn_gesture_hls.cpp",
+        "fileloc": "228",
+        "instructions": "137",
+        "total_instructions": "137",
+        "calls": "",
+        "basicblocks": "37",
+        "memory_accesses": "40",
+        "control_depth": "2",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "5"
+        },
+        "stores": {
+            "L": "38"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "8": {
+        "name": "cnn_gesture_top_Pipeline_VITIS_LOOP_202_3",
+        "file": "..\/cnn_gesture_hls.cpp",
+        "fileloc": "236",
+        "instructions": "34",
+        "total_instructions": "34",
+        "calls": "",
+        "basicblocks": "11",
+        "memory_accesses": "9",
+        "control_depth": "2",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "2"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "9": {
+        "name": "cnn_gesture_top_Pipeline_VITIS_LOOP_142_1_VITIS_LOOP_143_2",
+        "file": "..\/cnn_gesture_hls.cpp",
+        "fileloc": "233",
+        "instructions": "50",
+        "total_instructions": "50",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "14",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "7"
+        },
+        "stores": {
+            "L": "12"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "10": {
+        "name": "cnn_gesture_top_Pipeline_VITIS_LOOP_178_2",
+        "file": "..\/cnn_gesture_hls.cpp",
+        "fileloc": "235",
+        "instructions": "78",
+        "total_instructions": "78",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "6",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "G": "1",
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    }
+}

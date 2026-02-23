@@ -1,0 +1,23 @@
+{
+  "0": {
+    "basicblocks": 193,
+    "calls": "",
+    "control_depth": 6,
+    "def_use_depth": 29,
+    "file": "cnn_gesture_hls.cpp",
+    "fileloc": 208,
+    "instructions": 1366,
+    "loads": {
+      "G": 16,
+      "L": 12,
+      "T": 2
+    },
+    "memory_accesses": 28,
+    "name": "cnn_gesture_top",
+    "stores": {
+      "L": 8,
+      "T": 6
+    },
+    "total_instructions": 1366
+  }
+}
