@@ -75,6 +75,7 @@ public class FruitSpawn : MonoBehaviour
         Rigidbody rb = item.GetComponent<Rigidbody>();
         rb.useGravity = true;
         float spinForce = 5;
+        float gravityScale = 10f;
         switch (dir)
         {
             case Direction.Left:
@@ -90,6 +91,7 @@ public class FruitSpawn : MonoBehaviour
                 rb.AddTorque(Random.insideUnitSphere * spinForce, ForceMode.Impulse);
                 break;
         }
+        rb.AddForce(Physics.gravity * gravityScale, ForceMode.Acceleration);
     }
 
     private void ThrowFromBottom()
