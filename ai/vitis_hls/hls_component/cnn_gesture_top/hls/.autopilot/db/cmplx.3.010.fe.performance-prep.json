@@ -1,23 +1,39 @@
 {
   "0": {
-    "basicblocks": 195,
+    "basicblocks": 22,
+    "calls": "1",
+    "control_depth": 4,
+    "def_use_depth": 19,
+    "file": "cnn_gesture_hls.cpp",
+    "fileloc": 258,
+    "instructions": 213,
+    "loads": {
+      "L": 7
+    },
+    "memory_accesses": 19,
+    "name": "cnn_gesture_top",
+    "stores": {
+      "L": 10
+    },
+    "total_instructions": 1573
+  },
+  "1": {
+    "basicblocks": 188,
     "calls": "",
     "control_depth": 6,
     "def_use_depth": 29,
     "file": "cnn_gesture_hls.cpp",
-    "fileloc": 208,
-    "instructions": 1367,
+    "fileloc": 231,
+    "instructions": 1341,
     "loads": {
       "G": 16,
-      "L": 12,
-      "T": 2
+      "L": 13
     },
-    "memory_accesses": 28,
-    "name": "cnn_gesture_top",
+    "memory_accesses": 21,
+    "name": "cnn_gesture_core",
     "stores": {
-      "L": 8,
-      "T": 6
+      "L": 9
     },
-    "total_instructions": 1367
+    "total_instructions": 1341
   }
 }

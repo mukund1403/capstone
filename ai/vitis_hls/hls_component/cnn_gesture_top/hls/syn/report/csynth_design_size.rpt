@@ -6,57 +6,60 @@
 +---------------+----------------------------+--------------+----------------------------------------------------------------------------------------+
 | Phase         | Step                       | Instructions | Description                                                                            |
 +---------------+----------------------------+--------------+----------------------------------------------------------------------------------------+
-| Compile/Link  |                            | 14,469       | After all functions are compiled and linked into a single design                       |
+| Compile/Link  |                            | 15,465       | After all functions are compiled and linked into a single design                       |
 |               |                            |              |                                                                                        |
 | Unroll/Inline |                            |              | After user unroll and inline pragmas are applied                                       |
-|               | (1) unroll                 |  2,482       | user unroll pragmas are applied                                                        |
-|               | (2) simplification         |  1,603       | simplification of applied user unroll pragmas                                          |
-|               | (3) inline                 |  1,523       | user inline pragmas are applied                                                        |
-|               | (4) simplification         |  1,363       | simplification of applied user inline pragmas                                          |
+|               | (1) unroll                 |  2,789       | user unroll pragmas are applied                                                        |
+|               | (2) simplification         |  1,850       | simplification of applied user unroll pragmas                                          |
+|               | (3) inline                 |  1,757       | user inline pragmas are applied                                                        |
+|               | (4) simplification         |  1,547       | simplification of applied user inline pragmas                                          |
 |               |                            |              |                                                                                        |
 | Array/Struct  |                            |              | After user array partition and struct aggregate/disaggregate pragmas are applied       |
-|               | (1) array partition        |  1,366       | user array partition pragmas are applied                                               |
-|               | (2) simplification         |  1,363       | simplification of applied user array partition & struct aggregate/disaggregate pragmas |
-|               | (3) aggregate/disaggregate |  1,359       | user struct aggregate/disaggregate pragmas are applied                                 |
-|               | (4) array reshape          |  1,361       | apply array reshape pragmas                                                            |
-|               | (5) access patterns        |  1,371       | array access pattern optmizations                                                      |
+|               | (1) array partition        |  1,515       | user array partition pragmas are applied                                               |
+|               | (2) simplification         |  1,515       | simplification of applied user array partition & struct aggregate/disaggregate pragmas |
+|               | (3) aggregate/disaggregate |  1,515       | user struct aggregate/disaggregate pragmas are applied                                 |
+|               | (4) array reshape          |  1,515       | apply array reshape pragmas                                                            |
+|               | (5) access patterns        |  1,574       | array access pattern optmizations                                                      |
 |               |                            |              |                                                                                        |
 | Performance   |                            |              | After transformations are applied to meet performance pragma targets                   |
-|               | (1) loop simplification    |  1,367       | loop and instruction simplification                                                    |
-|               | (2) parallelization        |  3,863       | loops are unrolled or pipelined to meet performance targets                            |
-|               | (3) array partition        |  7,659       | arrays are partitioned to meet performance targets                                     |
-|               | (4) simplification         |  6,377       | simplification of design after performance transformations                             |
+|               | (1) loop simplification    |  1,573       | loop and instruction simplification                                                    |
+|               | (2) parallelization        |  4,058       | loops are unrolled or pipelined to meet performance targets                            |
+|               | (3) array partition        |  9,105       | arrays are partitioned to meet performance targets                                     |
+|               | (4) simplification         |  7,461       | simplification of design after performance transformations                             |
 |               |                            |              |                                                                                        |
 | HW Transforms |                            |              | After hardware transfomations                                                          |
-|               | (1) lowering               |  6,391       | initial conversion to HW specific instructions                                         |
-|               | (2) optimizations          |  6,461       | high level synthesis optimizations                                                     |
+|               | (1) lowering               |  7,449       | initial conversion to HW specific instructions                                         |
+|               | (2) optimizations          |  7,502       | high level synthesis optimizations                                                     |
 +---------------+----------------------------+--------------+----------------------------------------------------------------------------------------+
 
 * Instructions per Function for each Compilation Phase
-+-------------------+-------------------------+--------------+---------------+--------------+-------------+---------------+
-| Function          | Location                | Compile/Link | Unroll/Inline | Array/Struct | Performance | HW Transforms |
-+-------------------+-------------------------+--------------+---------------+--------------+-------------+---------------+
-| + cnn_gesture_top | cnn_gesture_hls.cpp:208 | 14,469       | 1,363         | 1,371        | 6,377       | 6,461         |
-|  + conv1_block    | cnn_gesture_hls.cpp:33  | 5,141        |               |              |             |               |
-|     conv_index    | cnn_gesture_hls.cpp:24  |     5        |               |              |             |               |
-|     relu          | cnn_gesture_hls.cpp:18  |   148        |               |              |             |               |
-|     sqrt          | sqrtfloat.cpp:6         |     2        |               |              |             |               |
-|    maxpool1       | cnn_gesture_hls.cpp:71  |    67        |               |              |             |               |
-|  + conv2_block    | cnn_gesture_hls.cpp:86  | 5,141        |               |              |             |               |
-|     conv_index    | cnn_gesture_hls.cpp:24  |     5        |               |              |             |               |
-|     relu          | cnn_gesture_hls.cpp:18  |   148        |               |              |             |               |
-|     sqrt          | sqrtfloat.cpp:6         |     2        |               |              |             |               |
-|    maxpool2       | cnn_gesture_hls.cpp:120 |    67        |               |              |             |               |
-|    flatten        | cnn_gesture_hls.cpp:135 |    30        |               |              |             |               |
-|  + dense1         | cnn_gesture_hls.cpp:149 | 1,463        |               |              |             |               |
-|     dense_index   | cnn_gesture_hls.cpp:29  |     3        |               |              |             |               |
-|     relu          | cnn_gesture_hls.cpp:18  |   148        |               |              |             |               |
-|  + dense2_logits  | cnn_gesture_hls.cpp:169 | 1,313        |               |              |             |               |
-|     dense_index   | cnn_gesture_hls.cpp:29  |     3        |               |              |             |               |
-|  + softmax        | cnn_gesture_hls.cpp:187 | 1,185        |               |              |             |               |
-|   + exp           | expfloat.cpp:15         |     4        |               |              |             |               |
-|      exp          | hls_exp_float.cpp:15    |     2        |               |              |             |               |
-+-------------------+-------------------------+--------------+---------------+--------------+-------------+---------------+
++---------------------+-------------------------+--------------+---------------+--------------+-------------+---------------+
+| Function            | Location                | Compile/Link | Unroll/Inline | Array/Struct | Performance | HW Transforms |
++---------------------+-------------------------+--------------+---------------+--------------+-------------+---------------+
+| + cnn_gesture_top   | cnn_gesture_hls.cpp:258 | 15,465       | 1,547         | 1,574        | 7,461       | 7,502         |
+|    bits_to_float    | cnn_gesture_hls.cpp:23  |    18        |               |              |             |               |
+|  + cnn_gesture_core | cnn_gesture_hls.cpp:231 | 14,465       | 1,361         | 1,341        | 6,992       | 7,061         |
+|   + conv1_block     | cnn_gesture_hls.cpp:56  | 5,141        |               |              |             |               |
+|      conv_index     | cnn_gesture_hls.cpp:47  |     5        |               |              |             |               |
+|      relu           | cnn_gesture_hls.cpp:41  |   148        |               |              |             |               |
+|      sqrt           | sqrtfloat.cpp:6         |     2        |               |              |             |               |
+|     maxpool1        | cnn_gesture_hls.cpp:94  |    67        |               |              |             |               |
+|   + conv2_block     | cnn_gesture_hls.cpp:109 | 5,141        |               |              |             |               |
+|      conv_index     | cnn_gesture_hls.cpp:47  |     5        |               |              |             |               |
+|      relu           | cnn_gesture_hls.cpp:41  |   148        |               |              |             |               |
+|      sqrt           | sqrtfloat.cpp:6         |     2        |               |              |             |               |
+|     maxpool2        | cnn_gesture_hls.cpp:143 |    67        |               |              |             |               |
+|     flatten         | cnn_gesture_hls.cpp:158 |    30        |               |              |             |               |
+|   + dense1          | cnn_gesture_hls.cpp:172 | 1,463        |               |              |             |               |
+|      dense_index    | cnn_gesture_hls.cpp:52  |     3        |               |              |             |               |
+|      relu           | cnn_gesture_hls.cpp:41  |   148        |               |              |             |               |
+|   + dense2_logits   | cnn_gesture_hls.cpp:192 | 1,313        |               |              |             |               |
+|      dense_index    | cnn_gesture_hls.cpp:52  |     3        |               |              |             |               |
+|   + softmax         | cnn_gesture_hls.cpp:210 | 1,185        |               |              |             |               |
+|    + exp            | expfloat.cpp:15         |     4        |               |              |             |               |
+|       exp           | hls_exp_float.cpp:15    |     2        |               |              |             |               |
+|    float_to_bits    | cnn_gesture_hls.cpp:32  |    26        |               |              |             |               |
++---------------------+-------------------------+--------------+---------------+--------------+-------------+---------------+
 
 * Design Size Message Settings
 +---------------------------------------------+--------+------------------------------------------------------------------+

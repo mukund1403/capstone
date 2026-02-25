@@ -2,62 +2,66 @@
     <item name="Total Instructions per Compilation Phase">
         <table>
             <keys size="4">Phase, Step, Instructions, Description</keys>
-            <column name="Compile/Link">, 14469, After all functions are compiled and linked into a single design</column>
+            <column name="Compile/Link">, 15465, After all functions are compiled and linked into a single design</column>
             <column name="">, , </column>
             <column name="Unroll/Inline">, , After user unroll and inline pragmas are applied</column>
-            <column name="">(1) unroll,  2482, user unroll pragmas are applied</column>
-            <column name="">(2) simplification,  1603, simplification of applied user unroll pragmas</column>
-            <column name="">(3) inline,  1523, user inline pragmas are applied</column>
-            <column name="">(4) simplification,  1363, simplification of applied user inline pragmas</column>
+            <column name="">(1) unroll,  2789, user unroll pragmas are applied</column>
+            <column name="">(2) simplification,  1850, simplification of applied user unroll pragmas</column>
+            <column name="">(3) inline,  1757, user inline pragmas are applied</column>
+            <column name="">(4) simplification,  1547, simplification of applied user inline pragmas</column>
             <column name="">, , </column>
             <column name="Array/Struct">, , After user array partition and struct aggregate/disaggregate pragmas are applied</column>
-            <column name="">(1) array partition,  1366, user array partition pragmas are applied</column>
-            <column name="">(2) simplification,  1363, simplification of applied user array partition &amp; struct aggregate/disaggregate pragmas</column>
-            <column name="">(3) aggregate/disaggregate,  1359, user struct aggregate/disaggregate pragmas are applied</column>
-            <column name="">(4) array reshape,  1361, apply array reshape pragmas</column>
-            <column name="">(5) access patterns,  1371, array access pattern optmizations</column>
+            <column name="">(1) array partition,  1515, user array partition pragmas are applied</column>
+            <column name="">(2) simplification,  1515, simplification of applied user array partition &amp; struct aggregate/disaggregate pragmas</column>
+            <column name="">(3) aggregate/disaggregate,  1515, user struct aggregate/disaggregate pragmas are applied</column>
+            <column name="">(4) array reshape,  1515, apply array reshape pragmas</column>
+            <column name="">(5) access patterns,  1574, array access pattern optmizations</column>
             <column name="">, , </column>
             <column name="Performance">, , After transformations are applied to meet performance pragma targets</column>
-            <column name="">(1) loop simplification,  1367, loop and instruction simplification</column>
-            <column name="">(2) parallelization,  3863, loops are unrolled or pipelined to meet performance targets</column>
-            <column name="">(3) array partition,  7659, arrays are partitioned to meet performance targets</column>
-            <column name="">(4) simplification,  6377, simplification of design after performance transformations</column>
+            <column name="">(1) loop simplification,  1573, loop and instruction simplification</column>
+            <column name="">(2) parallelization,  4058, loops are unrolled or pipelined to meet performance targets</column>
+            <column name="">(3) array partition,  9105, arrays are partitioned to meet performance targets</column>
+            <column name="">(4) simplification,  7461, simplification of design after performance transformations</column>
             <column name="">, , </column>
             <column name="HW Transforms">, , After hardware transfomations</column>
-            <column name="">(1) lowering,  6391, initial conversion to HW specific instructions</column>
-            <column name="">(2) optimizations,  6461, high level synthesis optimizations</column>
+            <column name="">(1) lowering,  7449, initial conversion to HW specific instructions</column>
+            <column name="">(2) optimizations,  7502, high level synthesis optimizations</column>
         </table>
     </item>
     <item name="Instructions per Function for each Compilation Phase">
         <hiertable>
             <header size="7" col0="Function" col1="Location" col2="Compile/Link" col3="Unroll/Inline" col4="Array/Struct" col5="Performance" col6="HW Transforms"/>
             <rows>
-                <row id="0" col0="cnn_gesture_top" col1="cnn_gesture_hls.cpp:208" col2="14469" col3="1363" col4="1371" col5="6377" col6="6461">
-                    <row id="3" col0="conv1_block" col1="cnn_gesture_hls.cpp:33" col2="5141" col3="" col4="" col5="" col6="">
-                        <row id="10" col0="conv_index" col1="cnn_gesture_hls.cpp:24" col2="5" col3="" col4="" col5="" col6=""/>
-                        <row id="1" col0="relu" col1="cnn_gesture_hls.cpp:18" col2="148" col3="" col4="" col5="" col6=""/>
-                        <row id="14" col0="sqrt" col1="sqrtfloat.cpp:6" col2="2" col3="" col4="" col5="" col6=""/>
-                    </row>
-                    <row id="6" col0="maxpool1" col1="cnn_gesture_hls.cpp:71" col2="67" col3="" col4="" col5="" col6=""/>
-                    <row id="11" col0="conv2_block" col1="cnn_gesture_hls.cpp:86" col2="5141" col3="" col4="" col5="" col6="">
-                        <row id="10" col0="conv_index" col1="cnn_gesture_hls.cpp:24" col2="5" col3="" col4="" col5="" col6=""/>
-                        <row id="1" col0="relu" col1="cnn_gesture_hls.cpp:18" col2="148" col3="" col4="" col5="" col6=""/>
-                        <row id="14" col0="sqrt" col1="sqrtfloat.cpp:6" col2="2" col3="" col4="" col5="" col6=""/>
-                    </row>
-                    <row id="9" col0="maxpool2" col1="cnn_gesture_hls.cpp:120" col2="67" col3="" col4="" col5="" col6=""/>
-                    <row id="12" col0="flatten" col1="cnn_gesture_hls.cpp:135" col2="30" col3="" col4="" col5="" col6=""/>
-                    <row id="2" col0="dense1" col1="cnn_gesture_hls.cpp:149" col2="1463" col3="" col4="" col5="" col6="">
-                        <row id="13" col0="dense_index" col1="cnn_gesture_hls.cpp:29" col2="3" col3="" col4="" col5="" col6=""/>
-                        <row id="1" col0="relu" col1="cnn_gesture_hls.cpp:18" col2="148" col3="" col4="" col5="" col6=""/>
-                    </row>
-                    <row id="4" col0="dense2_logits" col1="cnn_gesture_hls.cpp:169" col2="1313" col3="" col4="" col5="" col6="">
-                        <row id="13" col0="dense_index" col1="cnn_gesture_hls.cpp:29" col2="3" col3="" col4="" col5="" col6=""/>
-                    </row>
-                    <row id="5" col0="softmax" col1="cnn_gesture_hls.cpp:187" col2="1185" col3="" col4="" col5="" col6="">
-                        <row id="7" col0="exp" col1="expfloat.cpp:15" col2="4" col3="" col4="" col5="" col6="">
-                            <row id="8" col0="exp" col1="hls_exp_float.cpp:15" col2="2" col3="" col4="" col5="" col6=""/>
+                <row id="0" col0="cnn_gesture_top" col1="cnn_gesture_hls.cpp:258" col2="15465" col3="1547" col4="1574" col5="7461" col6="7502">
+                    <row id="4" col0="bits_to_float" col1="cnn_gesture_hls.cpp:23" col2="18" col3="" col4="" col5="" col6=""/>
+                    <row id="11" col0="cnn_gesture_core" col1="cnn_gesture_hls.cpp:231" col2="14465" col3="1361" col4="1341" col5="6992" col6="7061">
+                        <row id="15" col0="conv1_block" col1="cnn_gesture_hls.cpp:56" col2="5141" col3="" col4="" col5="" col6="">
+                            <row id="1" col0="conv_index" col1="cnn_gesture_hls.cpp:47" col2="5" col3="" col4="" col5="" col6=""/>
+                            <row id="16" col0="relu" col1="cnn_gesture_hls.cpp:41" col2="148" col3="" col4="" col5="" col6=""/>
+                            <row id="7" col0="sqrt" col1="sqrtfloat.cpp:6" col2="2" col3="" col4="" col5="" col6=""/>
+                        </row>
+                        <row id="6" col0="maxpool1" col1="cnn_gesture_hls.cpp:94" col2="67" col3="" col4="" col5="" col6=""/>
+                        <row id="12" col0="conv2_block" col1="cnn_gesture_hls.cpp:109" col2="5141" col3="" col4="" col5="" col6="">
+                            <row id="1" col0="conv_index" col1="cnn_gesture_hls.cpp:47" col2="5" col3="" col4="" col5="" col6=""/>
+                            <row id="16" col0="relu" col1="cnn_gesture_hls.cpp:41" col2="148" col3="" col4="" col5="" col6=""/>
+                            <row id="7" col0="sqrt" col1="sqrtfloat.cpp:6" col2="2" col3="" col4="" col5="" col6=""/>
+                        </row>
+                        <row id="10" col0="maxpool2" col1="cnn_gesture_hls.cpp:143" col2="67" col3="" col4="" col5="" col6=""/>
+                        <row id="9" col0="flatten" col1="cnn_gesture_hls.cpp:158" col2="30" col3="" col4="" col5="" col6=""/>
+                        <row id="8" col0="dense1" col1="cnn_gesture_hls.cpp:172" col2="1463" col3="" col4="" col5="" col6="">
+                            <row id="3" col0="dense_index" col1="cnn_gesture_hls.cpp:52" col2="3" col3="" col4="" col5="" col6=""/>
+                            <row id="16" col0="relu" col1="cnn_gesture_hls.cpp:41" col2="148" col3="" col4="" col5="" col6=""/>
+                        </row>
+                        <row id="17" col0="dense2_logits" col1="cnn_gesture_hls.cpp:192" col2="1313" col3="" col4="" col5="" col6="">
+                            <row id="3" col0="dense_index" col1="cnn_gesture_hls.cpp:52" col2="3" col3="" col4="" col5="" col6=""/>
+                        </row>
+                        <row id="13" col0="softmax" col1="cnn_gesture_hls.cpp:210" col2="1185" col3="" col4="" col5="" col6="">
+                            <row id="14" col0="exp" col1="expfloat.cpp:15" col2="4" col3="" col4="" col5="" col6="">
+                                <row id="2" col0="exp" col1="hls_exp_float.cpp:15" col2="2" col3="" col4="" col5="" col6=""/>
+                            </row>
                         </row>
                     </row>
+                    <row id="5" col0="float_to_bits" col1="cnn_gesture_hls.cpp:32" col2="26" col3="" col4="" col5="" col6=""/>
                 </row>
             </rows>
             <notes/>

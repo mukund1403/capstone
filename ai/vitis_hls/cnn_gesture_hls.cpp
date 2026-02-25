@@ -1,5 +1,9 @@
 #include <ap_fixed.h>
+#include <ap_axi_sdata.h>
+#include <ap_int.h>
+#include <cstdint>
 #include <hls_math.h>
+#include <hls_stream.h>
 #include "weights.h"
 
 // Model dimensions (must match your Python model)
@@ -14,6 +18,25 @@
 
 typedef ap_fixed<16, 6> data_t;
 typedef ap_fixed<32, 12> acc_t;
+typedef ap_axiu<32, 0, 0, 0> axis_t;
+
+static inline float bits_to_float(ap_uint<32> bits) {
+    union {
+        uint32_t u;
+        float f;
+    } cvt;
+    cvt.u = (uint32_t)bits;
+    return cvt.f;
+}
+
+static inline ap_uint<32> float_to_bits(float v) {
+    union {
+        uint32_t u;
+        float f;
+    } cvt;
+    cvt.f = v;
+    return (ap_uint<32>)cvt.u;
+}
 
 static inline data_t relu(data_t x) {
     return (x > 0) ? x : (data_t)0;
@@ -204,17 +227,12 @@ static void softmax(data_t logits[NUM_CLASSES], data_t probs[NUM_CLASSES]) {
     }
 }
 
-// Top function to synthesize in Vitis HLS
-void cnn_gesture_top(
+// Internal compute core (array form).
+static void cnn_gesture_core(
     data_t input[SEQ_LENGTH][FEATURES],
     data_t output[NUM_CLASSES]
 ) {
-#pragma HLS INTERFACE ap_memory port=input
-#pragma HLS INTERFACE ap_memory port=output
-#pragma HLS INTERFACE ap_ctrl_hs port=return
-
-#pragma HLS ARRAY_PARTITION variable=input cyclic factor=2 dim=2
-#pragma HLS ARRAY_PARTITION variable=output complete
+#pragma HLS INLINE off
 
     data_t conv1_out[SEQ_LENGTH][CONV1_FILTERS];
     data_t pool1_out[SEQ_LENGTH / 2][CONV1_FILTERS];
@@ -234,4 +252,39 @@ void cnn_gesture_top(
     dense1(flat, fc1);
     dense2_logits(fc1, logits);
     softmax(logits, output);
+}
+
+// Top function for AXI DMA integration (AXI4-Stream + AXI-Lite control).
+void cnn_gesture_top(
+    hls::stream<axis_t>& input_stream,
+    hls::stream<axis_t>& output_stream
+) {
+#pragma HLS INTERFACE axis port=input_stream
+#pragma HLS INTERFACE axis port=output_stream
+#pragma HLS INTERFACE s_axilite port=return bundle=CTRL
+
+    data_t input[SEQ_LENGTH][FEATURES];
+    data_t output[NUM_CLASSES];
+
+    // Input packing order: timestep-major, then feature.
+    for (int t = 0; t < SEQ_LENGTH; t++) {
+        for (int c = 0; c < FEATURES; c++) {
+#pragma HLS PIPELINE II=1
+            axis_t pkt = input_stream.read();
+            float in_f = bits_to_float(pkt.data);
+            input[t][c] = (data_t)in_f;
+        }
+    }
+
+    cnn_gesture_core(input, output);
+
+    for (int i = 0; i < NUM_CLASSES; i++) {
+#pragma HLS PIPELINE II=1
+        axis_t pkt;
+        pkt.data = float_to_bits((float)output[i]);
+        pkt.keep = -1;
+        pkt.strb = -1;
+        pkt.last = (i == NUM_CLASSES - 1) ? 1 : 0;
+        output_stream.write(pkt);
+    }
 }

@@ -19,366 +19,462 @@ INFO: [HLS 200-1465] Applying config ini 'part=xczu3eg-sbva484-2-i' from hls_con
 INFO: [HLS 200-1611] Setting target device to 'xczu3eg-sbva484-2-i'
 INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from hls_config.cfg(5)
 INFO: [HLS 200-2176] Writing Vitis IDE component file C:/Users/Jonathan/Desktop/capstone/ai/vitis_hls/hls_component/cnn_gesture_top/vitis-comp.json
-INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 10.033 seconds; current allocated memory: 154.309 MB.
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 11.807 seconds; current allocated memory: 155.109 MB.
 INFO: [HLS 200-2191] C-Synthesis will use clang-16 as the compiler
 INFO: [HLS 200-10] Analyzing design file '../cnn_gesture_hls.cpp' ... 
-INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 43.784 seconds; current allocated memory: 160.781 MB.
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 48.192 seconds; current allocated memory: 162.191 MB.
 INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
-INFO: [HLS 200-1995] There were 14,469 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details (C:/Users/Jonathan/Desktop/capstone/ai/vitis_hls/hls_component/cnn_gesture_top/hls/syn/report/csynth_design_size.rpt:2)
-INFO: [HLS 200-1995] There were 2,482 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details (C:/Users/Jonathan/Desktop/capstone/ai/vitis_hls/hls_component/cnn_gesture_top/hls/syn/report/csynth_design_size.rpt:2)
-INFO: [HLS 200-1995] There were 1,603 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details (C:/Users/Jonathan/Desktop/capstone/ai/vitis_hls/hls_component/cnn_gesture_top/hls/syn/report/csynth_design_size.rpt:2)
-INFO: [HLS 200-1995] There were 1,523 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details (C:/Users/Jonathan/Desktop/capstone/ai/vitis_hls/hls_component/cnn_gesture_top/hls/syn/report/csynth_design_size.rpt:2)
-INFO: [HLS 200-1995] There were 1,363 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details (C:/Users/Jonathan/Desktop/capstone/ai/vitis_hls/hls_component/cnn_gesture_top/hls/syn/report/csynth_design_size.rpt:2)
-INFO: [HLS 200-1995] There were 1,366 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details (C:/Users/Jonathan/Desktop/capstone/ai/vitis_hls/hls_component/cnn_gesture_top/hls/syn/report/csynth_design_size.rpt:2)
-INFO: [HLS 200-1995] There were 1,363 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details (C:/Users/Jonathan/Desktop/capstone/ai/vitis_hls/hls_component/cnn_gesture_top/hls/syn/report/csynth_design_size.rpt:2)
-INFO: [HLS 200-1995] There were 1,359 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details (C:/Users/Jonathan/Desktop/capstone/ai/vitis_hls/hls_component/cnn_gesture_top/hls/syn/report/csynth_design_size.rpt:2)
-INFO: [HLS 200-1995] There were 1,361 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details (C:/Users/Jonathan/Desktop/capstone/ai/vitis_hls/hls_component/cnn_gesture_top/hls/syn/report/csynth_design_size.rpt:2)
-INFO: [HLS 200-1995] There were 1,371 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details (C:/Users/Jonathan/Desktop/capstone/ai/vitis_hls/hls_component/cnn_gesture_top/hls/syn/report/csynth_design_size.rpt:2)
-INFO: [HLS 200-1995] There were 1,367 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details (C:/Users/Jonathan/Desktop/capstone/ai/vitis_hls/hls_component/cnn_gesture_top/hls/syn/report/csynth_design_size.rpt:2)
-INFO: [HLS 200-1995] There were 3,863 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details (C:/Users/Jonathan/Desktop/capstone/ai/vitis_hls/hls_component/cnn_gesture_top/hls/syn/report/csynth_design_size.rpt:2)
-INFO: [HLS 200-1995] There were 7,659 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details (C:/Users/Jonathan/Desktop/capstone/ai/vitis_hls/hls_component/cnn_gesture_top/hls/syn/report/csynth_design_size.rpt:2)
-INFO: [HLS 200-1995] There were 6,377 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details (C:/Users/Jonathan/Desktop/capstone/ai/vitis_hls/hls_component/cnn_gesture_top/hls/syn/report/csynth_design_size.rpt:2)
-INFO: [HLS 200-1995] There were 6,391 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details (C:/Users/Jonathan/Desktop/capstone/ai/vitis_hls/hls_component/cnn_gesture_top/hls/syn/report/csynth_design_size.rpt:2)
-INFO: [HLS 200-1995] There were 6,461 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details (C:/Users/Jonathan/Desktop/capstone/ai/vitis_hls/hls_component/cnn_gesture_top/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 15,465 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details (C:/Users/Jonathan/Desktop/capstone/ai/vitis_hls/hls_component/cnn_gesture_top/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 2,789 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details (C:/Users/Jonathan/Desktop/capstone/ai/vitis_hls/hls_component/cnn_gesture_top/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,850 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details (C:/Users/Jonathan/Desktop/capstone/ai/vitis_hls/hls_component/cnn_gesture_top/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,757 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details (C:/Users/Jonathan/Desktop/capstone/ai/vitis_hls/hls_component/cnn_gesture_top/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,547 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details (C:/Users/Jonathan/Desktop/capstone/ai/vitis_hls/hls_component/cnn_gesture_top/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,515 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details (C:/Users/Jonathan/Desktop/capstone/ai/vitis_hls/hls_component/cnn_gesture_top/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,515 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details (C:/Users/Jonathan/Desktop/capstone/ai/vitis_hls/hls_component/cnn_gesture_top/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,515 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details (C:/Users/Jonathan/Desktop/capstone/ai/vitis_hls/hls_component/cnn_gesture_top/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,515 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details (C:/Users/Jonathan/Desktop/capstone/ai/vitis_hls/hls_component/cnn_gesture_top/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,574 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details (C:/Users/Jonathan/Desktop/capstone/ai/vitis_hls/hls_component/cnn_gesture_top/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,573 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details (C:/Users/Jonathan/Desktop/capstone/ai/vitis_hls/hls_component/cnn_gesture_top/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 4,058 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details (C:/Users/Jonathan/Desktop/capstone/ai/vitis_hls/hls_component/cnn_gesture_top/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 9,105 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details (C:/Users/Jonathan/Desktop/capstone/ai/vitis_hls/hls_component/cnn_gesture_top/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 7,461 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details (C:/Users/Jonathan/Desktop/capstone/ai/vitis_hls/hls_component/cnn_gesture_top/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 7,449 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details (C:/Users/Jonathan/Desktop/capstone/ai/vitis_hls/hls_component/cnn_gesture_top/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 7,502 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details (C:/Users/Jonathan/Desktop/capstone/ai/vitis_hls/hls_component/cnn_gesture_top/hls/syn/report/csynth_design_size.rpt:2)
 INFO: [HLS 214-131] Inlining function 'exp_reduce_::exp(float)' into 'hls::exp(float)' (C:\scratch\2025.2\hls_product\665\2025.2\src\shared\hls\clib\hlsmath\src\c++\expfloat.cpp:17:9)
-INFO: [HLS 214-131] Inlining function 'hls::exp(float)' into 'softmax(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (../cnn_gesture_hls.cpp:198:27)
-INFO: [HLS 214-131] Inlining function 'conv1_block(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [32])' into 'cnn_gesture_top(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (../cnn_gesture_hls.cpp:227:5)
-INFO: [HLS 214-131] Inlining function 'maxpool1(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [32], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [32])' into 'cnn_gesture_top(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (../cnn_gesture_hls.cpp:228:5)
-INFO: [HLS 214-131] Inlining function 'conv2_block(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [32], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [64])' into 'cnn_gesture_top(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (../cnn_gesture_hls.cpp:230:5)
-INFO: [HLS 214-131] Inlining function 'maxpool2(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [64], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [64])' into 'cnn_gesture_top(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (../cnn_gesture_hls.cpp:231:5)
-INFO: [HLS 214-131] Inlining function 'flatten(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [64], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)' into 'cnn_gesture_top(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (../cnn_gesture_hls.cpp:233:5)
-INFO: [HLS 214-131] Inlining function 'dense1(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)' into 'cnn_gesture_top(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (../cnn_gesture_hls.cpp:234:5)
-INFO: [HLS 214-131] Inlining function 'dense2_logits(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)' into 'cnn_gesture_top(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (../cnn_gesture_hls.cpp:235:5)
-INFO: [HLS 214-131] Inlining function 'softmax(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)' into 'cnn_gesture_top(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (../cnn_gesture_hls.cpp:236:5)
-INFO: [HLS 214-178] Inlining function 'relu(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>)' into 'cnn_gesture_top(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (../cnn_gesture_hls.cpp:211:0)
-INFO: [HLS 214-178] Inlining function 'conv_index(int, int, int, int, int)' into 'cnn_gesture_top(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (../cnn_gesture_hls.cpp:211:0)
-INFO: [HLS 214-178] Inlining function 'hls::sqrt(float)' into 'cnn_gesture_top(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (../cnn_gesture_hls.cpp:211:0)
-INFO: [HLS 214-178] Inlining function 'dense_index(int, int, int)' into 'cnn_gesture_top(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (../cnn_gesture_hls.cpp:211:0)
-INFO: [HLS 214-248] Applying array_partition to 'input': Cyclic partitioning with factor 2 on dimension 2. (../cnn_gesture_hls.cpp:211:0)
-INFO: [HLS 214-248] Applying array_partition to 'output': Complete partitioning on dimension 1. (../cnn_gesture_hls.cpp:211:0)
-WARNING: [HLS 214-322] Unsuported scalar variable on pragma 'ap_memory Interface', ignore it. (../cnn_gesture_hls.cpp:213:1)
-INFO: [HLS 214-241] Aggregating bram variable 'input_1' with compact=bit mode in 16-bits (../cnn_gesture_hls.cpp:211:0)
-INFO: [HLS 214-241] Aggregating bram variable 'input_0' with compact=bit mode in 16-bits (../cnn_gesture_hls.cpp:211:0)
-INFO: [HLS 214-376] Pipelining loop< VITIS_LOOP_40_2> at ../cnn_gesture_hls.cpp:40:26 due to pipeline_loops threshold
-INFO: [HLS 214-376] Pipelining loop< VITIS_LOOP_78_2> at ../cnn_gesture_hls.cpp:78:26 due to pipeline_loops threshold
-INFO: [HLS 214-376] Pipelining loop< VITIS_LOOP_96_3> at ../cnn_gesture_hls.cpp:96:30 due to pipeline_loops threshold
-INFO: [HLS 214-376] Pipelining loop< VITIS_LOOP_127_2> at ../cnn_gesture_hls.cpp:127:27 due to pipeline_loops threshold
-INFO: [HLS 214-376] Pipelining loop< VITIS_LOOP_143_2> at ../cnn_gesture_hls.cpp:143:27 due to pipeline_loops threshold
-INFO: [HLS 214-376] Pipelining loop< VITIS_LOOP_160_2> at ../cnn_gesture_hls.cpp:160:27 due to pipeline_loops threshold
-INFO: [HLS 214-376] Pipelining loop< VITIS_LOOP_178_2> at ../cnn_gesture_hls.cpp:178:27 due to pipeline_loops threshold
-INFO: [HLS 214-376] Pipelining loop< VITIS_LOOP_191_1> at ../cnn_gesture_hls.cpp:191:23 due to pipeline_loops threshold
-INFO: [HLS 214-376] Pipelining loop< VITIS_LOOP_197_2> at ../cnn_gesture_hls.cpp:197:23 due to pipeline_loops threshold
-INFO: [HLS 214-376] Pipelining loop< VITIS_LOOP_202_3> at ../cnn_gesture_hls.cpp:202:23 due to pipeline_loops threshold
-INFO: [HLS 214-291] Loop 'VITIS_LOOP_99_4' is marked as complete unroll implied by the pipeline pragma (../cnn_gesture_hls.cpp:99:38)
-INFO: [HLS 214-291] Loop 'VITIS_LOOP_43_3' is marked as complete unroll implied by the pipeline pragma (../cnn_gesture_hls.cpp:43:30)
-INFO: [HLS 214-291] Loop 'VITIS_LOOP_46_4' is marked as complete unroll implied by the pipeline pragma (../cnn_gesture_hls.cpp:46:38)
-INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_99_4' (../cnn_gesture_hls.cpp:99:38) in function 'cnn_gesture_top' completely with a factor of 32 (../cnn_gesture_hls.cpp:211:0)
-INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_43_3' (../cnn_gesture_hls.cpp:43:30) in function 'cnn_gesture_top' completely with a factor of 3 (../cnn_gesture_hls.cpp:211:0)
-INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_46_4' (../cnn_gesture_hls.cpp:46:38) in function 'cnn_gesture_top' completely with a factor of 6 (../cnn_gesture_hls.cpp:211:0)
-INFO: [HLS 214-270] Inferring pragma 'array_partition type=cyclic factor=2 dim=1' for array 'conv1d_param_0' due to pipeline pragma (../weights.h:5:0)
+INFO: [HLS 214-131] Inlining function 'hls::exp(float)' into 'softmax(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (../cnn_gesture_hls.cpp:221:27)
+INFO: [HLS 214-131] Inlining function 'conv1_block(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [32])' into 'cnn_gesture_core(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (../cnn_gesture_hls.cpp:245:5)
+INFO: [HLS 214-131] Inlining function 'maxpool1(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [32], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [32])' into 'cnn_gesture_core(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (../cnn_gesture_hls.cpp:246:5)
+INFO: [HLS 214-131] Inlining function 'conv2_block(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [32], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [64])' into 'cnn_gesture_core(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (../cnn_gesture_hls.cpp:248:5)
+INFO: [HLS 214-131] Inlining function 'maxpool2(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [64], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [64])' into 'cnn_gesture_core(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (../cnn_gesture_hls.cpp:249:5)
+INFO: [HLS 214-131] Inlining function 'flatten(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [64], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)' into 'cnn_gesture_core(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (../cnn_gesture_hls.cpp:251:5)
+INFO: [HLS 214-131] Inlining function 'dense1(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)' into 'cnn_gesture_core(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (../cnn_gesture_hls.cpp:252:5)
+INFO: [HLS 214-131] Inlining function 'dense2_logits(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)' into 'cnn_gesture_core(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (../cnn_gesture_hls.cpp:253:5)
+INFO: [HLS 214-131] Inlining function 'softmax(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)' into 'cnn_gesture_core(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (../cnn_gesture_hls.cpp:254:5)
+INFO: [HLS 214-178] Inlining function 'relu(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>)' into 'cnn_gesture_core(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (../cnn_gesture_hls.cpp:234:0)
+INFO: [HLS 214-178] Inlining function 'conv_index(int, int, int, int, int)' into 'cnn_gesture_core(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (../cnn_gesture_hls.cpp:234:0)
+INFO: [HLS 214-178] Inlining function 'hls::sqrt(float)' into 'cnn_gesture_core(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (../cnn_gesture_hls.cpp:234:0)
+INFO: [HLS 214-178] Inlining function 'dense_index(int, int, int)' into 'cnn_gesture_core(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (../cnn_gesture_hls.cpp:234:0)
+INFO: [HLS 214-178] Inlining function 'hls::axis<ap_uint<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>::axis()' into 'cnn_gesture_top(hls::stream<hls::axis<ap_uint<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)' (../cnn_gesture_hls.cpp:261:0)
+INFO: [HLS 214-178] Inlining function 'bits_to_float(ap_uint<32>)' into 'cnn_gesture_top(hls::stream<hls::axis<ap_uint<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)' (../cnn_gesture_hls.cpp:261:0)
+INFO: [HLS 214-178] Inlining function 'float_to_bits(float)' into 'cnn_gesture_top(hls::stream<hls::axis<ap_uint<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)' (../cnn_gesture_hls.cpp:261:0)
+INFO: [HLS 214-376] Pipelining loop< VITIS_LOOP_63_2> at ../cnn_gesture_hls.cpp:63:26 due to pipeline_loops threshold
+INFO: [HLS 214-376] Pipelining loop< VITIS_LOOP_101_2> at ../cnn_gesture_hls.cpp:101:27 due to pipeline_loops threshold
+INFO: [HLS 214-376] Pipelining loop< VITIS_LOOP_119_3> at ../cnn_gesture_hls.cpp:119:31 due to pipeline_loops threshold
+INFO: [HLS 214-376] Pipelining loop< VITIS_LOOP_150_2> at ../cnn_gesture_hls.cpp:150:27 due to pipeline_loops threshold
+INFO: [HLS 214-376] Pipelining loop< VITIS_LOOP_166_2> at ../cnn_gesture_hls.cpp:166:27 due to pipeline_loops threshold
+INFO: [HLS 214-376] Pipelining loop< VITIS_LOOP_183_2> at ../cnn_gesture_hls.cpp:183:27 due to pipeline_loops threshold
+INFO: [HLS 214-376] Pipelining loop< VITIS_LOOP_201_2> at ../cnn_gesture_hls.cpp:201:27 due to pipeline_loops threshold
+INFO: [HLS 214-376] Pipelining loop< VITIS_LOOP_214_1> at ../cnn_gesture_hls.cpp:214:23 due to pipeline_loops threshold
+INFO: [HLS 214-376] Pipelining loop< VITIS_LOOP_220_2> at ../cnn_gesture_hls.cpp:220:23 due to pipeline_loops threshold
+INFO: [HLS 214-376] Pipelining loop< VITIS_LOOP_225_3> at ../cnn_gesture_hls.cpp:225:23 due to pipeline_loops threshold
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_122_4' is marked as complete unroll implied by the pipeline pragma (../cnn_gesture_hls.cpp:122:39)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_66_3' is marked as complete unroll implied by the pipeline pragma (../cnn_gesture_hls.cpp:66:30)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_69_4' is marked as complete unroll implied by the pipeline pragma (../cnn_gesture_hls.cpp:69:38)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_122_4' (../cnn_gesture_hls.cpp:122:39) in function 'cnn_gesture_core' completely with a factor of 32 (../cnn_gesture_hls.cpp:234:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_66_3' (../cnn_gesture_hls.cpp:66:30) in function 'cnn_gesture_core' completely with a factor of 3 (../cnn_gesture_hls.cpp:234:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_69_4' (../cnn_gesture_hls.cpp:69:38) in function 'cnn_gesture_core' completely with a factor of 6 (../cnn_gesture_hls.cpp:234:0)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=cyclic factor=19 dim=1' for array 'conv1d_param_0' due to pipeline pragma (../weights.h:5:0)
 INFO: [HLS 214-270] Inferring pragma 'array_partition type=cyclic factor=33 dim=1' for array 'conv1d_1_param_0' due to pipeline pragma (../weights.h:23:0)
-INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=2' for array 'pool1_out' due to pipeline pragma (../cnn_gesture_hls.cpp:220:12)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=2' for array 'pool1_out' due to pipeline pragma (../cnn_gesture_hls.cpp:238:12)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=cyclic factor=3 dim=1' for array 'input' due to pipeline pragma (../cnn_gesture_hls.cpp:266:12)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=2' for array 'input' due to pipeline pragma (../cnn_gesture_hls.cpp:266:12)
 INFO: [HLS 214-248] Applying array_partition to '_ZL16conv1d_1_param_0': Cyclic partitioning with factor 33 on dimension 1. (../weights.h:23:0)
-INFO: [HLS 214-248] Applying array_partition to '_ZL14conv1d_param_0': Cyclic partitioning with factor 2 on dimension 1. (../weights.h:5:0)
-INFO: [HLS 214-248] Applying array_partition to 'pool1_out': Complete partitioning on dimension 2. (../cnn_gesture_hls.cpp:220:12)
-INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 11.528 seconds; current allocated memory: 162.195 MB.
-INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.007 seconds; current allocated memory: 162.203 MB.
+INFO: [HLS 214-248] Applying array_partition to '_ZL14conv1d_param_0': Cyclic partitioning with factor 19 on dimension 1. (../weights.h:5:0)
+INFO: [HLS 214-248] Applying array_partition to 'pool1_out': Complete partitioning on dimension 2. (../cnn_gesture_hls.cpp:238:12)
+INFO: [HLS 214-248] Applying array_partition to 'input': Cyclic partitioning with factor 3 on dimension 1. Complete partitioning on dimension 2. (../cnn_gesture_hls.cpp:266:12)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 13.21 seconds; current allocated memory: 163.426 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.007 seconds; current allocated memory: 163.426 MB.
 INFO: [HLS 200-10] Starting code transformations ...
-INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.988 seconds; current allocated memory: 234.129 MB.
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.486 seconds; current allocated memory: 236.707 MB.
 INFO: [HLS 200-10] Checking synthesizability ...
-INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.7 seconds; current allocated memory: 238.820 MB.
-INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../cnn_gesture_hls.cpp:40:35) to (../cnn_gesture_hls.cpp:40:26) in function 'cnn_gesture_top'... converting 151 basic blocks.
-INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../cnn_gesture_hls.cpp:94:19) to (../cnn_gesture_hls.cpp:96:30) in function 'cnn_gesture_top'... converting 195 basic blocks.
-INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../cnn_gesture_hls.cpp:106:28) to (../cnn_gesture_hls.cpp:93:26) in function 'cnn_gesture_top'... converting 39 basic blocks.
-INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../cnn_gesture_hls.cpp:158:15) to (../cnn_gesture_hls.cpp:160:27) in function 'cnn_gesture_top'... converting 7 basic blocks.
-INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../cnn_gesture_hls.cpp:157:32) to (../cnn_gesture_hls.cpp:160:27) in function 'cnn_gesture_top'... converting 7 basic blocks.
-INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../cnn_gesture_hls.cpp:176:15) to (../cnn_gesture_hls.cpp:178:27) in function 'cnn_gesture_top'... converting 7 basic blocks.
-INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../cnn_gesture_hls.cpp:175:32) to (../cnn_gesture_hls.cpp:178:27) in function 'cnn_gesture_top'... converting 7 basic blocks.
-INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../cnn_gesture_hls.cpp:196:12) to (../cnn_gesture_hls.cpp:197:23) in function 'cnn_gesture_top'... converting 9 basic blocks.
-INFO: [XFORM 203-11] Balancing expressions in function 'cnn_gesture_top' (../cnn_gesture_hls.cpp:8:23)...54 expression(s) balanced.
-INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 3 seconds. CPU system time: 0 seconds. Elapsed time: 2.931 seconds; current allocated memory: 274.875 MB.
-INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_39_1'(../cnn_gesture_hls.cpp:39:22) and 'VITIS_LOOP_40_2'(../cnn_gesture_hls.cpp:40:26) in function 'cnn_gesture_top' into perfectly nested loops.
-INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_77_1'(../cnn_gesture_hls.cpp:77:22) and 'VITIS_LOOP_78_2'(../cnn_gesture_hls.cpp:78:26) in function 'cnn_gesture_top' into perfectly nested loops.
-INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_93_2'(../cnn_gesture_hls.cpp:93:26) and 'VITIS_LOOP_96_3'(../cnn_gesture_hls.cpp:96:30) in function 'cnn_gesture_top' into perfectly nested loops.
-INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_92_1'(../cnn_gesture_hls.cpp:92:22) and 'VITIS_LOOP_93_2'(../cnn_gesture_hls.cpp:93:26) in function 'cnn_gesture_top' into perfectly nested loops.
-INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_126_1'(../cnn_gesture_hls.cpp:126:23) and 'VITIS_LOOP_127_2'(../cnn_gesture_hls.cpp:127:27) in function 'cnn_gesture_top' into perfectly nested loops.
-INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_142_1'(../cnn_gesture_hls.cpp:142:23) and 'VITIS_LOOP_143_2'(../cnn_gesture_hls.cpp:143:27) in function 'cnn_gesture_top' into perfectly nested loops.
-INFO: [HLS 200-2060] Failed to convert nested loops 'VITIS_LOOP_157_1'(../cnn_gesture_hls.cpp:157:23) and 'VITIS_LOOP_160_2'(../cnn_gesture_hls.cpp:160:27) in function 'cnn_gesture_top' into perfectly nested loops.
-INFO: [HLS 200-2060] Failed to convert nested loops 'VITIS_LOOP_175_1'(../cnn_gesture_hls.cpp:175:23) and 'VITIS_LOOP_178_2'(../cnn_gesture_hls.cpp:178:27) in function 'cnn_gesture_top' into perfectly nested loops.
-INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_39_1' (../cnn_gesture_hls.cpp:39:22) in function 'cnn_gesture_top'.
-INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_77_1' (../cnn_gesture_hls.cpp:77:22) in function 'cnn_gesture_top'.
-INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_93_2' (../cnn_gesture_hls.cpp:93:26) in function 'cnn_gesture_top'.
-INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_92_1' (../cnn_gesture_hls.cpp:92:22) in function 'cnn_gesture_top'.
-INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_126_1' (../cnn_gesture_hls.cpp:126:23) in function 'cnn_gesture_top'.
-INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_142_1' (../cnn_gesture_hls.cpp:142:23) in function 'cnn_gesture_top'.
-INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 3 seconds. CPU system time: 0 seconds. Elapsed time: 3.906 seconds; current allocated memory: 363.109 MB.
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.325 seconds; current allocated memory: 241.637 MB.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../cnn_gesture_hls.cpp:272:1) to (../cnn_gesture_hls.cpp:275:25) in function 'cnn_gesture_top'... converting 7 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../cnn_gesture_hls.cpp:282:1) to (../cnn_gesture_hls.cpp:281:23) in function 'cnn_gesture_top'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../cnn_gesture_hls.cpp:63:35) to (../cnn_gesture_hls.cpp:63:26) in function 'cnn_gesture_core'... converting 151 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../cnn_gesture_hls.cpp:117:19) to (../cnn_gesture_hls.cpp:119:31) in function 'cnn_gesture_core'... converting 195 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../cnn_gesture_hls.cpp:129:28) to (../cnn_gesture_hls.cpp:116:27) in function 'cnn_gesture_core'... converting 39 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../cnn_gesture_hls.cpp:181:15) to (../cnn_gesture_hls.cpp:183:27) in function 'cnn_gesture_core'... converting 7 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../cnn_gesture_hls.cpp:180:32) to (../cnn_gesture_hls.cpp:183:27) in function 'cnn_gesture_core'... converting 7 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../cnn_gesture_hls.cpp:199:15) to (../cnn_gesture_hls.cpp:201:27) in function 'cnn_gesture_core'... converting 7 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../cnn_gesture_hls.cpp:198:32) to (../cnn_gesture_hls.cpp:201:27) in function 'cnn_gesture_core'... converting 7 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../cnn_gesture_hls.cpp:219:12) to (../cnn_gesture_hls.cpp:220:23) in function 'cnn_gesture_core'... converting 9 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'cnn_gesture_core' (../cnn_gesture_hls.cpp:8:23)...54 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 4 seconds. CPU system time: 0 seconds. Elapsed time: 4.073 seconds; current allocated memory: 282.727 MB.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_270_1'(../cnn_gesture_hls.cpp:270:23) and 'VITIS_LOOP_271_2'(../cnn_gesture_hls.cpp:271:27) in function 'cnn_gesture_top' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_62_1'(../cnn_gesture_hls.cpp:62:22) and 'VITIS_LOOP_63_2'(../cnn_gesture_hls.cpp:63:26) in function 'cnn_gesture_core' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_100_1'(../cnn_gesture_hls.cpp:100:23) and 'VITIS_LOOP_101_2'(../cnn_gesture_hls.cpp:101:27) in function 'cnn_gesture_core' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_116_2'(../cnn_gesture_hls.cpp:116:27) and 'VITIS_LOOP_119_3'(../cnn_gesture_hls.cpp:119:31) in function 'cnn_gesture_core' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_115_1'(../cnn_gesture_hls.cpp:115:23) and 'VITIS_LOOP_116_2'(../cnn_gesture_hls.cpp:116:27) in function 'cnn_gesture_core' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_149_1'(../cnn_gesture_hls.cpp:149:23) and 'VITIS_LOOP_150_2'(../cnn_gesture_hls.cpp:150:27) in function 'cnn_gesture_core' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_165_1'(../cnn_gesture_hls.cpp:165:23) and 'VITIS_LOOP_166_2'(../cnn_gesture_hls.cpp:166:27) in function 'cnn_gesture_core' into perfectly nested loops.
+INFO: [HLS 200-2060] Failed to convert nested loops 'VITIS_LOOP_180_1'(../cnn_gesture_hls.cpp:180:23) and 'VITIS_LOOP_183_2'(../cnn_gesture_hls.cpp:183:27) in function 'cnn_gesture_core' into perfectly nested loops.
+INFO: [HLS 200-2060] Failed to convert nested loops 'VITIS_LOOP_198_1'(../cnn_gesture_hls.cpp:198:23) and 'VITIS_LOOP_201_2'(../cnn_gesture_hls.cpp:201:27) in function 'cnn_gesture_core' into perfectly nested loops.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_270_1' (../cnn_gesture_hls.cpp:270:23) in function 'cnn_gesture_top'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_62_1' (../cnn_gesture_hls.cpp:62:22) in function 'cnn_gesture_core'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_100_1' (../cnn_gesture_hls.cpp:100:23) in function 'cnn_gesture_core'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_116_2' (../cnn_gesture_hls.cpp:116:27) in function 'cnn_gesture_core'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_115_1' (../cnn_gesture_hls.cpp:115:23) in function 'cnn_gesture_core'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_149_1' (../cnn_gesture_hls.cpp:149:23) in function 'cnn_gesture_core'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_165_1' (../cnn_gesture_hls.cpp:165:23) in function 'cnn_gesture_core'.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 6 seconds. CPU system time: 0 seconds. Elapsed time: 6.054 seconds; current allocated memory: 397.453 MB.
 INFO: [HLS 200-10] Starting hardware synthesis ...
 INFO: [HLS 200-10] Synthesizing 'cnn_gesture_top' ...
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'cnn_gesture_top_Pipeline_VITIS_LOOP_39_1_VITIS_LOOP_40_2' 
+INFO: [HLS 200-42] -- Implementing module 'cnn_gesture_top_Pipeline_VITIS_LOOP_270_1_VITIS_LOOP_271_2' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln66) to 3 in order to utilize available DSP registers.
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_32) to 3 in order to utilize available DSP registers.
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_31) to 3 in order to utilize available DSP registers.
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_30) to 3 in order to utilize available DSP registers.
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_29) to 3 in order to utilize available DSP registers.
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_20) to 3 in order to utilize available DSP registers.
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_19) to 3 in order to utilize available DSP registers.
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_18) to 3 in order to utilize available DSP registers.
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_17) to 3 in order to utilize available DSP registers.
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_9) to 3 in order to utilize available DSP registers.
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_8) to 3 in order to utilize available DSP registers.
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_7) to 3 in order to utilize available DSP registers.
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_6) to 3 in order to utilize available DSP registers.
-INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_39_1_VITIS_LOOP_40_2'.
-WARNING: [HLS 200-448] Lower bound of II is 5 due to multiple 'load' operation 16 bit ('input_0_load', ../cnn_gesture_hls.cpp:48->../cnn_gesture_hls.cpp:227) on array 'input_0', 'load' operation 16 bit ('input_0_load_1', ../cnn_gesture_hls.cpp:48->../cnn_gesture_hls.cpp:227) on array 'input_0', 'load' operation 16 bit ('input_0_load_2', ../cnn_gesture_hls.cpp:48->../cnn_gesture_hls.cpp:227) on array 'input_0', 'load' operation 16 bit ('input_0_load_3', ../cnn_gesture_hls.cpp:48->../cnn_gesture_hls.cpp:227) on array 'input_0', 'load' operation 16 bit ('input_0_load_4', ../cnn_gesture_hls.cpp:48->../cnn_gesture_hls.cpp:227) on array 'input_0', 'load' operation 16 bit ('input_0_load_5', ../cnn_gesture_hls.cpp:48->../cnn_gesture_hls.cpp:227) on array 'input_0', 'load' operation 16 bit ('input_0_load_6', ../cnn_gesture_hls.cpp:48->../cnn_gesture_hls.cpp:227) on array 'input_0', 'load' operation 16 bit ('input_0_load_7', ../cnn_gesture_hls.cpp:48->../cnn_gesture_hls.cpp:227) on array 'input_0', 'load' operation 16 bit ('input_0_load_8', ../cnn_gesture_hls.cpp:48->../cnn_gesture_hls.cpp:227) on array 'input_0' accessing core:RAM:input_0
-WARNING: [HLS 200-448] Lower bound of II is 5 due to multiple 'load' operation 16 bit ('input_1_load', ../cnn_gesture_hls.cpp:48->../cnn_gesture_hls.cpp:227) on array 'input_1', 'load' operation 16 bit ('input_1_load_1', ../cnn_gesture_hls.cpp:48->../cnn_gesture_hls.cpp:227) on array 'input_1', 'load' operation 16 bit ('input_1_load_2', ../cnn_gesture_hls.cpp:48->../cnn_gesture_hls.cpp:227) on array 'input_1', 'load' operation 16 bit ('input_1_load_3', ../cnn_gesture_hls.cpp:48->../cnn_gesture_hls.cpp:227) on array 'input_1', 'load' operation 16 bit ('input_1_load_4', ../cnn_gesture_hls.cpp:48->../cnn_gesture_hls.cpp:227) on array 'input_1', 'load' operation 16 bit ('input_1_load_5', ../cnn_gesture_hls.cpp:48->../cnn_gesture_hls.cpp:227) on array 'input_1', 'load' operation 16 bit ('input_1_load_6', ../cnn_gesture_hls.cpp:48->../cnn_gesture_hls.cpp:227) on array 'input_1', 'load' operation 16 bit ('input_1_load_7', ../cnn_gesture_hls.cpp:48->../cnn_gesture_hls.cpp:227) on array 'input_1', 'load' operation 16 bit ('input_1_load_8', ../cnn_gesture_hls.cpp:48->../cnn_gesture_hls.cpp:227) on array 'input_1' accessing core:RAM:input_1
-INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 5, Depth = 51, loop 'VITIS_LOOP_39_1_VITIS_LOOP_40_2'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_270_1_VITIS_LOOP_271_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 11, loop 'VITIS_LOOP_270_1_VITIS_LOOP_271_2'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.684 seconds; current allocated memory: 380.453 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.929 seconds; current allocated memory: 404.738 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.483 seconds; current allocated memory: 381.520 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.088 seconds; current allocated memory: 405.930 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'cnn_gesture_top_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2' 
+INFO: [HLS 200-42] -- Implementing module 'cnn_gesture_core_Pipeline_VITIS_LOOP_62_1_VITIS_LOOP_63_2' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_77_1_VITIS_LOOP_78_2'.
-INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_77_1_VITIS_LOOP_78_2'
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln89) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln71_32) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln71_31) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln71_30) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln71_29) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln71_20) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln71_19) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln71_18) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln71_17) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln71_9) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln71_8) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln71_7) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln71_6) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_62_1_VITIS_LOOP_63_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 53, loop 'VITIS_LOOP_62_1_VITIS_LOOP_63_2'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.588 seconds; current allocated memory: 397.719 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.772 seconds; current allocated memory: 436.664 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.073 seconds; current allocated memory: 397.719 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.794 seconds; current allocated memory: 436.664 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3' 
+INFO: [HLS 200-42] -- Implementing module 'cnn_gesture_core_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln115) to 3 in order to utilize available DSP registers.
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln101_59) to 3 in order to utilize available DSP registers.
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln101_58) to 3 in order to utilize available DSP registers.
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln101_57) to 3 in order to utilize available DSP registers.
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln101_55) to 3 in order to utilize available DSP registers.
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln101_54) to 3 in order to utilize available DSP registers.
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln101_51) to 3 in order to utilize available DSP registers.
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln101_50) to 3 in order to utilize available DSP registers.
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln101_48) to 3 in order to utilize available DSP registers.
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln101_47) to 3 in order to utilize available DSP registers.
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln101_43) to 3 in order to utilize available DSP registers.
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln101_42) to 3 in order to utilize available DSP registers.
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln101_40) to 3 in order to utilize available DSP registers.
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln101_39) to 3 in order to utilize available DSP registers.
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln101_36) to 3 in order to utilize available DSP registers.
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln101_35) to 3 in order to utilize available DSP registers.
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln101_32) to 3 in order to utilize available DSP registers.
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln101_33) to 3 in order to utilize available DSP registers.
-INFO: [HLS 200-486] Changing DSP latency (root=mul_ln100) to 3 in order to utilize available DSP registers.
-INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3'.
-INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 56, loop 'VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_100_1_VITIS_LOOP_101_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_100_1_VITIS_LOOP_101_2'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 3 seconds. CPU system time: 0 seconds. Elapsed time: 3.065 seconds; current allocated memory: 428.957 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 1.07 seconds; current allocated memory: 448.188 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.675 seconds; current allocated memory: 428.969 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.081 seconds; current allocated memory: 448.188 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'cnn_gesture_top_Pipeline_VITIS_LOOP_126_1_VITIS_LOOP_127_2' 
+INFO: [HLS 200-42] -- Implementing module 'cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_126_1_VITIS_LOOP_127_2'.
-INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_126_1_VITIS_LOOP_127_2'
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln138) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln124_59) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln124_58) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln124_57) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln124_55) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln124_54) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln124_51) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln124_50) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln124_48) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln124_47) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln124_43) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln124_42) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln124_40) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln124_39) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln124_36) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln124_35) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln124_32) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln124_33) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln123) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 56, loop 'VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 1.523 seconds; current allocated memory: 428.969 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 3 seconds. CPU system time: 0 seconds. Elapsed time: 3.093 seconds; current allocated memory: 480.453 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.032 seconds; current allocated memory: 428.969 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 1.958 seconds; current allocated memory: 480.453 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'cnn_gesture_top_Pipeline_VITIS_LOOP_142_1_VITIS_LOOP_143_2' 
+INFO: [HLS 200-42] -- Implementing module 'cnn_gesture_core_Pipeline_VITIS_LOOP_149_1_VITIS_LOOP_150_2' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_142_1_VITIS_LOOP_143_2'.
-INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_142_1_VITIS_LOOP_143_2'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_149_1_VITIS_LOOP_150_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_149_1_VITIS_LOOP_150_2'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.064 seconds; current allocated memory: 428.969 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.841 seconds; current allocated memory: 480.453 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.038 seconds; current allocated memory: 428.969 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.044 seconds; current allocated memory: 480.453 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'cnn_gesture_top_Pipeline_VITIS_LOOP_160_2' 
+INFO: [HLS 200-42] -- Implementing module 'cnn_gesture_core_Pipeline_VITIS_LOOP_165_1_VITIS_LOOP_166_2' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [HLS 200-486] Changing DSP latency (root=sum_12) to 3 in order to utilize available DSP registers.
-INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_160_2'.
-INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 7, loop 'VITIS_LOOP_160_2'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_165_1_VITIS_LOOP_166_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_165_1_VITIS_LOOP_166_2'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.075 seconds; current allocated memory: 428.969 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.069 seconds; current allocated memory: 480.453 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 428.969 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.044 seconds; current allocated memory: 480.453 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'cnn_gesture_top_Pipeline_VITIS_LOOP_178_2' 
+INFO: [HLS 200-42] -- Implementing module 'cnn_gesture_core_Pipeline_VITIS_LOOP_183_2' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [HLS 200-486] Changing DSP latency (root=sum_11) to 3 in order to utilize available DSP registers.
-INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_178_2'.
-INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 7, loop 'VITIS_LOOP_178_2'
+INFO: [HLS 200-486] Changing DSP latency (root=sum_10) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_183_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 7, loop 'VITIS_LOOP_183_2'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.193 seconds; current allocated memory: 428.969 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.081 seconds; current allocated memory: 480.453 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.068 seconds; current allocated memory: 428.969 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 480.453 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'cnn_gesture_top_Pipeline_VITIS_LOOP_191_1' 
+INFO: [HLS 200-42] -- Implementing module 'cnn_gesture_core_Pipeline_VITIS_LOOP_201_2' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_191_1'.
-INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_191_1'
+INFO: [HLS 200-486] Changing DSP latency (root=sum_8) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_201_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 7, loop 'VITIS_LOOP_201_2'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.092 seconds; current allocated memory: 428.969 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.246 seconds; current allocated memory: 480.453 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.025 seconds; current allocated memory: 428.969 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.054 seconds; current allocated memory: 480.453 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'cnn_gesture_top_Pipeline_VITIS_LOOP_197_2' 
+INFO: [HLS 200-42] -- Implementing module 'cnn_gesture_core_Pipeline_VITIS_LOOP_214_1' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_197_2'.
-INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 12, loop 'VITIS_LOOP_197_2'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_214_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_214_1'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.075 seconds; current allocated memory: 428.969 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 480.453 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 428.969 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.034 seconds; current allocated memory: 480.453 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'cnn_gesture_top_Pipeline_VITIS_LOOP_202_3' 
+INFO: [HLS 200-42] -- Implementing module 'cnn_gesture_core_Pipeline_VITIS_LOOP_220_2' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_202_3'.
-INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 31, loop 'VITIS_LOOP_202_3'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_220_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 12, loop 'VITIS_LOOP_220_2'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.058 seconds; current allocated memory: 428.969 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.085 seconds; current allocated memory: 480.453 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.033 seconds; current allocated memory: 429.039 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.056 seconds; current allocated memory: 480.453 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'cnn_gesture_core_Pipeline_VITIS_LOOP_225_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_225_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 31, loop 'VITIS_LOOP_225_3'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 480.453 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.035 seconds; current allocated memory: 480.453 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'cnn_gesture_core' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.729 seconds; current allocated memory: 480.547 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.188 seconds; current allocated memory: 481.453 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'cnn_gesture_top_Pipeline_VITIS_LOOP_281_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_281_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_281_3'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.284 seconds; current allocated memory: 481.660 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.051 seconds; current allocated memory: 481.660 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'cnn_gesture_top' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.615 seconds; current allocated memory: 430.117 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.077 seconds; current allocated memory: 481.934 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.11 seconds; current allocated memory: 431.320 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.095 seconds; current allocated memory: 482.582 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'cnn_gesture_top_Pipeline_VITIS_LOOP_39_1_VITIS_LOOP_40_2' 
+INFO: [HLS 200-10] -- Generating RTL for module 'cnn_gesture_top_Pipeline_VITIS_LOOP_270_1_VITIS_LOOP_271_2' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SYN 201-210] Renamed object name 'cnn_gesture_top_Pipeline_VITIS_LOOP_39_1_VITIS_LOOP_40_2_p_ZL14conv1d_param_0_0_ROM_AUTO_1R' to 'cnn_gesture_top_Pipeline_VITIS_LOOP_39_1_VITIS_LOOP_40_2_p_ZL14conv1d_param_0bkb' due to the length limit 80
-INFO: [SYN 201-210] Renamed object name 'cnn_gesture_top_Pipeline_VITIS_LOOP_39_1_VITIS_LOOP_40_2_p_ZL14conv1d_param_0_1_ROM_AUTO_1R' to 'cnn_gesture_top_Pipeline_VITIS_LOOP_39_1_VITIS_LOOP_40_2_p_ZL14conv1d_param_0cud' due to the length limit 80
-INFO: [SYN 201-210] Renamed object name 'cnn_gesture_top_Pipeline_VITIS_LOOP_39_1_VITIS_LOOP_40_2_conv1d_param_1_ROM_AUTO_1R' to 'cnn_gesture_top_Pipeline_VITIS_LOOP_39_1_VITIS_LOOP_40_2_conv1d_param_1_ROM_AdEe' due to the length limit 80
-INFO: [SYN 201-210] Renamed object name 'cnn_gesture_top_Pipeline_VITIS_LOOP_39_1_VITIS_LOOP_40_2_batch_normalization_param_0_ROM_AUTO_1R' to 'cnn_gesture_top_Pipeline_VITIS_LOOP_39_1_VITIS_LOOP_40_2_batch_normalization_eOg' due to the length limit 80
-INFO: [SYN 201-210] Renamed object name 'cnn_gesture_top_Pipeline_VITIS_LOOP_39_1_VITIS_LOOP_40_2_batch_normalization_param_1_ROM_AUTO_1R' to 'cnn_gesture_top_Pipeline_VITIS_LOOP_39_1_VITIS_LOOP_40_2_batch_normalization_fYi' due to the length limit 80
-INFO: [SYN 201-210] Renamed object name 'cnn_gesture_top_Pipeline_VITIS_LOOP_39_1_VITIS_LOOP_40_2_batch_normalization_param_2_ROM_AUTO_1R' to 'cnn_gesture_top_Pipeline_VITIS_LOOP_39_1_VITIS_LOOP_40_2_batch_normalization_g8j' due to the length limit 80
-INFO: [SYN 201-210] Renamed object name 'cnn_gesture_top_Pipeline_VITIS_LOOP_39_1_VITIS_LOOP_40_2_batch_normalization_param_3_ROM_AUTO_1R' to 'cnn_gesture_top_Pipeline_VITIS_LOOP_39_1_VITIS_LOOP_40_2_batch_normalization_hbi' due to the length limit 80
-INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'cnn_gesture_top_Pipeline_VITIS_LOOP_39_1_VITIS_LOOP_40_2' pipeline 'VITIS_LOOP_39_1_VITIS_LOOP_40_2' pipeline type 'loop pipeline'
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'cnn_gesture_top_Pipeline_VITIS_LOOP_270_1_VITIS_LOOP_271_2' pipeline 'VITIS_LOOP_270_1_VITIS_LOOP_271_2' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'fpext_32ns_64_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_7ns_9ns_15_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_9_3_16_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'urem_7ns_3ns_2_11_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'cnn_gesture_top_Pipeline_VITIS_LOOP_270_1_VITIS_LOOP_271_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.423 seconds; current allocated memory: 486.074 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'cnn_gesture_core_Pipeline_VITIS_LOOP_62_1_VITIS_LOOP_63_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'cnn_gesture_core_Pipeline_VITIS_LOOP_62_1_VITIS_LOOP_63_2_p_ZL14conv1d_param_0_0_ROM_AUTO_1R' to 'cnn_gesture_core_Pipeline_VITIS_LOOP_62_1_VITIS_LOOP_63_2_p_ZL14conv1d_param_bkb' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'cnn_gesture_core_Pipeline_VITIS_LOOP_62_1_VITIS_LOOP_63_2_p_ZL14conv1d_param_0_1_ROM_AUTO_1R' to 'cnn_gesture_core_Pipeline_VITIS_LOOP_62_1_VITIS_LOOP_63_2_p_ZL14conv1d_param_cud' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'cnn_gesture_core_Pipeline_VITIS_LOOP_62_1_VITIS_LOOP_63_2_p_ZL14conv1d_param_0_2_ROM_AUTO_1R' to 'cnn_gesture_core_Pipeline_VITIS_LOOP_62_1_VITIS_LOOP_63_2_p_ZL14conv1d_param_dEe' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'cnn_gesture_core_Pipeline_VITIS_LOOP_62_1_VITIS_LOOP_63_2_p_ZL14conv1d_param_0_3_ROM_AUTO_1R' to 'cnn_gesture_core_Pipeline_VITIS_LOOP_62_1_VITIS_LOOP_63_2_p_ZL14conv1d_param_eOg' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'cnn_gesture_core_Pipeline_VITIS_LOOP_62_1_VITIS_LOOP_63_2_p_ZL14conv1d_param_0_4_ROM_AUTO_1R' to 'cnn_gesture_core_Pipeline_VITIS_LOOP_62_1_VITIS_LOOP_63_2_p_ZL14conv1d_param_fYi' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'cnn_gesture_core_Pipeline_VITIS_LOOP_62_1_VITIS_LOOP_63_2_p_ZL14conv1d_param_0_5_ROM_AUTO_1R' to 'cnn_gesture_core_Pipeline_VITIS_LOOP_62_1_VITIS_LOOP_63_2_p_ZL14conv1d_param_g8j' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'cnn_gesture_core_Pipeline_VITIS_LOOP_62_1_VITIS_LOOP_63_2_p_ZL14conv1d_param_0_6_ROM_AUTO_1R' to 'cnn_gesture_core_Pipeline_VITIS_LOOP_62_1_VITIS_LOOP_63_2_p_ZL14conv1d_param_hbi' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'cnn_gesture_core_Pipeline_VITIS_LOOP_62_1_VITIS_LOOP_63_2_p_ZL14conv1d_param_0_7_ROM_AUTO_1R' to 'cnn_gesture_core_Pipeline_VITIS_LOOP_62_1_VITIS_LOOP_63_2_p_ZL14conv1d_param_ibs' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'cnn_gesture_core_Pipeline_VITIS_LOOP_62_1_VITIS_LOOP_63_2_p_ZL14conv1d_param_0_8_ROM_AUTO_1R' to 'cnn_gesture_core_Pipeline_VITIS_LOOP_62_1_VITIS_LOOP_63_2_p_ZL14conv1d_param_jbC' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'cnn_gesture_core_Pipeline_VITIS_LOOP_62_1_VITIS_LOOP_63_2_p_ZL14conv1d_param_0_9_ROM_AUTO_1R' to 'cnn_gesture_core_Pipeline_VITIS_LOOP_62_1_VITIS_LOOP_63_2_p_ZL14conv1d_param_kbM' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'cnn_gesture_core_Pipeline_VITIS_LOOP_62_1_VITIS_LOOP_63_2_p_ZL14conv1d_param_0_10_ROM_AUTO_1R' to 'cnn_gesture_core_Pipeline_VITIS_LOOP_62_1_VITIS_LOOP_63_2_p_ZL14conv1d_param_lbW' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'cnn_gesture_core_Pipeline_VITIS_LOOP_62_1_VITIS_LOOP_63_2_p_ZL14conv1d_param_0_11_ROM_AUTO_1R' to 'cnn_gesture_core_Pipeline_VITIS_LOOP_62_1_VITIS_LOOP_63_2_p_ZL14conv1d_param_mb6' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'cnn_gesture_core_Pipeline_VITIS_LOOP_62_1_VITIS_LOOP_63_2_p_ZL14conv1d_param_0_12_ROM_AUTO_1R' to 'cnn_gesture_core_Pipeline_VITIS_LOOP_62_1_VITIS_LOOP_63_2_p_ZL14conv1d_param_ncg' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'cnn_gesture_core_Pipeline_VITIS_LOOP_62_1_VITIS_LOOP_63_2_p_ZL14conv1d_param_0_13_ROM_AUTO_1R' to 'cnn_gesture_core_Pipeline_VITIS_LOOP_62_1_VITIS_LOOP_63_2_p_ZL14conv1d_param_ocq' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'cnn_gesture_core_Pipeline_VITIS_LOOP_62_1_VITIS_LOOP_63_2_p_ZL14conv1d_param_0_14_ROM_AUTO_1R' to 'cnn_gesture_core_Pipeline_VITIS_LOOP_62_1_VITIS_LOOP_63_2_p_ZL14conv1d_param_pcA' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'cnn_gesture_core_Pipeline_VITIS_LOOP_62_1_VITIS_LOOP_63_2_p_ZL14conv1d_param_0_15_ROM_AUTO_1R' to 'cnn_gesture_core_Pipeline_VITIS_LOOP_62_1_VITIS_LOOP_63_2_p_ZL14conv1d_param_qcK' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'cnn_gesture_core_Pipeline_VITIS_LOOP_62_1_VITIS_LOOP_63_2_p_ZL14conv1d_param_0_16_ROM_AUTO_1R' to 'cnn_gesture_core_Pipeline_VITIS_LOOP_62_1_VITIS_LOOP_63_2_p_ZL14conv1d_param_rcU' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'cnn_gesture_core_Pipeline_VITIS_LOOP_62_1_VITIS_LOOP_63_2_p_ZL14conv1d_param_0_17_ROM_AUTO_1R' to 'cnn_gesture_core_Pipeline_VITIS_LOOP_62_1_VITIS_LOOP_63_2_p_ZL14conv1d_param_sc4' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'cnn_gesture_core_Pipeline_VITIS_LOOP_62_1_VITIS_LOOP_63_2_p_ZL14conv1d_param_0_18_ROM_AUTO_1R' to 'cnn_gesture_core_Pipeline_VITIS_LOOP_62_1_VITIS_LOOP_63_2_p_ZL14conv1d_param_tde' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'cnn_gesture_core_Pipeline_VITIS_LOOP_62_1_VITIS_LOOP_63_2_conv1d_param_1_ROM_AUTO_1R' to 'cnn_gesture_core_Pipeline_VITIS_LOOP_62_1_VITIS_LOOP_63_2_conv1d_param_1_ROM_udo' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'cnn_gesture_core_Pipeline_VITIS_LOOP_62_1_VITIS_LOOP_63_2_batch_normalization_param_0_ROM_AUTO_1R' to 'cnn_gesture_core_Pipeline_VITIS_LOOP_62_1_VITIS_LOOP_63_2_batch_normalizationvdy' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'cnn_gesture_core_Pipeline_VITIS_LOOP_62_1_VITIS_LOOP_63_2_batch_normalization_param_1_ROM_AUTO_1R' to 'cnn_gesture_core_Pipeline_VITIS_LOOP_62_1_VITIS_LOOP_63_2_batch_normalizationwdI' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'cnn_gesture_core_Pipeline_VITIS_LOOP_62_1_VITIS_LOOP_63_2_batch_normalization_param_2_ROM_AUTO_1R' to 'cnn_gesture_core_Pipeline_VITIS_LOOP_62_1_VITIS_LOOP_63_2_batch_normalizationxdS' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'cnn_gesture_core_Pipeline_VITIS_LOOP_62_1_VITIS_LOOP_63_2_batch_normalization_param_3_ROM_AUTO_1R' to 'cnn_gesture_core_Pipeline_VITIS_LOOP_62_1_VITIS_LOOP_63_2_batch_normalizationyd2' due to the length limit 80
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'cnn_gesture_core_Pipeline_VITIS_LOOP_62_1_VITIS_LOOP_63_2' pipeline 'VITIS_LOOP_62_1_VITIS_LOOP_63_2' pipeline type 'loop pipeline'
 INFO: [RTGEN 206-100] Generating core module 'ctlz_17_17_1_1': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'fpext_32ns_64_2_no_dsp_1': 5 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fpext_32ns_64_2_no_dsp_1': 24 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'fsqrt_32ns_32ns_32_8_no_dsp_1': 1 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_16s_26s_26_4_1': 13 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_10ns_12ns_21_1_1': 2 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'mul_16s_16s_26_1_1': 6 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_64ns_66ns_129_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_6ns_8ns_13_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_7ns_9ns_15_1_1': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_8ns_10ns_17_1_1': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_9ns_11ns_19_1_1': 8 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'sdiv_27ns_16s_16_31_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_39_5_32_1_1': 18 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_7_2_16_1_1': 18 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'sparsemux_9_3_16_1_1': 24 instance(s).
-INFO: [RTGEN 206-100] Finished creating RTL model for 'cnn_gesture_top_Pipeline_VITIS_LOOP_39_1_VITIS_LOOP_40_2'.
-INFO: [HLS 200-2168] Implementing memory 'cnn_gesture_top_cnn_gesture_top_Pipeline_VITIS_LOOP_39_1_VITIS_LOOP_40_2_p_ZL14conv1d_param_0bkb' using auto ROMs with 4 copies to ensure enough ports to satisfy II or latency constraints.
-INFO: [HLS 200-2168] Implementing memory 'cnn_gesture_top_cnn_gesture_top_Pipeline_VITIS_LOOP_39_1_VITIS_LOOP_40_2_p_ZL14conv1d_param_0cud' using auto ROMs with 4 copies to ensure enough ports to satisfy II or latency constraints.
-INFO: [RTMG 210-279] Implementing memory 'cnn_gesture_top_cnn_gesture_top_Pipeline_VITIS_LOOP_39_1_VITIS_LOOP_40_2_conv1d_param_1_ROM_AdEe' using auto ROMs.
-INFO: [RTMG 210-279] Implementing memory 'cnn_gesture_top_cnn_gesture_top_Pipeline_VITIS_LOOP_39_1_VITIS_LOOP_40_2_batch_normalization_eOg' using auto ROMs.
-INFO: [RTMG 210-279] Implementing memory 'cnn_gesture_top_cnn_gesture_top_Pipeline_VITIS_LOOP_39_1_VITIS_LOOP_40_2_batch_normalization_fYi' using auto ROMs.
-INFO: [RTMG 210-279] Implementing memory 'cnn_gesture_top_cnn_gesture_top_Pipeline_VITIS_LOOP_39_1_VITIS_LOOP_40_2_batch_normalization_g8j' using auto ROMs.
-INFO: [RTMG 210-279] Implementing memory 'cnn_gesture_top_cnn_gesture_top_Pipeline_VITIS_LOOP_39_1_VITIS_LOOP_40_2_batch_normalization_hbi' using auto ROMs.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.868 seconds; current allocated memory: 444.406 MB.
+INFO: [RTGEN 206-100] Generating core module 'urem_7ns_3ns_2_11_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'cnn_gesture_core_Pipeline_VITIS_LOOP_62_1_VITIS_LOOP_63_2'.
+INFO: [HLS 200-2168] Implementing memory 'cnn_gesture_top_cnn_gesture_core_Pipeline_VITIS_LOOP_62_1_VITIS_LOOP_63_2_p_ZL14conv1d_param_bkb' using auto ROMs with 12 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cnn_gesture_top_cnn_gesture_core_Pipeline_VITIS_LOOP_62_1_VITIS_LOOP_63_2_p_ZL14conv1d_param_cud' using auto ROMs with 12 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cnn_gesture_top_cnn_gesture_core_Pipeline_VITIS_LOOP_62_1_VITIS_LOOP_63_2_p_ZL14conv1d_param_dEe' using auto ROMs with 12 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cnn_gesture_top_cnn_gesture_core_Pipeline_VITIS_LOOP_62_1_VITIS_LOOP_63_2_p_ZL14conv1d_param_eOg' using auto ROMs with 12 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cnn_gesture_top_cnn_gesture_core_Pipeline_VITIS_LOOP_62_1_VITIS_LOOP_63_2_p_ZL14conv1d_param_fYi' using auto ROMs with 12 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cnn_gesture_top_cnn_gesture_core_Pipeline_VITIS_LOOP_62_1_VITIS_LOOP_63_2_p_ZL14conv1d_param_g8j' using auto ROMs with 12 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cnn_gesture_top_cnn_gesture_core_Pipeline_VITIS_LOOP_62_1_VITIS_LOOP_63_2_p_ZL14conv1d_param_hbi' using auto ROMs with 12 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cnn_gesture_top_cnn_gesture_core_Pipeline_VITIS_LOOP_62_1_VITIS_LOOP_63_2_p_ZL14conv1d_param_ibs' using auto ROMs with 12 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cnn_gesture_top_cnn_gesture_core_Pipeline_VITIS_LOOP_62_1_VITIS_LOOP_63_2_p_ZL14conv1d_param_jbC' using auto ROMs with 12 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cnn_gesture_top_cnn_gesture_core_Pipeline_VITIS_LOOP_62_1_VITIS_LOOP_63_2_p_ZL14conv1d_param_kbM' using auto ROMs with 12 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cnn_gesture_top_cnn_gesture_core_Pipeline_VITIS_LOOP_62_1_VITIS_LOOP_63_2_p_ZL14conv1d_param_lbW' using auto ROMs with 12 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cnn_gesture_top_cnn_gesture_core_Pipeline_VITIS_LOOP_62_1_VITIS_LOOP_63_2_p_ZL14conv1d_param_mb6' using auto ROMs with 12 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cnn_gesture_top_cnn_gesture_core_Pipeline_VITIS_LOOP_62_1_VITIS_LOOP_63_2_p_ZL14conv1d_param_ncg' using auto ROMs with 12 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cnn_gesture_top_cnn_gesture_core_Pipeline_VITIS_LOOP_62_1_VITIS_LOOP_63_2_p_ZL14conv1d_param_ocq' using auto ROMs with 12 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cnn_gesture_top_cnn_gesture_core_Pipeline_VITIS_LOOP_62_1_VITIS_LOOP_63_2_p_ZL14conv1d_param_pcA' using auto ROMs with 12 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cnn_gesture_top_cnn_gesture_core_Pipeline_VITIS_LOOP_62_1_VITIS_LOOP_63_2_p_ZL14conv1d_param_qcK' using auto ROMs with 12 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cnn_gesture_top_cnn_gesture_core_Pipeline_VITIS_LOOP_62_1_VITIS_LOOP_63_2_p_ZL14conv1d_param_rcU' using auto ROMs with 12 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cnn_gesture_top_cnn_gesture_core_Pipeline_VITIS_LOOP_62_1_VITIS_LOOP_63_2_p_ZL14conv1d_param_sc4' using auto ROMs with 12 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cnn_gesture_top_cnn_gesture_core_Pipeline_VITIS_LOOP_62_1_VITIS_LOOP_63_2_p_ZL14conv1d_param_tde' using auto ROMs with 12 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [RTMG 210-279] Implementing memory 'cnn_gesture_top_cnn_gesture_core_Pipeline_VITIS_LOOP_62_1_VITIS_LOOP_63_2_conv1d_param_1_ROM_udo' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cnn_gesture_top_cnn_gesture_core_Pipeline_VITIS_LOOP_62_1_VITIS_LOOP_63_2_batch_normalizationvdy' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cnn_gesture_top_cnn_gesture_core_Pipeline_VITIS_LOOP_62_1_VITIS_LOOP_63_2_batch_normalizationwdI' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cnn_gesture_top_cnn_gesture_core_Pipeline_VITIS_LOOP_62_1_VITIS_LOOP_63_2_batch_normalizationxdS' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cnn_gesture_top_cnn_gesture_core_Pipeline_VITIS_LOOP_62_1_VITIS_LOOP_63_2_batch_normalizationyd2' using auto ROMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 4.892 seconds; current allocated memory: 517.766 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'cnn_gesture_top_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2' 
+INFO: [HLS 200-10] -- Generating RTL for module 'cnn_gesture_core_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'cnn_gesture_top_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2' pipeline 'VITIS_LOOP_77_1_VITIS_LOOP_78_2' pipeline type 'loop pipeline'
-INFO: [RTGEN 206-100] Finished creating RTL model for 'cnn_gesture_top_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_78_2'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 2 seconds. CPU system time: 2 seconds. Elapsed time: 3.579 seconds; current allocated memory: 473.551 MB.
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'cnn_gesture_core_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2' pipeline 'VITIS_LOOP_100_1_VITIS_LOOP_101_2' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'cnn_gesture_core_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 3 seconds. CPU system time: 5 seconds. Elapsed time: 9.053 seconds; current allocated memory: 562.445 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3' 
+INFO: [HLS 200-10] -- Generating RTL for module 'cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SYN 201-210] Renamed object name 'cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZL16conv1d_1_param_0_0_ROM_AUTO_1R' to 'cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZLibs' due to the length limit 80
-INFO: [SYN 201-210] Renamed object name 'cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZL16conv1d_1_param_0_1_ROM_AUTO_1R' to 'cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZLjbC' due to the length limit 80
-INFO: [SYN 201-210] Renamed object name 'cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZL16conv1d_1_param_0_2_ROM_AUTO_1R' to 'cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZLkbM' due to the length limit 80
-INFO: [SYN 201-210] Renamed object name 'cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZL16conv1d_1_param_0_3_ROM_AUTO_1R' to 'cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZLlbW' due to the length limit 80
-INFO: [SYN 201-210] Renamed object name 'cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZL16conv1d_1_param_0_4_ROM_AUTO_1R' to 'cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZLmb6' due to the length limit 80
-INFO: [SYN 201-210] Renamed object name 'cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZL16conv1d_1_param_0_5_ROM_AUTO_1R' to 'cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZLncg' due to the length limit 80
-INFO: [SYN 201-210] Renamed object name 'cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZL16conv1d_1_param_0_6_ROM_AUTO_1R' to 'cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZLocq' due to the length limit 80
-INFO: [SYN 201-210] Renamed object name 'cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZL16conv1d_1_param_0_7_ROM_AUTO_1R' to 'cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZLpcA' due to the length limit 80
-INFO: [SYN 201-210] Renamed object name 'cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZL16conv1d_1_param_0_8_ROM_AUTO_1R' to 'cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZLqcK' due to the length limit 80
-INFO: [SYN 201-210] Renamed object name 'cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZL16conv1d_1_param_0_9_ROM_AUTO_1R' to 'cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZLrcU' due to the length limit 80
-INFO: [SYN 201-210] Renamed object name 'cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZL16conv1d_1_param_0_10_ROM_AUTO_1R' to 'cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZLsc4' due to the length limit 80
-INFO: [SYN 201-210] Renamed object name 'cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZL16conv1d_1_param_0_11_ROM_AUTO_1R' to 'cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZLtde' due to the length limit 80
-INFO: [SYN 201-210] Renamed object name 'cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZL16conv1d_1_param_0_12_ROM_AUTO_1R' to 'cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZLudo' due to the length limit 80
-INFO: [SYN 201-210] Renamed object name 'cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZL16conv1d_1_param_0_13_ROM_AUTO_1R' to 'cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZLvdy' due to the length limit 80
-INFO: [SYN 201-210] Renamed object name 'cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZL16conv1d_1_param_0_14_ROM_AUTO_1R' to 'cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZLwdI' due to the length limit 80
-INFO: [SYN 201-210] Renamed object name 'cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZL16conv1d_1_param_0_15_ROM_AUTO_1R' to 'cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZLxdS' due to the length limit 80
-INFO: [SYN 201-210] Renamed object name 'cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZL16conv1d_1_param_0_16_ROM_AUTO_1R' to 'cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZLyd2' due to the length limit 80
-INFO: [SYN 201-210] Renamed object name 'cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZL16conv1d_1_param_0_17_ROM_AUTO_1R' to 'cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZLzec' due to the length limit 80
-INFO: [SYN 201-210] Renamed object name 'cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZL16conv1d_1_param_0_18_ROM_AUTO_1R' to 'cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZLAem' due to the length limit 80
-INFO: [SYN 201-210] Renamed object name 'cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZL16conv1d_1_param_0_19_ROM_AUTO_1R' to 'cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZLBew' due to the length limit 80
-INFO: [SYN 201-210] Renamed object name 'cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZL16conv1d_1_param_0_20_ROM_AUTO_1R' to 'cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZLCeG' due to the length limit 80
-INFO: [SYN 201-210] Renamed object name 'cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZL16conv1d_1_param_0_21_ROM_AUTO_1R' to 'cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZLDeQ' due to the length limit 80
-INFO: [SYN 201-210] Renamed object name 'cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZL16conv1d_1_param_0_22_ROM_AUTO_1R' to 'cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZLEe0' due to the length limit 80
-INFO: [SYN 201-210] Renamed object name 'cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZL16conv1d_1_param_0_23_ROM_AUTO_1R' to 'cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZLFfa' due to the length limit 80
-INFO: [SYN 201-210] Renamed object name 'cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZL16conv1d_1_param_0_24_ROM_AUTO_1R' to 'cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZLGfk' due to the length limit 80
-INFO: [SYN 201-210] Renamed object name 'cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZL16conv1d_1_param_0_25_ROM_AUTO_1R' to 'cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZLHfu' due to the length limit 80
-INFO: [SYN 201-210] Renamed object name 'cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZL16conv1d_1_param_0_26_ROM_AUTO_1R' to 'cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZLIfE' due to the length limit 80
-INFO: [SYN 201-210] Renamed object name 'cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZL16conv1d_1_param_0_27_ROM_AUTO_1R' to 'cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZLJfO' due to the length limit 80
-INFO: [SYN 201-210] Renamed object name 'cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZL16conv1d_1_param_0_28_ROM_AUTO_1R' to 'cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZLKfY' due to the length limit 80
-INFO: [SYN 201-210] Renamed object name 'cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZL16conv1d_1_param_0_29_ROM_AUTO_1R' to 'cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZLLf8' due to the length limit 80
-INFO: [SYN 201-210] Renamed object name 'cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZL16conv1d_1_param_0_30_ROM_AUTO_1R' to 'cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZLMgi' due to the length limit 80
-INFO: [SYN 201-210] Renamed object name 'cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZL16conv1d_1_param_0_31_ROM_AUTO_1R' to 'cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZLNgs' due to the length limit 80
-INFO: [SYN 201-210] Renamed object name 'cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZL16conv1d_1_param_0_32_ROM_AUTO_1R' to 'cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZLOgC' due to the length limit 80
-INFO: [SYN 201-210] Renamed object name 'cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_conv1d_1_param_1_ROM_AUTO_1R' to 'cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_convPgM' due to the length limit 80
-INFO: [SYN 201-210] Renamed object name 'cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_batch_normalization_1_param_0_ROM_AUTO_1R' to 'cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_batcQgW' due to the length limit 80
-INFO: [SYN 201-210] Renamed object name 'cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_batch_normalization_1_param_1_ROM_AUTO_1R' to 'cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_batcRg6' due to the length limit 80
-INFO: [SYN 201-210] Renamed object name 'cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_batch_normalization_1_param_2_ROM_AUTO_1R' to 'cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_batcShg' due to the length limit 80
-INFO: [SYN 201-210] Renamed object name 'cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_batch_normalization_1_param_3_ROM_AUTO_1R' to 'cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_batcThq' due to the length limit 80
-INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3' pipeline 'VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3' pipeline type 'loop pipeline'
-INFO: [RTGEN 206-104] Estimated max fanout for 'cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3' is 11694 from HDL expression: (1'b0 == ap_block_pp0_stage0_11001)
+INFO: [SYN 201-210] Renamed object name 'cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_p_ZL16conv1d_1_param_0_0_ROM_AUTO_1R' to 'cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_zec' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_p_ZL16conv1d_1_param_0_1_ROM_AUTO_1R' to 'cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_Aem' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_p_ZL16conv1d_1_param_0_2_ROM_AUTO_1R' to 'cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_Bew' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_p_ZL16conv1d_1_param_0_3_ROM_AUTO_1R' to 'cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_CeG' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_p_ZL16conv1d_1_param_0_4_ROM_AUTO_1R' to 'cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_DeQ' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_p_ZL16conv1d_1_param_0_5_ROM_AUTO_1R' to 'cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_Ee0' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_p_ZL16conv1d_1_param_0_6_ROM_AUTO_1R' to 'cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_Ffa' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_p_ZL16conv1d_1_param_0_7_ROM_AUTO_1R' to 'cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_Gfk' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_p_ZL16conv1d_1_param_0_8_ROM_AUTO_1R' to 'cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_Hfu' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_p_ZL16conv1d_1_param_0_9_ROM_AUTO_1R' to 'cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_IfE' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_p_ZL16conv1d_1_param_0_10_ROM_AUTO_1R' to 'cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_JfO' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_p_ZL16conv1d_1_param_0_11_ROM_AUTO_1R' to 'cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_KfY' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_p_ZL16conv1d_1_param_0_12_ROM_AUTO_1R' to 'cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_Lf8' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_p_ZL16conv1d_1_param_0_13_ROM_AUTO_1R' to 'cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_Mgi' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_p_ZL16conv1d_1_param_0_14_ROM_AUTO_1R' to 'cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_Ngs' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_p_ZL16conv1d_1_param_0_15_ROM_AUTO_1R' to 'cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_OgC' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_p_ZL16conv1d_1_param_0_16_ROM_AUTO_1R' to 'cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_PgM' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_p_ZL16conv1d_1_param_0_17_ROM_AUTO_1R' to 'cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_QgW' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_p_ZL16conv1d_1_param_0_18_ROM_AUTO_1R' to 'cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_Rg6' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_p_ZL16conv1d_1_param_0_19_ROM_AUTO_1R' to 'cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_Shg' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_p_ZL16conv1d_1_param_0_20_ROM_AUTO_1R' to 'cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_Thq' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_p_ZL16conv1d_1_param_0_21_ROM_AUTO_1R' to 'cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_UhA' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_p_ZL16conv1d_1_param_0_22_ROM_AUTO_1R' to 'cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_VhK' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_p_ZL16conv1d_1_param_0_23_ROM_AUTO_1R' to 'cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_WhU' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_p_ZL16conv1d_1_param_0_24_ROM_AUTO_1R' to 'cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_Xh4' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_p_ZL16conv1d_1_param_0_25_ROM_AUTO_1R' to 'cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_Yie' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_p_ZL16conv1d_1_param_0_26_ROM_AUTO_1R' to 'cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_Zio' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_p_ZL16conv1d_1_param_0_27_ROM_AUTO_1R' to 'cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_0iy' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_p_ZL16conv1d_1_param_0_28_ROM_AUTO_1R' to 'cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_1iI' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_p_ZL16conv1d_1_param_0_29_ROM_AUTO_1R' to 'cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_2iS' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_p_ZL16conv1d_1_param_0_30_ROM_AUTO_1R' to 'cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_3i2' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_p_ZL16conv1d_1_param_0_31_ROM_AUTO_1R' to 'cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_4jc' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_p_ZL16conv1d_1_param_0_32_ROM_AUTO_1R' to 'cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_5jm' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_conv1d_1_param_1_ROM_AUTO_1R' to 'cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_6jw' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_batch_normalization_1_param_0_ROM_AUTO_1R' to 'cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_7jG' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_batch_normalization_1_param_1_ROM_AUTO_1R' to 'cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_8jQ' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_batch_normalization_1_param_2_ROM_AUTO_1R' to 'cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_9j0' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_batch_normalization_1_param_3_ROM_AUTO_1R' to 'cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_bak' due to the length limit 80
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3' pipeline 'VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-104] Estimated max fanout for 'cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3' is 11694 from HDL expression: (1'b0 == ap_block_pp0_stage0_11001)
 INFO: [RTGEN 206-100] Generating core module 'am_addmul_11ns_12ns_14ns_27_4_1': 1 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'ctlz_17_17_1_1': 1 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'fpext_32ns_64_2_no_dsp_1': 38 instance(s).
@@ -391,131 +487,148 @@ INFO: [RTGEN 206-100] Generating core module 'sdiv_27ns_16s_16_31_1': 1 instance
 INFO: [RTGEN 206-100] Generating core module 'sparsemux_67_6_32_1_1': 32 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'sparsemux_9_3_16_1_1': 38 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'urem_11ns_7ns_6_15_1': 1 instance(s).
-INFO: [RTGEN 206-100] Finished creating RTL model for 'cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3'.
-INFO: [HLS 200-2168] Implementing memory 'cnn_gesture_top_cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZLibs' using auto ROMs with 18 copies to ensure enough ports to satisfy II or latency constraints.
-INFO: [HLS 200-2168] Implementing memory 'cnn_gesture_top_cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZLjbC' using auto ROMs with 18 copies to ensure enough ports to satisfy II or latency constraints.
-INFO: [HLS 200-2168] Implementing memory 'cnn_gesture_top_cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZLkbM' using auto ROMs with 18 copies to ensure enough ports to satisfy II or latency constraints.
-INFO: [HLS 200-2168] Implementing memory 'cnn_gesture_top_cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZLlbW' using auto ROMs with 18 copies to ensure enough ports to satisfy II or latency constraints.
-INFO: [HLS 200-2168] Implementing memory 'cnn_gesture_top_cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZLmb6' using auto ROMs with 18 copies to ensure enough ports to satisfy II or latency constraints.
-INFO: [HLS 200-2168] Implementing memory 'cnn_gesture_top_cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZLncg' using auto ROMs with 18 copies to ensure enough ports to satisfy II or latency constraints.
-INFO: [HLS 200-2168] Implementing memory 'cnn_gesture_top_cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZLocq' using auto ROMs with 18 copies to ensure enough ports to satisfy II or latency constraints.
-INFO: [HLS 200-2168] Implementing memory 'cnn_gesture_top_cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZLpcA' using auto ROMs with 18 copies to ensure enough ports to satisfy II or latency constraints.
-INFO: [HLS 200-2168] Implementing memory 'cnn_gesture_top_cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZLqcK' using auto ROMs with 18 copies to ensure enough ports to satisfy II or latency constraints.
-INFO: [HLS 200-2168] Implementing memory 'cnn_gesture_top_cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZLrcU' using auto ROMs with 18 copies to ensure enough ports to satisfy II or latency constraints.
-INFO: [HLS 200-2168] Implementing memory 'cnn_gesture_top_cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZLsc4' using auto ROMs with 18 copies to ensure enough ports to satisfy II or latency constraints.
-INFO: [HLS 200-2168] Implementing memory 'cnn_gesture_top_cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZLtde' using auto ROMs with 18 copies to ensure enough ports to satisfy II or latency constraints.
-INFO: [HLS 200-2168] Implementing memory 'cnn_gesture_top_cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZLudo' using auto ROMs with 18 copies to ensure enough ports to satisfy II or latency constraints.
-INFO: [HLS 200-2168] Implementing memory 'cnn_gesture_top_cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZLvdy' using auto ROMs with 18 copies to ensure enough ports to satisfy II or latency constraints.
-INFO: [HLS 200-2168] Implementing memory 'cnn_gesture_top_cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZLwdI' using auto ROMs with 18 copies to ensure enough ports to satisfy II or latency constraints.
-INFO: [HLS 200-2168] Implementing memory 'cnn_gesture_top_cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZLxdS' using auto ROMs with 18 copies to ensure enough ports to satisfy II or latency constraints.
-INFO: [HLS 200-2168] Implementing memory 'cnn_gesture_top_cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZLyd2' using auto ROMs with 18 copies to ensure enough ports to satisfy II or latency constraints.
-INFO: [HLS 200-2168] Implementing memory 'cnn_gesture_top_cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZLzec' using auto ROMs with 18 copies to ensure enough ports to satisfy II or latency constraints.
-INFO: [HLS 200-2168] Implementing memory 'cnn_gesture_top_cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZLAem' using auto ROMs with 18 copies to ensure enough ports to satisfy II or latency constraints.
-INFO: [HLS 200-2168] Implementing memory 'cnn_gesture_top_cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZLBew' using auto ROMs with 18 copies to ensure enough ports to satisfy II or latency constraints.
-INFO: [HLS 200-2168] Implementing memory 'cnn_gesture_top_cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZLCeG' using auto ROMs with 18 copies to ensure enough ports to satisfy II or latency constraints.
-INFO: [HLS 200-2168] Implementing memory 'cnn_gesture_top_cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZLDeQ' using auto ROMs with 18 copies to ensure enough ports to satisfy II or latency constraints.
-INFO: [HLS 200-2168] Implementing memory 'cnn_gesture_top_cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZLEe0' using auto ROMs with 18 copies to ensure enough ports to satisfy II or latency constraints.
-INFO: [HLS 200-2168] Implementing memory 'cnn_gesture_top_cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZLFfa' using auto ROMs with 18 copies to ensure enough ports to satisfy II or latency constraints.
-INFO: [HLS 200-2168] Implementing memory 'cnn_gesture_top_cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZLGfk' using auto ROMs with 18 copies to ensure enough ports to satisfy II or latency constraints.
-INFO: [HLS 200-2168] Implementing memory 'cnn_gesture_top_cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZLHfu' using auto ROMs with 18 copies to ensure enough ports to satisfy II or latency constraints.
-INFO: [HLS 200-2168] Implementing memory 'cnn_gesture_top_cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZLIfE' using auto ROMs with 18 copies to ensure enough ports to satisfy II or latency constraints.
-INFO: [HLS 200-2168] Implementing memory 'cnn_gesture_top_cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZLJfO' using auto ROMs with 18 copies to ensure enough ports to satisfy II or latency constraints.
-INFO: [HLS 200-2168] Implementing memory 'cnn_gesture_top_cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZLKfY' using auto ROMs with 18 copies to ensure enough ports to satisfy II or latency constraints.
-INFO: [HLS 200-2168] Implementing memory 'cnn_gesture_top_cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZLLf8' using auto ROMs with 18 copies to ensure enough ports to satisfy II or latency constraints.
-INFO: [HLS 200-2168] Implementing memory 'cnn_gesture_top_cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZLMgi' using auto ROMs with 18 copies to ensure enough ports to satisfy II or latency constraints.
-INFO: [HLS 200-2168] Implementing memory 'cnn_gesture_top_cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZLNgs' using auto ROMs with 18 copies to ensure enough ports to satisfy II or latency constraints.
-INFO: [HLS 200-2168] Implementing memory 'cnn_gesture_top_cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_p_ZLOgC' using auto ROMs with 18 copies to ensure enough ports to satisfy II or latency constraints.
-INFO: [RTMG 210-279] Implementing memory 'cnn_gesture_top_cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_convPgM' using auto ROMs.
-INFO: [RTMG 210-279] Implementing memory 'cnn_gesture_top_cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_batcQgW' using auto ROMs.
-INFO: [RTMG 210-279] Implementing memory 'cnn_gesture_top_cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_batcRg6' using auto ROMs.
-INFO: [RTMG 210-279] Implementing memory 'cnn_gesture_top_cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_batcShg' using auto ROMs.
-INFO: [RTMG 210-279] Implementing memory 'cnn_gesture_top_cnn_gesture_top_Pipeline_VITIS_LOOP_92_1_VITIS_LOOP_93_2_VITIS_LOOP_96_3_batcThq' using auto ROMs.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 3 seconds. CPU system time: 0 seconds. Elapsed time: 10.533 seconds; current allocated memory: 544.082 MB.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3'.
+INFO: [HLS 200-2168] Implementing memory 'cnn_gesture_top_cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_zec' using auto ROMs with 18 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cnn_gesture_top_cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_Aem' using auto ROMs with 18 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cnn_gesture_top_cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_Bew' using auto ROMs with 18 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cnn_gesture_top_cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_CeG' using auto ROMs with 18 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cnn_gesture_top_cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_DeQ' using auto ROMs with 18 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cnn_gesture_top_cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_Ee0' using auto ROMs with 18 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cnn_gesture_top_cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_Ffa' using auto ROMs with 18 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cnn_gesture_top_cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_Gfk' using auto ROMs with 18 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cnn_gesture_top_cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_Hfu' using auto ROMs with 18 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cnn_gesture_top_cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_IfE' using auto ROMs with 18 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cnn_gesture_top_cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_JfO' using auto ROMs with 18 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cnn_gesture_top_cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_KfY' using auto ROMs with 18 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cnn_gesture_top_cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_Lf8' using auto ROMs with 18 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cnn_gesture_top_cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_Mgi' using auto ROMs with 18 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cnn_gesture_top_cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_Ngs' using auto ROMs with 18 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cnn_gesture_top_cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_OgC' using auto ROMs with 18 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cnn_gesture_top_cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_PgM' using auto ROMs with 18 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cnn_gesture_top_cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_QgW' using auto ROMs with 18 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cnn_gesture_top_cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_Rg6' using auto ROMs with 18 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cnn_gesture_top_cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_Shg' using auto ROMs with 18 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cnn_gesture_top_cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_Thq' using auto ROMs with 18 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cnn_gesture_top_cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_UhA' using auto ROMs with 18 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cnn_gesture_top_cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_VhK' using auto ROMs with 18 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cnn_gesture_top_cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_WhU' using auto ROMs with 18 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cnn_gesture_top_cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_Xh4' using auto ROMs with 18 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cnn_gesture_top_cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_Yie' using auto ROMs with 18 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cnn_gesture_top_cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_Zio' using auto ROMs with 18 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cnn_gesture_top_cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_0iy' using auto ROMs with 18 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cnn_gesture_top_cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_1iI' using auto ROMs with 18 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cnn_gesture_top_cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_2iS' using auto ROMs with 18 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cnn_gesture_top_cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_3i2' using auto ROMs with 18 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cnn_gesture_top_cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_4jc' using auto ROMs with 18 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'cnn_gesture_top_cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_5jm' using auto ROMs with 18 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [RTMG 210-279] Implementing memory 'cnn_gesture_top_cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_6jw' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cnn_gesture_top_cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_7jG' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cnn_gesture_top_cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_8jQ' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cnn_gesture_top_cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_9j0' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cnn_gesture_top_cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3_bak' using auto ROMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 5 seconds. CPU system time: 1 seconds. Elapsed time: 11.28 seconds; current allocated memory: 626.914 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'cnn_gesture_top_Pipeline_VITIS_LOOP_126_1_VITIS_LOOP_127_2' 
+INFO: [HLS 200-10] -- Generating RTL for module 'cnn_gesture_core_Pipeline_VITIS_LOOP_149_1_VITIS_LOOP_150_2' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'cnn_gesture_top_Pipeline_VITIS_LOOP_126_1_VITIS_LOOP_127_2' pipeline 'VITIS_LOOP_126_1_VITIS_LOOP_127_2' pipeline type 'loop pipeline'
-INFO: [RTGEN 206-100] Finished creating RTL model for 'cnn_gesture_top_Pipeline_VITIS_LOOP_126_1_VITIS_LOOP_127_2'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 4 seconds. CPU system time: 7 seconds. Elapsed time: 11.231 seconds; current allocated memory: 631.258 MB.
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'cnn_gesture_core_Pipeline_VITIS_LOOP_149_1_VITIS_LOOP_150_2' pipeline 'VITIS_LOOP_149_1_VITIS_LOOP_150_2' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'cnn_gesture_core_Pipeline_VITIS_LOOP_149_1_VITIS_LOOP_150_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 5 seconds. CPU system time: 8 seconds. Elapsed time: 15.193 seconds; current allocated memory: 713.680 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'cnn_gesture_top_Pipeline_VITIS_LOOP_142_1_VITIS_LOOP_143_2' 
+INFO: [HLS 200-10] -- Generating RTL for module 'cnn_gesture_core_Pipeline_VITIS_LOOP_165_1_VITIS_LOOP_166_2' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'cnn_gesture_top_Pipeline_VITIS_LOOP_142_1_VITIS_LOOP_143_2' pipeline 'VITIS_LOOP_142_1_VITIS_LOOP_143_2' pipeline type 'loop pipeline'
-INFO: [RTGEN 206-100] Finished creating RTL model for 'cnn_gesture_top_Pipeline_VITIS_LOOP_142_1_VITIS_LOOP_143_2'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.281 seconds; current allocated memory: 631.258 MB.
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'cnn_gesture_core_Pipeline_VITIS_LOOP_165_1_VITIS_LOOP_166_2' pipeline 'VITIS_LOOP_165_1_VITIS_LOOP_166_2' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'cnn_gesture_core_Pipeline_VITIS_LOOP_165_1_VITIS_LOOP_166_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 0.446 seconds; current allocated memory: 713.680 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'cnn_gesture_top_Pipeline_VITIS_LOOP_160_2' 
+INFO: [HLS 200-10] -- Generating RTL for module 'cnn_gesture_core_Pipeline_VITIS_LOOP_183_2' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'cnn_gesture_top_Pipeline_VITIS_LOOP_160_2' pipeline 'VITIS_LOOP_160_2' pipeline type 'loop pipeline'
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'cnn_gesture_core_Pipeline_VITIS_LOOP_183_2' pipeline 'VITIS_LOOP_183_2' pipeline type 'loop pipeline'
 INFO: [RTGEN 206-100] Generating core module 'fpext_32ns_64_2_no_dsp_1': 1 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_16s_32s_32_4_1': 1 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'sparsemux_9_3_16_1_1': 1 instance(s).
-INFO: [RTGEN 206-100] Finished creating RTL model for 'cnn_gesture_top_Pipeline_VITIS_LOOP_160_2'.
-INFO: [RTMG 210-279] Implementing memory 'cnn_gesture_top_cnn_gesture_top_Pipeline_VITIS_LOOP_160_2_dense_param_0_ROM_AUTO_1R' using auto ROMs.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.852 seconds; current allocated memory: 685.594 MB.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'cnn_gesture_core_Pipeline_VITIS_LOOP_183_2'.
+INFO: [RTMG 210-279] Implementing memory 'cnn_gesture_top_cnn_gesture_core_Pipeline_VITIS_LOOP_183_2_dense_param_0_ROM_AUTO_1R' using auto ROMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.333 seconds; current allocated memory: 768.434 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'cnn_gesture_top_Pipeline_VITIS_LOOP_178_2' 
+INFO: [HLS 200-10] -- Generating RTL for module 'cnn_gesture_core_Pipeline_VITIS_LOOP_201_2' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'cnn_gesture_top_Pipeline_VITIS_LOOP_178_2' pipeline 'VITIS_LOOP_178_2' pipeline type 'loop pipeline'
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'cnn_gesture_core_Pipeline_VITIS_LOOP_201_2' pipeline 'VITIS_LOOP_201_2' pipeline type 'loop pipeline'
 INFO: [RTGEN 206-100] Generating core module 'fpext_32ns_64_2_no_dsp_1': 1 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_15ns_32s_32_4_1': 1 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'sparsemux_9_3_16_1_1': 1 instance(s).
-INFO: [RTGEN 206-100] Finished creating RTL model for 'cnn_gesture_top_Pipeline_VITIS_LOOP_178_2'.
-INFO: [RTMG 210-279] Implementing memory 'cnn_gesture_top_cnn_gesture_top_Pipeline_VITIS_LOOP_178_2_dense_1_param_0_ROM_AUTO_1R' using auto ROMs.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.408 seconds; current allocated memory: 685.594 MB.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'cnn_gesture_core_Pipeline_VITIS_LOOP_201_2'.
+INFO: [RTMG 210-279] Implementing memory 'cnn_gesture_top_cnn_gesture_core_Pipeline_VITIS_LOOP_201_2_dense_1_param_0_ROM_AUTO_1R' using auto ROMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.121 seconds; current allocated memory: 768.434 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'cnn_gesture_top_Pipeline_VITIS_LOOP_191_1' 
+INFO: [HLS 200-10] -- Generating RTL for module 'cnn_gesture_core_Pipeline_VITIS_LOOP_214_1' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'cnn_gesture_top_Pipeline_VITIS_LOOP_191_1' pipeline 'VITIS_LOOP_191_1' pipeline type 'loop pipeline'
-INFO: [RTGEN 206-100] Finished creating RTL model for 'cnn_gesture_top_Pipeline_VITIS_LOOP_191_1'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 0.431 seconds; current allocated memory: 685.594 MB.
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'cnn_gesture_core_Pipeline_VITIS_LOOP_214_1' pipeline 'VITIS_LOOP_214_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'cnn_gesture_core_Pipeline_VITIS_LOOP_214_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.822 seconds; current allocated memory: 768.434 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'cnn_gesture_top_Pipeline_VITIS_LOOP_197_2' 
+INFO: [HLS 200-10] -- Generating RTL for module 'cnn_gesture_core_Pipeline_VITIS_LOOP_220_2' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'cnn_gesture_top_Pipeline_VITIS_LOOP_197_2' pipeline 'VITIS_LOOP_197_2' pipeline type 'loop pipeline'
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'cnn_gesture_core_Pipeline_VITIS_LOOP_220_2' pipeline 'VITIS_LOOP_220_2' pipeline type 'loop pipeline'
 INFO: [RTGEN 206-100] Generating core module 'ctlz_17_17_1_1': 1 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'fexp_32ns_32ns_32_8_full_dsp_1': 1 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'fpext_32ns_64_2_no_dsp_1': 1 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'sparsemux_9_3_16_1_1': 1 instance(s).
-INFO: [RTGEN 206-100] Finished creating RTL model for 'cnn_gesture_top_Pipeline_VITIS_LOOP_197_2'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.304 seconds; current allocated memory: 685.594 MB.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'cnn_gesture_core_Pipeline_VITIS_LOOP_220_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 0.419 seconds; current allocated memory: 768.434 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'cnn_gesture_top_Pipeline_VITIS_LOOP_202_3' 
+INFO: [HLS 200-10] -- Generating RTL for module 'cnn_gesture_core_Pipeline_VITIS_LOOP_225_3' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'cnn_gesture_top_Pipeline_VITIS_LOOP_202_3' pipeline 'VITIS_LOOP_202_3' pipeline type 'loop pipeline'
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'cnn_gesture_core_Pipeline_VITIS_LOOP_225_3' pipeline 'VITIS_LOOP_225_3' pipeline type 'loop pipeline'
 INFO: [RTGEN 206-100] Generating core module 'sdiv_26ns_16s_16_30_1': 1 instance(s).
-INFO: [RTGEN 206-100] Finished creating RTL model for 'cnn_gesture_top_Pipeline_VITIS_LOOP_202_3'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.507 seconds; current allocated memory: 685.594 MB.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'cnn_gesture_core_Pipeline_VITIS_LOOP_225_3'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.685 seconds; current allocated memory: 768.434 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'cnn_gesture_core' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'fpext_32ns_64_2_no_dsp_1': 24 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fsqrt_32ns_32ns_32_8_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_9_3_16_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'cnn_gesture_core'.
+INFO: [RTMG 210-279] Implementing memory 'cnn_gesture_top_cnn_gesture_core_dense_param_1_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cnn_gesture_top_cnn_gesture_core_dense_1_param_1_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-278] Implementing memory 'cnn_gesture_top_cnn_gesture_core_exps_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'cnn_gesture_top_cnn_gesture_core_conv1_out_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'cnn_gesture_top_cnn_gesture_core_pool1_out_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'cnn_gesture_top_cnn_gesture_core_pool2_out_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'cnn_gesture_top_cnn_gesture_core_fc1_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.751 seconds; current allocated memory: 768.434 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'cnn_gesture_top_Pipeline_VITIS_LOOP_281_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'cnn_gesture_top_Pipeline_VITIS_LOOP_281_3' pipeline 'VITIS_LOOP_281_3' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'ctlz_16_16_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'cnn_gesture_top_Pipeline_VITIS_LOOP_281_3'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 1.524 seconds; current allocated memory: 768.434 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'cnn_gesture_top' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [RTGEN 206-500] Setting interface mode on port 'cnn_gesture_top/input_0' to 'ap_memory'.
-INFO: [RTGEN 206-500] Setting interface mode on port 'cnn_gesture_top/input_1' to 'ap_memory'.
-INFO: [RTGEN 206-500] Setting interface mode on port 'cnn_gesture_top/output_0' to 'ap_vld'.
-INFO: [RTGEN 206-500] Setting interface mode on port 'cnn_gesture_top/output_1' to 'ap_vld'.
-INFO: [RTGEN 206-500] Setting interface mode on port 'cnn_gesture_top/output_2' to 'ap_vld'.
-INFO: [RTGEN 206-500] Setting interface mode on port 'cnn_gesture_top/output_3' to 'ap_vld'.
-INFO: [RTGEN 206-500] Setting interface mode on port 'cnn_gesture_top/output_4' to 'ap_vld'.
-INFO: [RTGEN 206-500] Setting interface mode on port 'cnn_gesture_top/output_5' to 'ap_vld'.
-INFO: [RTGEN 206-500] Setting interface mode on function 'cnn_gesture_top' to 'ap_ctrl_hs'.
-INFO: [RTGEN 206-100] Generating core module 'fpext_32ns_64_2_no_dsp_1': 5 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'fsqrt_32ns_32ns_32_8_no_dsp_1': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'sparsemux_9_3_16_1_1': 2 instance(s).
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'cnn_gesture_top/input_stream_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'cnn_gesture_top/input_stream_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'cnn_gesture_top/input_stream_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'cnn_gesture_top/input_stream_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'cnn_gesture_top/output_stream_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'cnn_gesture_top/output_stream_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'cnn_gesture_top/output_stream_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'cnn_gesture_top/output_stream_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'cnn_gesture_top' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'return' to AXI-Lite port CTRL.
+INFO: [RTGEN 206-100] Generating core module 'fpext_32ns_64_2_no_dsp_1': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'cnn_gesture_top'.
-INFO: [RTMG 210-279] Implementing memory 'cnn_gesture_top_dense_param_1_ROM_AUTO_1R' using auto ROMs.
-INFO: [RTMG 210-279] Implementing memory 'cnn_gesture_top_dense_1_param_1_ROM_AUTO_1R' using auto ROMs.
-INFO: [RTMG 210-278] Implementing memory 'cnn_gesture_top_exps_RAM_AUTO_1R1W' using auto RAMs.
-INFO: [RTMG 210-278] Implementing memory 'cnn_gesture_top_conv1_out_RAM_AUTO_1R1W' using auto RAMs.
-INFO: [RTMG 210-278] Implementing memory 'cnn_gesture_top_pool1_out_RAM_AUTO_1R1W' using auto RAMs.
-INFO: [RTMG 210-278] Implementing memory 'cnn_gesture_top_pool2_out_RAM_AUTO_1R1W' using auto RAMs.
-INFO: [RTMG 210-278] Implementing memory 'cnn_gesture_top_fc1_RAM_AUTO_1R1W' using auto RAMs.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.503 seconds; current allocated memory: 685.594 MB.
-INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1 seconds. CPU system time: 2 seconds. Elapsed time: 5.579 seconds; current allocated memory: 685.594 MB.
+INFO: [RTMG 210-278] Implementing memory 'cnn_gesture_top_input_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'cnn_gesture_top_output_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.651 seconds; current allocated memory: 768.434 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1 seconds. CPU system time: 2 seconds. Elapsed time: 10.349 seconds; current allocated memory: 768.434 MB.
 INFO: [HLS 200-2225] Wrote inferred directives to file C:/Users/Jonathan/Desktop/capstone/ai/vitis_hls/hls_component/cnn_gesture_top/hls/syn/inferred_directives.ini
-INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 4.593 seconds; current allocated memory: 685.594 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 3 seconds. CPU system time: 2 seconds. Elapsed time: 7.549 seconds; current allocated memory: 768.434 MB.
 INFO: [VHDL 208-304] Generating VHDL RTL for cnn_gesture_top.
 INFO: [VLOG 209-307] Generating Verilog RTL for cnn_gesture_top.
-INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
 INFO: [HLS 200-789] **** Estimated Fmax: 138.50 MHz
-INFO: [HLS 200-112] Total CPU user time: 32 seconds. Total CPU system time: 15 seconds. Total elapsed time: 126.46 seconds; peak allocated memory: 685.594 MB.
-INFO: [v++ 60-791] Total elapsed time: 0h 2m 11s
+INFO: [HLS 200-112] Total CPU user time: 50 seconds. Total CPU system time: 26 seconds. Total elapsed time: 169.055 seconds; peak allocated memory: 768.434 MB.
+INFO: [v++ 60-791] Total elapsed time: 0h 2m 54s

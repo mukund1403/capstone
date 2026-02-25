@@ -1,5 +1,6 @@
 INFO: [SIM 2] *************** CSIM start ***************
    Compiling ../../../../../testbench.cpp in debug mode
+   Compiling ../../../../../cnn_gesture_hls.cpp in debug mode
    Generating csim.exe
 Processed 10 samples.
 Max abs error: 0.022872
@@ -8,5 +9,6 @@ Logit mismatches (> 0.100000): 0
 Wrote HLS outputs to output_logits.txt
 Class check passed.
 Logit check passed.
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 600
 INFO: [SIM 1] CSim done with 0 errors.
 INFO: [SIM 3] *************** CSIM finish ***************

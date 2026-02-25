@@ -23,8 +23,25 @@ INFO: [SIM 211-2] *************** CSIM start ***************
 INFO: [HLS 200-2191] C-Simulation will use clang-16 as the compiler
 INFO: [HLS 200-2036] Building debug C Simulation binaries
    Compiling ../../../../../testbench.cpp in debug mode
+   Compiling ../../../../../cnn_gesture_hls.cpp in debug mode
    Generating csim.exe
 In file included from ../../../../../testbench.cpp:10:
+In file included from C:/AMDDesignTools/2025.2/Vitis/include\ap_axi_sdata.h:15:
+In file included from C:/AMDDesignTools/2025.2/Vitis/include/ap_int.h:10:
+In file included from C:/AMDDesignTools/2025.2/Vitis/include\etc/ap_common.h:668:
+In file included from C:/AMDDesignTools/2025.2/Vitis/include\etc/ap_private.h:68:
+In file included from C:/AMDDesignTools/2025.2/Vitis/include\hls_half.h:26:
+In file included from C:/AMDDesignTools/2025.2/Vitis/include/etc/hls_half_fpo.h:19:
+In file included from C:/AMDDesignTools/2025.2/Vitis/include\hls_fpo.h:140:
+In file included from C:/AMDDesignTools/2025.2/Vitis/include/floating_point_v7_1_bitacc_cmodel.h:150:
+C:/AMDDesignTools/2025.2/Vitis/include\gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+C:/AMDDesignTools/2025.2/Vitis/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+1 warning generated.
+In file included from ../../../../../cnn_gesture_hls.cpp:1:
 In file included from C:/AMDDesignTools/2025.2/Vitis/include\ap_fixed.h:9:
 In file included from C:/AMDDesignTools/2025.2/Vitis/include\etc/ap_common.h:668:
 In file included from C:/AMDDesignTools/2025.2/Vitis/include\etc/ap_private.h:68:
@@ -46,7 +63,8 @@ Logit mismatches (> 0.100000): 0
 Wrote HLS outputs to output_logits.txt
 Class check passed.
 Logit check passed.
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 600
 INFO: [SIM 211-1] CSim done with 0 errors.
 INFO: [SIM 211-3] *************** CSIM finish ***************
-INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 1 seconds. Total elapsed time: 10.952 seconds; peak allocated memory: 154.430 MB.
-INFO: [vitis-run 60-791] Total elapsed time: 0h 0m 15s
+INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 1 seconds. Total elapsed time: 22.131 seconds; peak allocated memory: 154.613 MB.
+INFO: [vitis-run 60-791] Total elapsed time: 0h 0m 27s

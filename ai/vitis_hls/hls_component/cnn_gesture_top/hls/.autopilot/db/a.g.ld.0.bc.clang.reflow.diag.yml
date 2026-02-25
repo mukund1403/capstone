@@ -1,20 +1,32 @@
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 47, Column: 34 }
-Function:        _ZL11conv1_blockPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA32_S2_
+Function:        _ZN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EE4readEv
 Args:            
-  - Callee:          'conv_index(int, int, int, int, int)'
-    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 24, Column: 0 }
+  - Callee:          'hls::axis<ap_uint<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>::axis()'
+    DebugLoc:        { File: 'C:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot\ap_axi_sdata.h', 
+                       Line: 217, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'conv1_block(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [32])'
-    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 36, Column: 0 }
+  - Caller:          'hls::stream<hls::axis<ap_uint<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>::read()'
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 65, Column: 50 }
+DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 70, Column: 34 }
+Function:        _ZL11conv1_blockPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA32_S2_
+Args:            
+  - Callee:          'conv_index(int, int, int, int, int)'
+    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 47, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'conv1_block(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [32])'
+    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 59, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 88, Column: 50 }
 Function:        _ZL11conv1_blockPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA32_S2_
 Args:            
   - Callee:          'hls::sqrt(float)'
@@ -22,39 +34,39 @@ Args:
                        Line: 6, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'conv1_block(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [32])'
-    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 36, Column: 0 }
+    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 59, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 57, Column: 26 }
+DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 80, Column: 26 }
 Function:        _ZL11conv1_blockPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA32_S2_
 Args:            
   - Callee:          'relu(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>)'
-    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 18, Column: 0 }
+    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 41, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'conv1_block(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [32])'
-    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 36, Column: 0 }
+    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 59, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 100, Column: 34 }
+DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 123, Column: 34 }
 Function:        _ZL11conv2_blockPA32_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA64_S2_
 Args:            
   - Callee:          'conv_index(int, int, int, int, int)'
-    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 24, Column: 0 }
+    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 47, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'conv2_block(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [32], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [64])'
-    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 89, Column: 0 }
+    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 112, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 114, Column: 50 }
+DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 137, Column: 50 }
 Function:        _ZL11conv2_blockPA32_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA64_S2_
 Args:            
   - Callee:          'hls::sqrt(float)'
@@ -62,59 +74,59 @@ Args:
                        Line: 6, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'conv2_block(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [32], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [64])'
-    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 89, Column: 0 }
+    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 112, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 107, Column: 26 }
+DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 130, Column: 26 }
 Function:        _ZL11conv2_blockPA32_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA64_S2_
 Args:            
   - Callee:          'relu(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>)'
-    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 18, Column: 0 }
+    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 41, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'conv2_block(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [32], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [64])'
-    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 89, Column: 0 }
+    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 112, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 165, Column: 21 }
+DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 188, Column: 21 }
 Function:        _ZL6dense1P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_
 Args:            
   - Callee:          'relu(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>)'
-    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 18, Column: 0 }
+    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 41, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'dense1(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 152, Column: 0 }
+    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 175, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 161, Column: 22 }
+DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 184, Column: 22 }
 Function:        _ZL6dense1P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_
 Args:            
   - Callee:          'dense_index(int, int, int)'
-    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 29, Column: 0 }
+    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 52, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'dense1(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 152, Column: 0 }
+    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 175, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 179, Column: 22 }
+DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 202, Column: 22 }
 Function:        _ZL13dense2_logitsP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_
 Args:            
   - Callee:          'dense_index(int, int, int)'
-    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 29, Column: 0 }
+    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 52, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'dense2_logits(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 172, Column: 0 }
+    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 195, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Passed
@@ -137,7 +149,7 @@ Args:
 --- !Passed
 Pass:            inline
 Name:            AlwaysInline
-DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 198, Column: 27 }
+DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 221, Column: 27 }
 Function:        _ZL7softmaxP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_
 Args:            
   - String:          'Inlining function '''
@@ -146,225 +158,331 @@ Args:
                        Line: 15, Column: 0 }
   - String:          ''' into '''
   - Caller:          'softmax(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 187, Column: 0 }
+    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 210, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            inline
 Name:            AlwaysInline
-DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 227, Column: 5 }
-Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 245, Column: 5 }
+Function:        _ZL16cnn_gesture_corePA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
 Args:            
   - String:          'Inlining function '''
   - Callee:          'conv1_block(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [32])'
-    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 36, Column: 0 }
+    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 59, Column: 0 }
   - String:          ''' into '''
-  - Caller:          'cnn_gesture_top(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 211, Column: 0 }
+  - Caller:          'cnn_gesture_core(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 234, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            inline
 Name:            AlwaysInline
-DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 228, Column: 5 }
-Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 246, Column: 5 }
+Function:        _ZL16cnn_gesture_corePA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
 Args:            
   - String:          'Inlining function '''
   - Callee:          'maxpool1(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [32], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [32])'
-    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 74, Column: 0 }
+    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 97, Column: 0 }
   - String:          ''' into '''
-  - Caller:          'cnn_gesture_top(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 211, Column: 0 }
+  - Caller:          'cnn_gesture_core(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 234, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            inline
 Name:            AlwaysInline
-DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 230, Column: 5 }
-Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 248, Column: 5 }
+Function:        _ZL16cnn_gesture_corePA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
 Args:            
   - String:          'Inlining function '''
   - Callee:          'conv2_block(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [32], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [64])'
-    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 89, Column: 0 }
+    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 112, Column: 0 }
   - String:          ''' into '''
-  - Caller:          'cnn_gesture_top(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 211, Column: 0 }
+  - Caller:          'cnn_gesture_core(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 234, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            inline
 Name:            AlwaysInline
-DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 231, Column: 5 }
-Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 249, Column: 5 }
+Function:        _ZL16cnn_gesture_corePA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
 Args:            
   - String:          'Inlining function '''
   - Callee:          'maxpool2(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [64], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [64])'
-    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 123, Column: 0 }
+    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 146, Column: 0 }
   - String:          ''' into '''
-  - Caller:          'cnn_gesture_top(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 211, Column: 0 }
+  - Caller:          'cnn_gesture_core(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 234, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            inline
 Name:            AlwaysInline
-DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 233, Column: 5 }
-Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 251, Column: 5 }
+Function:        _ZL16cnn_gesture_corePA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
 Args:            
   - String:          'Inlining function '''
   - Callee:          'flatten(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [64], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 138, Column: 0 }
+    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 161, Column: 0 }
   - String:          ''' into '''
-  - Caller:          'cnn_gesture_top(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 211, Column: 0 }
+  - Caller:          'cnn_gesture_core(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 234, Column: 0 }
   - String:          ''''
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 107, Column: 26 }
-Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 130, Column: 26 }
+Function:        _ZL16cnn_gesture_corePA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
 Args:            
   - Callee:          'relu(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>)'
-    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 18, Column: 0 }
+    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 41, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'cnn_gesture_top(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 211, Column: 0 }
+  - Caller:          'cnn_gesture_core(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 234, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Passed
 Pass:            inline
 Name:            AlwaysInline
-DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 234, Column: 5 }
-Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 252, Column: 5 }
+Function:        _ZL16cnn_gesture_corePA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
 Args:            
   - String:          'Inlining function '''
   - Callee:          'dense1(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 152, Column: 0 }
+    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 175, Column: 0 }
   - String:          ''' into '''
-  - Caller:          'cnn_gesture_top(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 211, Column: 0 }
+  - Caller:          'cnn_gesture_core(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 234, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            inline
 Name:            AlwaysInline
-DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 235, Column: 5 }
-Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 253, Column: 5 }
+Function:        _ZL16cnn_gesture_corePA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
 Args:            
   - String:          'Inlining function '''
   - Callee:          'dense2_logits(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 172, Column: 0 }
+    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 195, Column: 0 }
   - String:          ''' into '''
-  - Caller:          'cnn_gesture_top(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 211, Column: 0 }
+  - Caller:          'cnn_gesture_core(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 234, Column: 0 }
   - String:          ''''
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 179, Column: 22 }
-Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 202, Column: 22 }
+Function:        _ZL16cnn_gesture_corePA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
 Args:            
   - Callee:          'dense_index(int, int, int)'
-    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 29, Column: 0 }
+    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 52, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'cnn_gesture_top(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 211, Column: 0 }
+  - Caller:          'cnn_gesture_core(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 234, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Passed
 Pass:            inline
 Name:            AlwaysInline
-DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 236, Column: 5 }
-Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 254, Column: 5 }
+Function:        _ZL16cnn_gesture_corePA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
 Args:            
   - String:          'Inlining function '''
   - Callee:          'softmax(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 187, Column: 0 }
+    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 210, Column: 0 }
   - String:          ''' into '''
-  - Caller:          'cnn_gesture_top(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 211, Column: 0 }
+  - Caller:          'cnn_gesture_core(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 234, Column: 0 }
   - String:          ''''
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 47, Column: 34 }
-Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 70, Column: 34 }
+Function:        _ZL16cnn_gesture_corePA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
 Args:            
   - Callee:          'conv_index(int, int, int, int, int)'
-    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 24, Column: 0 }
+    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 47, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'cnn_gesture_top(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 211, Column: 0 }
+  - Caller:          'cnn_gesture_core(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 234, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 65, Column: 50 }
-Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 88, Column: 50 }
+Function:        _ZL16cnn_gesture_corePA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
 Args:            
   - Callee:          'hls::sqrt(float)'
     DebugLoc:        { File: 'C:\scratch\2025.2\hls_product\665\2025.2\src\shared\hls\clib\hlsmath\src\c++\sqrtfloat.cpp', 
                        Line: 6, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'cnn_gesture_top(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 211, Column: 0 }
+  - Caller:          'cnn_gesture_core(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 234, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 57, Column: 26 }
-Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 273, Column: 39 }
+Function:        _Z15cnn_gesture_topRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_
+Args:            
+  - Callee:          'hls::axis<ap_uint<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>::axis()'
+    DebugLoc:        { File: 'C:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot\ap_axi_sdata.h', 
+                       Line: 217, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'cnn_gesture_top(hls::stream<hls::axis<ap_uint<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)'
+    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 261, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 274, Column: 26 }
+Function:        _Z15cnn_gesture_topRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_
+Args:            
+  - Callee:          'bits_to_float(ap_uint<32>)'
+    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 23, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'cnn_gesture_top(hls::stream<hls::axis<ap_uint<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)'
+    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 261, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 279, Column: 5 }
+Function:        _Z15cnn_gesture_topRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_
+Args:            
+  - Callee:          'cnn_gesture_core(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 234, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'cnn_gesture_top(hls::stream<hls::axis<ap_uint<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)'
+    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 261, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 284, Column: 20 }
+Function:        _Z15cnn_gesture_topRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_
+Args:            
+  - Callee:          'float_to_bits(float)'
+    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 32, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'cnn_gesture_top(hls::stream<hls::axis<ap_uint<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)'
+    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 261, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 80, Column: 26 }
+Function:        _ZL16cnn_gesture_corePA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
 Args:            
   - Callee:          'relu(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>)'
-    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 18, Column: 0 }
+    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 41, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'cnn_gesture_top(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 211, Column: 0 }
+  - Caller:          'cnn_gesture_core(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 234, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 47, Column: 34 }
-Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 70, Column: 34 }
+Function:        _ZL16cnn_gesture_corePA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
 Args:            
   - Callee:          'conv_index(int, int, int, int, int)'
-    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 24, Column: 0 }
+    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 47, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'cnn_gesture_top(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 211, Column: 0 }
+  - Caller:          'cnn_gesture_core(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 234, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 65, Column: 50 }
-Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 88, Column: 50 }
+Function:        _ZL16cnn_gesture_corePA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
 Args:            
   - Callee:          'hls::sqrt(float)'
     DebugLoc:        { File: 'C:\scratch\2025.2\hls_product\665\2025.2\src\shared\hls\clib\hlsmath\src\c++\sqrtfloat.cpp', 
                        Line: 6, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'cnn_gesture_top(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 211, Column: 0 }
+  - Caller:          'cnn_gesture_core(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 234, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 161, Column: 22 }
-Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 184, Column: 22 }
+Function:        _ZL16cnn_gesture_corePA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
 Args:            
   - Callee:          'dense_index(int, int, int)'
-    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 29, Column: 0 }
+    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 52, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'cnn_gesture_top(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 211, Column: 0 }
+  - Caller:          'cnn_gesture_core(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 234, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 273, Column: 39 }
+Function:        _Z15cnn_gesture_topRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_
+Args:            
+  - Callee:          'hls::axis<ap_uint<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>::axis()'
+    DebugLoc:        { File: 'C:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot\ap_axi_sdata.h', 
+                       Line: 217, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'cnn_gesture_top(hls::stream<hls::axis<ap_uint<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)'
+    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 261, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 274, Column: 26 }
+Function:        _Z15cnn_gesture_topRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_
+Args:            
+  - Callee:          'bits_to_float(ap_uint<32>)'
+    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 23, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'cnn_gesture_top(hls::stream<hls::axis<ap_uint<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)'
+    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 261, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 279, Column: 5 }
+Function:        _Z15cnn_gesture_topRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_
+Args:            
+  - Callee:          'cnn_gesture_core(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 234, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'cnn_gesture_top(hls::stream<hls::axis<ap_uint<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)'
+    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 261, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 284, Column: 20 }
+Function:        _Z15cnn_gesture_topRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_
+Args:            
+  - Callee:          'float_to_bits(float)'
+    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 32, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'cnn_gesture_top(hls::stream<hls::axis<ap_uint<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)'
+    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 261, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -372,8 +490,8 @@ Pass:            inline
 Name:            NeverInline
 Function:        apatb_cnn_gesture_top_ir
 Args:            
-  - Callee:          'cnn_gesture_top(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 211, Column: 0 }
+  - Callee:          'cnn_gesture_top(hls::stream<hls::axis<ap_uint<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)'
+    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 261, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          apatb_cnn_gesture_top_ir
   - String:          ' because it should never be inlined (cost=never)'
@@ -381,211 +499,118 @@ Args:
 --- !Passed
 Pass:            reflow-inliner
 Name:            Inline
-DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 211, Column: 0 }
-Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 234, Column: 0 }
+Function:        _ZL16cnn_gesture_corePA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
 Args:            
   - String:          'Inlining function '''
   - Callee:          'relu(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>)'
-    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 18, Column: 0 }
+    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 41, Column: 0 }
   - String:          ''' into '''
-  - Caller:          'cnn_gesture_top(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 211, Column: 0 }
+  - Caller:          'cnn_gesture_core(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 234, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            reflow-inliner
 Name:            Inline
-DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 211, Column: 0 }
-Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 234, Column: 0 }
+Function:        _ZL16cnn_gesture_corePA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
 Args:            
   - String:          'Inlining function '''
   - Callee:          'conv_index(int, int, int, int, int)'
-    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 24, Column: 0 }
+    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 47, Column: 0 }
   - String:          ''' into '''
-  - Caller:          'cnn_gesture_top(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 211, Column: 0 }
+  - Caller:          'cnn_gesture_core(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 234, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            reflow-inliner
 Name:            Inline
-DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 211, Column: 0 }
-Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 234, Column: 0 }
+Function:        _ZL16cnn_gesture_corePA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
 Args:            
   - String:          'Inlining function '''
   - Callee:          'hls::sqrt(float)'
     DebugLoc:        { File: 'C:\scratch\2025.2\hls_product\665\2025.2\src\shared\hls\clib\hlsmath\src\c++\sqrtfloat.cpp', 
                        Line: 6, Column: 0 }
   - String:          ''' into '''
-  - Caller:          'cnn_gesture_top(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 211, Column: 0 }
+  - Caller:          'cnn_gesture_core(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 234, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            reflow-inliner
 Name:            Inline
-DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 211, Column: 0 }
-Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 234, Column: 0 }
+Function:        _ZL16cnn_gesture_corePA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
 Args:            
   - String:          'Inlining function '''
   - Callee:          'dense_index(int, int, int)'
-    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 29, Column: 0 }
+    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 52, Column: 0 }
   - String:          ''' into '''
-  - Caller:          'cnn_gesture_top(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 211, Column: 0 }
+  - Caller:          'cnn_gesture_core(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 234, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
-Pass:            reflow-array-partition
-Name:            ArrayXform
-DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 211, Column: 0 }
-Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 261, Column: 0 }
+Function:        _Z15cnn_gesture_topRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_
 Args:            
-  - String:          'Applying '
-  - String:          array_partition
-  - String:          ' to '''
-  - UOName:          input
-  - String:          ''':'
-  - String:          ' '
-  - Mode:            Cyclic
-  - String:          ' partitioning'
-  - String:          ' with factor '
-  - Factor:          '2'
-  - String:          ' on dimension '
-  - Dim:             '2'
-  - String:          .
+  - String:          'Inlining function '''
+  - Callee:          'hls::axis<ap_uint<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>::axis()'
+    DebugLoc:        { File: 'C:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot\ap_axi_sdata.h', 
+                       Line: 217, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'cnn_gesture_top(hls::stream<hls::axis<ap_uint<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)'
+    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 261, Column: 0 }
+  - String:          ''''
 ...
 --- !Passed
-Pass:            reflow-array-partition
-Name:            ArrayXform
-DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 211, Column: 0 }
-Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 261, Column: 0 }
+Function:        _Z15cnn_gesture_topRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_
 Args:            
-  - String:          'Applying '
-  - String:          array_partition
-  - String:          ' to '''
-  - UOName:          output
-  - String:          ''':'
-  - String:          ' '
-  - Mode:            Complete
-  - String:          ' partitioning'
-  - String:          ' on dimension '
-  - Dim:             '1'
-  - String:          .
+  - String:          'Inlining function '''
+  - Callee:          'bits_to_float(ap_uint<32>)'
+    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 23, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'cnn_gesture_top(hls::stream<hls::axis<ap_uint<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)'
+    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 261, Column: 0 }
+  - String:          ''''
 ...
 --- !Passed
-Pass:            reflow-check-pragma-conflict-variable
-Name:            VariablePragmaScalarWarn
-DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 213, Column: 1 }
-Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 261, Column: 0 }
+Function:        _Z15cnn_gesture_topRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_
 Args:            
-  - String:          'Unsuported scalar variable on pragma '''
-  - Name:            ap_memory Interface
-  - String:          ''', '
-  - String:          ignore it.
-...
---- !Passed
-Pass:            reflow-check-pragma-conflict-variable
-Name:            VariablePragmaScalarWarn
-DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 213, Column: 1 }
-Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
-Args:            
-  - String:          'Unsuported scalar variable on pragma '''
-  - Name:            ap_memory Interface
-  - String:          ''', '
-  - String:          ignore it.
-...
---- !Passed
-Pass:            reflow-check-pragma-conflict-variable
-Name:            VariablePragmaScalarWarn
-DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 213, Column: 1 }
-Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
-Args:            
-  - String:          'Unsuported scalar variable on pragma '''
-  - Name:            ap_memory Interface
-  - String:          ''', '
-  - String:          ignore it.
-...
---- !Passed
-Pass:            reflow-check-pragma-conflict-variable
-Name:            VariablePragmaScalarWarn
-DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 213, Column: 1 }
-Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
-Args:            
-  - String:          'Unsuported scalar variable on pragma '''
-  - Name:            ap_memory Interface
-  - String:          ''', '
-  - String:          ignore it.
-...
---- !Passed
-Pass:            reflow-check-pragma-conflict-variable
-Name:            VariablePragmaScalarWarn
-DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 213, Column: 1 }
-Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
-Args:            
-  - String:          'Unsuported scalar variable on pragma '''
-  - Name:            ap_memory Interface
-  - String:          ''', '
-  - String:          ignore it.
-...
---- !Passed
-Pass:            reflow-check-pragma-conflict-variable
-Name:            VariablePragmaScalarWarn
-DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 213, Column: 1 }
-Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
-Args:            
-  - String:          'Unsuported scalar variable on pragma '''
-  - Name:            ap_memory Interface
-  - String:          ''', '
-  - String:          ignore it.
-...
---- !Passed
-Pass:            reflow-aggr
-Name:            AggrSucc
-DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 211, Column: 0 }
-Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
-Args:            
-  - String:          'Aggregating '
-  - HwTyName:        bram
-  - String:          ' variable '''
-  - Name:            input_1
-  - String:          ''' with '
-  - AggregateTypeName: 'compact=bit'
-  - String:          ' mode in '
-  - Bitwidth:        '16'
-  - String:          '-bits'
-...
---- !Passed
-Pass:            reflow-aggr
-Name:            AggrSucc
-DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 211, Column: 0 }
-Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
-Args:            
-  - String:          'Aggregating '
-  - HwTyName:        bram
-  - String:          ' variable '''
-  - Name:            input_0
-  - String:          ''' with '
-  - AggregateTypeName: 'compact=bit'
-  - String:          ' mode in '
-  - Bitwidth:        '16'
-  - String:          '-bits'
+  - String:          'Inlining function '''
+  - Callee:          'float_to_bits(float)'
+    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 32, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'cnn_gesture_top(hls::stream<hls::axis<ap_uint<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)'
+    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 261, Column: 0 }
+  - String:          ''''
 ...
 --- !HLSReportInfo
 Pass:            reflow-auto-loop-pipeline
 Name:            AutoLoopPipeline
 Args:            
   - String:          'Pipelining loop< '
-  - LoopName:        VITIS_LOOP_40_2
+  - LoopName:        VITIS_LOOP_63_2
   - String:          '> at '
-  - LoopLoc:         '../cnn_gesture_hls.cpp:40:26'
+  - LoopLoc:         '../cnn_gesture_hls.cpp:63:26'
   - String:          ' due to pipeline_loops threshold'
 ...
 --- !Passed
 Pass:            reflow-auto-loop-pipeline
 Name:            AutoParallelPerformanceDrivenVerbosePassed
-DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 40, Column: 26 }
-Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 63, Column: 26 }
+Function:        _ZL16cnn_gesture_corePA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
 Args:            
   - PragmaType:      pipeline
   - String:          ' '
@@ -593,13 +618,13 @@ Args:
   - String:          ' '
   - PragmaIsAuto:    '1'
   - String:          ' '
-  - PragmaFunction:  cnn_gesture_top
+  - PragmaFunction:  cnn_gesture_core
   - String:          ' '
   - PragmaInferReason: config_compile -pipeline_loops 64
-  - LoopName:        VITIS_LOOP_40_2
+  - LoopName:        VITIS_LOOP_63_2
   - String:          ' '
-  - LoopLoc:         '../cnn_gesture_hls.cpp:40:26'
-    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 40, Column: 26 }
+  - LoopLoc:         '../cnn_gesture_hls.cpp:63:26'
+    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 63, Column: 26 }
   - String:          ' '
 ...
 --- !HLSReportInfo
@@ -607,16 +632,16 @@ Pass:            reflow-auto-loop-pipeline
 Name:            AutoLoopPipeline
 Args:            
   - String:          'Pipelining loop< '
-  - LoopName:        VITIS_LOOP_78_2
+  - LoopName:        VITIS_LOOP_101_2
   - String:          '> at '
-  - LoopLoc:         '../cnn_gesture_hls.cpp:78:26'
+  - LoopLoc:         '../cnn_gesture_hls.cpp:101:27'
   - String:          ' due to pipeline_loops threshold'
 ...
 --- !Passed
 Pass:            reflow-auto-loop-pipeline
 Name:            AutoParallelPerformanceDrivenVerbosePassed
-DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 78, Column: 26 }
-Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 101, Column: 27 }
+Function:        _ZL16cnn_gesture_corePA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
 Args:            
   - PragmaType:      pipeline
   - String:          ' '
@@ -624,13 +649,13 @@ Args:
   - String:          ' '
   - PragmaIsAuto:    '1'
   - String:          ' '
-  - PragmaFunction:  cnn_gesture_top
+  - PragmaFunction:  cnn_gesture_core
   - String:          ' '
   - PragmaInferReason: config_compile -pipeline_loops 64
-  - LoopName:        VITIS_LOOP_78_2
+  - LoopName:        VITIS_LOOP_101_2
   - String:          ' '
-  - LoopLoc:         '../cnn_gesture_hls.cpp:78:26'
-    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 78, Column: 26 }
+  - LoopLoc:         '../cnn_gesture_hls.cpp:101:27'
+    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 101, Column: 27 }
   - String:          ' '
 ...
 --- !HLSReportInfo
@@ -638,16 +663,16 @@ Pass:            reflow-auto-loop-pipeline
 Name:            AutoLoopPipeline
 Args:            
   - String:          'Pipelining loop< '
-  - LoopName:        VITIS_LOOP_96_3
+  - LoopName:        VITIS_LOOP_119_3
   - String:          '> at '
-  - LoopLoc:         '../cnn_gesture_hls.cpp:96:30'
+  - LoopLoc:         '../cnn_gesture_hls.cpp:119:31'
   - String:          ' due to pipeline_loops threshold'
 ...
 --- !Passed
 Pass:            reflow-auto-loop-pipeline
 Name:            AutoParallelPerformanceDrivenVerbosePassed
-DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 96, Column: 30 }
-Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 119, Column: 31 }
+Function:        _ZL16cnn_gesture_corePA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
 Args:            
   - PragmaType:      pipeline
   - String:          ' '
@@ -655,13 +680,13 @@ Args:
   - String:          ' '
   - PragmaIsAuto:    '1'
   - String:          ' '
-  - PragmaFunction:  cnn_gesture_top
+  - PragmaFunction:  cnn_gesture_core
   - String:          ' '
   - PragmaInferReason: config_compile -pipeline_loops 64
-  - LoopName:        VITIS_LOOP_96_3
+  - LoopName:        VITIS_LOOP_119_3
   - String:          ' '
-  - LoopLoc:         '../cnn_gesture_hls.cpp:96:30'
-    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 96, Column: 30 }
+  - LoopLoc:         '../cnn_gesture_hls.cpp:119:31'
+    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 119, Column: 31 }
   - String:          ' '
 ...
 --- !HLSReportInfo
@@ -669,16 +694,16 @@ Pass:            reflow-auto-loop-pipeline
 Name:            AutoLoopPipeline
 Args:            
   - String:          'Pipelining loop< '
-  - LoopName:        VITIS_LOOP_127_2
+  - LoopName:        VITIS_LOOP_150_2
   - String:          '> at '
-  - LoopLoc:         '../cnn_gesture_hls.cpp:127:27'
+  - LoopLoc:         '../cnn_gesture_hls.cpp:150:27'
   - String:          ' due to pipeline_loops threshold'
 ...
 --- !Passed
 Pass:            reflow-auto-loop-pipeline
 Name:            AutoParallelPerformanceDrivenVerbosePassed
-DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 127, Column: 27 }
-Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 150, Column: 27 }
+Function:        _ZL16cnn_gesture_corePA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
 Args:            
   - PragmaType:      pipeline
   - String:          ' '
@@ -686,13 +711,13 @@ Args:
   - String:          ' '
   - PragmaIsAuto:    '1'
   - String:          ' '
-  - PragmaFunction:  cnn_gesture_top
+  - PragmaFunction:  cnn_gesture_core
   - String:          ' '
   - PragmaInferReason: config_compile -pipeline_loops 64
-  - LoopName:        VITIS_LOOP_127_2
+  - LoopName:        VITIS_LOOP_150_2
   - String:          ' '
-  - LoopLoc:         '../cnn_gesture_hls.cpp:127:27'
-    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 127, Column: 27 }
+  - LoopLoc:         '../cnn_gesture_hls.cpp:150:27'
+    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 150, Column: 27 }
   - String:          ' '
 ...
 --- !HLSReportInfo
@@ -700,16 +725,16 @@ Pass:            reflow-auto-loop-pipeline
 Name:            AutoLoopPipeline
 Args:            
   - String:          'Pipelining loop< '
-  - LoopName:        VITIS_LOOP_143_2
+  - LoopName:        VITIS_LOOP_166_2
   - String:          '> at '
-  - LoopLoc:         '../cnn_gesture_hls.cpp:143:27'
+  - LoopLoc:         '../cnn_gesture_hls.cpp:166:27'
   - String:          ' due to pipeline_loops threshold'
 ...
 --- !Passed
 Pass:            reflow-auto-loop-pipeline
 Name:            AutoParallelPerformanceDrivenVerbosePassed
-DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 143, Column: 27 }
-Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 166, Column: 27 }
+Function:        _ZL16cnn_gesture_corePA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
 Args:            
   - PragmaType:      pipeline
   - String:          ' '
@@ -717,13 +742,13 @@ Args:
   - String:          ' '
   - PragmaIsAuto:    '1'
   - String:          ' '
-  - PragmaFunction:  cnn_gesture_top
+  - PragmaFunction:  cnn_gesture_core
   - String:          ' '
   - PragmaInferReason: config_compile -pipeline_loops 64
-  - LoopName:        VITIS_LOOP_143_2
+  - LoopName:        VITIS_LOOP_166_2
   - String:          ' '
-  - LoopLoc:         '../cnn_gesture_hls.cpp:143:27'
-    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 143, Column: 27 }
+  - LoopLoc:         '../cnn_gesture_hls.cpp:166:27'
+    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 166, Column: 27 }
   - String:          ' '
 ...
 --- !HLSReportInfo
@@ -731,16 +756,16 @@ Pass:            reflow-auto-loop-pipeline
 Name:            AutoLoopPipeline
 Args:            
   - String:          'Pipelining loop< '
-  - LoopName:        VITIS_LOOP_160_2
+  - LoopName:        VITIS_LOOP_183_2
   - String:          '> at '
-  - LoopLoc:         '../cnn_gesture_hls.cpp:160:27'
+  - LoopLoc:         '../cnn_gesture_hls.cpp:183:27'
   - String:          ' due to pipeline_loops threshold'
 ...
 --- !Passed
 Pass:            reflow-auto-loop-pipeline
 Name:            AutoParallelPerformanceDrivenVerbosePassed
-DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 160, Column: 27 }
-Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 183, Column: 27 }
+Function:        _ZL16cnn_gesture_corePA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
 Args:            
   - PragmaType:      pipeline
   - String:          ' '
@@ -748,13 +773,13 @@ Args:
   - String:          ' '
   - PragmaIsAuto:    '1'
   - String:          ' '
-  - PragmaFunction:  cnn_gesture_top
+  - PragmaFunction:  cnn_gesture_core
   - String:          ' '
   - PragmaInferReason: config_compile -pipeline_loops 64
-  - LoopName:        VITIS_LOOP_160_2
+  - LoopName:        VITIS_LOOP_183_2
   - String:          ' '
-  - LoopLoc:         '../cnn_gesture_hls.cpp:160:27'
-    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 160, Column: 27 }
+  - LoopLoc:         '../cnn_gesture_hls.cpp:183:27'
+    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 183, Column: 27 }
   - String:          ' '
 ...
 --- !HLSReportInfo
@@ -762,16 +787,16 @@ Pass:            reflow-auto-loop-pipeline
 Name:            AutoLoopPipeline
 Args:            
   - String:          'Pipelining loop< '
-  - LoopName:        VITIS_LOOP_178_2
+  - LoopName:        VITIS_LOOP_201_2
   - String:          '> at '
-  - LoopLoc:         '../cnn_gesture_hls.cpp:178:27'
+  - LoopLoc:         '../cnn_gesture_hls.cpp:201:27'
   - String:          ' due to pipeline_loops threshold'
 ...
 --- !Passed
 Pass:            reflow-auto-loop-pipeline
 Name:            AutoParallelPerformanceDrivenVerbosePassed
-DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 178, Column: 27 }
-Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 201, Column: 27 }
+Function:        _ZL16cnn_gesture_corePA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
 Args:            
   - PragmaType:      pipeline
   - String:          ' '
@@ -779,13 +804,13 @@ Args:
   - String:          ' '
   - PragmaIsAuto:    '1'
   - String:          ' '
-  - PragmaFunction:  cnn_gesture_top
+  - PragmaFunction:  cnn_gesture_core
   - String:          ' '
   - PragmaInferReason: config_compile -pipeline_loops 64
-  - LoopName:        VITIS_LOOP_178_2
+  - LoopName:        VITIS_LOOP_201_2
   - String:          ' '
-  - LoopLoc:         '../cnn_gesture_hls.cpp:178:27'
-    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 178, Column: 27 }
+  - LoopLoc:         '../cnn_gesture_hls.cpp:201:27'
+    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 201, Column: 27 }
   - String:          ' '
 ...
 --- !HLSReportInfo
@@ -793,16 +818,16 @@ Pass:            reflow-auto-loop-pipeline
 Name:            AutoLoopPipeline
 Args:            
   - String:          'Pipelining loop< '
-  - LoopName:        VITIS_LOOP_191_1
+  - LoopName:        VITIS_LOOP_214_1
   - String:          '> at '
-  - LoopLoc:         '../cnn_gesture_hls.cpp:191:23'
+  - LoopLoc:         '../cnn_gesture_hls.cpp:214:23'
   - String:          ' due to pipeline_loops threshold'
 ...
 --- !Passed
 Pass:            reflow-auto-loop-pipeline
 Name:            AutoParallelPerformanceDrivenVerbosePassed
-DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 191, Column: 23 }
-Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 214, Column: 23 }
+Function:        _ZL16cnn_gesture_corePA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
 Args:            
   - PragmaType:      pipeline
   - String:          ' '
@@ -810,13 +835,13 @@ Args:
   - String:          ' '
   - PragmaIsAuto:    '1'
   - String:          ' '
-  - PragmaFunction:  cnn_gesture_top
+  - PragmaFunction:  cnn_gesture_core
   - String:          ' '
   - PragmaInferReason: config_compile -pipeline_loops 64
-  - LoopName:        VITIS_LOOP_191_1
+  - LoopName:        VITIS_LOOP_214_1
   - String:          ' '
-  - LoopLoc:         '../cnn_gesture_hls.cpp:191:23'
-    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 191, Column: 23 }
+  - LoopLoc:         '../cnn_gesture_hls.cpp:214:23'
+    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 214, Column: 23 }
   - String:          ' '
 ...
 --- !HLSReportInfo
@@ -824,16 +849,16 @@ Pass:            reflow-auto-loop-pipeline
 Name:            AutoLoopPipeline
 Args:            
   - String:          'Pipelining loop< '
-  - LoopName:        VITIS_LOOP_197_2
+  - LoopName:        VITIS_LOOP_220_2
   - String:          '> at '
-  - LoopLoc:         '../cnn_gesture_hls.cpp:197:23'
+  - LoopLoc:         '../cnn_gesture_hls.cpp:220:23'
   - String:          ' due to pipeline_loops threshold'
 ...
 --- !Passed
 Pass:            reflow-auto-loop-pipeline
 Name:            AutoParallelPerformanceDrivenVerbosePassed
-DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 197, Column: 23 }
-Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 220, Column: 23 }
+Function:        _ZL16cnn_gesture_corePA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
 Args:            
   - PragmaType:      pipeline
   - String:          ' '
@@ -841,13 +866,13 @@ Args:
   - String:          ' '
   - PragmaIsAuto:    '1'
   - String:          ' '
-  - PragmaFunction:  cnn_gesture_top
+  - PragmaFunction:  cnn_gesture_core
   - String:          ' '
   - PragmaInferReason: config_compile -pipeline_loops 64
-  - LoopName:        VITIS_LOOP_197_2
+  - LoopName:        VITIS_LOOP_220_2
   - String:          ' '
-  - LoopLoc:         '../cnn_gesture_hls.cpp:197:23'
-    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 197, Column: 23 }
+  - LoopLoc:         '../cnn_gesture_hls.cpp:220:23'
+    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 220, Column: 23 }
   - String:          ' '
 ...
 --- !HLSReportInfo
@@ -855,16 +880,16 @@ Pass:            reflow-auto-loop-pipeline
 Name:            AutoLoopPipeline
 Args:            
   - String:          'Pipelining loop< '
-  - LoopName:        VITIS_LOOP_202_3
+  - LoopName:        VITIS_LOOP_225_3
   - String:          '> at '
-  - LoopLoc:         '../cnn_gesture_hls.cpp:202:23'
+  - LoopLoc:         '../cnn_gesture_hls.cpp:225:23'
   - String:          ' due to pipeline_loops threshold'
 ...
 --- !Passed
 Pass:            reflow-auto-loop-pipeline
 Name:            AutoParallelPerformanceDrivenVerbosePassed
-DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 202, Column: 23 }
-Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 225, Column: 23 }
+Function:        _ZL16cnn_gesture_corePA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
 Args:            
   - PragmaType:      pipeline
   - String:          ' '
@@ -872,122 +897,122 @@ Args:
   - String:          ' '
   - PragmaIsAuto:    '1'
   - String:          ' '
-  - PragmaFunction:  cnn_gesture_top
+  - PragmaFunction:  cnn_gesture_core
   - String:          ' '
   - PragmaInferReason: config_compile -pipeline_loops 64
-  - LoopName:        VITIS_LOOP_202_3
+  - LoopName:        VITIS_LOOP_225_3
   - String:          ' '
-  - LoopLoc:         '../cnn_gesture_hls.cpp:202:23'
-    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 202, Column: 23 }
+  - LoopLoc:         '../cnn_gesture_hls.cpp:225:23'
+    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 225, Column: 23 }
   - String:          ' '
 ...
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
-DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 99, Column: 38 }
-Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 122, Column: 39 }
+Function:        _ZL16cnn_gesture_corePA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
 Args:            
   - String:          'Loop '''
-  - LoopName:        VITIS_LOOP_99_4
+  - LoopName:        VITIS_LOOP_122_4
   - String:          ''' is marked as complete unroll implied by the pipeline pragma'
 ...
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
-DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 43, Column: 30 }
-Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 66, Column: 30 }
+Function:        _ZL16cnn_gesture_corePA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
 Args:            
   - String:          'Loop '''
-  - LoopName:        VITIS_LOOP_43_3
+  - LoopName:        VITIS_LOOP_66_3
   - String:          ''' is marked as complete unroll implied by the pipeline pragma'
 ...
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
-DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 46, Column: 38 }
-Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 69, Column: 38 }
+Function:        _ZL16cnn_gesture_corePA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
 Args:            
   - String:          'Loop '''
-  - LoopName:        VITIS_LOOP_46_4
+  - LoopName:        VITIS_LOOP_69_4
   - String:          ''' is marked as complete unroll implied by the pipeline pragma'
 ...
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 211, Column: 0 }
-Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 234, Column: 0 }
+Function:        _ZL16cnn_gesture_corePA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_99_4
+  - LoopName:        VITIS_LOOP_122_4
   - String:          ''' ('
-  - LoopLoc:         '../cnn_gesture_hls.cpp:99:38'
+  - LoopLoc:         '../cnn_gesture_hls.cpp:122:39'
   - String:          ') '
   - String:          'in function '''
-  - String:          cnn_gesture_top
+  - String:          cnn_gesture_core
   - String:          ''' completely with a factor of '
   - Factor:          '32'
 ...
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 211, Column: 0 }
-Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 234, Column: 0 }
+Function:        _ZL16cnn_gesture_corePA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_43_3
+  - LoopName:        VITIS_LOOP_66_3
   - String:          ''' ('
-  - LoopLoc:         '../cnn_gesture_hls.cpp:43:30'
+  - LoopLoc:         '../cnn_gesture_hls.cpp:66:30'
   - String:          ') '
   - String:          'in function '''
-  - String:          cnn_gesture_top
+  - String:          cnn_gesture_core
   - String:          ''' completely with a factor of '
   - Factor:          '3'
 ...
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 211, Column: 0 }
-Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 234, Column: 0 }
+Function:        _ZL16cnn_gesture_corePA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_46_4
+  - LoopName:        VITIS_LOOP_69_4
   - String:          ''' ('
-  - LoopLoc:         '../cnn_gesture_hls.cpp:46:38'
+  - LoopLoc:         '../cnn_gesture_hls.cpp:69:38'
   - String:          ') '
   - String:          'in function '''
-  - String:          cnn_gesture_top
+  - String:          cnn_gesture_core
   - String:          ''' completely with a factor of '
   - Factor:          '6'
 ...
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 211, Column: 0 }
-Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 234, Column: 0 }
+Function:        _ZL16cnn_gesture_corePA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_46_4
+  - LoopName:        VITIS_LOOP_69_4
   - String:          ''' ('
-  - LoopLoc:         '../cnn_gesture_hls.cpp:46:38'
+  - LoopLoc:         '../cnn_gesture_hls.cpp:69:38'
   - String:          ') '
   - String:          'in function '''
-  - String:          cnn_gesture_top
+  - String:          cnn_gesture_core
   - String:          ''' completely with a factor of '
   - Factor:          '6'
 ...
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 211, Column: 0 }
-Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 234, Column: 0 }
+Function:        _ZL16cnn_gesture_corePA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_46_4
+  - LoopName:        VITIS_LOOP_69_4
   - String:          ''' ('
-  - LoopLoc:         '../cnn_gesture_hls.cpp:46:38'
+  - LoopLoc:         '../cnn_gesture_hls.cpp:69:38'
   - String:          ') '
   - String:          'in function '''
-  - String:          cnn_gesture_top
+  - String:          cnn_gesture_core
   - String:          ''' completely with a factor of '
   - Factor:          '6'
 ...
@@ -995,11 +1020,11 @@ Args:
 Pass:            reflow-auto-array-partition
 Name:            AutoParallelPerformanceDrivenVerbosePassed
 DebugLoc:        { File: ../weights.h, Line: 5, Column: 0 }
-Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+Function:        _Z15cnn_gesture_topRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_
 Args:            
   - PragmaType:      array_partition
   - String:          ' '
-  - PragmaOptions:   'dim=1 type=cyclic factor=2 variable=conv1d_param_0'
+  - PragmaOptions:   'dim=1 type=cyclic factor=19 variable=conv1d_param_0'
   - String:          ' '
   - PragmaIsAuto:    '1'
   - String:          ' '
@@ -1014,14 +1039,14 @@ Args:
 Pass:            reflow-auto-array-partition
 Name:            AutoArrayXform
 DebugLoc:        { File: ../weights.h, Line: 5, Column: 0 }
-Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+Function:        _Z15cnn_gesture_topRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_
 Args:            
   - String:          'Inferring pragma '''
   - PragmaType:      array_partition
   - String:          ' type='
   - Mode:            cyclic
   - String:          ' factor='
-  - Factor:          '2'
+  - Factor:          '19'
   - String:          ' dim='
   - Dim:             '1'
   - String:          ''' for array '''
@@ -1035,7 +1060,7 @@ Args:
 Pass:            reflow-auto-array-partition
 Name:            AutoParallelPerformanceDrivenVerbosePassed
 DebugLoc:        { File: ../weights.h, Line: 23, Column: 0 }
-Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+Function:        _Z15cnn_gesture_topRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_
 Args:            
   - PragmaType:      array_partition
   - String:          ' '
@@ -1054,7 +1079,7 @@ Args:
 Pass:            reflow-auto-array-partition
 Name:            AutoArrayXform
 DebugLoc:        { File: ../weights.h, Line: 23, Column: 0 }
-Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+Function:        _Z15cnn_gesture_topRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_
 Args:            
   - String:          'Inferring pragma '''
   - PragmaType:      array_partition
@@ -1074,8 +1099,8 @@ Args:
 --- !Passed
 Pass:            reflow-auto-array-partition
 Name:            AutoParallelPerformanceDrivenVerbosePassed
-DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 220, Column: 12 }
-Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 238, Column: 12 }
+Function:        _ZL16cnn_gesture_corePA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
 Args:            
   - PragmaType:      array_partition
   - String:          ' '
@@ -1083,9 +1108,9 @@ Args:
   - String:          ' '
   - PragmaIsAuto:    '1'
   - String:          ' '
-  - PragmaFunction:  cnn_gesture_top
+  - PragmaFunction:  cnn_gesture_core
   - String:          ' '
-  - VarLoc:          '../cnn_gesture_hls.cpp:220:12'
+  - VarLoc:          '../cnn_gesture_hls.cpp:238:12'
   - String:          ' '
   - VarName:         pool1_out
   - String:          ' '
@@ -1093,8 +1118,8 @@ Args:
 --- !Passed
 Pass:            reflow-auto-array-partition
 Name:            AutoArrayXform
-DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 220, Column: 12 }
-Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 238, Column: 12 }
+Function:        _ZL16cnn_gesture_corePA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
 Args:            
   - String:          'Inferring pragma '''
   - PragmaType:      array_partition
@@ -1110,10 +1135,88 @@ Args:
   - String:          ' pragma'
 ...
 --- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 266, Column: 12 }
+Function:        _Z15cnn_gesture_topRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=cyclic factor=3 variable=input'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  cnn_gesture_top
+  - String:          ' '
+  - VarLoc:          '../cnn_gesture_hls.cpp:266:12'
+  - String:          ' '
+  - VarName:         input
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 266, Column: 12 }
+Function:        _Z15cnn_gesture_topRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            cyclic
+  - String:          ' factor='
+  - Factor:          '3'
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            input
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 266, Column: 12 }
+Function:        _Z15cnn_gesture_topRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=2 type=complete  variable=input'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  cnn_gesture_top
+  - String:          ' '
+  - VarLoc:          '../cnn_gesture_hls.cpp:266:12'
+  - String:          ' '
+  - VarName:         input
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 266, Column: 12 }
+Function:        _Z15cnn_gesture_topRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '2'
+  - String:          ''' for array '''
+  - Name:            input
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
 Pass:            reflow-array-partition
 Name:            ArrayXform
 DebugLoc:        { File: ../weights.h, Line: 23, Column: 0 }
-Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+Function:        _Z15cnn_gesture_topRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_
 Args:            
   - String:          'Applying '
   - String:          array_partition
@@ -1133,7 +1236,7 @@ Args:
 Pass:            reflow-array-partition
 Name:            ArrayXform
 DebugLoc:        { File: ../weights.h, Line: 5, Column: 0 }
-Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+Function:        _Z15cnn_gesture_topRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_
 Args:            
   - String:          'Applying '
   - String:          array_partition
@@ -1144,7 +1247,7 @@ Args:
   - Mode:            Cyclic
   - String:          ' partitioning'
   - String:          ' with factor '
-  - Factor:          '2'
+  - Factor:          '19'
   - String:          ' on dimension '
   - Dim:             '1'
   - String:          .
@@ -1152,8 +1255,8 @@ Args:
 --- !Passed
 Pass:            reflow-array-partition
 Name:            ArrayXform
-DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 220, Column: 12 }
-Function:        _Z15cnn_gesture_topPA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
+DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 238, Column: 12 }
+Function:        _ZL16cnn_gesture_corePA6_8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_
 Args:            
   - String:          'Applying '
   - String:          array_partition
@@ -1166,4 +1269,43 @@ Args:
   - String:          ' on dimension '
   - Dim:             '2'
   - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 266, Column: 12 }
+Function:        _Z15cnn_gesture_topRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          input
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '3'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 279, Column: 5 }
+Function:        _Z15cnn_gesture_topRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_
+Args:            
+  - Callee:          'cnn_gesture_core(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [6], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 234, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'cnn_gesture_top(hls::stream<hls::axis<ap_uint<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)'
+    DebugLoc:        { File: ../cnn_gesture_hls.cpp, Line: 261, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
 ...

@@ -6,68 +6,13 @@ if {${::AESL::PGuard_rtl_comp_handler}} {
 }
 
 
-set name cnn_gesture_top_fpext_32ns_64_2_no_dsp_1
 if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {fpext} IMPL {auto} LATENCY 1 ALLOW_PRAGMA 1
-}
-
-
-set name cnn_gesture_top_fpext_32ns_64_2_no_dsp_1
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {fpext} IMPL {auto} LATENCY 1 ALLOW_PRAGMA 1
-}
-
-
-set name cnn_gesture_top_fpext_32ns_64_2_no_dsp_1
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {fpext} IMPL {auto} LATENCY 1 ALLOW_PRAGMA 1
-}
-
-
-set name cnn_gesture_top_fpext_32ns_64_2_no_dsp_1
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {fpext} IMPL {auto} LATENCY 1 ALLOW_PRAGMA 1
-}
-
-
-set name cnn_gesture_top_fsqrt_32ns_32ns_32_8_no_dsp_1
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {fsqrt} IMPL {fabric} LATENCY 7 ALLOW_PRAGMA 1
+	::AP::rtl_comp_handler cnn_gesture_top_input_RAM_AUTO_1R1W BINDTYPE {storage} TYPE {ram} IMPL {auto} LATENCY 2 ALLOW_PRAGMA 1
 }
 
 
 if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler cnn_gesture_top_dense_param_1_ROM_AUTO_1R BINDTYPE {storage} TYPE {rom} IMPL {auto} LATENCY 2 ALLOW_PRAGMA 1
-}
-
-
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler cnn_gesture_top_dense_1_param_1_ROM_AUTO_1R BINDTYPE {storage} TYPE {rom} IMPL {auto} LATENCY 2 ALLOW_PRAGMA 1
-}
-
-
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler cnn_gesture_top_exps_RAM_AUTO_1R1W BINDTYPE {storage} TYPE {ram} IMPL {auto} LATENCY 2 ALLOW_PRAGMA 1
-}
-
-
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler cnn_gesture_top_conv1_out_RAM_AUTO_1R1W BINDTYPE {storage} TYPE {ram} IMPL {auto} LATENCY 2 ALLOW_PRAGMA 1
-}
-
-
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler cnn_gesture_top_pool1_out_RAM_AUTO_1R1W BINDTYPE {storage} TYPE {ram} IMPL {auto} LATENCY 2 ALLOW_PRAGMA 1
-}
-
-
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler cnn_gesture_top_pool2_out_RAM_AUTO_1R1W BINDTYPE {storage} TYPE {ram} IMPL {auto} LATENCY 2 ALLOW_PRAGMA 1
-}
-
-
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler cnn_gesture_top_fc1_RAM_AUTO_1R1W BINDTYPE {storage} TYPE {ram} IMPL {auto} LATENCY 2 ALLOW_PRAGMA 1
+	::AP::rtl_comp_handler cnn_gesture_top_output_RAM_AUTO_1R1W BINDTYPE {storage} TYPE {ram} IMPL {auto} LATENCY 2 ALLOW_PRAGMA 1
 }
 
 
@@ -79,147 +24,193 @@ if {${::AESL::PGuard_autoexp_gen}} {
 }
 
 set axilite_register_dict [dict create]
-# XIL_BRAM:
+set port_CTRL {
+ap_start { }
+ap_done { }
+ap_ready { }
+ap_idle { }
+interrupt {
+}
+}
+dict set axilite_register_dict CTRL $port_CTRL
+
+
+# Native S_AXILite:
+if {${::AESL::PGuard_simmodel_gen}} {
+	if {[info proc ::AESL_LIB_XILADAPTER::s_axilite_gen] == "::AESL_LIB_XILADAPTER::s_axilite_gen"} {
+		eval "::AESL_LIB_XILADAPTER::s_axilite_gen { \
+			id 652 \
+			corename cnn_gesture_top_CTRL_axilite \
+			name cnn_gesture_top_CTRL_s_axi \
+			ports {$port_CTRL} \
+			op interface \
+			interrupt_clear_mode TOW \
+			interrupt_trigger_type default \
+			is_flushable 0 \
+			is_datawidth64 0 \
+			is_addrwidth64 1 \
+			enable_mem_auto_widen 1 \
+		} "
+	} else {
+		puts "@W \[IMPL-110\] Cannot find AXI Lite interface model in the library. Ignored generation of AXI Lite  interface for 'CTRL'"
+	}
+}
+
+if {${::AESL::PGuard_rtl_comp_handler}} {
+	::AP::rtl_comp_handler cnn_gesture_top_CTRL_s_axi BINDTYPE interface TYPE interface_s_axilite
+}
+
+# Native AXIS:
 if {${::AESL::PGuard_autoexp_gen}} {
-if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
-eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 450 \
-    name input_0 \
-    reset_level 1 \
+if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
+eval "::AESL_LIB_XILADAPTER::native_axis_add { \
+    id 653 \
+    name input_stream_V_data_V \
+    reset_level 0 \
     sync_rst true \
-    dir I \
-    corename input_0 \
+    corename {input_stream} \
+    metadata {  } \
     op interface \
-    ports { input_0_address0 { O 9 vector } input_0_ce0 { O 1 bit } input_0_q0 { I 16 vector } input_0_address1 { O 9 vector } input_0_ce1 { O 1 bit } input_0_q1 { I 16 vector } } \
+    ports { input_stream_TDATA { I 32 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'input_0'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'input_stream_V_data_V'"
 }
 }
 
 
-# XIL_BRAM:
+# Native AXIS:
 if {${::AESL::PGuard_autoexp_gen}} {
-if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
-eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 451 \
-    name input_1 \
-    reset_level 1 \
+if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
+eval "::AESL_LIB_XILADAPTER::native_axis_add { \
+    id 654 \
+    name input_stream_V_keep_V \
+    reset_level 0 \
     sync_rst true \
-    dir I \
-    corename input_1 \
+    corename {input_stream} \
+    metadata {  } \
     op interface \
-    ports { input_1_address0 { O 9 vector } input_1_ce0 { O 1 bit } input_1_q0 { I 16 vector } input_1_address1 { O 9 vector } input_1_ce1 { O 1 bit } input_1_q1 { I 16 vector } } \
+    ports { input_stream_TKEEP { I 4 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'input_1'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'input_stream_V_keep_V'"
 }
 }
 
 
-# Direct connection:
+# Native AXIS:
 if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 452 \
-    name output_0 \
-    type other \
-    dir O \
-    reset_level 1 \
+if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
+eval "::AESL_LIB_XILADAPTER::native_axis_add { \
+    id 655 \
+    name input_stream_V_strb_V \
+    reset_level 0 \
     sync_rst true \
-    corename dc_output_0 \
+    corename {input_stream} \
+    metadata {  } \
     op interface \
-    ports { output_0 { O 16 vector } output_0_ap_vld { O 1 bit } } \
+    ports { input_stream_TSTRB { I 4 vector } } \
 } "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'input_stream_V_strb_V'"
+}
 }
 
-# Direct connection:
+
+# Native AXIS:
 if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 453 \
-    name output_1 \
-    type other \
-    dir O \
-    reset_level 1 \
+if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
+eval "::AESL_LIB_XILADAPTER::native_axis_add { \
+    id 656 \
+    name input_stream_V_last_V \
+    reset_level 0 \
     sync_rst true \
-    corename dc_output_1 \
+    corename {input_stream} \
+    metadata {  } \
     op interface \
-    ports { output_1 { O 16 vector } output_1_ap_vld { O 1 bit } } \
+    ports { input_stream_TVALID { I 1 bit } input_stream_TREADY { O 1 bit } input_stream_TLAST { I 1 vector } } \
 } "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'input_stream_V_last_V'"
+}
 }
 
-# Direct connection:
+
+# Native AXIS:
 if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 454 \
-    name output_2 \
-    type other \
-    dir O \
-    reset_level 1 \
+if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
+eval "::AESL_LIB_XILADAPTER::native_axis_add { \
+    id 657 \
+    name output_stream_V_data_V \
+    reset_level 0 \
     sync_rst true \
-    corename dc_output_2 \
+    corename {output_stream} \
+    metadata {  } \
     op interface \
-    ports { output_2 { O 16 vector } output_2_ap_vld { O 1 bit } } \
+    ports { output_stream_TDATA { O 32 vector } } \
 } "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'output_stream_V_data_V'"
+}
 }
 
-# Direct connection:
+
+# Native AXIS:
 if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 455 \
-    name output_3 \
-    type other \
-    dir O \
-    reset_level 1 \
+if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
+eval "::AESL_LIB_XILADAPTER::native_axis_add { \
+    id 658 \
+    name output_stream_V_keep_V \
+    reset_level 0 \
     sync_rst true \
-    corename dc_output_3 \
+    corename {output_stream} \
+    metadata {  } \
     op interface \
-    ports { output_3 { O 16 vector } output_3_ap_vld { O 1 bit } } \
+    ports { output_stream_TKEEP { O 4 vector } } \
 } "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'output_stream_V_keep_V'"
+}
 }
 
-# Direct connection:
+
+# Native AXIS:
 if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 456 \
-    name output_4 \
-    type other \
-    dir O \
-    reset_level 1 \
+if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
+eval "::AESL_LIB_XILADAPTER::native_axis_add { \
+    id 659 \
+    name output_stream_V_strb_V \
+    reset_level 0 \
     sync_rst true \
-    corename dc_output_4 \
+    corename {output_stream} \
+    metadata {  } \
     op interface \
-    ports { output_4 { O 16 vector } output_4_ap_vld { O 1 bit } } \
+    ports { output_stream_TSTRB { O 4 vector } } \
 } "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'output_stream_V_strb_V'"
+}
 }
 
-# Direct connection:
+
+# Native AXIS:
 if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 457 \
-    name output_5 \
-    type other \
-    dir O \
-    reset_level 1 \
+if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
+eval "::AESL_LIB_XILADAPTER::native_axis_add { \
+    id 660 \
+    name output_stream_V_last_V \
+    reset_level 0 \
     sync_rst true \
-    corename dc_output_5 \
+    corename {output_stream} \
+    metadata {  } \
     op interface \
-    ports { output_5 { O 16 vector } output_5_ap_vld { O 1 bit } } \
+    ports { output_stream_TVALID { O 1 bit } output_stream_TREADY { I 1 bit } output_stream_TLAST { O 1 vector } } \
 } "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'output_stream_V_last_V'"
+}
 }
 
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id -1 \
-    name ap_ctrl \
-    type ap_ctrl \
-    reset_level 1 \
-    sync_rst true \
-    corename ap_ctrl \
-    op interface \
-    ports { ap_start { I 1 bit } ap_ready { O 1 bit } ap_done { O 1 bit } ap_idle { O 1 bit } } \
-} "
-}
 
 
 # Adapter definition:
@@ -228,9 +219,9 @@ set DataWd 1
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc cg_default_interface_gen_clock] == "cg_default_interface_gen_clock"} {
 eval "cg_default_interface_gen_clock { \
-    id -2 \
+    id -1 \
     name ${PortName} \
-    reset_level 1 \
+    reset_level 0 \
     sync_rst true \
     corename apif_ap_clk \
     data_wd ${DataWd} \
@@ -243,16 +234,16 @@ puts "@W \[IMPL-113\] Cannot find bus interface model in the library. Ignored ge
 
 
 # Adapter definition:
-set PortName ap_rst
+set PortName ap_rst_n
 set DataWd 1 
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc cg_default_interface_gen_reset] == "cg_default_interface_gen_reset"} {
 eval "cg_default_interface_gen_reset { \
-    id -3 \
+    id -2 \
     name ${PortName} \
-    reset_level 1 \
+    reset_level 0 \
     sync_rst true \
-    corename apif_ap_rst \
+    corename apif_ap_rst_n \
     data_wd ${DataWd} \
     op interface \
 }"
@@ -268,6 +259,46 @@ if {${::AESL::PGuard_autoexp_gen}} {
     cg_default_interface_gen_dc_end
     cg_default_interface_gen_bundle_end
     AESL_LIB_XILADAPTER::native_axis_end
+}
+
+
+if {${::AESL::PGuard_rtl_comp_handler}} {
+	::AP::rtl_comp_handler cnn_gesture_top_regslice_both BINDTYPE {interface} TYPE {adapter} IMPL {reg_slice}
+}
+
+
+if {${::AESL::PGuard_rtl_comp_handler}} {
+	::AP::rtl_comp_handler cnn_gesture_top_regslice_both BINDTYPE {interface} TYPE {adapter} IMPL {reg_slice}
+}
+
+
+if {${::AESL::PGuard_rtl_comp_handler}} {
+	::AP::rtl_comp_handler cnn_gesture_top_regslice_both BINDTYPE {interface} TYPE {adapter} IMPL {reg_slice}
+}
+
+
+if {${::AESL::PGuard_rtl_comp_handler}} {
+	::AP::rtl_comp_handler cnn_gesture_top_regslice_both BINDTYPE {interface} TYPE {adapter} IMPL {reg_slice}
+}
+
+
+if {${::AESL::PGuard_rtl_comp_handler}} {
+	::AP::rtl_comp_handler cnn_gesture_top_regslice_both BINDTYPE {interface} TYPE {adapter} IMPL {reg_slice}
+}
+
+
+if {${::AESL::PGuard_rtl_comp_handler}} {
+	::AP::rtl_comp_handler cnn_gesture_top_regslice_both BINDTYPE {interface} TYPE {adapter} IMPL {reg_slice}
+}
+
+
+if {${::AESL::PGuard_rtl_comp_handler}} {
+	::AP::rtl_comp_handler cnn_gesture_top_regslice_both BINDTYPE {interface} TYPE {adapter} IMPL {reg_slice}
+}
+
+
+if {${::AESL::PGuard_rtl_comp_handler}} {
+	::AP::rtl_comp_handler cnn_gesture_top_regslice_both BINDTYPE {interface} TYPE {adapter} IMPL {reg_slice}
 }
 
 

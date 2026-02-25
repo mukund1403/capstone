@@ -17,6 +17,9 @@ obj/cnn_gesture_hls.o: ..\..\..\..\..\cnn_gesture_hls.cpp \
   C:\AMDDesignTools\2025.2\Vitis\include\etc\ap_int_special.h \
   C:\AMDDesignTools\2025.2\Vitis\include\etc\ap_fixed_ref.h \
   C:\AMDDesignTools\2025.2\Vitis\include\etc\ap_fixed_special.h \
+  C:\AMDDesignTools\2025.2\Vitis\include\ap_axi_sdata.h \
+  C:\AMDDesignTools\2025.2\Vitis\include\hls_stream.h \
+  C:\AMDDesignTools\2025.2\Vitis\include\etc\hls_stream_common.h \
   C:\AMDDesignTools\2025.2\Vitis\include\hls_math.h \
   C:\AMDDesignTools\2025.2\Vitis\include\etc\hls_hotbm_apfixed.h \
   C:\AMDDesignTools\2025.2\Vitis\include\utils\x_hls_defines.h \
