@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
+    path: Assets/Scenes/FruitStartScene.unity
+    guid: e0552444a85853c4d9ab967b07d9cd99
+  - enabled: 1
     path: Assets/Scenes/FruitScene.unity
     guid: 9db714fb949d512449271b944a5b6823
   m_configObjects:

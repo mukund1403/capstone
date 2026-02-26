@@ -65,7 +65,7 @@ public class MqttService : MonoBehaviour
         client.MqttMsgPublishReceived += HandleMqttMessage;
 
         string clientId = Guid.NewGuid().ToString();
-        client.Connect(clientId, "unity", "capstone");
+        //client.Connect(clientId, "unity", "capstone");   //commemtted out when doing indiv subtest
 
         client.Subscribe(subTopics, qos);
 

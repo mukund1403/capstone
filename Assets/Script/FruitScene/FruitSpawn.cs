@@ -13,6 +13,7 @@ public class FruitSpawn : MonoBehaviour
     private bool isActive;
 
     [SerializeField] private GameObject lemonPrefab, pearPrefab, strawberryPrefab, applePrefab, watermelonPrefab, peachPrefab;
+    [SerializeField] private GameObject bombPrefab;
     private GameObject[] fruits;
     [SerializeField] private Camera cam;
 
@@ -99,13 +100,19 @@ public class FruitSpawn : MonoBehaviour
         Vector3 camPos = cam.transform.position;
         float force = 11;
         GameObject fruitChosen = fruits[Random.Range(0, fruits.Length)];
-        if (fruitChosen != null)
+        bool isBomb = Random.value < 0.1f;
+        if (fruitChosen != null && !isBomb)
         {
             GameObject spawnedFruit = Instantiate(fruitChosen, new Vector3(Random.Range(camPos.x-3, camPos.x+3), -5, 7), transform.rotation);
             spawnedFruit.SetActive(true);
             applyPhysics(spawnedFruit, force, Direction.Up);
             //GameObject spawnedFruit = Instantiate(fruitChosen, new Vector3(Random.Range(-1, 1), 0, 5), transform.rotation);
             //spawnedFruit.SetActive(true);
+        } else if (isBomb)
+        {
+            GameObject bomb = Instantiate(bombPrefab, new Vector3(Random.Range(camPos.x - 3, camPos.x + 3), -5, 7), transform.rotation);
+            bomb.SetActive(true);
+            applyPhysics(bomb, force, Direction.Up);
         }
     }
 
