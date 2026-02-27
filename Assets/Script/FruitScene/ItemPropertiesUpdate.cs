@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FruitPropertiesUpdate : MonoBehaviour
+public class ItemPropertiesUpdate : MonoBehaviour
 {
     private float deadzone = -50;
 

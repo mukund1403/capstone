@@ -9,15 +9,18 @@ using System.Runtime.CompilerServices;
 
 public class PrefabCreatorImage : MonoBehaviour
 {
-    [SerializeField] private Vector3 prefabOffset;
+    [SerializeField] private Vector3 prefabOffsetKatana;
+    [SerializeField] private Vector3 prefabOffsetHand;
     //private GameObject contentRoot;
     //private bool isInitialized;
 
     private ARTrackedImageManager aRTrackedImageManager;
 
     [SerializeField] private GameObject katanaPrefab;
+    [SerializeField] private GameObject handPrefab;
     [SerializeField] private TMP_Text text;
     private GameObject katana;
+    private GameObject hand;
 
     private void Awake()
     {
@@ -52,8 +55,16 @@ public class PrefabCreatorImage : MonoBehaviour
             //contentRoot = new GameObject("ContentRoot");
             //contentRoot.transform.SetParent(image.transform, false);
             //katana = Instantiate(katanaPrefab, contentRoot.transform);
-            katana = Instantiate(katanaPrefab, image.transform);
-            InitializeContent(katana);
+            if (image.referenceImage.name == "WaterDragon")
+            {
+                katana = Instantiate(katanaPrefab, image.transform);
+                InitializeContent(katana);
+            }
+            if (image.referenceImage.name == "Hand")
+            {
+                hand = Instantiate(handPrefab, image.transform);
+                InitializeContent(hand);
+            }
         }
         //if (!isInitialized && katana)
         //{
@@ -62,35 +73,55 @@ public class PrefabCreatorImage : MonoBehaviour
         //}
         foreach (ARTrackedImage image in obj.updated)
         {
-            if (katana == null)
+            if (hand == null)
             {
-                SetMessage("Kanata Status: not exist");
+                SetMessage("Hand Status: not exist");
                 return;
             }
-            if (image.trackingState == TrackingState.Tracking)
+            if (image.referenceImage.name == "WaterDragon")
             {
-                katana.SetActive(true);
-
-                string message = "Kanata Status: tracking active\n" + katana.transform.position;
-                message += "\n";
-                message += image.transform.position;
-                SetMessage(message);
+                if (image.trackingState == TrackingState.Tracking)
+                {
+                    katana.SetActive(true);
+                }
+                else
+                {
+                    //katana.SetActive(false);
+                }
             }
-            else
+            if (image.referenceImage.name == "Hand")
             {
-                katana.SetActive(false);
-                SetMessage("Kanata Status: tracking inactive");
+                if (image.trackingState == TrackingState.Tracking)
+                {
+                    hand.SetActive(true);
+
+                    string message = "Hand Status: tracking active\n" + hand.transform.position;
+                    message += "\n";
+                    message += image.transform.position;
+                    SetMessage(message);
+                }
+                else
+                {
+                    //hand.SetActive(false);
+                    SetMessage("Hand Status: tracking inactive");
+                }
             }
         }
     }
 
     private void InitializeContent(GameObject instance)
     {
-        if (instance != null)
+        if (instance == katana)
         {
             instance.transform.localScale = new Vector3(0.15f, 0.15f, 0.15f);
-            instance.transform.localPosition += prefabOffset;
+            instance.transform.localPosition += prefabOffsetKatana;
             instance.transform.localRotation = Quaternion.Euler(90, 0, 0);
+        }
+        else if (instance == hand)
+        {
+            instance.transform.localScale = new Vector3(0.3f, 0.3f, 0.3f);
+            instance.transform.localPosition += prefabOffsetHand;
+            instance.transform.localRotation = Quaternion.Euler(0, -90, 0);
         }
     }
 }

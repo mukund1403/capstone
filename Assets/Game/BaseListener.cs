@@ -5,8 +5,15 @@ using UnityEngine;
 // in the HandleMqtt part: make sure to filter out the exact topic name using the if (!topic.StartsWith)
 public class BaseListener : MonoBehaviour
 {
+    public static BaseListener Instance;
     void Awake()
     {
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+        Instance = this;
         DontDestroyOnLoad(gameObject);
     }
 

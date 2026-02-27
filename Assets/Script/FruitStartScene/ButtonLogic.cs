@@ -15,7 +15,6 @@ public class ButtonLogic : MonoBehaviour
         {
             SceneManager.LoadScene("FruitScene");
             isLoadingScene = true;
-            Debug.Log("Scene loading...");
         }
     }
 
