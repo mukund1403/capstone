@@ -5,14 +5,13 @@ using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
 using TMPro;
 using System.Runtime.CompilerServices;
+using System.Collections.Generic;
 
 
 public class PrefabCreatorImage : MonoBehaviour
 {
-    [SerializeField] private Vector3 prefabOffsetKatana;
-    [SerializeField] private Vector3 prefabOffsetHand;
-    //private GameObject contentRoot;
-    //private bool isInitialized;
+    private Vector3 prefabOffsetKatana = new Vector3(0, 0, 0);
+    private Vector3 prefabOffsetHand = new Vector3(0, 0, 0);
 
     private ARTrackedImageManager aRTrackedImageManager;
 
@@ -22,9 +21,18 @@ public class PrefabCreatorImage : MonoBehaviour
     private GameObject katana;
     private GameObject hand;
 
+    [SerializeField] private GameObject bombPrefab;
+    private GameObject[] listToSpawn;
+    private const int maxNumber = 5;
+    private GameObject[] itemsToPick = new GameObject[maxNumber];
+
     private void Awake()
     {
         aRTrackedImageManager = gameObject.GetComponent<ARTrackedImageManager>();
+        listToSpawn = new GameObject[]
+        {
+            bombPrefab
+        };
     }
 
     private void OnEnable()
@@ -48,14 +56,49 @@ public class PrefabCreatorImage : MonoBehaviour
         text.text = message;
     }
 
+    private void SpawnAroundImage(ARTrackedImage image)
+    {
+        List<Vector2> usedPositions = new List<Vector2>();
+        float spawnRadius = 0.1f;
+        int count = 0;
+        bool isValidPosition = false;
+        float minDistance = 0.05f;
+
+        while (count < maxNumber)
+        {
+            GameObject itemChosen = listToSpawn[UnityEngine.Random.Range(0, listToSpawn.Length)];
+            Vector2 spawnArea = UnityEngine.Random.insideUnitCircle * spawnRadius;
+            isValidPosition = true;
+
+            foreach (var position in usedPositions)
+            {
+                if (Vector2.Distance(spawnArea, position) <= minDistance)
+                {
+                    isValidPosition = false;
+                    break;
+                }
+            }
+
+            if (isValidPosition)
+            {
+                usedPositions.Add(spawnArea);
+                Vector3 spawnPosition = new Vector3(spawnArea.x, 0, spawnArea.y);
+                GameObject spawnedItem = Instantiate(itemChosen, image.transform);
+                spawnedItem.transform.localPosition = spawnPosition;
+                spawnedItem.transform.localScale = new Vector3(0.05f, 0.05f, 0.05f);
+                spawnedItem.SetActive(true);
+                count++;
+            }
+        }
+        usedPositions.Clear();
+    }
+
     private void OnImageChanged(ARTrackedImagesChangedEventArgs obj)
     {
+        string playerIdentity = PlayerStatusManager.Instance.GetIdentity();
         foreach (ARTrackedImage image in obj.added)
         {
-            //contentRoot = new GameObject("ContentRoot");
-            //contentRoot.transform.SetParent(image.transform, false);
-            //katana = Instantiate(katanaPrefab, contentRoot.transform);
-            if (image.referenceImage.name == "WaterDragon")
+            if (image.referenceImage.name == "WaterDragon" && playerIdentity == "Defender")
             {
                 katana = Instantiate(katanaPrefab, image.transform);
                 InitializeContent(katana);
@@ -65,20 +108,19 @@ public class PrefabCreatorImage : MonoBehaviour
                 hand = Instantiate(handPrefab, image.transform);
                 InitializeContent(hand);
             }
+            if (image.referenceImage.name == "NUSLogo" && playerIdentity == "Attacker")
+            {
+                SpawnAroundImage(image);
+            }
         }
-        //if (!isInitialized && katana)
-        //{
-        //    InitializeContent(katana);
-        //    isInitialized = true;
-        //}
         foreach (ARTrackedImage image in obj.updated)
         {
             if (hand == null)
             {
-                SetMessage("Hand Status: not exist");
+                //SetMessage("Hand Status: not exist");
                 return;
             }
-            if (image.referenceImage.name == "WaterDragon")
+            if (image.referenceImage.name == "WaterDragon" && katana != null)
             {
                 if (image.trackingState == TrackingState.Tracking)
                 {
@@ -89,7 +131,7 @@ public class PrefabCreatorImage : MonoBehaviour
                     //katana.SetActive(false);
                 }
             }
-            if (image.referenceImage.name == "Hand")
+            if (image.referenceImage.name == "Hand" && hand != null)
             {
                 if (image.trackingState == TrackingState.Tracking)
                 {
@@ -98,12 +140,12 @@ public class PrefabCreatorImage : MonoBehaviour
                     string message = "Hand Status: tracking active\n" + hand.transform.position;
                     message += "\n";
                     message += image.transform.position;
-                    SetMessage(message);
+                    //SetMessage(message);
                 }
                 else
                 {
                     //hand.SetActive(false);
-                    SetMessage("Hand Status: tracking inactive");
+                    //SetMessage("Hand Status: tracking inactive");
                 }
             }
         }

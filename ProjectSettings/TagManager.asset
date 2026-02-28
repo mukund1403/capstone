@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Right Stick
   - Left Stick
+  - Pickable
+  - Attacker AR Spawn
   layers:
   - Default
   - TransparentFX

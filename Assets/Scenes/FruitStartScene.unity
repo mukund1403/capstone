@@ -1247,11 +1247,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07cf642387ee1d14e84b8f4b1cc31324, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefabOffsetKatana: {x: 0, y: 0, z: 0}
-  prefabOffsetHand: {x: 0, y: 0, z: 0}
-  katanaPrefab: {fileID: 7898086976628606237, guid: d76813baffe480b46b7e862aaaf7789a, type: 3}
+  katanaPrefab: {fileID: 0}
   handPrefab: {fileID: 0}
   text: {fileID: 0}
+  bombPrefab: {fileID: 0}
 --- !u!114 &1050326295
 MonoBehaviour:
   m_ObjectHideFlags: 0
