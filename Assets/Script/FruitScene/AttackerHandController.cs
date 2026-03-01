@@ -6,6 +6,7 @@ public class AttackerHandController : MonoBehaviour
 {
     private Transform holdPoint;
     private Animator animator;
+    private string playerIdentity;
 
     public GameObject heldObject;
     public bool canHold;
@@ -13,6 +14,12 @@ public class AttackerHandController : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        playerIdentity = PlayerStatusManager.Instance.GetIdentity();
+        if (playerIdentity != "Attacker")
+        {
+            this.enabled = false;
+            return;
+        }
         holdPoint = transform.Find("HoldPoint");
         animator = GetComponent<Animator>();
         canHold = true;
@@ -25,9 +32,7 @@ public class AttackerHandController : MonoBehaviour
             return;
         }
 
-        string playerIdentity = PlayerStatusManager.Instance.GetIdentity();
-
-        if (collision.gameObject.CompareTag("Pickable") && playerIdentity == "Attacker")
+        if (collision.gameObject.CompareTag("Pickable"))
         {
             Grab(collision.gameObject);
             canHold = false;

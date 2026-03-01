@@ -107,6 +107,14 @@ public class PrefabCreatorImage : MonoBehaviour
             {
                 hand = Instantiate(handPrefab, image.transform);
                 InitializeContent(hand);
+                if (playerIdentity == "Attacker")
+                {
+                    hand.tag = "Attacker AR Spawn";
+                }
+                else if (playerIdentity == "Defender")
+                {
+                    hand.tag = "Defender AR Spawn";
+                }
             }
             if (image.referenceImage.name == "NUSLogo" && playerIdentity == "Attacker")
             {

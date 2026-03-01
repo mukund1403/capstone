@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.XR.CoreUtils;
 using UnityEngine;
 
-public class MotionController : MonoBehaviour, IIMUSource
+public class MotionManager : MonoBehaviour, IIMUSource
 {
     [SerializeField] private float speed;
     [SerializeField] private IIMUSource imuSource;

@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 2304759093205092189}
   m_Layer: 0
   m_Name: peach
-  m_TagString: Untagged
+  m_TagString: Safe Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -131,7 +131,7 @@ SphereCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Radius: 0.008151753
   m_Center: {x: 0.0010625503, y: 0.00045279355, z: 0.0000000018491513}
@@ -244,4 +244,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89982346633e2eb4baa4394dabf2ff04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 0}

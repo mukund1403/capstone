@@ -6,6 +6,8 @@ using TMPro;
 public class HandLogic : MonoBehaviour
 {
     [SerializeField] private TMP_Text text;
+    private int clickCount = 0;
+
     private void SetMessage(string message)
     {
         text.text = message;
@@ -13,15 +15,18 @@ public class HandLogic : MonoBehaviour
 
     public void ApplyHandAction()
     {
+        clickCount++;
+        if (clickCount > 3)
+        {
+            clickCount = 0;
+        }
         string playerIdentity = PlayerStatusManager.Instance.GetIdentity();
         if (playerIdentity == "Attacker")
         {
-            SetMessage("identity is attacker");
             AttackHandRelease();
         }
         else if (playerIdentity == "Defender")
         {
-            SetMessage("identity is attacker");
             DefendHandSkillRelease();
         }
     }
@@ -44,6 +49,16 @@ public class HandLogic : MonoBehaviour
 
     private void DefendHandSkillRelease()
     {
-
+        GameObject hand = GameObject.FindWithTag("Defender AR Spawn");
+        if (hand != null)
+        {
+            DefenderHandController controller = hand.GetComponent<DefenderHandController>();
+            controller.ApplyFreezeSkill();
+            SetMessage("skill released.");
+        }
+        else
+        {
+            SetMessage("No hand found: " + hand);
+        }
     }
 }

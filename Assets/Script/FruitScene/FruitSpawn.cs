@@ -1,21 +1,30 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
+using TMPro;
 using UnityEngine;
+using UnityEngine.XR.ARFoundation;
+using UnityEngine.XR.ARSubsystems;
 
 public class FruitSpawn : MonoBehaviour
 {
     private float lowestYPoint = -5;
 
     [SerializeField] private float spawnRate;
+    [SerializeField] private GameObject origin;
+    private ARTrackedImageManager aRTrackedImageManager;
+
     private float timer;
 
     private bool isActive;
+    private bool isImageScanned;
+    private Vector3 storedImagePos;
 
     [SerializeField] private GameObject lemonPrefab, pearPrefab, strawberryPrefab, applePrefab, watermelonPrefab, peachPrefab;
     [SerializeField] private GameObject bombPrefab;
     private GameObject[] fruits;
-    [SerializeField] private Camera cam;
+    private ARTrackedImage currentImage;
+
 
     private enum Direction
     {
@@ -25,10 +34,11 @@ public class FruitSpawn : MonoBehaviour
         Down
     }
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    void Awake()
     {
+        aRTrackedImageManager = origin.GetComponent<ARTrackedImageManager>();
         isActive = false;
+        isImageScanned = false;
         timer = 0;
         fruits = new GameObject[]
         {
@@ -40,16 +50,80 @@ public class FruitSpawn : MonoBehaviour
             peachPrefab
         };
     }
+    private void OnEnable()
+    {
+        if (aRTrackedImageManager != null)
+        {
+            aRTrackedImageManager.trackedImagesChanged += OnImageChanged;
+        }
+    }
 
-    public void setSpawnOnClick()
+    private void OnDisable()
+    {
+        if (aRTrackedImageManager != null)
+        {
+            aRTrackedImageManager.trackedImagesChanged -= OnImageChanged;
+        }
+    }
+
+    private void OnImageChanged(ARTrackedImagesChangedEventArgs obj)
+    {
+        foreach (ARTrackedImage image in obj.added)
+        {
+            currentImage = image;
+        }
+        foreach (ARTrackedImage image in obj.updated)
+        {
+            currentImage = image;
+        }
+    }
+
+    private void SetMessage(string message)
+    {
+        TMP_Text text = GameObject.Find("ScanText").GetComponent<TMP_Text>();
+        text.text = message;
+    }
+
+    public void SetSpawnOnClick()
     {
         if (isActive)
         {
             isActive = false;
         }
-        else
+        else if (isImageScanned)
         {
             isActive = true;
+        }
+        else
+        {
+            SetMessage("No scanned location.");
+        }
+        MqttPubTest();
+    }
+
+    public void SetSpawn(bool input)
+    {
+        isActive = input;
+    }
+
+    public void SetImageOnClick()
+    {
+        if (PlayerStatusManager.Instance.GetIdentity() != "Defender")
+        {
+            SetMessage("Scan disabled for your role.");
+            return;
+        }
+        if (currentImage.referenceImage.name == "NUSLogo" && currentImage.trackingState == TrackingState.Tracking)
+        {
+            isImageScanned = true;
+            storedImagePos = currentImage.transform.position;
+            string message = "Image Scanned. \n" + storedImagePos.ToString();
+            SetMessage(message);
+        } 
+        else
+        {
+            string message = "No Image Found. \n" + storedImagePos.ToString();
+            SetMessage(message);
         }
         MqttPubTest();
     }
@@ -76,7 +150,7 @@ public class FruitSpawn : MonoBehaviour
         Rigidbody rb = item.GetComponent<Rigidbody>();
         rb.useGravity = true;
         float spinForce = 5;
-        float gravityScale = 10f;
+        float gravityScale = 1f;
         switch (dir)
         {
             case Direction.Left:
@@ -92,37 +166,33 @@ public class FruitSpawn : MonoBehaviour
                 rb.AddTorque(Random.insideUnitSphere * spinForce, ForceMode.Impulse);
                 break;
         }
-        rb.AddForce(Physics.gravity * gravityScale, ForceMode.Acceleration);
     }
 
     private void ThrowFromBottom()
     {
-        Vector3 camPos = cam.transform.position;
-        float force = 11;
+        float force = 2;
         GameObject fruitChosen = fruits[Random.Range(0, fruits.Length)];
         bool isBomb = Random.value < 0.1f;
+        //Vector3 offset = new Vector3(Random.Range(-0.1f, 0.1f), 0, Random.Range(-0.1f, 0.1f));
+        Vector3 offset = new Vector3(0, 0, 0);
+        Vector3 spawnPos = storedImagePos + offset;
+
         if (fruitChosen != null && !isBomb)
         {
-            GameObject spawnedFruit = Instantiate(fruitChosen, new Vector3(Random.Range(camPos.x-3, camPos.x+3), -5, 7), transform.rotation);
+            GameObject spawnedFruit = Instantiate(fruitChosen, spawnPos, Quaternion.identity);
+            spawnedFruit.transform.SetParent(null);
+            spawnedFruit.transform.localScale *= 0.067f;
             spawnedFruit.SetActive(true);
-            applyPhysics(spawnedFruit, force, Direction.Up);
-            //GameObject spawnedFruit = Instantiate(fruitChosen, new Vector3(Random.Range(-1, 1), 0, 5), transform.rotation);
-            //spawnedFruit.SetActive(true);
-        } else if (isBomb)
-        {
-            GameObject bomb = Instantiate(bombPrefab, new Vector3(Random.Range(camPos.x - 3, camPos.x + 3), -5, 7), transform.rotation);
-            bomb.SetActive(true);
-            applyPhysics(bomb, force, Direction.Up);
+            //applyPhysics(spawnedFruit, force, Direction.Up);
         }
-    }
-
-    private void ThrowFromLeft()
-    {
-
-    }
-
-    private void ThrowFromRight()
-    {
+        else if (isBomb)
+        {
+            GameObject bomb = Instantiate(bombPrefab, spawnPos, Quaternion.identity);
+            bomb.transform.SetParent(null);
+            bomb.transform.localScale *= 0.067f;
+            bomb.SetActive(true);
+            //applyPhysics(bomb, force, Direction.Up);
+        }
     }
 
     private void MqttPubTest()

@@ -7,6 +7,8 @@ public class ButtonLogic : MonoBehaviour
 {
     [SerializeField] private GameObject helpMenu;
     [SerializeField] private GameObject selectRoleMenu;
+    [SerializeField] private GameObject gamePlayCanvas;
+    [SerializeField] private GameObject gameOverCanvas;
     private bool isLoadingScene = false;
 
     public void LoadGameScene()
@@ -20,7 +22,7 @@ public class ButtonLogic : MonoBehaviour
 
     public void QuitGame()
     {
-        if (!helpMenu.activeSelf && !selectRoleMenu.activeSelf)
+        if (!helpMenu.activeSelf && !selectRoleMenu.activeSelf || gameOverCanvas.activeSelf)
         {
             Application.Quit();
         }
@@ -50,5 +52,11 @@ public class ButtonLogic : MonoBehaviour
     public void CloseSelectRole()
     {
         selectRoleMenu.SetActive(false);
+    }
+
+    public void RestartGame()
+    {
+        gamePlayCanvas.SetActive(true);
+        gameOverCanvas.SetActive(false);
     }
 }

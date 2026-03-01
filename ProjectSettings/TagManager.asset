@@ -8,6 +8,9 @@ TagManager:
   - Left Stick
   - Pickable
   - Attacker AR Spawn
+  - Defender AR Spawn
+  - Orientation Data
+  - Safe Object
   layers:
   - Default
   - TransparentFX
