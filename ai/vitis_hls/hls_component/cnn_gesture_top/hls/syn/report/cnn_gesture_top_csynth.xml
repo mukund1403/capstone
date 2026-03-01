@@ -18,33 +18,55 @@
 <PipelineType>no</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>7.220</EstimatedClockPeriod>
+<EstimatedClockPeriod>13.301</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>225730</Best-caseLatency>
-<Average-caseLatency>225730</Average-caseLatency>
-<Worst-caseLatency>225730</Worst-caseLatency>
-<Best-caseRealTimeLatency>2.257 ms</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>2.257 ms</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>2.257 ms</Worst-caseRealTimeLatency>
-<Interval-min>225731</Interval-min>
-<Interval-max>225731</Interval-max>
+<Best-caseLatency>737</Best-caseLatency>
+<Average-caseLatency>737</Average-caseLatency>
+<Worst-caseLatency>737</Worst-caseLatency>
+<Best-caseRealTimeLatency>9.803 us</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>9.803 us</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>9.803 us</Worst-caseRealTimeLatency>
+<Interval-min>738</Interval-min>
+<Interval-max>738</Interval-max>
 <PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
+<SummaryOfLoopLatency>
+<VITIS_LOOP_112_1>
+<Slack>7.30</Slack>
+<TripCount>6</TripCount>
+<isPerfectNested>0</isPerfectNested>
+<Latency>7</Latency>
+<AbsoluteTimeLatency>93</AbsoluteTimeLatency>
+<PipelineII>1</PipelineII>
+<PipelineDepth>3</PipelineDepth>
+<PerformancePragma>-</PerformancePragma>
+<InstanceList>
+</InstanceList>
+</VITIS_LOOP_112_1>
+</SummaryOfLoopLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>../cnn_gesture_hls.cpp:258</SourceLocation>
+<SourceLocation>../cnn_gesture_hls.cpp:112</SourceLocation>
+<SummaryOfLoopViolations>
+<VITIS_LOOP_112_1>
+<Name>VITIS_LOOP_112_1</Name>
+<IssueType>-</IssueType>
+<ViolationType>-</ViolationType>
+<SourceLocation>../cnn_gesture_hls.cpp:112</SourceLocation>
+</VITIS_LOOP_112_1>
+</SummaryOfLoopViolations>
 </SummaryOfViolations>
 </PerformanceEstimates>
 
 <AreaEstimates>
 <Resources>
-<BRAM_18K>984</BRAM_18K>
-<DSP>119</DSP>
-<FF>22611</FF>
-<LUT>65711</LUT>
+<BRAM_18K>0</BRAM_18K>
+<DSP>37</DSP>
+<FF>4766</FF>
+<LUT>4722</LUT>
 <URAM>0</URAM>
 </Resources>
 <AvailableResources>

@@ -8,7 +8,7 @@ Diagnostics:
       FileOffset:      676
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          280381
+          Offset:          280278
           Length:          0
           ReplacementText: 'VITIS_LOOP_676_1: '
     Level:           Remark
@@ -20,7 +20,7 @@ Diagnostics:
       FileOffset:      690
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          280852
+          Offset:          280749
           Length:          0
           ReplacementText: 'VITIS_LOOP_690_1: '
     Level:           Remark
@@ -32,7 +32,7 @@ Diagnostics:
       FileOffset:      704
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          281324
+          Offset:          281221
           Length:          0
           ReplacementText: 'VITIS_LOOP_704_1: '
     Level:           Remark
@@ -44,7 +44,7 @@ Diagnostics:
       FileOffset:      1251
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          626311
+          Offset:          626617
           Length:          0
           ReplacementText: 'VITIS_LOOP_1251_1: '
     Level:           Remark
@@ -56,7 +56,7 @@ Diagnostics:
       FileOffset:      61
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2309465
+          Offset:          2309572
           Length:          0
           ReplacementText: 'VITIS_LOOP_61_1: '
     Level:           Remark
@@ -68,7 +68,7 @@ Diagnostics:
       FileOffset:      117
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2310288
+          Offset:          2310395
           Length:          0
           ReplacementText: 'VITIS_LOOP_117_1: '
     Level:           Remark
@@ -80,7 +80,7 @@ Diagnostics:
       FileOffset:      289
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2312959
+          Offset:          2313066
           Length:          0
           ReplacementText: 'VITIS_LOOP_289_1: '
     Level:           Remark
@@ -92,7 +92,7 @@ Diagnostics:
       FileOffset:      449
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2315695
+          Offset:          2315802
           Length:          0
           ReplacementText: 'VITIS_LOOP_449_1: '
     Level:           Remark
@@ -104,7 +104,7 @@ Diagnostics:
       FileOffset:      629
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2318865
+          Offset:          2318972
           Length:          0
           ReplacementText: 'VITIS_LOOP_629_1: '
     Level:           Remark
@@ -116,7 +116,7 @@ Diagnostics:
       FileOffset:      633
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2318951
+          Offset:          2319058
           Length:          0
           ReplacementText: 'VITIS_LOOP_633_2: '
     Level:           Remark
@@ -128,7 +128,7 @@ Diagnostics:
       FileOffset:      743
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2321265
+          Offset:          2321372
           Length:          0
           ReplacementText: 'VITIS_LOOP_743_1: '
     Level:           Remark
@@ -140,7 +140,7 @@ Diagnostics:
       FileOffset:      840
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2322763
+          Offset:          2322870
           Length:          0
           ReplacementText: 'VITIS_LOOP_840_1: '
     Level:           Remark
@@ -152,7 +152,7 @@ Diagnostics:
       FileOffset:      859
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2323000
+          Offset:          2323107
           Length:          0
           ReplacementText: 'VITIS_LOOP_859_2: '
     Level:           Remark
@@ -164,7 +164,7 @@ Diagnostics:
       FileOffset:      1176
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2329258
+          Offset:          2329365
           Length:          0
           ReplacementText: 'VITIS_LOOP_1176_1: '
     Level:           Remark
@@ -176,7 +176,7 @@ Diagnostics:
       FileOffset:      1259
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2330861
+          Offset:          2330968
           Length:          0
           ReplacementText: 'VITIS_LOOP_1259_1: '
     Level:           Remark
@@ -188,7 +188,7 @@ Diagnostics:
       FileOffset:      68
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2338753
+          Offset:          2338860
           Length:          0
           ReplacementText: 'VITIS_LOOP_68_1: '
     Level:           Remark
@@ -200,7 +200,7 @@ Diagnostics:
       FileOffset:      74
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2338918
+          Offset:          2339025
           Length:          0
           ReplacementText: 'VITIS_LOOP_74_2: '
     Level:           Remark
@@ -212,7 +212,7 @@ Diagnostics:
       FileOffset:      78
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2339034
+          Offset:          2339141
           Length:          0
           ReplacementText: 'VITIS_LOOP_78_3: '
     Level:           Remark
@@ -224,7 +224,7 @@ Diagnostics:
       FileOffset:      145
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2340876
+          Offset:          2340983
           Length:          0
           ReplacementText: 'VITIS_LOOP_145_4: '
     Level:           Remark
@@ -236,7 +236,7 @@ Diagnostics:
       FileOffset:      151
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2341041
+          Offset:          2341148
           Length:          0
           ReplacementText: 'VITIS_LOOP_151_5: '
     Level:           Remark
@@ -248,7 +248,7 @@ Diagnostics:
       FileOffset:      155
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2341157
+          Offset:          2341264
           Length:          0
           ReplacementText: 'VITIS_LOOP_155_6: '
     Level:           Remark
@@ -260,7 +260,7 @@ Diagnostics:
       FileOffset:      170
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2341557
+          Offset:          2341664
           Length:          0
           ReplacementText: 'VITIS_LOOP_170_7: '
     Level:           Remark
@@ -272,7 +272,7 @@ Diagnostics:
       FileOffset:      178
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2341799
+          Offset:          2341906
           Length:          0
           ReplacementText: 'VITIS_LOOP_178_8: '
     Level:           Remark
@@ -284,7 +284,7 @@ Diagnostics:
       FileOffset:      243
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2345221
+          Offset:          2345328
           Length:          0
           ReplacementText: 'VITIS_LOOP_243_9: '
     Level:           Remark
@@ -296,7 +296,7 @@ Diagnostics:
       FileOffset:      249
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2345388
+          Offset:          2345495
           Length:          0
           ReplacementText: 'VITIS_LOOP_249_10: '
     Level:           Remark
@@ -308,7 +308,7 @@ Diagnostics:
       FileOffset:      253
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2345507
+          Offset:          2345614
           Length:          0
           ReplacementText: 'VITIS_LOOP_253_11: '
     Level:           Remark
@@ -320,7 +320,7 @@ Diagnostics:
       FileOffset:      268
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2345908
+          Offset:          2346015
           Length:          0
           ReplacementText: 'VITIS_LOOP_268_12: '
     Level:           Remark
@@ -332,7 +332,7 @@ Diagnostics:
       FileOffset:      276
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2346157
+          Offset:          2346264
           Length:          0
           ReplacementText: 'VITIS_LOOP_276_13: '
     Level:           Remark
@@ -344,7 +344,7 @@ Diagnostics:
       FileOffset:      505
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2361729
+          Offset:          2361836
           Length:          0
           ReplacementText: 'VITIS_LOOP_505_14: '
     Level:           Remark
@@ -356,7 +356,7 @@ Diagnostics:
       FileOffset:      511
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2361896
+          Offset:          2362003
           Length:          0
           ReplacementText: 'VITIS_LOOP_511_15: '
     Level:           Remark
@@ -368,7 +368,7 @@ Diagnostics:
       FileOffset:      515
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2362014
+          Offset:          2362121
           Length:          0
           ReplacementText: 'VITIS_LOOP_515_16: '
     Level:           Remark
@@ -380,7 +380,7 @@ Diagnostics:
       FileOffset:      525
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2362210
+          Offset:          2362317
           Length:          0
           ReplacementText: 'VITIS_LOOP_525_17: '
     Level:           Remark
@@ -392,7 +392,7 @@ Diagnostics:
       FileOffset:      529
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2362319
+          Offset:          2362426
           Length:          0
           ReplacementText: 'VITIS_LOOP_529_18: '
     Level:           Remark
@@ -404,7 +404,7 @@ Diagnostics:
       FileOffset:      539
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2362615
+          Offset:          2362722
           Length:          0
           ReplacementText: 'VITIS_LOOP_539_19: '
     Level:           Remark
@@ -416,7 +416,7 @@ Diagnostics:
       FileOffset:      547
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2362881
+          Offset:          2362988
           Length:          0
           ReplacementText: 'VITIS_LOOP_547_20: '
     Level:           Remark
@@ -428,7 +428,7 @@ Diagnostics:
       FileOffset:      908
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2395137
+          Offset:          2395244
           Length:          0
           ReplacementText: 'VITIS_LOOP_908_21: '
     Level:           Remark
@@ -440,7 +440,7 @@ Diagnostics:
       FileOffset:      914
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2395304
+          Offset:          2395411
           Length:          0
           ReplacementText: 'VITIS_LOOP_914_22: '
     Level:           Remark
@@ -452,7 +452,7 @@ Diagnostics:
       FileOffset:      918
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2395423
+          Offset:          2395530
           Length:          0
           ReplacementText: 'VITIS_LOOP_918_23: '
     Level:           Remark
@@ -464,7 +464,7 @@ Diagnostics:
       FileOffset:      1034
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2398135
+          Offset:          2398242
           Length:          0
           ReplacementText: 'VITIS_LOOP_1034_1: '
     Level:           Remark
@@ -476,7 +476,7 @@ Diagnostics:
       FileOffset:      1040
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2398300
+          Offset:          2398407
           Length:          0
           ReplacementText: 'VITIS_LOOP_1040_2: '
     Level:           Remark
@@ -488,7 +488,7 @@ Diagnostics:
       FileOffset:      1044
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2398417
+          Offset:          2398524
           Length:          0
           ReplacementText: 'VITIS_LOOP_1044_3: '
     Level:           Remark
@@ -500,7 +500,7 @@ Diagnostics:
       FileOffset:      1131
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2401906
+          Offset:          2402013
           Length:          0
           ReplacementText: 'VITIS_LOOP_1131_4: '
     Level:           Remark
@@ -512,7 +512,7 @@ Diagnostics:
       FileOffset:      1137
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2402072
+          Offset:          2402179
           Length:          0
           ReplacementText: 'VITIS_LOOP_1137_5: '
     Level:           Remark
@@ -524,7 +524,7 @@ Diagnostics:
       FileOffset:      1141
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2402190
+          Offset:          2402297
           Length:          0
           ReplacementText: 'VITIS_LOOP_1141_6: '
     Level:           Remark
@@ -536,7 +536,7 @@ Diagnostics:
       FileOffset:      1160
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2402689
+          Offset:          2402796
           Length:          0
           ReplacementText: 'VITIS_LOOP_1160_7: '
     Level:           Remark
@@ -548,7 +548,7 @@ Diagnostics:
       FileOffset:      1167
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2402942
+          Offset:          2403049
           Length:          0
           ReplacementText: 'VITIS_LOOP_1167_8: '
     Level:           Remark
@@ -560,7 +560,7 @@ Diagnostics:
       FileOffset:      1283
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2408407
+          Offset:          2408514
           Length:          0
           ReplacementText: 'VITIS_LOOP_1283_9: '
     Level:           Remark
@@ -572,7 +572,7 @@ Diagnostics:
       FileOffset:      1289
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2408574
+          Offset:          2408681
           Length:          0
           ReplacementText: 'VITIS_LOOP_1289_10: '
     Level:           Remark
@@ -584,7 +584,7 @@ Diagnostics:
       FileOffset:      1293
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2408692
+          Offset:          2408799
           Length:          0
           ReplacementText: 'VITIS_LOOP_1293_11: '
     Level:           Remark
@@ -596,7 +596,7 @@ Diagnostics:
       FileOffset:      1313
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2409220
+          Offset:          2409327
           Length:          0
           ReplacementText: 'VITIS_LOOP_1313_12: '
     Level:           Remark
@@ -608,7 +608,7 @@ Diagnostics:
       FileOffset:      1320
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2409480
+          Offset:          2409587
           Length:          0
           ReplacementText: 'VITIS_LOOP_1320_13: '
     Level:           Remark
@@ -620,7 +620,7 @@ Diagnostics:
       FileOffset:      1582
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2426775
+          Offset:          2426882
           Length:          0
           ReplacementText: 'VITIS_LOOP_1582_14: '
     Level:           Remark
@@ -632,7 +632,7 @@ Diagnostics:
       FileOffset:      1588
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2426942
+          Offset:          2427049
           Length:          0
           ReplacementText: 'VITIS_LOOP_1588_15: '
     Level:           Remark
@@ -644,7 +644,7 @@ Diagnostics:
       FileOffset:      1592
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2427061
+          Offset:          2427168
           Length:          0
           ReplacementText: 'VITIS_LOOP_1592_16: '
     Level:           Remark
@@ -656,7 +656,7 @@ Diagnostics:
       FileOffset:      1616
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2427554
+          Offset:          2427661
           Length:          0
           ReplacementText: 'VITIS_LOOP_1616_17: '
     Level:           Remark
@@ -668,7 +668,7 @@ Diagnostics:
       FileOffset:      1623
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2427832
+          Offset:          2427939
           Length:          0
           ReplacementText: 'VITIS_LOOP_1623_18: '
     Level:           Remark
@@ -680,7 +680,7 @@ Diagnostics:
       FileOffset:      2053
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2466290
+          Offset:          2466397
           Length:          0
           ReplacementText: 'VITIS_LOOP_2053_19: '
     Level:           Remark
@@ -692,7 +692,7 @@ Diagnostics:
       FileOffset:      2059
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2466457
+          Offset:          2466564
           Length:          0
           ReplacementText: 'VITIS_LOOP_2059_20: '
     Level:           Remark
@@ -704,7 +704,7 @@ Diagnostics:
       FileOffset:      2063
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2466576
+          Offset:          2466683
           Length:          0
           ReplacementText: 'VITIS_LOOP_2063_21: '
     Level:           Remark
@@ -716,7 +716,7 @@ Diagnostics:
       FileOffset:      2192
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2469206
+          Offset:          2469313
           Length:          0
           ReplacementText: 'VITIS_LOOP_2192_1: '
     Level:           Remark
@@ -728,7 +728,7 @@ Diagnostics:
       FileOffset:      2199
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2469384
+          Offset:          2469491
           Length:          0
           ReplacementText: 'VITIS_LOOP_2199_2: '
     Level:           Remark
@@ -740,7 +740,7 @@ Diagnostics:
       FileOffset:      2203
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2469495
+          Offset:          2469602
           Length:          0
           ReplacementText: 'VITIS_LOOP_2203_3: '
     Level:           Remark
@@ -752,7 +752,7 @@ Diagnostics:
       FileOffset:      2250
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2471123
+          Offset:          2471230
           Length:          0
           ReplacementText: 'VITIS_LOOP_2250_4: '
     Level:           Remark
@@ -764,7 +764,7 @@ Diagnostics:
       FileOffset:      2257
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2471300
+          Offset:          2471407
           Length:          0
           ReplacementText: 'VITIS_LOOP_2257_5: '
     Level:           Remark
@@ -776,7 +776,7 @@ Diagnostics:
       FileOffset:      2261
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2471411
+          Offset:          2471518
           Length:          0
           ReplacementText: 'VITIS_LOOP_2261_6: '
     Level:           Remark
@@ -788,7 +788,7 @@ Diagnostics:
       FileOffset:      2279
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2471803
+          Offset:          2471910
           Length:          0
           ReplacementText: 'VITIS_LOOP_2279_7: '
     Level:           Remark
@@ -800,7 +800,7 @@ Diagnostics:
       FileOffset:      2334
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2474280
+          Offset:          2474387
           Length:          0
           ReplacementText: 'VITIS_LOOP_2334_8: '
     Level:           Remark
@@ -812,7 +812,7 @@ Diagnostics:
       FileOffset:      2341
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2474462
+          Offset:          2474569
           Length:          0
           ReplacementText: 'VITIS_LOOP_2341_9: '
     Level:           Remark
@@ -824,7 +824,7 @@ Diagnostics:
       FileOffset:      2345
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2474574
+          Offset:          2474681
           Length:          0
           ReplacementText: 'VITIS_LOOP_2345_10: '
     Level:           Remark
@@ -836,7 +836,7 @@ Diagnostics:
       FileOffset:      2363
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2474974
+          Offset:          2475081
           Length:          0
           ReplacementText: 'VITIS_LOOP_2363_11: '
     Level:           Remark
@@ -848,7 +848,7 @@ Diagnostics:
       FileOffset:      2452
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2480426
+          Offset:          2480533
           Length:          0
           ReplacementText: 'VITIS_LOOP_2452_12: '
     Level:           Remark
@@ -860,7 +860,7 @@ Diagnostics:
       FileOffset:      2459
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2480609
+          Offset:          2480716
           Length:          0
           ReplacementText: 'VITIS_LOOP_2459_13: '
     Level:           Remark
@@ -872,7 +872,7 @@ Diagnostics:
       FileOffset:      2463
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2480722
+          Offset:          2480829
           Length:          0
           ReplacementText: 'VITIS_LOOP_2463_14: '
     Level:           Remark
@@ -884,7 +884,7 @@ Diagnostics:
       FileOffset:      2473
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2480912
+          Offset:          2481019
           Length:          0
           ReplacementText: 'VITIS_LOOP_2473_15: '
     Level:           Remark
@@ -896,7 +896,7 @@ Diagnostics:
       FileOffset:      2477
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2481014
+          Offset:          2481121
           Length:          0
           ReplacementText: 'VITIS_LOOP_2477_16: '
     Level:           Remark
@@ -908,7 +908,7 @@ Diagnostics:
       FileOffset:      2488
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2481307
+          Offset:          2481414
           Length:          0
           ReplacementText: 'VITIS_LOOP_2488_17: '
     Level:           Remark
@@ -920,7 +920,7 @@ Diagnostics:
       FileOffset:      2496
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2481505
+          Offset:          2481612
           Length:          0
           ReplacementText: 'VITIS_LOOP_2496_18: '
     Level:           Remark
@@ -932,7 +932,7 @@ Diagnostics:
       FileOffset:      2821
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2515994
+          Offset:          2516101
           Length:          0
           ReplacementText: 'VITIS_LOOP_2821_19: '
     Level:           Remark
@@ -944,7 +944,7 @@ Diagnostics:
       FileOffset:      2828
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2516177
+          Offset:          2516284
           Length:          0
           ReplacementText: 'VITIS_LOOP_2828_20: '
     Level:           Remark
@@ -956,7 +956,7 @@ Diagnostics:
       FileOffset:      2832
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2516290
+          Offset:          2516397
           Length:          0
           ReplacementText: 'VITIS_LOOP_2832_21: '
     Level:           Remark
@@ -968,7 +968,7 @@ Diagnostics:
       FileOffset:      2920
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2518095
+          Offset:          2518202
           Length:          0
           ReplacementText: 'VITIS_LOOP_2920_1: '
     Level:           Remark
@@ -980,7 +980,7 @@ Diagnostics:
       FileOffset:      2927
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2518206
+          Offset:          2518313
           Length:          0
           ReplacementText: 'VITIS_LOOP_2927_2: '
     Level:           Remark
@@ -992,7 +992,7 @@ Diagnostics:
       FileOffset:      2931
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2518281
+          Offset:          2518388
           Length:          0
           ReplacementText: 'VITIS_LOOP_2931_3: '
     Level:           Remark
@@ -1004,7 +1004,7 @@ Diagnostics:
       FileOffset:      2946
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2518573
+          Offset:          2518680
           Length:          0
           ReplacementText: 'VITIS_LOOP_2946_4: '
     Level:           Remark
@@ -1016,7 +1016,7 @@ Diagnostics:
       FileOffset:      2978
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2519789
+          Offset:          2519896
           Length:          0
           ReplacementText: 'VITIS_LOOP_2978_5: '
     Level:           Remark
@@ -1028,7 +1028,7 @@ Diagnostics:
       FileOffset:      2985
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2519903
+          Offset:          2520010
           Length:          0
           ReplacementText: 'VITIS_LOOP_2985_6: '
     Level:           Remark
@@ -1040,7 +1040,7 @@ Diagnostics:
       FileOffset:      2989
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2519980
+          Offset:          2520087
           Length:          0
           ReplacementText: 'VITIS_LOOP_2989_7: '
     Level:           Remark
@@ -1052,7 +1052,7 @@ Diagnostics:
       FileOffset:      3004
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2520279
+          Offset:          2520386
           Length:          0
           ReplacementText: 'VITIS_LOOP_3004_8: '
     Level:           Remark
@@ -1064,7 +1064,7 @@ Diagnostics:
       FileOffset:      3054
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2523614
+          Offset:          2523721
           Length:          0
           ReplacementText: 'VITIS_LOOP_3054_9: '
     Level:           Remark
@@ -1076,7 +1076,7 @@ Diagnostics:
       FileOffset:      3061
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2523728
+          Offset:          2523835
           Length:          0
           ReplacementText: 'VITIS_LOOP_3061_10: '
     Level:           Remark
@@ -1088,7 +1088,7 @@ Diagnostics:
       FileOffset:      3065
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2523805
+          Offset:          2523912
           Length:          0
           ReplacementText: 'VITIS_LOOP_3065_11: '
     Level:           Remark
@@ -1100,7 +1100,7 @@ Diagnostics:
       FileOffset:      3080
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2524105
+          Offset:          2524212
           Length:          0
           ReplacementText: 'VITIS_LOOP_3080_12: '
     Level:           Remark
@@ -1112,7 +1112,7 @@ Diagnostics:
       FileOffset:      3217
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2543419
+          Offset:          2543526
           Length:          0
           ReplacementText: 'VITIS_LOOP_3217_13: '
     Level:           Remark
@@ -1124,7 +1124,7 @@ Diagnostics:
       FileOffset:      3224
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2543536
+          Offset:          2543643
           Length:          0
           ReplacementText: 'VITIS_LOOP_3224_14: '
     Level:           Remark
@@ -1136,7 +1136,7 @@ Diagnostics:
       FileOffset:      3228
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2543615
+          Offset:          2543722
           Length:          0
           ReplacementText: 'VITIS_LOOP_3228_15: '
     Level:           Remark
@@ -1148,7 +1148,7 @@ Diagnostics:
       FileOffset:      3243
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2543906
+          Offset:          2544013
           Length:          0
           ReplacementText: 'VITIS_LOOP_3243_16: '
     Level:           Remark
@@ -1160,7 +1160,7 @@ Diagnostics:
       FileOffset:      3403
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2569518
+          Offset:          2569625
           Length:          0
           ReplacementText: 'VITIS_LOOP_3403_17: '
     Level:           Remark
@@ -1172,7 +1172,7 @@ Diagnostics:
       FileOffset:      3410
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2569635
+          Offset:          2569742
           Length:          0
           ReplacementText: 'VITIS_LOOP_3410_18: '
     Level:           Remark
@@ -1184,7 +1184,7 @@ Diagnostics:
       FileOffset:      3414
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2569716
+          Offset:          2569823
           Length:          0
           ReplacementText: 'VITIS_LOOP_3414_19: '
     Level:           Remark
@@ -1196,7 +1196,7 @@ Diagnostics:
       FileOffset:      703
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2603807
+          Offset:          2603914
           Length:          0
           ReplacementText: 'VITIS_LOOP_703_1: '
     Level:           Remark
@@ -1208,7 +1208,7 @@ Diagnostics:
       FileOffset:      921
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2612214
+          Offset:          2612321
           Length:          0
           ReplacementText: 'VITIS_LOOP_921_1: '
     Level:           Remark
@@ -1220,7 +1220,7 @@ Diagnostics:
       FileOffset:      1345
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2631209
+          Offset:          2631316
           Length:          0
           ReplacementText: 'VITIS_LOOP_1345_1: '
     Level:           Remark
@@ -1232,7 +1232,7 @@ Diagnostics:
       FileOffset:      243
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2646194
+          Offset:          2646300
           Length:          0
           ReplacementText: 'VITIS_LOOP_243_1: '
     Level:           Remark
@@ -1244,7 +1244,7 @@ Diagnostics:
       FileOffset:      271
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2646726
+          Offset:          2646832
           Length:          0
           ReplacementText: 'VITIS_LOOP_271_2: '
     Level:           Remark
@@ -1256,7 +1256,7 @@ Diagnostics:
       FileOffset:      48
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2662738
+          Offset:          2662843
           Length:          0
           ReplacementText: 'VITIS_LOOP_48_1: '
     Level:           Remark
@@ -1268,7 +1268,7 @@ Diagnostics:
       FileOffset:      109
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2663905
+          Offset:          2664010
           Length:          0
           ReplacementText: 'VITIS_LOOP_109_2: '
     Level:           Remark
@@ -1280,7 +1280,7 @@ Diagnostics:
       FileOffset:      123
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2664221
+          Offset:          2664326
           Length:          0
           ReplacementText: 'VITIS_LOOP_123_3: '
     Level:           Remark
@@ -1292,7 +1292,7 @@ Diagnostics:
       FileOffset:      153
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2664746
+          Offset:          2664851
           Length:          0
           ReplacementText: 'VITIS_LOOP_153_4: '
     Level:           Remark
@@ -1304,7 +1304,7 @@ Diagnostics:
       FileOffset:      281
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2666619
+          Offset:          2666724
           Length:          0
           ReplacementText: 'VITIS_LOOP_281_1: '
     Level:           Remark
@@ -1316,7 +1316,7 @@ Diagnostics:
       FileOffset:      301
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2666999
+          Offset:          2667104
           Length:          0
           ReplacementText: 'VITIS_LOOP_301_2: '
     Level:           Remark
@@ -1328,7 +1328,7 @@ Diagnostics:
       FileOffset:      315
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2667325
+          Offset:          2667430
           Length:          0
           ReplacementText: 'VITIS_LOOP_315_3: '
     Level:           Remark
@@ -1340,7 +1340,7 @@ Diagnostics:
       FileOffset:      433
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2669178
+          Offset:          2669283
           Length:          0
           ReplacementText: 'VITIS_LOOP_433_1: '
     Level:           Remark
@@ -1352,7 +1352,7 @@ Diagnostics:
       FileOffset:      447
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2669517
+          Offset:          2669622
           Length:          0
           ReplacementText: 'VITIS_LOOP_447_2: '
     Level:           Remark
@@ -1364,7 +1364,7 @@ Diagnostics:
       FileOffset:      33
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2672210
+          Offset:          2672314
           Length:          0
           ReplacementText: 'VITIS_LOOP_33_1: '
     Level:           Remark
@@ -1376,7 +1376,7 @@ Diagnostics:
       FileOffset:      183
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2675132
+          Offset:          2675236
           Length:          0
           ReplacementText: 'VITIS_LOOP_183_1: '
     Level:           Remark
@@ -1388,7 +1388,7 @@ Diagnostics:
       FileOffset:      248
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2676441
+          Offset:          2676545
           Length:          0
           ReplacementText: 'VITIS_LOOP_248_1: '
     Level:           Remark
@@ -1400,7 +1400,7 @@ Diagnostics:
       FileOffset:      44
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2682105
+          Offset:          2682208
           Length:          0
           ReplacementText: 'VITIS_LOOP_44_1: '
     Level:           Remark
@@ -1412,7 +1412,7 @@ Diagnostics:
       FileOffset:      16
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2687430
+          Offset:          2687532
           Length:          0
           ReplacementText: 'VITIS_LOOP_16_1: '
     Level:           Remark
@@ -1424,7 +1424,7 @@ Diagnostics:
       FileOffset:      27
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2687608
+          Offset:          2687710
           Length:          0
           ReplacementText: 'VITIS_LOOP_27_1: '
     Level:           Remark
@@ -1436,7 +1436,7 @@ Diagnostics:
       FileOffset:      38
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2687772
+          Offset:          2687874
           Length:          0
           ReplacementText: 'VITIS_LOOP_38_1: '
     Level:           Remark
@@ -1448,7 +1448,7 @@ Diagnostics:
       FileOffset:      49
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2687937
+          Offset:          2688039
           Length:          0
           ReplacementText: 'VITIS_LOOP_49_1: '
     Level:           Remark
@@ -1460,7 +1460,7 @@ Diagnostics:
       FileOffset:      60
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2688114
+          Offset:          2688216
           Length:          0
           ReplacementText: 'VITIS_LOOP_60_1: '
     Level:           Remark
@@ -1472,7 +1472,7 @@ Diagnostics:
       FileOffset:      71
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2688292
+          Offset:          2688394
           Length:          0
           ReplacementText: 'VITIS_LOOP_71_1: '
     Level:           Remark
@@ -1484,7 +1484,7 @@ Diagnostics:
       FileOffset:      82
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2688456
+          Offset:          2688558
           Length:          0
           ReplacementText: 'VITIS_LOOP_82_1: '
     Level:           Remark
@@ -1496,7 +1496,7 @@ Diagnostics:
       FileOffset:      93
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2688621
+          Offset:          2688723
           Length:          0
           ReplacementText: 'VITIS_LOOP_93_1: '
     Level:           Remark
@@ -1508,7 +1508,7 @@ Diagnostics:
       FileOffset:      26
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2760372
+          Offset:          2760468
           Length:          0
           ReplacementText: 'VITIS_LOOP_26_1: '
     Level:           Remark
@@ -1520,7 +1520,7 @@ Diagnostics:
       FileOffset:      40
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2762142
+          Offset:          2762238
           Length:          0
           ReplacementText: 'VITIS_LOOP_40_1: '
     Level:           Remark
@@ -1532,7 +1532,7 @@ Diagnostics:
       FileOffset:      49
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2766681
+          Offset:          2766776
           Length:          0
           ReplacementText: 'VITIS_LOOP_49_1: '
     Level:           Remark
@@ -1544,7 +1544,7 @@ Diagnostics:
       FileOffset:      81
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2767416
+          Offset:          2767511
           Length:          0
           ReplacementText: 'VITIS_LOOP_81_2: '
     Level:           Remark
@@ -1556,297 +1556,129 @@ Diagnostics:
       FileOffset:      169
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          2769105
+          Offset:          2769200
           Length:          0
           ReplacementText: 'VITIS_LOOP_169_3: '
     Level:           Remark
     BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
   - DiagnosticName:  xilinx-label-all-loops
     DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_62_1:  '
+      Message:         'Added loop label VITIS_LOOP_33_1:  '
       FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\cnn_gesture_hls.cpp'
-      FileOffset:      62
+      FileOffset:      33
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          5657489
+          Offset:          2822159
           Length:          0
-          ReplacementText: 'VITIS_LOOP_62_1: '
+          ReplacementText: 'VITIS_LOOP_33_1: '
     Level:           Remark
     BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
   - DiagnosticName:  xilinx-label-all-loops
     DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_63_2:  '
+      Message:         'Added loop label VITIS_LOOP_39_2:  '
       FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\cnn_gesture_hls.cpp'
-      FileOffset:      63
+      FileOffset:      39
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          5657529
+          Offset:          2822291
           Length:          0
-          ReplacementText: 'VITIS_LOOP_63_2: '
+          ReplacementText: 'VITIS_LOOP_39_2: '
     Level:           Remark
     BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
   - DiagnosticName:  xilinx-label-all-loops
     DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_66_3:  '
+      Message:         'Added loop label VITIS_LOOP_45_3:  '
       FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\cnn_gesture_hls.cpp'
-      FileOffset:      66
+      FileOffset:      45
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          5657600
+          Offset:          2822456
           Length:          0
-          ReplacementText: 'VITIS_LOOP_66_3: '
+          ReplacementText: 'VITIS_LOOP_45_3: '
     Level:           Remark
     BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
   - DiagnosticName:  xilinx-label-all-loops
     DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_69_4:  '
+      Message:         'Added loop label VITIS_LOOP_70_1:  '
       FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\cnn_gesture_hls.cpp'
-      FileOffset:      69
+      FileOffset:      70
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          5657732
+          Offset:          2823171
           Length:          0
-          ReplacementText: 'VITIS_LOOP_69_4: '
+          ReplacementText: 'VITIS_LOOP_70_1: '
     Level:           Remark
     BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
   - DiagnosticName:  xilinx-label-all-loops
     DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_100_1:  '
+      Message:         'Added loop label VITIS_LOOP_74_2:  '
       FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\cnn_gesture_hls.cpp'
-      FileOffset:      100
+      FileOffset:      74
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          5658579
+          Offset:          2823243
           Length:          0
-          ReplacementText: 'VITIS_LOOP_100_1: '
+          ReplacementText: 'VITIS_LOOP_74_2: '
     Level:           Remark
     BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
   - DiagnosticName:  xilinx-label-all-loops
     DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_101_2:  '
+      Message:         'Added loop label VITIS_LOOP_75_3:  '
       FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\cnn_gesture_hls.cpp'
-      FileOffset:      101
+      FileOffset:      75
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          5658623
+          Offset:          2823283
           Length:          0
-          ReplacementText: 'VITIS_LOOP_101_2: '
+          ReplacementText: 'VITIS_LOOP_75_3: '
     Level:           Remark
     BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
   - DiagnosticName:  xilinx-label-all-loops
     DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_115_1:  '
+      Message:         'Added loop label VITIS_LOOP_85_4:  '
       FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\cnn_gesture_hls.cpp'
-      FileOffset:      115
+      FileOffset:      85
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          5658916
+          Offset:          2823596
           Length:          0
-          ReplacementText: 'VITIS_LOOP_115_1: '
+          ReplacementText: 'VITIS_LOOP_85_4: '
     Level:           Remark
     BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
   - DiagnosticName:  xilinx-label-all-loops
     DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_116_2:  '
+      Message:         'Added loop label VITIS_LOOP_90_5:  '
       FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\cnn_gesture_hls.cpp'
-      FileOffset:      116
+      FileOffset:      90
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          5658960
+          Offset:          2823708
           Length:          0
-          ReplacementText: 'VITIS_LOOP_116_2: '
+          ReplacementText: 'VITIS_LOOP_90_5: '
     Level:           Remark
     BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
   - DiagnosticName:  xilinx-label-all-loops
     DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_119_3:  '
+      Message:         'Added loop label VITIS_LOOP_92_6:  '
       FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\cnn_gesture_hls.cpp'
-      FileOffset:      119
+      FileOffset:      92
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          5659031
+          Offset:          2823772
           Length:          0
-          ReplacementText: 'VITIS_LOOP_119_3: '
+          ReplacementText: 'VITIS_LOOP_92_6: '
     Level:           Remark
     BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
   - DiagnosticName:  xilinx-label-all-loops
     DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_122_4:  '
+      Message:         'Added loop label VITIS_LOOP_112_1:  '
       FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\cnn_gesture_hls.cpp'
-      FileOffset:      122
+      FileOffset:      112
       Replacements:
         - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          5659167
+          Offset:          2824409
           Length:          0
-          ReplacementText: 'VITIS_LOOP_122_4: '
-    Level:           Remark
-    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
-  - DiagnosticName:  xilinx-label-all-loops
-    DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_149_1:  '
-      FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\cnn_gesture_hls.cpp'
-      FileOffset:      149
-      Replacements:
-        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          5660028
-          Length:          0
-          ReplacementText: 'VITIS_LOOP_149_1: '
-    Level:           Remark
-    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
-  - DiagnosticName:  xilinx-label-all-loops
-    DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_150_2:  '
-      FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\cnn_gesture_hls.cpp'
-      FileOffset:      150
-      Replacements:
-        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          5660072
-          Length:          0
-          ReplacementText: 'VITIS_LOOP_150_2: '
-    Level:           Remark
-    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
-  - DiagnosticName:  xilinx-label-all-loops
-    DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_165_1:  '
-      FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\cnn_gesture_hls.cpp'
-      FileOffset:      165
-      Replacements:
-        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          5660381
-          Length:          0
-          ReplacementText: 'VITIS_LOOP_165_1: '
-    Level:           Remark
-    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
-  - DiagnosticName:  xilinx-label-all-loops
-    DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_166_2:  '
-      FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\cnn_gesture_hls.cpp'
-      FileOffset:      166
-      Replacements:
-        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          5660425
-          Length:          0
-          ReplacementText: 'VITIS_LOOP_166_2: '
-    Level:           Remark
-    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
-  - DiagnosticName:  xilinx-label-all-loops
-    DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_180_1:  '
-      FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\cnn_gesture_hls.cpp'
-      FileOffset:      180
-      Replacements:
-        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          5660661
-          Length:          0
-          ReplacementText: 'VITIS_LOOP_180_1: '
-    Level:           Remark
-    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
-  - DiagnosticName:  xilinx-label-all-loops
-    DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_183_2:  '
-      FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\cnn_gesture_hls.cpp'
-      FileOffset:      183
-      Replacements:
-        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          5660748
-          Length:          0
-          ReplacementText: 'VITIS_LOOP_183_2: '
-    Level:           Remark
-    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
-  - DiagnosticName:  xilinx-label-all-loops
-    DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_198_1:  '
-      FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\cnn_gesture_hls.cpp'
-      FileOffset:      198
-      Replacements:
-        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          5661043
-          Length:          0
-          ReplacementText: 'VITIS_LOOP_198_1: '
-    Level:           Remark
-    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
-  - DiagnosticName:  xilinx-label-all-loops
-    DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_201_2:  '
-      FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\cnn_gesture_hls.cpp'
-      FileOffset:      201
-      Replacements:
-        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          5661130
-          Length:          0
-          ReplacementText: 'VITIS_LOOP_201_2: '
-    Level:           Remark
-    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
-  - DiagnosticName:  xilinx-label-all-loops
-    DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_214_1:  '
-      FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\cnn_gesture_hls.cpp'
-      FileOffset:      214
-      Replacements:
-        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          5661428
-          Length:          0
-          ReplacementText: 'VITIS_LOOP_214_1: '
-    Level:           Remark
-    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
-  - DiagnosticName:  xilinx-label-all-loops
-    DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_220_2:  '
-      FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\cnn_gesture_hls.cpp'
-      FileOffset:      220
-      Replacements:
-        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          5661559
-          Length:          0
-          ReplacementText: 'VITIS_LOOP_220_2: '
-    Level:           Remark
-    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
-  - DiagnosticName:  xilinx-label-all-loops
-    DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_225_3:  '
-      FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\cnn_gesture_hls.cpp'
-      FileOffset:      225
-      Replacements:
-        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          5661688
-          Length:          0
-          ReplacementText: 'VITIS_LOOP_225_3: '
-    Level:           Remark
-    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
-  - DiagnosticName:  xilinx-label-all-loops
-    DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_270_1:  '
-      FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\cnn_gesture_hls.cpp'
-      FileOffset:      270
-      Replacements:
-        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          5662800
-          Length:          0
-          ReplacementText: 'VITIS_LOOP_270_1: '
-    Level:           Remark
-    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
-  - DiagnosticName:  xilinx-label-all-loops
-    DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_271_2:  '
-      FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\cnn_gesture_hls.cpp'
-      FileOffset:      271
-      Replacements:
-        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          5662840
-          Length:          0
-          ReplacementText: 'VITIS_LOOP_271_2: '
-    Level:           Remark
-    BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
-  - DiagnosticName:  xilinx-label-all-loops
-    DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_281_3:  '
-      FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\cnn_gesture_hls.cpp'
-      FileOffset:      281
-      Replacements:
-        - FilePath:        'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component\cnn_gesture_top\hls\.autopilot\db\cnn_gesture_hls.pp.0.cpp'
-          Offset:          5663091
-          Length:          0
-          ReplacementText: 'VITIS_LOOP_281_3: '
+          ReplacementText: 'VITIS_LOOP_112_1: '
     Level:           Remark
     BuildDirectory:  'C:\Users\Jonathan\Desktop\capstone\ai\vitis_hls\hls_component'
 ...

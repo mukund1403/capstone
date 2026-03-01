@@ -3385,11 +3385,11 @@
       <key>filename</key>
       <string>../cnn_gesture_hls.cpp</string>
       <key>line</key>
-      <integer>60</integer>
+      <integer>69</integer>
       <key>column</key>
       <integer>1</integer>
       <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=conv1_block_XLX_SEP_ PragmaOptions=_XLX_SEP_</string>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=tiny_classifier_XLX_SEP_ PragmaOptions=variable=feature_sum complete dim=1_XLX_SEP_</string>
       <key>ID</key>
       <integer>6999</integer>
       <key>WarningOption</key>
@@ -3401,11 +3401,11 @@
       <key>filename</key>
       <string>../cnn_gesture_hls.cpp</string>
       <key>line</key>
-      <integer>98</integer>
+      <integer>76</integer>
       <key>column</key>
       <integer>1</integer>
       <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=maxpool1_XLX_SEP_ PragmaOptions=_XLX_SEP_</string>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=tiny_classifier_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_</string>
       <key>ID</key>
       <integer>6999</integer>
       <key>WarningOption</key>
@@ -3417,107 +3417,11 @@
       <key>filename</key>
       <string>../cnn_gesture_hls.cpp</string>
       <key>line</key>
-      <integer>113</integer>
+      <integer>83</integer>
       <key>column</key>
       <integer>1</integer>
       <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=conv2_block_XLX_SEP_ PragmaOptions=_XLX_SEP_</string>
-      <key>ID</key>
-      <integer>6999</integer>
-      <key>WarningOption</key>
-      <string>dump-hls-pragmas</string>
-    </dict>
-    <dict>
-      <key>level</key>
-      <string>warning</string>
-      <key>filename</key>
-      <string>../cnn_gesture_hls.cpp</string>
-      <key>line</key>
-      <integer>147</integer>
-      <key>column</key>
-      <integer>1</integer>
-      <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=maxpool2_XLX_SEP_ PragmaOptions=_XLX_SEP_</string>
-      <key>ID</key>
-      <integer>6999</integer>
-      <key>WarningOption</key>
-      <string>dump-hls-pragmas</string>
-    </dict>
-    <dict>
-      <key>level</key>
-      <string>warning</string>
-      <key>filename</key>
-      <string>../cnn_gesture_hls.cpp</string>
-      <key>line</key>
-      <integer>162</integer>
-      <key>column</key>
-      <integer>1</integer>
-      <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=flatten_XLX_SEP_ PragmaOptions=_XLX_SEP_</string>
-      <key>ID</key>
-      <integer>6999</integer>
-      <key>WarningOption</key>
-      <string>dump-hls-pragmas</string>
-    </dict>
-    <dict>
-      <key>level</key>
-      <string>warning</string>
-      <key>filename</key>
-      <string>../cnn_gesture_hls.cpp</string>
-      <key>line</key>
-      <integer>176</integer>
-      <key>column</key>
-      <integer>1</integer>
-      <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=dense1_XLX_SEP_ PragmaOptions=_XLX_SEP_</string>
-      <key>ID</key>
-      <integer>6999</integer>
-      <key>WarningOption</key>
-      <string>dump-hls-pragmas</string>
-    </dict>
-    <dict>
-      <key>level</key>
-      <string>warning</string>
-      <key>filename</key>
-      <string>../cnn_gesture_hls.cpp</string>
-      <key>line</key>
-      <integer>196</integer>
-      <key>column</key>
-      <integer>1</integer>
-      <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=dense2_logits_XLX_SEP_ PragmaOptions=_XLX_SEP_</string>
-      <key>ID</key>
-      <integer>6999</integer>
-      <key>WarningOption</key>
-      <string>dump-hls-pragmas</string>
-    </dict>
-    <dict>
-      <key>level</key>
-      <string>warning</string>
-      <key>filename</key>
-      <string>../cnn_gesture_hls.cpp</string>
-      <key>line</key>
-      <integer>211</integer>
-      <key>column</key>
-      <integer>1</integer>
-      <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=softmax_XLX_SEP_ PragmaOptions=_XLX_SEP_</string>
-      <key>ID</key>
-      <integer>6999</integer>
-      <key>WarningOption</key>
-      <string>dump-hls-pragmas</string>
-    </dict>
-    <dict>
-      <key>level</key>
-      <string>warning</string>
-      <key>filename</key>
-      <string>../cnn_gesture_hls.cpp</string>
-      <key>line</key>
-      <integer>235</integer>
-      <key>column</key>
-      <integer>1</integer>
-      <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=cnn_gesture_core_XLX_SEP_ PragmaOptions=off_XLX_SEP_</string>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=tiny_classifier_XLX_SEP_ PragmaOptions=variable=feature_mean complete dim=1_XLX_SEP_</string>
       <key>ID</key>
       <integer>6999</integer>
       <key>WarningOption</key>
@@ -3545,7 +3449,7 @@
       <key>filename</key>
       <string>../cnn_gesture_hls.cpp</string>
       <key>line</key>
-      <integer>262</integer>
+      <integer>105</integer>
       <key>column</key>
       <integer>1</integer>
       <key>message</key>
@@ -3561,7 +3465,7 @@
       <key>filename</key>
       <string>../cnn_gesture_hls.cpp</string>
       <key>line</key>
-      <integer>263</integer>
+      <integer>106</integer>
       <key>column</key>
       <integer>1</integer>
       <key>message</key>
@@ -3577,7 +3481,7 @@
       <key>filename</key>
       <string>../cnn_gesture_hls.cpp</string>
       <key>line</key>
-      <integer>264</integer>
+      <integer>107</integer>
       <key>column</key>
       <integer>1</integer>
       <key>message</key>
@@ -3593,23 +3497,7 @@
       <key>filename</key>
       <string>../cnn_gesture_hls.cpp</string>
       <key>line</key>
-      <integer>272</integer>
-      <key>column</key>
-      <integer>1</integer>
-      <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=cnn_gesture_top_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_</string>
-      <key>ID</key>
-      <integer>6999</integer>
-      <key>WarningOption</key>
-      <string>dump-hls-pragmas</string>
-    </dict>
-    <dict>
-      <key>level</key>
-      <string>warning</string>
-      <key>filename</key>
-      <string>../cnn_gesture_hls.cpp</string>
-      <key>line</key>
-      <integer>282</integer>
+      <integer>113</integer>
       <key>column</key>
       <integer>1</integer>
       <key>message</key>

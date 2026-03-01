@@ -7,11 +7,7 @@
 #include <string>
 #include <vector>
 
-#include <ap_axi_sdata.h>
 #include <ap_fixed.h>
-#include <ap_int.h>
-#include <cstdint>
-#include <hls_stream.h>
 
 #define SEQ_LENGTH 100
 #define FEATURES 6
@@ -19,31 +15,12 @@
 
 typedef ap_fixed<16, 6> data_t;
 typedef float float_t;
-typedef ap_axiu<32, 0, 0, 0> axis_t;
 
 // Top function declaration from cnn_gesture_hls.cpp
 void cnn_gesture_top(
-    hls::stream<axis_t>& input_stream,
-    hls::stream<axis_t>& output_stream
+    data_t input[SEQ_LENGTH][FEATURES],
+    data_t output[NUM_CLASSES]
 );
-
-static inline ap_uint<32> float_to_bits(float v) {
-    union {
-        uint32_t u;
-        float f;
-    } cvt;
-    cvt.f = v;
-    return (ap_uint<32>)cvt.u;
-}
-
-static inline float bits_to_float(ap_uint<32> bits) {
-    union {
-        uint32_t u;
-        float f;
-    } cvt;
-    cvt.u = (uint32_t)bits;
-    return cvt.f;
-}
 
 static int argmax(const float_t logits[NUM_CLASSES]) {
     int max_idx = 0;
@@ -114,33 +91,23 @@ int main() {
             return 5;
         }
 
-        hls::stream<axis_t> input_stream;
-        hls::stream<axis_t> output_stream;
+        data_t input[SEQ_LENGTH][FEATURES];
+        data_t output_fixed[NUM_CLASSES];
         float_t output[NUM_CLASSES];
         float_t golden[NUM_CLASSES];
 
         int idx = 0;
         for (int t = 0; t < SEQ_LENGTH; t++) {
             for (int ch = 0; ch < FEATURES; ch++) {
-                axis_t pkt;
-                pkt.data = float_to_bits(input_vals[idx++]);
-                pkt.keep = -1;
-                pkt.strb = -1;
-                pkt.last = 0;
-                input_stream.write(pkt);
+                input[t][ch] = (data_t)input_vals[idx++];
             }
         }
 
-        cnn_gesture_top(input_stream, output_stream);
+        cnn_gesture_top(input, output_fixed);
 
         for (int c = 0; c < NUM_CLASSES; c++) {
-            axis_t pkt = output_stream.read();
-            output[c] = bits_to_float(pkt.data);
+            output[c] = (float_t)output_fixed[c];
             golden[c] = golden_vals[c];
-            if (c == NUM_CLASSES - 1 && pkt.last != 1) {
-                std::cerr << "Output TLAST not asserted on final class for sample " << sample_count << "\n";
-                return 7;
-            }
         }
 
         for (int c = 0; c < NUM_CLASSES; c++) {

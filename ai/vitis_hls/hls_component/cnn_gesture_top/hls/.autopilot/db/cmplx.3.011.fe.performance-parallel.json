@@ -1,39 +1,39 @@
 {
   "0": {
-    "basicblocks": 22,
+    "basicblocks": 3,
     "calls": "1",
-    "control_depth": 4,
-    "def_use_depth": 21,
+    "control_depth": 0,
+    "def_use_depth": 5,
     "file": "cnn_gesture_hls.cpp",
-    "fileloc": 258,
-    "instructions": 201,
+    "fileloc": 101,
+    "instructions": 66,
     "loads": {
-      "L": 2
+      "L": 1
     },
-    "memory_accesses": 10,
+    "memory_accesses": 6,
     "name": "cnn_gesture_top",
     "stores": {
-      "L": 6
+      "L": 4
     },
-    "total_instructions": 4058
+    "total_instructions": 281
   },
   "1": {
-    "basicblocks": 474,
+    "basicblocks": 32,
     "calls": "",
-    "control_depth": 6,
-    "def_use_depth": 46,
+    "control_depth": 2,
+    "def_use_depth": 9,
     "file": "cnn_gesture_hls.cpp",
-    "fileloc": 231,
-    "instructions": 3842,
+    "fileloc": 54,
+    "instructions": 200,
     "loads": {
-      "G": 64,
-      "L": 61
+      "G": 7,
+      "L": 17
     },
-    "memory_accesses": 123,
-    "name": "cnn_gesture_core",
+    "memory_accesses": 31,
+    "name": "tiny_classifier",
     "stores": {
-      "L": 9
+      "L": 16
     },
-    "total_instructions": 3842
+    "total_instructions": 203
   }
 }

@@ -1,4 +1,5 @@
 import argparse
+import time
 import numpy as np
 from pynq import Overlay, allocate
 
@@ -35,15 +36,30 @@ def load_reference_logits(path, sample_idx):
 
 def main():
     parser = argparse.ArgumentParser(description="Run CNN IP via AXI DMA on Ultra96")
-    parser.add_argument("--bit", required=True, help="Path to .bit file (matching .hwh must be present)")
+    parser.add_argument("--bit", default=None, help="Path to .bit file (matching .hwh must be present)")
     parser.add_argument("--input", default="reference_input.txt", help="Path to reference_input.txt")
     parser.add_argument("--sample", type=int, default=0, help="Row index to run from input file")
     parser.add_argument("--dma", default="axi_dma_0", help="DMA IP name in overlay")
     parser.add_argument("--ip", default="cnn_gesture_top_0", help="CNN IP name in overlay")
     parser.add_argument("--ref-logits", default=None, help="Optional reference_logits.txt for comparison")
+    parser.add_argument("--timeout", type=float, default=5.0, help="DMA wait timeout in seconds")
+    parser.add_argument("--no-download", action="store_true", help="Use already-loaded bitstream (skip PL reprogramming)")
+    parser.add_argument("--no-dma", action="store_true", help="Skip FPGA/DMA and use reference logits only")
     args = parser.parse_args()
 
-    ol = Overlay(args.bit)
+    if args.no_dma:
+        if not args.ref_logits:
+            raise ValueError("--no-dma requires --ref-logits <file>")
+        y = load_reference_logits(args.ref_logits, args.sample)
+        pred = int(np.argmax(y))
+        print("Output (reference logits):", y.tolist())
+        print("Predicted class:", pred)
+        return
+
+    if not args.bit:
+        raise ValueError("--bit is required unless --no-dma is used")
+
+    ol = Overlay(args.bit, download=not args.no_download)
     dma = getattr(ol, args.dma)
     ip = getattr(ol, args.ip)
 
@@ -59,8 +75,28 @@ def main():
 
     dma.recvchannel.transfer(out_buf)
     dma.sendchannel.transfer(in_buf)
-    dma.sendchannel.wait()
-    dma.recvchannel.wait()
+
+    t0 = time.time()
+    while not dma.sendchannel.idle:
+        if (time.time() - t0) > args.timeout:
+            mm2s_dmasr = dma.mmio.read(0x04)
+            s2mm_dmasr = dma.mmio.read(0x34)
+            raise TimeoutError(
+                f"Timeout waiting sendchannel after {args.timeout:.2f}s "
+                f"(MM2S_DMASR=0x{mm2s_dmasr:08x}, S2MM_DMASR=0x{s2mm_dmasr:08x})"
+            )
+        time.sleep(0.001)
+
+    t1 = time.time()
+    while not dma.recvchannel.idle:
+        if (time.time() - t1) > args.timeout:
+            mm2s_dmasr = dma.mmio.read(0x04)
+            s2mm_dmasr = dma.mmio.read(0x34)
+            raise TimeoutError(
+                f"Timeout waiting recvchannel after {args.timeout:.2f}s "
+                f"(MM2S_DMASR=0x{mm2s_dmasr:08x}, S2MM_DMASR=0x{s2mm_dmasr:08x})"
+            )
+        time.sleep(0.001)
 
     y = np.array(out_buf, dtype=np.float32)
     pred = int(np.argmax(y))

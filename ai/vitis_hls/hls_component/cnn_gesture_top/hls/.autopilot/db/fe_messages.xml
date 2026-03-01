@@ -632,190 +632,85 @@
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="C:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot/etc/hls_hypot_apfixed.h:170:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="hls" ARG_PragmaFunction="hypot_fixed" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../cnn_gesture_hls.cpp:60:1" msg_body="HLS pragma dump">
-        <args ARG_PragmaContext="hls" ARG_PragmaFunction="conv1_block" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../cnn_gesture_hls.cpp:69:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="tiny_classifier" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=feature_sum complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../cnn_gesture_hls.cpp:98:1" msg_body="HLS pragma dump">
-        <args ARG_PragmaContext="hls" ARG_PragmaFunction="maxpool1" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../cnn_gesture_hls.cpp:76:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="tiny_classifier" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../cnn_gesture_hls.cpp:113:1" msg_body="HLS pragma dump">
-        <args ARG_PragmaContext="hls" ARG_PragmaFunction="conv2_block" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../cnn_gesture_hls.cpp:147:1" msg_body="HLS pragma dump">
-        <args ARG_PragmaContext="hls" ARG_PragmaFunction="maxpool2" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../cnn_gesture_hls.cpp:162:1" msg_body="HLS pragma dump">
-        <args ARG_PragmaContext="hls" ARG_PragmaFunction="flatten" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../cnn_gesture_hls.cpp:176:1" msg_body="HLS pragma dump">
-        <args ARG_PragmaContext="hls" ARG_PragmaFunction="dense1" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../cnn_gesture_hls.cpp:196:1" msg_body="HLS pragma dump">
-        <args ARG_PragmaContext="hls" ARG_PragmaFunction="dense2_logits" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../cnn_gesture_hls.cpp:211:1" msg_body="HLS pragma dump">
-        <args ARG_PragmaContext="hls" ARG_PragmaFunction="softmax" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../cnn_gesture_hls.cpp:235:1" msg_body="HLS pragma dump">
-        <args ARG_PragmaContext="hls" ARG_PragmaFunction="cnn_gesture_core" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../cnn_gesture_hls.cpp:83:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="tiny_classifier" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=feature_mean complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="directive:1:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="directive" ARG_PragmaFunction="cnn_gesture_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=cnn_gesture_top" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../cnn_gesture_hls.cpp:262:1" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../cnn_gesture_hls.cpp:105:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="hls" ARG_PragmaFunction="cnn_gesture_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis port=input_stream" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../cnn_gesture_hls.cpp:263:1" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../cnn_gesture_hls.cpp:106:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="hls" ARG_PragmaFunction="cnn_gesture_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis port=output_stream" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../cnn_gesture_hls.cpp:264:1" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../cnn_gesture_hls.cpp:107:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="hls" ARG_PragmaFunction="cnn_gesture_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=return bundle=CTRL" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../cnn_gesture_hls.cpp:272:1" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../cnn_gesture_hls.cpp:113:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="hls" ARG_PragmaFunction="cnn_gesture_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../cnn_gesture_hls.cpp:282:1" msg_body="HLS pragma dump">
-        <args ARG_PragmaContext="hls" ARG_PragmaFunction="cnn_gesture_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:\scratch\2025.2\hls_product\665\2025.2\src\shared\hls\clib\hlsmath\src\c++\expfloat.cpp:22:9" msg_body="Inlining function 'exp_reduce_::exp(float)' into 'hls::expf(float)'">
+        <args Callee="exp_reduce_::exp(float)" Callee-DebugLoc="File {C:\scratch\2025.2\hls_product\665\2025.2\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp} Line 15 Column 0" Caller="hls::expf(float)" Caller-DebugLoc="File {C:\scratch\2025.2\hls_product\665\2025.2\src\shared\hls\clib\hlsmath\src\c++\expfloat.cpp} Line 20 Column 0"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:\scratch\2025.2\hls_product\665\2025.2\src\shared\hls\clib\hlsmath\src\c++\expfloat.cpp:17:9" msg_body="Inlining function 'exp_reduce_::exp(float)' into 'hls::exp(float)'">
-        <args Callee="exp_reduce_::exp(float)" Callee-DebugLoc="File {C:\scratch\2025.2\hls_product\665\2025.2\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp} Line 15 Column 0" Caller="hls::exp(float)" Caller-DebugLoc="File {C:\scratch\2025.2\hls_product\665\2025.2\src\shared\hls\clib\hlsmath\src\c++\expfloat.cpp} Line 15 Column 0"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../cnn_gesture_hls.cpp:40:19" msg_body="Inlining function 'hls::expf(float)' into 'softmax(float const*, float*)'">
+        <args Callee="hls::expf(float)" Callee-DebugLoc="File {C:\scratch\2025.2\hls_product\665\2025.2\src\shared\hls\clib\hlsmath\src\c++\expfloat.cpp} Line 20 Column 0" Caller="softmax(float const*, float*)" Caller-DebugLoc="File ../cnn_gesture_hls.cpp Line 31 Column 0"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../cnn_gesture_hls.cpp:221:27" msg_body="Inlining function 'hls::exp(float)' into 'softmax(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)'">
-        <args Callee="hls::exp(float)" Callee-DebugLoc="File {C:\scratch\2025.2\hls_product\665\2025.2\src\shared\hls\clib\hlsmath\src\c++\expfloat.cpp} Line 15 Column 0" Caller="softmax(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)" Caller-DebugLoc="File ../cnn_gesture_hls.cpp Line 210 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../cnn_gesture_hls.cpp:57:0" msg_body="Inlining function 'hls::axis&lt;ap_uint&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;::axis()' into 'tiny_classifier(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;, float*)'">
+        <args Callee="hls::axis&lt;ap_uint&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;::axis()" Callee-DebugLoc="File {C:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot\ap_axi_sdata.h} Line 217 Column 0" Caller="tiny_classifier(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;, float*)" Caller-DebugLoc="File ../cnn_gesture_hls.cpp Line 57 Column 0"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../cnn_gesture_hls.cpp:245:5" msg_body="Inlining function 'conv1_block(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [6], ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [32])' into 'cnn_gesture_core(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [6], ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)'">
-        <args Callee="conv1_block(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [6], ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [32])" Callee-DebugLoc="File ../cnn_gesture_hls.cpp Line 59 Column 0" Caller="cnn_gesture_core(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [6], ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)" Caller-DebugLoc="File ../cnn_gesture_hls.cpp Line 234 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../cnn_gesture_hls.cpp:57:0" msg_body="Inlining function 'bits_to_float(ap_uint&lt;32&gt;)' into 'tiny_classifier(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;, float*)'">
+        <args Callee="bits_to_float(ap_uint&lt;32&gt;)" Callee-DebugLoc="File ../cnn_gesture_hls.cpp Line 13 Column 0" Caller="tiny_classifier(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;, float*)" Caller-DebugLoc="File ../cnn_gesture_hls.cpp Line 57 Column 0"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../cnn_gesture_hls.cpp:246:5" msg_body="Inlining function 'maxpool1(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [32], ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [32])' into 'cnn_gesture_core(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [6], ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)'">
-        <args Callee="maxpool1(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [32], ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [32])" Callee-DebugLoc="File ../cnn_gesture_hls.cpp Line 97 Column 0" Caller="cnn_gesture_core(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [6], ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)" Caller-DebugLoc="File ../cnn_gesture_hls.cpp Line 234 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../cnn_gesture_hls.cpp:57:0" msg_body="Inlining function 'softmax(float const*, float*)' into 'tiny_classifier(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;, float*)'">
+        <args Callee="softmax(float const*, float*)" Callee-DebugLoc="File ../cnn_gesture_hls.cpp Line 31 Column 0" Caller="tiny_classifier(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;, float*)" Caller-DebugLoc="File ../cnn_gesture_hls.cpp Line 57 Column 0"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../cnn_gesture_hls.cpp:248:5" msg_body="Inlining function 'conv2_block(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [32], ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [64])' into 'cnn_gesture_core(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [6], ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)'">
-        <args Callee="conv2_block(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [32], ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [64])" Callee-DebugLoc="File ../cnn_gesture_hls.cpp Line 112 Column 0" Caller="cnn_gesture_core(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [6], ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)" Caller-DebugLoc="File ../cnn_gesture_hls.cpp Line 234 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../cnn_gesture_hls.cpp:104:0" msg_body="Inlining function 'hls::axis&lt;ap_uint&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;::axis()' into 'cnn_gesture_top(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;)'">
+        <args Callee="hls::axis&lt;ap_uint&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;::axis()" Callee-DebugLoc="File {C:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot\ap_axi_sdata.h} Line 217 Column 0" Caller="cnn_gesture_top(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;)" Caller-DebugLoc="File ../cnn_gesture_hls.cpp Line 104 Column 0"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../cnn_gesture_hls.cpp:249:5" msg_body="Inlining function 'maxpool2(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [64], ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [64])' into 'cnn_gesture_core(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [6], ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)'">
-        <args Callee="maxpool2(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [64], ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [64])" Callee-DebugLoc="File ../cnn_gesture_hls.cpp Line 146 Column 0" Caller="cnn_gesture_core(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [6], ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)" Caller-DebugLoc="File ../cnn_gesture_hls.cpp Line 234 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../cnn_gesture_hls.cpp:104:0" msg_body="Inlining function 'float_to_bits(float)' into 'cnn_gesture_top(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;)'">
+        <args Callee="float_to_bits(float)" Callee-DebugLoc="File ../cnn_gesture_hls.cpp Line 22 Column 0" Caller="cnn_gesture_top(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;)" Caller-DebugLoc="File ../cnn_gesture_hls.cpp Line 104 Column 0"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../cnn_gesture_hls.cpp:251:5" msg_body="Inlining function 'flatten(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [64], ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)' into 'cnn_gesture_core(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [6], ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)'">
-        <args Callee="flatten(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [64], ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)" Callee-DebugLoc="File ../cnn_gesture_hls.cpp Line 161 Column 0" Caller="cnn_gesture_core(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [6], ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)" Caller-DebugLoc="File ../cnn_gesture_hls.cpp Line 234 Column 0"/>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../cnn_gesture_hls.cpp:68:11" msg_body="Applying array_partition to 'feature_sum': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="feature_sum"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../cnn_gesture_hls.cpp:252:5" msg_body="Inlining function 'dense1(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)' into 'cnn_gesture_core(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [6], ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)'">
-        <args Callee="dense1(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)" Callee-DebugLoc="File ../cnn_gesture_hls.cpp Line 175 Column 0" Caller="cnn_gesture_core(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [6], ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)" Caller-DebugLoc="File ../cnn_gesture_hls.cpp Line 234 Column 0"/>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../cnn_gesture_hls.cpp:82:11" msg_body="Applying array_partition to 'feature_mean': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="feature_mean"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../cnn_gesture_hls.cpp:253:5" msg_body="Inlining function 'dense2_logits(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)' into 'cnn_gesture_core(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [6], ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)'">
-        <args Callee="dense2_logits(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)" Callee-DebugLoc="File ../cnn_gesture_hls.cpp Line 195 Column 0" Caller="cnn_gesture_core(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [6], ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)" Caller-DebugLoc="File ../cnn_gesture_hls.cpp Line 234 Column 0"/>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="../cnn_gesture_hls.cpp:70:22" msg_body="pipeline   1 tiny_classifier config_compile -pipeline_loops 64VITIS_LOOP_70_1 ../cnn_gesture_hls.cpp:70:22">
+        <args LoopLoc="../cnn_gesture_hls.cpp:70:22" LoopLoc-DebugLoc="File ../cnn_gesture_hls.cpp Line 70 Column 22" LoopName="VITIS_LOOP_70_1" PragmaFunction="tiny_classifier" PragmaInferReason="config_compile -pipeline_loops 64" PragmaIsAuto="1" PragmaType="pipeline"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../cnn_gesture_hls.cpp:254:5" msg_body="Inlining function 'softmax(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)' into 'cnn_gesture_core(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [6], ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)'">
-        <args Callee="softmax(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)" Callee-DebugLoc="File ../cnn_gesture_hls.cpp Line 210 Column 0" Caller="cnn_gesture_core(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [6], ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)" Caller-DebugLoc="File ../cnn_gesture_hls.cpp Line 234 Column 0"/>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="../cnn_gesture_hls.cpp:85:22" msg_body="pipeline   1 tiny_classifier config_compile -pipeline_loops 64VITIS_LOOP_85_4 ../cnn_gesture_hls.cpp:85:22">
+        <args LoopLoc="../cnn_gesture_hls.cpp:85:22" LoopLoc-DebugLoc="File ../cnn_gesture_hls.cpp Line 85 Column 22" LoopName="VITIS_LOOP_85_4" PragmaFunction="tiny_classifier" PragmaInferReason="config_compile -pipeline_loops 64" PragmaIsAuto="1" PragmaType="pipeline"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../cnn_gesture_hls.cpp:234:0" msg_body="Inlining function 'relu(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;)' into 'cnn_gesture_core(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [6], ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)'">
-        <args Callee="relu(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;)" Callee-DebugLoc="File ../cnn_gesture_hls.cpp Line 41 Column 0" Caller="cnn_gesture_core(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [6], ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)" Caller-DebugLoc="File ../cnn_gesture_hls.cpp Line 234 Column 0"/>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="../cnn_gesture_hls.cpp:90:22" msg_body="pipeline   1 tiny_classifier config_compile -pipeline_loops 64VITIS_LOOP_90_5 ../cnn_gesture_hls.cpp:90:22">
+        <args LoopLoc="../cnn_gesture_hls.cpp:90:22" LoopLoc-DebugLoc="File ../cnn_gesture_hls.cpp Line 90 Column 22" LoopName="VITIS_LOOP_90_5" PragmaFunction="tiny_classifier" PragmaInferReason="config_compile -pipeline_loops 64" PragmaIsAuto="1" PragmaType="pipeline"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../cnn_gesture_hls.cpp:234:0" msg_body="Inlining function 'conv_index(int, int, int, int, int)' into 'cnn_gesture_core(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [6], ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)'">
-        <args Callee="conv_index(int, int, int, int, int)" Callee-DebugLoc="File ../cnn_gesture_hls.cpp Line 47 Column 0" Caller="cnn_gesture_core(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [6], ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)" Caller-DebugLoc="File ../cnn_gesture_hls.cpp Line 234 Column 0"/>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="../cnn_gesture_hls.cpp:33:22" msg_body="pipeline   1 tiny_classifier config_compile -pipeline_loops 64VITIS_LOOP_33_1 ../cnn_gesture_hls.cpp:33:22">
+        <args LoopLoc="../cnn_gesture_hls.cpp:33:22" LoopLoc-DebugLoc="File ../cnn_gesture_hls.cpp Line 33 Column 22" LoopName="VITIS_LOOP_33_1" PragmaFunction="tiny_classifier" PragmaInferReason="config_compile -pipeline_loops 64" PragmaIsAuto="1" PragmaType="pipeline"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../cnn_gesture_hls.cpp:234:0" msg_body="Inlining function 'hls::sqrt(float)' into 'cnn_gesture_core(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [6], ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)'">
-        <args Callee="hls::sqrt(float)" Callee-DebugLoc="File {C:\scratch\2025.2\hls_product\665\2025.2\src\shared\hls\clib\hlsmath\src\c++\sqrtfloat.cpp} Line 6 Column 0" Caller="cnn_gesture_core(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [6], ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)" Caller-DebugLoc="File ../cnn_gesture_hls.cpp Line 234 Column 0"/>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="../cnn_gesture_hls.cpp:39:22" msg_body="pipeline   1 tiny_classifier config_compile -pipeline_loops 64VITIS_LOOP_39_2 ../cnn_gesture_hls.cpp:39:22">
+        <args LoopLoc="../cnn_gesture_hls.cpp:39:22" LoopLoc-DebugLoc="File ../cnn_gesture_hls.cpp Line 39 Column 22" LoopName="VITIS_LOOP_39_2" PragmaFunction="tiny_classifier" PragmaInferReason="config_compile -pipeline_loops 64" PragmaIsAuto="1" PragmaType="pipeline"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../cnn_gesture_hls.cpp:234:0" msg_body="Inlining function 'dense_index(int, int, int)' into 'cnn_gesture_core(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [6], ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)'">
-        <args Callee="dense_index(int, int, int)" Callee-DebugLoc="File ../cnn_gesture_hls.cpp Line 52 Column 0" Caller="cnn_gesture_core(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [6], ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)" Caller-DebugLoc="File ../cnn_gesture_hls.cpp Line 234 Column 0"/>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="../cnn_gesture_hls.cpp:45:22" msg_body="pipeline   1 tiny_classifier config_compile -pipeline_loops 64VITIS_LOOP_45_3 ../cnn_gesture_hls.cpp:45:22">
+        <args LoopLoc="../cnn_gesture_hls.cpp:45:22" LoopLoc-DebugLoc="File ../cnn_gesture_hls.cpp Line 45 Column 22" LoopName="VITIS_LOOP_45_3" PragmaFunction="tiny_classifier" PragmaInferReason="config_compile -pipeline_loops 64" PragmaIsAuto="1" PragmaType="pipeline"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../cnn_gesture_hls.cpp:261:0" msg_body="Inlining function 'hls::axis&lt;ap_uint&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;::axis()' into 'cnn_gesture_top(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;)'">
-        <args Callee="hls::axis&lt;ap_uint&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;::axis()" Callee-DebugLoc="File {C:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot\ap_axi_sdata.h} Line 217 Column 0" Caller="cnn_gesture_top(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;)" Caller-DebugLoc="File ../cnn_gesture_hls.cpp Line 261 Column 0"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../cnn_gesture_hls.cpp:92:26" msg_body="Loop 'VITIS_LOOP_92_6' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_92_6"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../cnn_gesture_hls.cpp:261:0" msg_body="Inlining function 'bits_to_float(ap_uint&lt;32&gt;)' into 'cnn_gesture_top(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;)'">
-        <args Callee="bits_to_float(ap_uint&lt;32&gt;)" Callee-DebugLoc="File ../cnn_gesture_hls.cpp Line 23 Column 0" Caller="cnn_gesture_top(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;)" Caller-DebugLoc="File ../cnn_gesture_hls.cpp Line 261 Column 0"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../cnn_gesture_hls.cpp:57:0" msg_body="Unrolling loop 'VITIS_LOOP_92_6' (../cnn_gesture_hls.cpp:92:26) in function 'tiny_classifier' completely with a factor of 6">
+        <args Factor="6" LoopLoc="../cnn_gesture_hls.cpp:92:26" LoopName="VITIS_LOOP_92_6"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../cnn_gesture_hls.cpp:261:0" msg_body="Inlining function 'float_to_bits(float)' into 'cnn_gesture_top(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;)'">
-        <args Callee="float_to_bits(float)" Callee-DebugLoc="File ../cnn_gesture_hls.cpp Line 32 Column 0" Caller="cnn_gesture_top(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;)" Caller-DebugLoc="File ../cnn_gesture_hls.cpp Line 261 Column 0"/>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-449" msg_severity="INFO" msg_loc="../cnn_gesture_hls.cpp:58:0" msg_body="Partitioning array 'tiny_classifier(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;, float*)::W' dimension 2 due to constant index.">
+        <args Dim="2" Value="tiny_classifier(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;, float*)::W"/>
     </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="../cnn_gesture_hls.cpp:63:26" msg_body="pipeline   1 cnn_gesture_core config_compile -pipeline_loops 64VITIS_LOOP_63_2 ../cnn_gesture_hls.cpp:63:26">
-        <args LoopLoc="../cnn_gesture_hls.cpp:63:26" LoopLoc-DebugLoc="File ../cnn_gesture_hls.cpp Line 63 Column 26" LoopName="VITIS_LOOP_63_2" PragmaFunction="cnn_gesture_core" PragmaInferReason="config_compile -pipeline_loops 64" PragmaIsAuto="1" PragmaType="pipeline"/>
-    </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="../cnn_gesture_hls.cpp:101:27" msg_body="pipeline   1 cnn_gesture_core config_compile -pipeline_loops 64VITIS_LOOP_101_2 ../cnn_gesture_hls.cpp:101:27">
-        <args LoopLoc="../cnn_gesture_hls.cpp:101:27" LoopLoc-DebugLoc="File ../cnn_gesture_hls.cpp Line 101 Column 27" LoopName="VITIS_LOOP_101_2" PragmaFunction="cnn_gesture_core" PragmaInferReason="config_compile -pipeline_loops 64" PragmaIsAuto="1" PragmaType="pipeline"/>
-    </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="../cnn_gesture_hls.cpp:119:31" msg_body="pipeline   1 cnn_gesture_core config_compile -pipeline_loops 64VITIS_LOOP_119_3 ../cnn_gesture_hls.cpp:119:31">
-        <args LoopLoc="../cnn_gesture_hls.cpp:119:31" LoopLoc-DebugLoc="File ../cnn_gesture_hls.cpp Line 119 Column 31" LoopName="VITIS_LOOP_119_3" PragmaFunction="cnn_gesture_core" PragmaInferReason="config_compile -pipeline_loops 64" PragmaIsAuto="1" PragmaType="pipeline"/>
-    </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="../cnn_gesture_hls.cpp:150:27" msg_body="pipeline   1 cnn_gesture_core config_compile -pipeline_loops 64VITIS_LOOP_150_2 ../cnn_gesture_hls.cpp:150:27">
-        <args LoopLoc="../cnn_gesture_hls.cpp:150:27" LoopLoc-DebugLoc="File ../cnn_gesture_hls.cpp Line 150 Column 27" LoopName="VITIS_LOOP_150_2" PragmaFunction="cnn_gesture_core" PragmaInferReason="config_compile -pipeline_loops 64" PragmaIsAuto="1" PragmaType="pipeline"/>
-    </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="../cnn_gesture_hls.cpp:166:27" msg_body="pipeline   1 cnn_gesture_core config_compile -pipeline_loops 64VITIS_LOOP_166_2 ../cnn_gesture_hls.cpp:166:27">
-        <args LoopLoc="../cnn_gesture_hls.cpp:166:27" LoopLoc-DebugLoc="File ../cnn_gesture_hls.cpp Line 166 Column 27" LoopName="VITIS_LOOP_166_2" PragmaFunction="cnn_gesture_core" PragmaInferReason="config_compile -pipeline_loops 64" PragmaIsAuto="1" PragmaType="pipeline"/>
-    </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="../cnn_gesture_hls.cpp:183:27" msg_body="pipeline   1 cnn_gesture_core config_compile -pipeline_loops 64VITIS_LOOP_183_2 ../cnn_gesture_hls.cpp:183:27">
-        <args LoopLoc="../cnn_gesture_hls.cpp:183:27" LoopLoc-DebugLoc="File ../cnn_gesture_hls.cpp Line 183 Column 27" LoopName="VITIS_LOOP_183_2" PragmaFunction="cnn_gesture_core" PragmaInferReason="config_compile -pipeline_loops 64" PragmaIsAuto="1" PragmaType="pipeline"/>
-    </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="../cnn_gesture_hls.cpp:201:27" msg_body="pipeline   1 cnn_gesture_core config_compile -pipeline_loops 64VITIS_LOOP_201_2 ../cnn_gesture_hls.cpp:201:27">
-        <args LoopLoc="../cnn_gesture_hls.cpp:201:27" LoopLoc-DebugLoc="File ../cnn_gesture_hls.cpp Line 201 Column 27" LoopName="VITIS_LOOP_201_2" PragmaFunction="cnn_gesture_core" PragmaInferReason="config_compile -pipeline_loops 64" PragmaIsAuto="1" PragmaType="pipeline"/>
-    </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="../cnn_gesture_hls.cpp:214:23" msg_body="pipeline   1 cnn_gesture_core config_compile -pipeline_loops 64VITIS_LOOP_214_1 ../cnn_gesture_hls.cpp:214:23">
-        <args LoopLoc="../cnn_gesture_hls.cpp:214:23" LoopLoc-DebugLoc="File ../cnn_gesture_hls.cpp Line 214 Column 23" LoopName="VITIS_LOOP_214_1" PragmaFunction="cnn_gesture_core" PragmaInferReason="config_compile -pipeline_loops 64" PragmaIsAuto="1" PragmaType="pipeline"/>
-    </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="../cnn_gesture_hls.cpp:220:23" msg_body="pipeline   1 cnn_gesture_core config_compile -pipeline_loops 64VITIS_LOOP_220_2 ../cnn_gesture_hls.cpp:220:23">
-        <args LoopLoc="../cnn_gesture_hls.cpp:220:23" LoopLoc-DebugLoc="File ../cnn_gesture_hls.cpp Line 220 Column 23" LoopName="VITIS_LOOP_220_2" PragmaFunction="cnn_gesture_core" PragmaInferReason="config_compile -pipeline_loops 64" PragmaIsAuto="1" PragmaType="pipeline"/>
-    </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="../cnn_gesture_hls.cpp:225:23" msg_body="pipeline   1 cnn_gesture_core config_compile -pipeline_loops 64VITIS_LOOP_225_3 ../cnn_gesture_hls.cpp:225:23">
-        <args LoopLoc="../cnn_gesture_hls.cpp:225:23" LoopLoc-DebugLoc="File ../cnn_gesture_hls.cpp Line 225 Column 23" LoopName="VITIS_LOOP_225_3" PragmaFunction="cnn_gesture_core" PragmaInferReason="config_compile -pipeline_loops 64" PragmaIsAuto="1" PragmaType="pipeline"/>
-    </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../cnn_gesture_hls.cpp:122:39" msg_body="Loop 'VITIS_LOOP_122_4' is marked as complete unroll implied by the pipeline pragma">
-        <args LoopName="VITIS_LOOP_122_4"/>
-    </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../cnn_gesture_hls.cpp:66:30" msg_body="Loop 'VITIS_LOOP_66_3' is marked as complete unroll implied by the pipeline pragma">
-        <args LoopName="VITIS_LOOP_66_3"/>
-    </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../cnn_gesture_hls.cpp:69:38" msg_body="Loop 'VITIS_LOOP_69_4' is marked as complete unroll implied by the pipeline pragma">
-        <args LoopName="VITIS_LOOP_69_4"/>
-    </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../cnn_gesture_hls.cpp:234:0" msg_body="Unrolling loop 'VITIS_LOOP_122_4' (../cnn_gesture_hls.cpp:122:39) in function 'cnn_gesture_core' completely with a factor of 32">
-        <args Factor="32" LoopLoc="../cnn_gesture_hls.cpp:122:39" LoopName="VITIS_LOOP_122_4"/>
-    </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../cnn_gesture_hls.cpp:234:0" msg_body="Unrolling loop 'VITIS_LOOP_66_3' (../cnn_gesture_hls.cpp:66:30) in function 'cnn_gesture_core' completely with a factor of 3">
-        <args Factor="3" LoopLoc="../cnn_gesture_hls.cpp:66:30" LoopName="VITIS_LOOP_66_3"/>
-    </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../cnn_gesture_hls.cpp:234:0" msg_body="Unrolling loop 'VITIS_LOOP_69_4' (../cnn_gesture_hls.cpp:69:38) in function 'cnn_gesture_core' completely with a factor of 6">
-        <args Factor="6" LoopLoc="../cnn_gesture_hls.cpp:69:38" LoopName="VITIS_LOOP_69_4"/>
-    </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="../weights.h:5:0" msg_body="array_partition dim=1 type=cyclic factor=19 variable=conv1d_param_0 1 cnn_gesture_top ../weights.h:5:0 conv1d_param_0">
-        <args PragmaFunction="cnn_gesture_top" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=19 variable=conv1d_param_0" PragmaType="array_partition" VarLoc="../weights.h:5:0" VarName="conv1d_param_0"/>
-    </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="../weights.h:5:0" msg_body="Inferring pragma 'array_partition type=cyclic factor=19 dim=1' for array 'conv1d_param_0' due to pipeline pragma">
-        <args Dim="1" Factor="19" Mode="cyclic" Name="conv1d_param_0" PragmaType="array_partition"/>
-    </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="../weights.h:23:0" msg_body="array_partition dim=1 type=cyclic factor=33 variable=conv1d_1_param_0 1 cnn_gesture_top ../weights.h:23:0 conv1d_1_param_0">
-        <args PragmaFunction="cnn_gesture_top" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=33 variable=conv1d_1_param_0" PragmaType="array_partition" VarLoc="../weights.h:23:0" VarName="conv1d_1_param_0"/>
-    </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="../weights.h:23:0" msg_body="Inferring pragma 'array_partition type=cyclic factor=33 dim=1' for array 'conv1d_1_param_0' due to pipeline pragma">
-        <args Dim="1" Factor="33" Mode="cyclic" Name="conv1d_1_param_0" PragmaType="array_partition"/>
-    </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="../cnn_gesture_hls.cpp:238:12" msg_body="array_partition dim=2 type=complete  variable=pool1_out 1 cnn_gesture_core ../cnn_gesture_hls.cpp:238:12 pool1_out">
-        <args PragmaFunction="cnn_gesture_core" PragmaIsAuto="1" PragmaOptions="dim=2 type=complete  variable=pool1_out" PragmaType="array_partition" VarLoc="../cnn_gesture_hls.cpp:238:12" VarName="pool1_out"/>
-    </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="../cnn_gesture_hls.cpp:238:12" msg_body="Inferring pragma 'array_partition type=complete dim=2' for array 'pool1_out' due to pipeline pragma">
-        <args Dim="2" Mode="complete" Name="pool1_out" PragmaType="array_partition"/>
-    </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="../cnn_gesture_hls.cpp:266:12" msg_body="array_partition dim=1 type=cyclic factor=3 variable=input 1 cnn_gesture_top ../cnn_gesture_hls.cpp:266:12 input">
-        <args PragmaFunction="cnn_gesture_top" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=3 variable=input" PragmaType="array_partition" VarLoc="../cnn_gesture_hls.cpp:266:12" VarName="input"/>
-    </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="../cnn_gesture_hls.cpp:266:12" msg_body="Inferring pragma 'array_partition type=cyclic factor=3 dim=1' for array 'input' due to pipeline pragma">
-        <args Dim="1" Factor="3" Mode="cyclic" Name="input" PragmaType="array_partition"/>
-    </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="../cnn_gesture_hls.cpp:266:12" msg_body="array_partition dim=2 type=complete  variable=input 1 cnn_gesture_top ../cnn_gesture_hls.cpp:266:12 input">
-        <args PragmaFunction="cnn_gesture_top" PragmaIsAuto="1" PragmaOptions="dim=2 type=complete  variable=input" PragmaType="array_partition" VarLoc="../cnn_gesture_hls.cpp:266:12" VarName="input"/>
-    </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="../cnn_gesture_hls.cpp:266:12" msg_body="Inferring pragma 'array_partition type=complete dim=2' for array 'input' due to pipeline pragma">
-        <args Dim="2" Mode="complete" Name="input" PragmaType="array_partition"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../weights.h:23:0" msg_body="Applying array_partition to '_ZL16conv1d_1_param_0': Cyclic partitioning with factor 33 on dimension 1.">
-        <args Dim="1" Factor="33" Mode="Cyclic" UOName="_ZL16conv1d_1_param_0"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../weights.h:5:0" msg_body="Applying array_partition to '_ZL14conv1d_param_0': Cyclic partitioning with factor 19 on dimension 1.">
-        <args Dim="1" Factor="19" Mode="Cyclic" UOName="_ZL14conv1d_param_0"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../cnn_gesture_hls.cpp:238:12" msg_body="Applying array_partition to 'pool1_out': Complete partitioning on dimension 2.">
-        <args Dim="2" Mode="Complete" UOName="pool1_out"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../cnn_gesture_hls.cpp:266:12" msg_body="Applying array_partition to 'input': Cyclic partitioning with factor 3 on dimension 1. Complete partitioning on dimension 2.">
-        <args Dim="islist 1 2" Factor="3" Mode="islist Cyclic Complete" UOName="input"/>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../cnn_gesture_hls.cpp:58:0" msg_body="Applying array_partition to '_ZZL15tiny_classifierRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEEPfE1W': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZZL15tiny_classifierRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEEPfE1W"/>
     </msg>
 </xilinx:hls_fe_msgs>

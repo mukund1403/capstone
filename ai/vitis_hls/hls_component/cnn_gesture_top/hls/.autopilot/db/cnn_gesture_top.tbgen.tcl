@@ -15,7 +15,7 @@ set hasInterrupt 0
 set DLRegFirstOffset 0
 set DLRegItemOffset 0
 set svuvm_can_support 1
-set cdfgNum 16
+set cdfgNum 10
 set C_modelName {cnn_gesture_top}
 set C_modelType { void 0 }
 set ap_memory_interface_dict [dict create]
@@ -113,386 +113,96 @@ set NewPortList {[
 
 set ArgLastReadFirstWriteLatency {
 	cnn_gesture_top {
-		input_stream_V_data_V {Type I LastRead 8 FirstWrite -1}
-		input_stream_V_keep_V {Type I LastRead 8 FirstWrite -1}
-		input_stream_V_strb_V {Type I LastRead 8 FirstWrite -1}
-		input_stream_V_last_V {Type I LastRead 8 FirstWrite -1}
-		output_stream_V_data_V {Type O LastRead -1 FirstWrite 1}
-		output_stream_V_keep_V {Type O LastRead -1 FirstWrite 1}
-		output_stream_V_strb_V {Type O LastRead -1 FirstWrite 1}
-		output_stream_V_last_V {Type O LastRead -1 FirstWrite 1}
-		p_ZL14conv1d_param_0_0 {Type I LastRead -1 FirstWrite -1}
-		p_ZL14conv1d_param_0_1 {Type I LastRead -1 FirstWrite -1}
-		p_ZL14conv1d_param_0_2 {Type I LastRead -1 FirstWrite -1}
-		p_ZL14conv1d_param_0_3 {Type I LastRead -1 FirstWrite -1}
-		p_ZL14conv1d_param_0_4 {Type I LastRead -1 FirstWrite -1}
-		p_ZL14conv1d_param_0_5 {Type I LastRead -1 FirstWrite -1}
-		p_ZL14conv1d_param_0_6 {Type I LastRead -1 FirstWrite -1}
-		p_ZL14conv1d_param_0_7 {Type I LastRead -1 FirstWrite -1}
-		p_ZL14conv1d_param_0_8 {Type I LastRead -1 FirstWrite -1}
-		p_ZL14conv1d_param_0_9 {Type I LastRead -1 FirstWrite -1}
-		p_ZL14conv1d_param_0_10 {Type I LastRead -1 FirstWrite -1}
-		p_ZL14conv1d_param_0_11 {Type I LastRead -1 FirstWrite -1}
-		p_ZL14conv1d_param_0_12 {Type I LastRead -1 FirstWrite -1}
-		p_ZL14conv1d_param_0_13 {Type I LastRead -1 FirstWrite -1}
-		p_ZL14conv1d_param_0_14 {Type I LastRead -1 FirstWrite -1}
-		p_ZL14conv1d_param_0_15 {Type I LastRead -1 FirstWrite -1}
-		p_ZL14conv1d_param_0_16 {Type I LastRead -1 FirstWrite -1}
-		p_ZL14conv1d_param_0_17 {Type I LastRead -1 FirstWrite -1}
-		p_ZL14conv1d_param_0_18 {Type I LastRead -1 FirstWrite -1}
-		conv1d_param_1 {Type I LastRead -1 FirstWrite -1}
-		batch_normalization_param_0 {Type I LastRead -1 FirstWrite -1}
-		batch_normalization_param_1 {Type I LastRead -1 FirstWrite -1}
-		batch_normalization_param_2 {Type I LastRead -1 FirstWrite -1}
-		batch_normalization_param_3 {Type I LastRead -1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_0 {Type I LastRead -1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_1 {Type I LastRead -1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_2 {Type I LastRead -1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_3 {Type I LastRead -1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_4 {Type I LastRead -1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_5 {Type I LastRead -1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_6 {Type I LastRead -1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_7 {Type I LastRead -1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_8 {Type I LastRead -1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_9 {Type I LastRead -1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_10 {Type I LastRead -1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_11 {Type I LastRead -1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_12 {Type I LastRead -1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_13 {Type I LastRead -1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_14 {Type I LastRead -1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_15 {Type I LastRead -1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_16 {Type I LastRead -1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_17 {Type I LastRead -1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_18 {Type I LastRead -1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_19 {Type I LastRead -1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_20 {Type I LastRead -1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_21 {Type I LastRead -1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_22 {Type I LastRead -1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_23 {Type I LastRead -1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_24 {Type I LastRead -1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_25 {Type I LastRead -1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_26 {Type I LastRead -1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_27 {Type I LastRead -1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_28 {Type I LastRead -1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_29 {Type I LastRead -1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_30 {Type I LastRead -1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_31 {Type I LastRead -1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_32 {Type I LastRead -1 FirstWrite -1}
-		conv1d_1_param_1 {Type I LastRead -1 FirstWrite -1}
-		batch_normalization_1_param_0 {Type I LastRead -1 FirstWrite -1}
-		batch_normalization_1_param_1 {Type I LastRead -1 FirstWrite -1}
-		batch_normalization_1_param_2 {Type I LastRead -1 FirstWrite -1}
-		batch_normalization_1_param_3 {Type I LastRead -1 FirstWrite -1}
-		dense_param_1 {Type I LastRead -1 FirstWrite -1}
-		dense_param_0 {Type I LastRead -1 FirstWrite -1}
-		dense_1_param_1 {Type I LastRead -1 FirstWrite -1}
-		dense_1_param_0 {Type I LastRead -1 FirstWrite -1}}
-	cnn_gesture_top_Pipeline_VITIS_LOOP_270_1_VITIS_LOOP_271_2 {
-		input_r {Type O LastRead -1 FirstWrite 10}
-		input_1 {Type O LastRead -1 FirstWrite 10}
-		input_2 {Type O LastRead -1 FirstWrite 10}
-		input_3 {Type O LastRead -1 FirstWrite 10}
-		input_4 {Type O LastRead -1 FirstWrite 10}
-		input_5 {Type O LastRead -1 FirstWrite 10}
-		input_6 {Type O LastRead -1 FirstWrite 10}
-		input_7 {Type O LastRead -1 FirstWrite 10}
-		input_8 {Type O LastRead -1 FirstWrite 10}
-		input_9 {Type O LastRead -1 FirstWrite 10}
-		input_10 {Type O LastRead -1 FirstWrite 10}
-		input_11 {Type O LastRead -1 FirstWrite 10}
-		input_12 {Type O LastRead -1 FirstWrite 10}
-		input_13 {Type O LastRead -1 FirstWrite 10}
-		input_14 {Type O LastRead -1 FirstWrite 10}
-		input_15 {Type O LastRead -1 FirstWrite 10}
-		input_16 {Type O LastRead -1 FirstWrite 10}
-		input_17 {Type O LastRead -1 FirstWrite 10}
-		input_stream_V_data_V {Type I LastRead 8 FirstWrite -1}
-		input_stream_V_keep_V {Type I LastRead 8 FirstWrite -1}
-		input_stream_V_strb_V {Type I LastRead 8 FirstWrite -1}
-		input_stream_V_last_V {Type I LastRead 8 FirstWrite -1}}
-	cnn_gesture_core {
-		input_0_0 {Type I LastRead 12 FirstWrite -1}
-		input_0_1 {Type I LastRead 12 FirstWrite -1}
-		input_0_2 {Type I LastRead 12 FirstWrite -1}
-		input_0_3 {Type I LastRead 12 FirstWrite -1}
-		input_0_4 {Type I LastRead 12 FirstWrite -1}
-		input_0_5 {Type I LastRead 12 FirstWrite -1}
-		input_1_0 {Type I LastRead 12 FirstWrite -1}
-		input_1_1 {Type I LastRead 12 FirstWrite -1}
-		input_1_2 {Type I LastRead 12 FirstWrite -1}
-		input_1_3 {Type I LastRead 12 FirstWrite -1}
-		input_1_4 {Type I LastRead 12 FirstWrite -1}
-		input_1_5 {Type I LastRead 12 FirstWrite -1}
-		input_2_0 {Type I LastRead 12 FirstWrite -1}
-		input_2_1 {Type I LastRead 12 FirstWrite -1}
-		input_2_2 {Type I LastRead 12 FirstWrite -1}
-		input_2_3 {Type I LastRead 12 FirstWrite -1}
-		input_2_4 {Type I LastRead 12 FirstWrite -1}
-		input_2_5 {Type I LastRead 12 FirstWrite -1}
-		output_r {Type O LastRead -1 FirstWrite 30}
-		p_ZL14conv1d_param_0_0 {Type I LastRead -1 FirstWrite -1}
-		p_ZL14conv1d_param_0_1 {Type I LastRead -1 FirstWrite -1}
-		p_ZL14conv1d_param_0_2 {Type I LastRead -1 FirstWrite -1}
-		p_ZL14conv1d_param_0_3 {Type I LastRead -1 FirstWrite -1}
-		p_ZL14conv1d_param_0_4 {Type I LastRead -1 FirstWrite -1}
-		p_ZL14conv1d_param_0_5 {Type I LastRead -1 FirstWrite -1}
-		p_ZL14conv1d_param_0_6 {Type I LastRead -1 FirstWrite -1}
-		p_ZL14conv1d_param_0_7 {Type I LastRead -1 FirstWrite -1}
-		p_ZL14conv1d_param_0_8 {Type I LastRead -1 FirstWrite -1}
-		p_ZL14conv1d_param_0_9 {Type I LastRead -1 FirstWrite -1}
-		p_ZL14conv1d_param_0_10 {Type I LastRead -1 FirstWrite -1}
-		p_ZL14conv1d_param_0_11 {Type I LastRead -1 FirstWrite -1}
-		p_ZL14conv1d_param_0_12 {Type I LastRead -1 FirstWrite -1}
-		p_ZL14conv1d_param_0_13 {Type I LastRead -1 FirstWrite -1}
-		p_ZL14conv1d_param_0_14 {Type I LastRead -1 FirstWrite -1}
-		p_ZL14conv1d_param_0_15 {Type I LastRead -1 FirstWrite -1}
-		p_ZL14conv1d_param_0_16 {Type I LastRead -1 FirstWrite -1}
-		p_ZL14conv1d_param_0_17 {Type I LastRead -1 FirstWrite -1}
-		p_ZL14conv1d_param_0_18 {Type I LastRead -1 FirstWrite -1}
-		conv1d_param_1 {Type I LastRead -1 FirstWrite -1}
-		batch_normalization_param_0 {Type I LastRead -1 FirstWrite -1}
-		batch_normalization_param_1 {Type I LastRead -1 FirstWrite -1}
-		batch_normalization_param_2 {Type I LastRead -1 FirstWrite -1}
-		batch_normalization_param_3 {Type I LastRead -1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_0 {Type I LastRead -1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_1 {Type I LastRead -1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_2 {Type I LastRead -1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_3 {Type I LastRead -1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_4 {Type I LastRead -1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_5 {Type I LastRead -1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_6 {Type I LastRead -1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_7 {Type I LastRead -1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_8 {Type I LastRead -1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_9 {Type I LastRead -1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_10 {Type I LastRead -1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_11 {Type I LastRead -1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_12 {Type I LastRead -1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_13 {Type I LastRead -1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_14 {Type I LastRead -1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_15 {Type I LastRead -1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_16 {Type I LastRead -1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_17 {Type I LastRead -1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_18 {Type I LastRead -1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_19 {Type I LastRead -1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_20 {Type I LastRead -1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_21 {Type I LastRead -1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_22 {Type I LastRead -1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_23 {Type I LastRead -1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_24 {Type I LastRead -1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_25 {Type I LastRead -1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_26 {Type I LastRead -1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_27 {Type I LastRead -1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_28 {Type I LastRead -1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_29 {Type I LastRead -1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_30 {Type I LastRead -1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_31 {Type I LastRead -1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_32 {Type I LastRead -1 FirstWrite -1}
-		conv1d_1_param_1 {Type I LastRead -1 FirstWrite -1}
-		batch_normalization_1_param_0 {Type I LastRead -1 FirstWrite -1}
-		batch_normalization_1_param_1 {Type I LastRead -1 FirstWrite -1}
-		batch_normalization_1_param_2 {Type I LastRead -1 FirstWrite -1}
-		batch_normalization_1_param_3 {Type I LastRead -1 FirstWrite -1}
-		dense_param_1 {Type I LastRead -1 FirstWrite -1}
-		dense_param_0 {Type I LastRead -1 FirstWrite -1}
-		dense_1_param_1 {Type I LastRead -1 FirstWrite -1}
-		dense_1_param_0 {Type I LastRead -1 FirstWrite -1}}
-	cnn_gesture_core_Pipeline_VITIS_LOOP_62_1_VITIS_LOOP_63_2 {
-		input_0_0 {Type I LastRead 12 FirstWrite -1}
-		input_1_0 {Type I LastRead 12 FirstWrite -1}
-		input_2_0 {Type I LastRead 12 FirstWrite -1}
-		input_0_1 {Type I LastRead 12 FirstWrite -1}
-		input_1_1 {Type I LastRead 12 FirstWrite -1}
-		input_2_1 {Type I LastRead 12 FirstWrite -1}
-		input_0_2 {Type I LastRead 12 FirstWrite -1}
-		input_1_2 {Type I LastRead 12 FirstWrite -1}
-		input_2_2 {Type I LastRead 12 FirstWrite -1}
-		input_0_3 {Type I LastRead 12 FirstWrite -1}
-		input_1_3 {Type I LastRead 12 FirstWrite -1}
-		input_2_3 {Type I LastRead 12 FirstWrite -1}
-		input_0_4 {Type I LastRead 12 FirstWrite -1}
-		input_1_4 {Type I LastRead 12 FirstWrite -1}
-		input_2_4 {Type I LastRead 12 FirstWrite -1}
-		input_0_5 {Type I LastRead 12 FirstWrite -1}
-		input_1_5 {Type I LastRead 12 FirstWrite -1}
-		input_2_5 {Type I LastRead 12 FirstWrite -1}
-		conv1_out {Type O LastRead -1 FirstWrite 52}
-		p_ZL14conv1d_param_0_0 {Type I LastRead -1 FirstWrite -1}
-		p_ZL14conv1d_param_0_1 {Type I LastRead -1 FirstWrite -1}
-		p_ZL14conv1d_param_0_2 {Type I LastRead -1 FirstWrite -1}
-		p_ZL14conv1d_param_0_3 {Type I LastRead -1 FirstWrite -1}
-		p_ZL14conv1d_param_0_4 {Type I LastRead -1 FirstWrite -1}
-		p_ZL14conv1d_param_0_5 {Type I LastRead -1 FirstWrite -1}
-		p_ZL14conv1d_param_0_6 {Type I LastRead -1 FirstWrite -1}
-		p_ZL14conv1d_param_0_7 {Type I LastRead -1 FirstWrite -1}
-		p_ZL14conv1d_param_0_8 {Type I LastRead -1 FirstWrite -1}
-		p_ZL14conv1d_param_0_9 {Type I LastRead -1 FirstWrite -1}
-		p_ZL14conv1d_param_0_10 {Type I LastRead -1 FirstWrite -1}
-		p_ZL14conv1d_param_0_11 {Type I LastRead -1 FirstWrite -1}
-		p_ZL14conv1d_param_0_12 {Type I LastRead -1 FirstWrite -1}
-		p_ZL14conv1d_param_0_13 {Type I LastRead -1 FirstWrite -1}
-		p_ZL14conv1d_param_0_14 {Type I LastRead -1 FirstWrite -1}
-		p_ZL14conv1d_param_0_15 {Type I LastRead -1 FirstWrite -1}
-		p_ZL14conv1d_param_0_16 {Type I LastRead -1 FirstWrite -1}
-		p_ZL14conv1d_param_0_17 {Type I LastRead -1 FirstWrite -1}
-		p_ZL14conv1d_param_0_18 {Type I LastRead -1 FirstWrite -1}
-		conv1d_param_1 {Type I LastRead -1 FirstWrite -1}
-		batch_normalization_param_0 {Type I LastRead -1 FirstWrite -1}
-		batch_normalization_param_1 {Type I LastRead -1 FirstWrite -1}
-		batch_normalization_param_2 {Type I LastRead -1 FirstWrite -1}
-		batch_normalization_param_3 {Type I LastRead -1 FirstWrite -1}}
-	cnn_gesture_core_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2 {
-		pool1_out {Type O LastRead -1 FirstWrite 1}
-		pool1_out_1 {Type O LastRead -1 FirstWrite 1}
-		pool1_out_2 {Type O LastRead -1 FirstWrite 1}
-		pool1_out_3 {Type O LastRead -1 FirstWrite 1}
-		pool1_out_4 {Type O LastRead -1 FirstWrite 1}
-		pool1_out_5 {Type O LastRead -1 FirstWrite 1}
-		pool1_out_6 {Type O LastRead -1 FirstWrite 1}
-		pool1_out_7 {Type O LastRead -1 FirstWrite 1}
-		pool1_out_8 {Type O LastRead -1 FirstWrite 1}
-		pool1_out_9 {Type O LastRead -1 FirstWrite 1}
-		pool1_out_10 {Type O LastRead -1 FirstWrite 1}
-		pool1_out_11 {Type O LastRead -1 FirstWrite 1}
-		pool1_out_12 {Type O LastRead -1 FirstWrite 1}
-		pool1_out_13 {Type O LastRead -1 FirstWrite 1}
-		pool1_out_14 {Type O LastRead -1 FirstWrite 1}
-		pool1_out_15 {Type O LastRead -1 FirstWrite 1}
-		pool1_out_16 {Type O LastRead -1 FirstWrite 1}
-		pool1_out_17 {Type O LastRead -1 FirstWrite 1}
-		pool1_out_18 {Type O LastRead -1 FirstWrite 1}
-		pool1_out_19 {Type O LastRead -1 FirstWrite 1}
-		pool1_out_20 {Type O LastRead -1 FirstWrite 1}
-		pool1_out_21 {Type O LastRead -1 FirstWrite 1}
-		pool1_out_22 {Type O LastRead -1 FirstWrite 1}
-		pool1_out_23 {Type O LastRead -1 FirstWrite 1}
-		pool1_out_24 {Type O LastRead -1 FirstWrite 1}
-		pool1_out_25 {Type O LastRead -1 FirstWrite 1}
-		pool1_out_26 {Type O LastRead -1 FirstWrite 1}
-		pool1_out_27 {Type O LastRead -1 FirstWrite 1}
-		pool1_out_28 {Type O LastRead -1 FirstWrite 1}
-		pool1_out_29 {Type O LastRead -1 FirstWrite 1}
-		pool1_out_30 {Type O LastRead -1 FirstWrite 1}
-		pool1_out_31 {Type O LastRead -1 FirstWrite 1}
-		conv1_out {Type I LastRead 1 FirstWrite -1}}
-	cnn_gesture_core_Pipeline_VITIS_LOOP_115_1_VITIS_LOOP_116_2_VITIS_LOOP_119_3 {
-		conv2_out {Type O LastRead -1 FirstWrite 55}
-		pool1_out {Type I LastRead 1 FirstWrite -1}
-		pool1_out_1 {Type I LastRead 1 FirstWrite -1}
-		pool1_out_2 {Type I LastRead 1 FirstWrite -1}
-		pool1_out_3 {Type I LastRead 1 FirstWrite -1}
-		pool1_out_4 {Type I LastRead 1 FirstWrite -1}
-		pool1_out_5 {Type I LastRead 1 FirstWrite -1}
-		pool1_out_6 {Type I LastRead 1 FirstWrite -1}
-		pool1_out_7 {Type I LastRead 1 FirstWrite -1}
-		pool1_out_8 {Type I LastRead 1 FirstWrite -1}
-		pool1_out_9 {Type I LastRead 1 FirstWrite -1}
-		pool1_out_10 {Type I LastRead 1 FirstWrite -1}
-		pool1_out_11 {Type I LastRead 1 FirstWrite -1}
-		pool1_out_12 {Type I LastRead 1 FirstWrite -1}
-		pool1_out_13 {Type I LastRead 1 FirstWrite -1}
-		pool1_out_14 {Type I LastRead 1 FirstWrite -1}
-		pool1_out_15 {Type I LastRead 1 FirstWrite -1}
-		pool1_out_16 {Type I LastRead 1 FirstWrite -1}
-		pool1_out_17 {Type I LastRead 1 FirstWrite -1}
-		pool1_out_18 {Type I LastRead 1 FirstWrite -1}
-		pool1_out_19 {Type I LastRead 1 FirstWrite -1}
-		pool1_out_20 {Type I LastRead 1 FirstWrite -1}
-		pool1_out_21 {Type I LastRead 1 FirstWrite -1}
-		pool1_out_22 {Type I LastRead 1 FirstWrite -1}
-		pool1_out_23 {Type I LastRead 1 FirstWrite -1}
-		pool1_out_24 {Type I LastRead 1 FirstWrite -1}
-		pool1_out_25 {Type I LastRead 1 FirstWrite -1}
-		pool1_out_26 {Type I LastRead 1 FirstWrite -1}
-		pool1_out_27 {Type I LastRead 1 FirstWrite -1}
-		pool1_out_28 {Type I LastRead 1 FirstWrite -1}
-		pool1_out_29 {Type I LastRead 1 FirstWrite -1}
-		pool1_out_30 {Type I LastRead 1 FirstWrite -1}
-		pool1_out_31 {Type I LastRead 1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_0 {Type I LastRead -1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_1 {Type I LastRead -1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_2 {Type I LastRead -1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_3 {Type I LastRead -1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_4 {Type I LastRead -1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_5 {Type I LastRead -1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_6 {Type I LastRead -1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_7 {Type I LastRead -1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_8 {Type I LastRead -1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_9 {Type I LastRead -1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_10 {Type I LastRead -1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_11 {Type I LastRead -1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_12 {Type I LastRead -1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_13 {Type I LastRead -1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_14 {Type I LastRead -1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_15 {Type I LastRead -1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_16 {Type I LastRead -1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_17 {Type I LastRead -1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_18 {Type I LastRead -1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_19 {Type I LastRead -1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_20 {Type I LastRead -1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_21 {Type I LastRead -1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_22 {Type I LastRead -1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_23 {Type I LastRead -1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_24 {Type I LastRead -1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_25 {Type I LastRead -1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_26 {Type I LastRead -1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_27 {Type I LastRead -1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_28 {Type I LastRead -1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_29 {Type I LastRead -1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_30 {Type I LastRead -1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_31 {Type I LastRead -1 FirstWrite -1}
-		p_ZL16conv1d_1_param_0_32 {Type I LastRead -1 FirstWrite -1}
-		conv1d_1_param_1 {Type I LastRead -1 FirstWrite -1}
-		batch_normalization_1_param_0 {Type I LastRead -1 FirstWrite -1}
-		batch_normalization_1_param_1 {Type I LastRead -1 FirstWrite -1}
-		batch_normalization_1_param_2 {Type I LastRead -1 FirstWrite -1}
-		batch_normalization_1_param_3 {Type I LastRead -1 FirstWrite -1}}
-	cnn_gesture_core_Pipeline_VITIS_LOOP_149_1_VITIS_LOOP_150_2 {
-		conv2_out {Type I LastRead 1 FirstWrite -1}
-		pool2_out {Type O LastRead -1 FirstWrite 1}}
-	cnn_gesture_core_Pipeline_VITIS_LOOP_165_1_VITIS_LOOP_166_2 {
-		pool2_out {Type I LastRead 0 FirstWrite -1}
-		flat {Type O LastRead -1 FirstWrite 1}}
-	cnn_gesture_core_Pipeline_VITIS_LOOP_183_2 {
-		sext_ln181_2 {Type I LastRead 0 FirstWrite -1}
-		empty {Type I LastRead 0 FirstWrite -1}
-		flat {Type I LastRead 2 FirstWrite -1}
-		sum_9_out {Type O LastRead -1 FirstWrite 5}
-		dense_param_0 {Type I LastRead -1 FirstWrite -1}}
-	cnn_gesture_core_Pipeline_VITIS_LOOP_201_2 {
-		sext_ln199_2 {Type I LastRead 0 FirstWrite -1}
-		zext_ln201 {Type I LastRead 0 FirstWrite -1}
-		fc1 {Type I LastRead 2 FirstWrite -1}
-		sum_11_out {Type O LastRead -1 FirstWrite 5}
-		dense_1_param_0 {Type I LastRead -1 FirstWrite -1}}
-	cnn_gesture_core_Pipeline_VITIS_LOOP_214_1 {
+		input_stream_V_data_V {Type I LastRead 1 FirstWrite -1}
+		input_stream_V_keep_V {Type I LastRead 1 FirstWrite -1}
+		input_stream_V_strb_V {Type I LastRead 1 FirstWrite -1}
+		input_stream_V_last_V {Type I LastRead 1 FirstWrite -1}
+		output_stream_V_data_V {Type O LastRead -1 FirstWrite 4}
+		output_stream_V_keep_V {Type O LastRead -1 FirstWrite 4}
+		output_stream_V_strb_V {Type O LastRead -1 FirstWrite 4}
+		output_stream_V_last_V {Type O LastRead -1 FirstWrite 4}
+		B {Type I LastRead -1 FirstWrite -1}
+		tiny_classifier_stream_axis_0_float_W_5 {Type I LastRead -1 FirstWrite -1}
+		tiny_classifier_stream_axis_0_float_W_4 {Type I LastRead -1 FirstWrite -1}
+		tiny_classifier_stream_axis_0_float_W_3 {Type I LastRead -1 FirstWrite -1}
+		tiny_classifier_stream_axis_0_float_W_2 {Type I LastRead -1 FirstWrite -1}
+		tiny_classifier_stream_axis_0_float_W_1 {Type I LastRead -1 FirstWrite -1}
+		tiny_classifier_stream_axis_0_float_W {Type I LastRead -1 FirstWrite -1}}
+	tiny_classifier {
+		input_stream_V_data_V {Type I LastRead 1 FirstWrite -1}
+		input_stream_V_keep_V {Type I LastRead 1 FirstWrite -1}
+		input_stream_V_strb_V {Type I LastRead 1 FirstWrite -1}
+		input_stream_V_last_V {Type I LastRead 1 FirstWrite -1}
+		output_probs {Type O LastRead -1 FirstWrite 5}
+		B {Type I LastRead -1 FirstWrite -1}
+		tiny_classifier_stream_axis_0_float_W_5 {Type I LastRead -1 FirstWrite -1}
+		tiny_classifier_stream_axis_0_float_W_4 {Type I LastRead -1 FirstWrite -1}
+		tiny_classifier_stream_axis_0_float_W_3 {Type I LastRead -1 FirstWrite -1}
+		tiny_classifier_stream_axis_0_float_W_2 {Type I LastRead -1 FirstWrite -1}
+		tiny_classifier_stream_axis_0_float_W_1 {Type I LastRead -1 FirstWrite -1}
+		tiny_classifier_stream_axis_0_float_W {Type I LastRead -1 FirstWrite -1}}
+	tiny_classifier_Pipeline_VITIS_LOOP_74_2_VITIS_LOOP_75_3 {
+		input_stream_V_data_V {Type I LastRead 1 FirstWrite -1}
+		input_stream_V_keep_V {Type I LastRead 1 FirstWrite -1}
+		input_stream_V_strb_V {Type I LastRead 1 FirstWrite -1}
+		input_stream_V_last_V {Type I LastRead 1 FirstWrite -1}
+		feature_sum_load_out {Type O LastRead -1 FirstWrite 3}
+		feature_sum_1_load_out {Type O LastRead -1 FirstWrite 3}
+		feature_sum_2_load_out {Type O LastRead -1 FirstWrite 3}
+		feature_sum_3_load_out {Type O LastRead -1 FirstWrite 3}
+		feature_sum_4_load_out {Type O LastRead -1 FirstWrite 3}
+		feature_sum_5_load_out {Type O LastRead -1 FirstWrite 3}}
+	tiny_classifier_Pipeline_VITIS_LOOP_85_4 {
+		feature_sum_load_reload {Type I LastRead 0 FirstWrite -1}
+		feature_sum_1_load_reload {Type I LastRead 0 FirstWrite -1}
+		feature_sum_2_load_reload {Type I LastRead 0 FirstWrite -1}
+		feature_sum_3_load_reload {Type I LastRead 0 FirstWrite -1}
+		feature_sum_4_load_reload {Type I LastRead 0 FirstWrite -1}
+		feature_sum_5_load_reload {Type I LastRead 0 FirstWrite -1}
+		mux_case_52547_out {Type O LastRead -1 FirstWrite 2}
+		mux_case_42343_out {Type O LastRead -1 FirstWrite 2}
+		mux_case_32139_out {Type O LastRead -1 FirstWrite 2}
+		mux_case_21935_out {Type O LastRead -1 FirstWrite 2}
+		mux_case_11731_out {Type O LastRead -1 FirstWrite 2}
+		mux_case_01527_out {Type O LastRead -1 FirstWrite 2}}
+	tiny_classifier_Pipeline_VITIS_LOOP_90_5 {
+		mux_case_01527_reload {Type I LastRead 0 FirstWrite -1}
+		mux_case_11731_reload {Type I LastRead 0 FirstWrite -1}
+		mux_case_21935_reload {Type I LastRead 0 FirstWrite -1}
+		mux_case_32139_reload {Type I LastRead 0 FirstWrite -1}
+		mux_case_42343_reload {Type I LastRead 0 FirstWrite -1}
+		mux_case_52547_reload {Type I LastRead 0 FirstWrite -1}
+		logits {Type O LastRead -1 FirstWrite 28}
+		B {Type I LastRead -1 FirstWrite -1}
+		tiny_classifier_stream_axis_0_float_W_5 {Type I LastRead -1 FirstWrite -1}
+		tiny_classifier_stream_axis_0_float_W_4 {Type I LastRead -1 FirstWrite -1}
+		tiny_classifier_stream_axis_0_float_W_3 {Type I LastRead -1 FirstWrite -1}
+		tiny_classifier_stream_axis_0_float_W_2 {Type I LastRead -1 FirstWrite -1}
+		tiny_classifier_stream_axis_0_float_W_1 {Type I LastRead -1 FirstWrite -1}
+		tiny_classifier_stream_axis_0_float_W {Type I LastRead -1 FirstWrite -1}}
+	tiny_classifier_Pipeline_VITIS_LOOP_33_1 {
 		max_v {Type I LastRead 0 FirstWrite -1}
 		logits {Type I LastRead 0 FirstWrite -1}
-		max_v_1_out {Type O LastRead -1 FirstWrite 0}}
-	cnn_gesture_core_Pipeline_VITIS_LOOP_220_2 {
+		max_v_1_out {Type O LastRead -1 FirstWrite 1}}
+	tiny_classifier_Pipeline_VITIS_LOOP_39_2 {
 		logits {Type I LastRead 0 FirstWrite -1}
-		sext_ln221 {Type I LastRead 0 FirstWrite -1}
 		max_v_1_reload {Type I LastRead 0 FirstWrite -1}
-		exps {Type O LastRead -1 FirstWrite 11}
-		sum_7_out {Type O LastRead -1 FirstWrite 10}}
-	cnn_gesture_core_Pipeline_VITIS_LOOP_225_3 {
+		exps {Type O LastRead -1 FirstWrite 12}
+		sum_out {Type O LastRead -1 FirstWrite 14}}
+	tiny_classifier_Pipeline_VITIS_LOOP_45_3 {
 		exps {Type I LastRead 0 FirstWrite -1}
-		sext_ln225 {Type I LastRead 0 FirstWrite -1}
-		output_r {Type O LastRead -1 FirstWrite 30}}
-	cnn_gesture_top_Pipeline_VITIS_LOOP_281_3 {
-		output_r {Type I LastRead 0 FirstWrite -1}
-		output_stream_V_data_V {Type O LastRead -1 FirstWrite 1}
-		output_stream_V_keep_V {Type O LastRead -1 FirstWrite 1}
-		output_stream_V_strb_V {Type O LastRead -1 FirstWrite 1}
-		output_stream_V_last_V {Type O LastRead -1 FirstWrite 1}}}
+		inv {Type I LastRead 0 FirstWrite -1}
+		output_probs {Type O LastRead -1 FirstWrite 5}}}
 
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "225730", "Max" : "225730"}
-	, {"Name" : "Interval", "Min" : "225731", "Max" : "225731"}
+	{"Name" : "Latency", "Min" : "737", "Max" : "737"}
+	, {"Name" : "Interval", "Min" : "738", "Max" : "738"}
 ]}
 
 set PipelineEnableSignalInfo {[
+	{"Pipeline" : "0", "EnableSignal" : "ap_enable_pp0"}
 ]}
 
 set Spec2ImplPortList { 

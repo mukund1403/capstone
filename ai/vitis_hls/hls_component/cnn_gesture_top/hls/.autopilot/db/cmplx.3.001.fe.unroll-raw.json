@@ -1,33 +1,39 @@
 {
   "0": {
-    "basicblocks": 28,
-    "calls": "2 4 5",
-    "control_depth": 2,
-    "def_use_depth": 18,
+    "basicblocks": 5,
+    "calls": "3 4",
+    "control_depth": 0,
+    "def_use_depth": 3,
     "file": "cnn_gesture_hls.cpp",
-    "fileloc": 258,
-    "instructions": 232,
+    "fileloc": 101,
+    "instructions": 97,
     "loads": {
-      "L": 11
+      "L": 6
     },
-    "memory_accesses": 27,
+    "memory_accesses": 17,
     "name": "cnn_gesture_top",
     "stores": {
-      "L": 9
+      "L": 8
     },
-    "total_instructions": 2789
+    "total_instructions": 301
   },
   "1": {
-    "basicblocks": 1,
+    "basicblocks": 18,
     "calls": "",
-    "control_depth": 0,
-    "def_use_depth": 1,
-    "file": "sqrtfloat.cpp",
-    "fileloc": 6,
-    "instructions": 2,
-    "memory_accesses": 0,
-    "name": "sqrt",
-    "total_instructions": 2
+    "control_depth": 2,
+    "def_use_depth": 4,
+    "file": "cnn_gesture_hls.cpp",
+    "fileloc": 31,
+    "instructions": 64,
+    "loads": {
+      "L": 5
+    },
+    "memory_accesses": 6,
+    "name": "softmax",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 64
   },
   "2": {
     "basicblocks": 1,
@@ -35,53 +41,38 @@
     "control_depth": 0,
     "def_use_depth": 1,
     "file": "cnn_gesture_hls.cpp",
-    "fileloc": 23,
+    "fileloc": 13,
     "instructions": 2,
     "memory_accesses": 0,
     "name": "bits_to_float",
     "total_instructions": 2
   },
   "3": {
-    "basicblocks": 10,
-    "calls": "",
+    "basicblocks": 21,
+    "calls": "2 1",
     "control_depth": 0,
-    "def_use_depth": 1,
+    "def_use_depth": 3,
     "file": "cnn_gesture_hls.cpp",
-    "fileloc": 41,
-    "instructions": 14,
-    "memory_accesses": 0,
-    "name": "relu",
-    "stores": {
-      "L": 2
+    "fileloc": 54,
+    "instructions": 127,
+    "loads": {
+      "G": 2,
+      "L": 4
     },
-    "total_instructions": 14
+    "memory_accesses": 11,
+    "name": "tiny_classifier",
+    "stores": {
+      "L": 4
+    },
+    "total_instructions": 197
   },
   "4": {
-    "basicblocks": 355,
-    "calls": "7 3 1 7 3 1 6 3 6",
-    "control_depth": 4,
-    "def_use_depth": 20,
-    "file": "cnn_gesture_hls.cpp",
-    "fileloc": 231,
-    "instructions": 1202,
-    "loads": {
-      "G": 16,
-      "L": 53
-    },
-    "memory_accesses": 49,
-    "name": "cnn_gesture_core",
-    "stores": {
-      "L": 13
-    },
-    "total_instructions": 2480
-  },
-  "5": {
     "basicblocks": 1,
     "calls": "",
     "control_depth": 0,
     "def_use_depth": 1,
     "file": "cnn_gesture_hls.cpp",
-    "fileloc": 32,
+    "fileloc": 22,
     "instructions": 3,
     "memory_accesses": 0,
     "name": "float_to_bits",
@@ -89,29 +80,5 @@
       "L": 1
     },
     "total_instructions": 3
-  },
-  "6": {
-    "basicblocks": 1,
-    "calls": "",
-    "control_depth": 0,
-    "def_use_depth": 2,
-    "file": "cnn_gesture_hls.cpp",
-    "fileloc": 52,
-    "instructions": 3,
-    "memory_accesses": 0,
-    "name": "dense_index",
-    "total_instructions": 3
-  },
-  "7": {
-    "basicblocks": 1,
-    "calls": "",
-    "control_depth": 0,
-    "def_use_depth": 4,
-    "file": "cnn_gesture_hls.cpp",
-    "fileloc": 47,
-    "instructions": 5,
-    "memory_accesses": 0,
-    "name": "conv_index",
-    "total_instructions": 5
   }
 }
