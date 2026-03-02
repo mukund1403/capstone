@@ -23,6 +23,13 @@ public class GameLogic : MonoBehaviour
         Time.fixedDeltaTime = 0.02f;
     }
 
+    public void ResetScore()
+    {
+        score = 0;
+        TMP_Text text = GameObject.Find("ScoreText").GetComponent<TMP_Text>();
+        text.text = "Score: " + score.ToString();
+    }
+
     public void AddScore()
     {
         score++;

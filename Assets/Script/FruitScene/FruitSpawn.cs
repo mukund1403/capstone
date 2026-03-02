@@ -17,6 +17,7 @@ public class FruitSpawn : MonoBehaviour
     private float timer;
 
     private bool isActive;
+    private bool isFrozen;
     private bool isImageScanned;
     private Vector3 storedImagePos;
 
@@ -49,6 +50,7 @@ public class FruitSpawn : MonoBehaviour
             watermelonPrefab, 
             peachPrefab
         };
+        isFrozen = false;
     }
     private void OnEnable()
     {
@@ -70,11 +72,17 @@ public class FruitSpawn : MonoBehaviour
     {
         foreach (ARTrackedImage image in obj.added)
         {
-            currentImage = image;
+            if (image.referenceImage.name == "NUSLogo")
+            {
+                currentImage = image;
+            }
         }
         foreach (ARTrackedImage image in obj.updated)
         {
-            currentImage = image;
+            if (image.referenceImage.name == "NUSLogo")
+            {
+                currentImage = image;
+            }
         }
     }
 
@@ -100,11 +108,6 @@ public class FruitSpawn : MonoBehaviour
         }
     }
 
-    public void SetSpawn(bool input)
-    {
-        isActive = input;
-    }
-
     public void SetImageOnClick()
     {
         if (PlayerStatusManager.Instance.GetIdentity() != "Defender")
@@ -126,9 +129,18 @@ public class FruitSpawn : MonoBehaviour
         }
     }
 
+    public void SetFrozen(bool value)
+    {
+        isFrozen = value;
+    }
+
     // Update is called once per frame
     void Update()
     {
+        if (isFrozen)
+        {
+            return;
+        }
         if (isActive)
         {
             if (timer < spawnRate)
@@ -168,7 +180,7 @@ public class FruitSpawn : MonoBehaviour
 
     private void ThrowFromBottom()
     {
-        float force = 2;
+        float force = 3;
         GameObject fruitChosen = fruits[Random.Range(0, fruits.Length)];
         bool isBomb = Random.value < 0.1f;
         //Vector3 offset = new Vector3(Random.Range(-0.1f, 0.1f), 0, Random.Range(-0.1f, 0.1f));
@@ -181,7 +193,7 @@ public class FruitSpawn : MonoBehaviour
             spawnedFruit.transform.SetParent(null);
             spawnedFruit.transform.localScale *= 0.067f;
             spawnedFruit.SetActive(true);
-            //applyPhysics(spawnedFruit, force, Direction.Up);
+            applyPhysics(spawnedFruit, force, Direction.Up);
         }
         else if (isBomb)
         {
@@ -189,7 +201,7 @@ public class FruitSpawn : MonoBehaviour
             bomb.transform.SetParent(null);
             bomb.transform.localScale *= 0.067f;
             bomb.SetActive(true);
-            //applyPhysics(bomb, force, Direction.Up);
+            applyPhysics(bomb, force, Direction.Up);
         }
     }
 }

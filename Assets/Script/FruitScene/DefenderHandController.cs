@@ -31,25 +31,12 @@ public class DefenderHandController : MonoBehaviour
         StartCoroutine(SlowMotion());
     }
 
-    //private System.Collections.IEnumerator SlowMotion()
-    //{
-    //    Time.timeScale = slowScale;
-
-    //    yield return new WaitForSecondsRealtime(duration);
-
-    //    Time.timeScale = 0.3f; Time.fixedDeltaTime = 0.02f;
-    //    animator.SetBool("isSkillOngoing", false);
-    //    animator.SetBool("isFreezeSkill", false);
-    //}
-
     private System.Collections.IEnumerator SlowMotion()
     {
         Dictionary<Rigidbody, Vector3> storedVelocities = new Dictionary<Rigidbody, Vector3>();
         Dictionary<Rigidbody, Vector3> storedAngularVelocities = new Dictionary<Rigidbody, Vector3>();
         GameObject[] fruits = GameObject.FindGameObjectsWithTag("Safe Object");
         GameObject[] bombs = GameObject.FindGameObjectsWithTag("Pickable");
-        //FruitSpawn spawn = GameObject.Find("FruitSpawn").GetComponent<FruitSpawn>();
-        //spawn.SetSpawn(false);
 
         foreach (GameObject fruit in fruits)
         {
@@ -84,6 +71,9 @@ public class DefenderHandController : MonoBehaviour
             }
         }
 
+        FruitSpawn spawn = GameObject.Find("SpawnFruit").GetComponent<FruitSpawn>();
+        spawn.SetFrozen(true);
+
         yield return new WaitForSecondsRealtime(duration);
 
         foreach (var pair in storedVelocities)
@@ -98,7 +88,7 @@ public class DefenderHandController : MonoBehaviour
             }
         }
 
-        //spawn.SetSpawn(true);
+        spawn.SetFrozen(false);
 
         animator.SetBool("isSkillOngoing", false);
         animator.SetBool("isFreezeSkill", false);

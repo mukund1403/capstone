@@ -22,10 +22,7 @@ public class ButtonLogic : MonoBehaviour
 
     public void QuitGame()
     {
-        if (!helpMenu.activeSelf && !selectRoleMenu.activeSelf || gameOverCanvas.activeSelf)
-        {
-            Application.Quit();
-        }
+        Application.Quit();
     }
 
     public void OpenHelp()
@@ -58,5 +55,7 @@ public class ButtonLogic : MonoBehaviour
     {
         gamePlayCanvas.SetActive(true);
         gameOverCanvas.SetActive(false);
+        GameLogic logic = GameObject.Find("GameLogic").GetComponent<GameLogic>();
+        logic.ResetScore();
     }
 }
