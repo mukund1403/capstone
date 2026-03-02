@@ -57,17 +57,17 @@ public class AttackerHandController : MonoBehaviour
 
     private void applyPhysics(Rigidbody rb)
     {
-        float force = 5;
+        float force = 7;
         rb.isKinematic = false;
         rb.useGravity = true;
         float spinForce = 5;
-        rb.AddForce(transform.forward * force, ForceMode.Impulse);
+        rb.AddForce(holdPoint.up * force, ForceMode.Impulse);
         rb.AddTorque(Random.insideUnitSphere * spinForce, ForceMode.Impulse);
     }
 
-    IEnumerator WaitTwoSeconds()
+    IEnumerator WaitOneSecond()
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(1);
         canHold = true;
     }
 
@@ -86,7 +86,7 @@ public class AttackerHandController : MonoBehaviour
         heldObject = null;
 
         animator.SetBool("isHolding", false);
-        StartCoroutine(WaitTwoSeconds());
+        StartCoroutine(WaitOneSecond());
     }
 
     private void MqttPubTest()

@@ -8,6 +8,15 @@ public class HandLogic : MonoBehaviour
     [SerializeField] private TMP_Text text;
     private int clickCount = 0;
 
+    void Awake()
+    {
+        string playerIdentity = PlayerStatusManager.Instance.GetIdentity();
+        if (playerIdentity == "Attacker")
+        {
+            SetMessage("Tracking hand status.");
+        }
+    }
+
     private void SetMessage(string message)
     {
         text.text = message;

@@ -6,6 +6,7 @@ public class DefenderHandController : MonoBehaviour
 {
     private string playerIdentity;
     private Animator animator;
+    private bool animationOngoing;
 
 
     private const float slowScale = 0f;
@@ -22,11 +23,16 @@ public class DefenderHandController : MonoBehaviour
             return;
         }
         animator = GetComponent<Animator>();
+        animationOngoing = false;
     }
 
     public void ApplyFreezeSkill()
     {
-        animator.SetBool("isSkillOngoing", true);
+        if (animationOngoing)
+        {
+            return;
+        }
+        animationOngoing = true;
         animator.SetBool("isFreezeSkill", true);
         StartCoroutine(SlowMotion());
     }
@@ -51,7 +57,7 @@ public class DefenderHandController : MonoBehaviour
                 // Freeze movement
                 rb.velocity = Vector3.zero;
                 rb.angularVelocity = Vector3.zero;
-                rb.isKinematic = true;
+                rb.constraints = RigidbodyConstraints.FreezeAll;
             }
         }
         foreach (GameObject bomb in bombs)
@@ -67,7 +73,7 @@ public class DefenderHandController : MonoBehaviour
                 // Freeze movement
                 rb.velocity = Vector3.zero;
                 rb.angularVelocity = Vector3.zero;
-                rb.isKinematic = true;
+                rb.constraints = RigidbodyConstraints.FreezeAll;
             }
         }
 
@@ -82,7 +88,7 @@ public class DefenderHandController : MonoBehaviour
 
             if (rb != null)
             {
-                rb.isKinematic = false;
+                rb.constraints = RigidbodyConstraints.None;
                 rb.velocity = pair.Value;
                 rb.angularVelocity = storedAngularVelocities[rb];
             }
@@ -90,7 +96,7 @@ public class DefenderHandController : MonoBehaviour
 
         spawn.SetFrozen(false);
 
-        animator.SetBool("isSkillOngoing", false);
         animator.SetBool("isFreezeSkill", false);
+        animationOngoing = false;
     }
 }
