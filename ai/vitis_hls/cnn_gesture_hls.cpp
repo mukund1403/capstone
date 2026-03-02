@@ -2,7 +2,6 @@
 #include <hls_math.h>
 #include "weights.h"
 
-// Model dimensions (must match your Python model)
 #define SEQ_LENGTH 100
 #define FEATURES 6
 #define CONV1_FILTERS 32
@@ -19,13 +18,10 @@ static inline data_t relu(data_t x) {
     return (x > 0) ? x : (data_t)0;
 }
 
-// Index helpers for flattened Keras tensors
-// Conv kernel shape in Keras: [kernel, in_channels, out_channels]
 static inline int conv_index(int k, int c, int f, int in_ch, int out_ch) {
     return (k * in_ch + c) * out_ch + f;
 }
 
-// Dense kernel shape in Keras: [in_dim, out_dim]
 static inline int dense_index(int i, int o, int out_dim) {
     return i * out_dim + o;
 }
