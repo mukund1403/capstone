@@ -98,7 +98,6 @@ public class FruitSpawn : MonoBehaviour
         {
             SetMessage("No scanned location.");
         }
-        MqttPubTest();
     }
 
     public void SetSpawn(bool input)
@@ -125,7 +124,6 @@ public class FruitSpawn : MonoBehaviour
             string message = "No Image Found. \n" + storedImagePos.ToString();
             SetMessage(message);
         }
-        MqttPubTest();
     }
 
     // Update is called once per frame
@@ -193,10 +191,5 @@ public class FruitSpawn : MonoBehaviour
             bomb.SetActive(true);
             //applyPhysics(bomb, force, Direction.Up);
         }
-    }
-
-    private void MqttPubTest()
-    {
-        MqttApi.BuzzSuccess();
     }
 }

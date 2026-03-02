@@ -34,6 +34,7 @@ public class AttackerHandController : MonoBehaviour
 
         if (collision.gameObject.CompareTag("Pickable"))
         {
+            MqttPubTest();
             Grab(collision.gameObject);
             canHold = false;
         }
@@ -86,5 +87,10 @@ public class AttackerHandController : MonoBehaviour
 
         animator.SetBool("isHolding", false);
         StartCoroutine(WaitTwoSeconds());
+    }
+
+    private void MqttPubTest()
+    {
+        MqttApi.PickCollisionDetected();
     }
 }

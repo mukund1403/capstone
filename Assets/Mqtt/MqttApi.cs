@@ -22,6 +22,7 @@ public static class MqttApi
         MqttService.PublishTopic.DEFENDER_SWORD_IMU_CONTROL_TOPIC,
         new ImuControlMessage("imuWindow", "sliceStart")
         );
+        Debug.Log("collide message sent");
     }
 
     // Unity detect first collision between hand and a fruit/item (indicate attacker's pick-up action), and send a control message
@@ -31,5 +32,6 @@ public static class MqttApi
         MqttService.PublishTopic.ATTACKER_IMU_CONTROL_TOPIC,
         new ImuControlMessage("imuWindow", "pickUpStart")
         );
+        Debug.Log("pick message sent");
     }
 }

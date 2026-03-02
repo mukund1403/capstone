@@ -148,3 +148,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   splashPrefab: {fileID: 4084783424606406867, guid: 7e1f34d8f1f5929428bb0ed722eaf266, type: 3}
   wrongSignPrefab: {fileID: 2515303463335641517, guid: e447505c132a51243b6d25b8be35996e, type: 3}
+  triPrefab: {fileID: 3043239444861963151, guid: c330503f944e2e4499a3898f352176fe, type: 3}
+  rectPrefab: {fileID: 155302726855719916, guid: a5bbe38aa7e256d4f95acb2161ea6677, type: 3}
+  cirPrefab: {fileID: 7536506176070180853, guid: 37bb35134e409dc46846f2f67547118f, type: 3}
