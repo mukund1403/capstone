@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// Defines Hand Prefab's list of actions as an Attacker
 public class AttackerHandController : MonoBehaviour
 {
     private Transform holdPoint;
@@ -11,7 +12,6 @@ public class AttackerHandController : MonoBehaviour
     public GameObject heldObject;
     public bool canHold;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         playerIdentity = PlayerStatusManager.Instance.GetIdentity();
@@ -48,6 +48,7 @@ public class AttackerHandController : MonoBehaviour
         rb.isKinematic = true;
         rb.useGravity = false;
 
+        // set picked item's orientation ralative to the holdPoint
         picked.transform.SetParent(holdPoint);
         picked.transform.localPosition = new Vector3(0, -0.065f, 0);
         picked.transform.localRotation = Quaternion.Euler(0, 0, -90);
@@ -78,6 +79,7 @@ public class AttackerHandController : MonoBehaviour
             return;
         }
 
+        // release picked item from hand prefab's holdPoint 
         heldObject.transform.SetParent(null);
 
         Rigidbody rb = heldObject.GetComponent<Rigidbody>();
@@ -86,9 +88,11 @@ public class AttackerHandController : MonoBehaviour
         heldObject = null;
 
         animator.SetBool("isHolding", false);
+        // wait for one second to prevent re-grabbing from collision
         StartCoroutine(WaitOneSecond());
     }
 
+    // Simulating topic publishing using MQTT
     private void MqttPubTest()
     {
         MqttApi.PickCollisionDetected();

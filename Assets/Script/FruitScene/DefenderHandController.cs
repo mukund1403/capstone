@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// Defines Hand Prefab's list of actions as a Defender
 public class DefenderHandController : MonoBehaviour
 {
     private string playerIdentity;
@@ -28,6 +29,7 @@ public class DefenderHandController : MonoBehaviour
 
     public void ApplyFreezeSkill()
     {
+        // avoid calling multiple times when last run isn't done
         if (animationOngoing)
         {
             return;
@@ -37,6 +39,7 @@ public class DefenderHandController : MonoBehaviour
         StartCoroutine(SlowMotion());
     }
 
+    // freeze existing prefabs and pause spawning for a set time period
     private System.Collections.IEnumerator SlowMotion()
     {
         Dictionary<Rigidbody, Vector3> storedVelocities = new Dictionary<Rigidbody, Vector3>();

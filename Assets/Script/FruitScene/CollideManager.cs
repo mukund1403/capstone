@@ -4,6 +4,7 @@ using Unity.XR.CoreUtils;
 using UnityEngine;
 using TMPro;
 
+// Manage katana prefab's collision during gameplay
 public class CollideManager : MonoBehaviour
 {
     [SerializeField] private GameObject splashPrefab;
@@ -23,7 +24,6 @@ public class CollideManager : MonoBehaviour
     void Start()
     {
         logic = GameObject.Find("GameLogic").GetComponent<GameLogic>();
-        //gestureListener = FindObjectOfType<GestureListener>();
     }
 
     public void AddSpecialAnimation(string type, Vector3 pos)
@@ -54,6 +54,7 @@ public class CollideManager : MonoBehaviour
         {
             Vector3 hitPos = collision.transform.position;
 
+            // check if the object collided has special child object
             Transform circle = collision.transform.Find("circleSprite");
             Transform triangle = collision.transform.Find("triSprite");
             Transform rectangle = collision.transform.Find("rectSprite");
@@ -62,6 +63,7 @@ public class CollideManager : MonoBehaviour
 
             if (circle != null)
             {
+                // dummy data input simulating AI gesture detection  
                 string gestureDetected = Random.value < 0.5f ? "circle" : "none";
                 if (gestureDetected == "circle")
                 {
@@ -75,6 +77,7 @@ public class CollideManager : MonoBehaviour
             }
             else if (triangle != null)
             {
+                // dummy data input simulating AI gesture detection 
                 string gestureDetected = Random.value < 0.5f ? "triangle" : "none";
                 if (gestureDetected == "triangle")
                 {
@@ -88,6 +91,7 @@ public class CollideManager : MonoBehaviour
             }
             else if (rectangle != null)
             {
+                // dummy data input simulating AI gesture detection 
                 string gestureDetected = Random.value < 0.5f ? "rectangle" : "none";
                 if (gestureDetected == "rectangle")
                 {
@@ -108,6 +112,8 @@ public class CollideManager : MonoBehaviour
             logic.GameOver();
         }
     }
+
+    // Simulating topic publishing using MQTT
     private void MqttPubTest()
     {
         MqttApi.BuzzSuccess();

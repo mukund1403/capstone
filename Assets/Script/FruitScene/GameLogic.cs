@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
+// in charge of basic game logic in the scene
 public class GameLogic : MonoBehaviour
 {
     [SerializeField] private GameObject gamePlayCanvas;

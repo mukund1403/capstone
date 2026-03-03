@@ -7,7 +7,7 @@ using TMPro;
 using System.Runtime.CompilerServices;
 using System.Collections.Generic;
 
-
+// Manage creating AR prefabs using ARTrackedImageManager
 public class PrefabCreatorImage : MonoBehaviour
 {
     private Vector3 prefabOffsetKatana = new Vector3(0, 0, 0);
@@ -56,6 +56,7 @@ public class PrefabCreatorImage : MonoBehaviour
         text.text = message;
     }
 
+    // spawn multiple prefabs randomly in an area centred around the tracked image's location
     private void SpawnAroundImage(ARTrackedImage image)
     {
         List<Vector2> usedPositions = new List<Vector2>();
@@ -70,6 +71,7 @@ public class PrefabCreatorImage : MonoBehaviour
             Vector2 spawnArea = UnityEngine.Random.insideUnitCircle * spawnRadius;
             isValidPosition = true;
 
+            // ensure enough distance between new and existing prefabs
             foreach (var position in usedPositions)
             {
                 if (Vector2.Distance(spawnArea, position) <= minDistance)
@@ -98,6 +100,7 @@ public class PrefabCreatorImage : MonoBehaviour
         string playerIdentity = PlayerStatusManager.Instance.GetIdentity();
         foreach (ARTrackedImage image in obj.added)
         {
+            // create katana for defender role
             if (image.referenceImage.name == "WaterDragon" && playerIdentity == "Defender")
             {
                 katana = Instantiate(katanaPrefab, image.transform);
@@ -125,7 +128,6 @@ public class PrefabCreatorImage : MonoBehaviour
         {
             if (hand == null)
             {
-                //SetMessage("Hand Status: not exist");
                 return;
             }
             if (image.referenceImage.name == "WaterDragon" && katana != null)
@@ -133,10 +135,6 @@ public class PrefabCreatorImage : MonoBehaviour
                 if (image.trackingState == TrackingState.Tracking)
                 {
                     katana.SetActive(true);
-                }
-                else
-                {
-                    //katana.SetActive(false);
                 }
             }
             if (image.referenceImage.name == "Hand" && hand != null)
@@ -148,17 +146,12 @@ public class PrefabCreatorImage : MonoBehaviour
                     string message = "Hand Status: tracking active\n" + hand.transform.position;
                     message += "\n";
                     message += image.transform.position;
-                    //SetMessage(message);
-                }
-                else
-                {
-                    //hand.SetActive(false);
-                    //SetMessage("Hand Status: tracking inactive");
                 }
             }
         }
     }
 
+    // Set local orientation data
     private void InitializeContent(GameObject instance)
     {
         if (instance == katana)

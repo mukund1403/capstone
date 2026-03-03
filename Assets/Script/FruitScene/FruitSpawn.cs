@@ -6,6 +6,7 @@ using UnityEngine;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
 
+// Manage fruit prefab spawning logic when playing as defender
 public class FruitSpawn : MonoBehaviour
 {
     private float lowestYPoint = -5;
@@ -52,6 +53,8 @@ public class FruitSpawn : MonoBehaviour
         };
         isFrozen = false;
     }
+
+    // subscribe to ARTrackedImageManager
     private void OnEnable()
     {
         if (aRTrackedImageManager != null)
@@ -60,6 +63,7 @@ public class FruitSpawn : MonoBehaviour
         }
     }
 
+    // unsubscribe to ARTrackedImageManager
     private void OnDisable()
     {
         if (aRTrackedImageManager != null)
@@ -68,6 +72,7 @@ public class FruitSpawn : MonoBehaviour
         }
     }
 
+    // store the image's last tracking status 
     private void OnImageChanged(ARTrackedImagesChangedEventArgs obj)
     {
         foreach (ARTrackedImage image in obj.added)
@@ -108,6 +113,7 @@ public class FruitSpawn : MonoBehaviour
         }
     }
 
+    // store image's last position detected by AR manager, this position is the anchor point to spawn fruit 
     public void SetImageOnClick()
     {
         if (PlayerStatusManager.Instance.GetIdentity() != "Defender")
@@ -134,7 +140,7 @@ public class FruitSpawn : MonoBehaviour
         isFrozen = value;
     }
 
-    // Update is called once per frame
+    // controls fruit spawn rate
     void Update()
     {
         if (isFrozen)
@@ -155,12 +161,12 @@ public class FruitSpawn : MonoBehaviour
         }
     }
 
+    // throw fruit prefabs in the direction
     private void applyPhysics(GameObject item, float force, Direction dir)
     {
         Rigidbody rb = item.GetComponent<Rigidbody>();
         rb.useGravity = true;
         float spinForce = 5;
-        float gravityScale = 1f;
         switch (dir)
         {
             case Direction.Left:
@@ -178,12 +184,12 @@ public class FruitSpawn : MonoBehaviour
         }
     }
 
+    // Randomly spawn fruits and bombs bottom-up
     private void ThrowFromBottom()
     {
         float force = 3;
         GameObject fruitChosen = fruits[Random.Range(0, fruits.Length)];
         bool isBomb = Random.value < 0.1f;
-        //Vector3 offset = new Vector3(Random.Range(-0.1f, 0.1f), 0, Random.Range(-0.1f, 0.1f));
         Vector3 offset = new Vector3(0, 0, 0);
         Vector3 spawnPos = storedImagePos + offset;
 

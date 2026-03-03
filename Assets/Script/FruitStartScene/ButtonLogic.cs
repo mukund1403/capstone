@@ -20,7 +20,15 @@ public class ButtonLogic : MonoBehaviour
         }
     }
 
-    public void QuitGame()
+    public void QuitGameScene1()
+    {
+        if (!helpMenu.activeSelf && !selectRoleMenu.activeSelf)
+        {
+            Application.Quit();
+        }
+    }
+
+    public void QuitGameScene2()
     {
         Application.Quit();
     }

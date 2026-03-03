@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// Set the role player chose at start scene, this class is not destroyed on load
 public class PlayerStatusManager : MonoBehaviour
 {
     public static PlayerStatusManager Instance;

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
+// triggers different hand prefab's actions according to player's role
 public class HandLogic : MonoBehaviour
 {
     [SerializeField] private TMP_Text text;
