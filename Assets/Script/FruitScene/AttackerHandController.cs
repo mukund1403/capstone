@@ -27,13 +27,13 @@ public class AttackerHandController : MonoBehaviour
 
     public void OnCollisionEnter(Collision collision)
     {
-        if (!canHold)
-        {
-            return;
-        }
-
         if (collision.gameObject.CompareTag("Pickable"))
         {
+            if (!canHold)
+            {
+                return;
+            }
+
             MqttPubTest();
             Grab(collision.gameObject);
             canHold = false;
@@ -58,11 +58,11 @@ public class AttackerHandController : MonoBehaviour
 
     private void applyPhysics(Rigidbody rb)
     {
-        float force = 7;
+        float force = 5;
         rb.isKinematic = false;
         rb.useGravity = true;
         float spinForce = 5;
-        rb.AddForce(holdPoint.up * force, ForceMode.Impulse);
+        rb.AddForce(-holdPoint.up * force, ForceMode.Impulse);
         rb.AddTorque(Random.insideUnitSphere * spinForce, ForceMode.Impulse);
     }
 

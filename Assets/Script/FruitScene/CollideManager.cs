@@ -61,10 +61,13 @@ public class CollideManager : MonoBehaviour
 
             splash = Instantiate(splashPrefab, hitPos, Quaternion.identity);
 
+            string swordGesture = GestureListener.gestureInstance.defSwordGesture;
+
             if (circle != null)
             {
                 // dummy data input simulating AI gesture detection  
-                string gestureDetected = Random.value < 0.5f ? "circle" : "none";
+                string tempGesture = Random.value < 0.5f ? "circle" : "none";
+                string gestureDetected = swordGesture;
                 if (gestureDetected == "circle")
                 {
                     AddSpecialAnimation("circle", hitPos);
@@ -78,8 +81,9 @@ public class CollideManager : MonoBehaviour
             else if (triangle != null)
             {
                 // dummy data input simulating AI gesture detection 
-                string gestureDetected = Random.value < 0.5f ? "triangle" : "none";
-                if (gestureDetected == "triangle")
+                string tempGesture = Random.value < 0.5f ? "z" : "none";
+                string gestureDetected = swordGesture;
+                if (gestureDetected == "z")
                 {
                     AddSpecialAnimation("triangle", hitPos);
                 }
@@ -92,8 +96,9 @@ public class CollideManager : MonoBehaviour
             else if (rectangle != null)
             {
                 // dummy data input simulating AI gesture detection 
-                string gestureDetected = Random.value < 0.5f ? "rectangle" : "none";
-                if (gestureDetected == "rectangle")
+                string tempGesture = Random.value < 0.5f ? "checkmark" : "none";
+                string gestureDetected = swordGesture;
+                if (gestureDetected == "checkmark")
                 {
                     AddSpecialAnimation("rectangle", hitPos);
                 }
@@ -103,6 +108,21 @@ public class CollideManager : MonoBehaviour
                     logic.DeductScore();
                 }
             }
+            //else if (rectangle != null)
+            //{
+            //    // dummy data input simulating AI gesture detection 
+            //    string tempGesture = Random.value < 0.5f ? "caret" : "none";
+            //    string gestureDetected = swordGesture;
+            //    if (gestureDetected == "caret")
+            //    {
+            //        AddSpecialAnimation("rectangle", hitPos);
+            //    }
+            //    else
+            //    {
+            //        AddSpecialAnimation("wrong", hitPos);
+            //        logic.DeductScore();
+            //    }
+            //}
 
             logic.AddScore();
             Destroy(collision.gameObject);

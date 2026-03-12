@@ -17,6 +17,20 @@ public class HandLogic : MonoBehaviour
             SetMessage("Tracking hand status.");
         }
     }
+    void Update()
+    {
+        string atkGesture = GestureListener.gestureInstance.atkHandGesture;
+        string defGesture = GestureListener.gestureInstance.defHandGesture;
+        string playerIdentity = PlayerStatusManager.Instance.GetIdentity();
+        if (playerIdentity == "Attacker" && atkGesture != null)
+        {
+            AttackHandRelease();
+        }
+        else if (playerIdentity == "Defender" && defGesture != null)
+        {
+            DefendHandSkillRelease();
+        }
+    }
 
     private void SetMessage(string message)
     {

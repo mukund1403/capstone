@@ -34,4 +34,14 @@ public static class MqttApi
         );
         Debug.Log("pick message sent");
     }
+
+    //// Player's role defined
+    //public static void DefineRole(string role)
+    //{
+    //    MqttService.Instance.PublishImuControl(
+    //    MqttService.PublishTopic.ATTACKER_IMU_CONTROL_TOPIC,
+    //    new ImuControlMessage("imuWindow", role)
+    //    );
+    //    Debug.Log("Player role message sent");
+    //}
 }
