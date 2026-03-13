@@ -3,7 +3,10 @@ import random
 import numpy as np
 # from pynq import Overlay  # uncomment when real driver is ready
 
-GESTURE_LABELS = ["idle", "circle", "z", "checkmark", "caret", "infinity"]
+# GESTURE_LABELS = ["idle", "circle", "z", "checkmark", "caret", "infinity"]
+
+# for week 0
+GESTURE_LABELS = ["circle", "triangle", "rectangle"]
 
 
 class MockPYNQDriver:

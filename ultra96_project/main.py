@@ -56,11 +56,12 @@ def parse_sensor_payload(payload) -> list:
     Convert raw MQTT payload to input for driver.run().
     Replace with actual parsing logic (e.g. np array of sensor data)
     """
-    try:
-        data = json.loads(payload.decode("utf-8"))
-    except Exception:
-        data = payload  # fallback for mock but can also use this and parse in run if you want
-    return data
+    data = json.loads(payload.decode("utf-8"))
+    if isinstance(data, list):
+        return [[s["ax"], s["ay"], s["az"], s["gx"], s["gy"], s["gz"]] for s in data]
+    else:
+        return [[data["ax"], data["ay"], data["az"], data["gx"], data["gy"], data["gz"]]]
+
 
 
 def on_message(client: mqtt.Client, userdata, msg):
@@ -78,6 +79,7 @@ def on_message(client: mqtt.Client, userdata, msg):
         stride_counts[topic] = 0
         window = np.array(buf, dtype=np.float32)  # shape: (Window_size, 6)
 
+        print(f"window length: {len(window)}")
         gesture, confidence = driver.run(window, WINDOW_SIZE)
 
         if confidence >= CONFIDENCE_THRESHOLD and gesture != "idle":

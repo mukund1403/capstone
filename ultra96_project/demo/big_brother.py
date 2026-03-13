@@ -59,12 +59,12 @@ def pretty_print(topic: str, payload: bytes):
         else:
             print(
                 f"{colour}[{user.upper()}|ESP] IMU "
-                f"ax[{summarize(data.get('ax', []))}] "
-                f"ay[{summarize(data.get('ay', []))}] "
-                f"az[{summarize(data.get('az', []))}] "
-                f"gx[{summarize(data.get('gx', []))}] "
-                f"gy[{summarize(data.get('gy', []))}] "
-                f"gz[{summarize(data.get('gz', []))}]\n"
+                f"ax={data.get('ax', '?')} "
+                f"ay={data.get('ay', '?')} "
+                f"az={data.get('az', '?')} "
+                f"gx={data.get('gx', '?')} "
+                f"gy={data.get('gy', '?')} "
+                f"gz={data.get('gz', '?')}\n"
                 f"ESP TO ULTRA {throughput}"
                 f"{COLOURS['reset']}"
             )
