@@ -133,7 +133,7 @@ def main():
     args = parse_args()
     VERBOSE = args.verbose
 
-    #MQTT init stuffs
+    # MQTT init stuffs
     client = mqtt.Client(client_id="bigbrother")
     client.tls_set(ca_certs=CA_CERT_PATH)
     client.tls_insecure_set(False)  # helps me verify broker

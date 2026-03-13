@@ -3,25 +3,51 @@
 #include <secrets.h>
 #include <ArduinoJson.h>
 #include <actuators.h>
+#include <mqtt.h>
+#include <WiFiClientSecure.h>
+#include "certs.h"
+#include "demo_packets.h"
 
-// Forward declaration
-void callback(char *topic, byte *payload, unsigned int length);
 
-const char *pub_topic = "fruitninja/imu/window";
-const char *sub_topic = "fruitninja/control";
+//============================================================
+// Uncomment these based on which esp is being programmed
+//============================================================
+// #define PLAYER_ID "attacker"
+// #define IS_ATTACKER
 
-WiFiClient espClient;
+
+// #define PLAYER_ID "defender/hand"
+// #define IS_DEFENDER_HAND
+
+#define PLAYER_ID "defender/sword"
+#define IS_DEFENDER_SWORD
+//============================================================
+#define SCHOOL false
+
+#ifdef IS_DEFENDER_HAND
+  #include "defender_hand.h"
+#endif
+#ifdef IS_DEFENDER_SWORD
+  #include "defender_sword.h"
+#endif
+#ifdef IS_ATTACKER
+  #include "attacker.h"
+#endif
+
+WiFiClientSecure espClient;
 PubSubClient client(espClient);
 
 
 // Building up MQTT topics per player
 // This way we can separate out the IMUs for each player and also have a wii style connect/disconnect thing
-#define PLAYER_ID 1
+
+// Following are just topic builders to avoid repetition
 
 String baseTopic() {
-  return "fruitninja/player/" + String(PLAYER_ID);
+  return "fruitninja/" + String(PLAYER_ID);
 }
 
+// Only send disconnects using Last Will
 String statusTopic() {
   return baseTopic() + "/status";
 }
@@ -34,6 +60,10 @@ String controlTopic() {
   return baseTopic() + "/control";
 }
 
+String demoTopic() {
+  return baseTopic() + "/demo";
+}
+
 void connectMQTT() {
   while (!client.connected()) {
     String client_id = "esp32-player-" + String(PLAYER_ID);
@@ -44,17 +74,19 @@ void connectMQTT() {
       client_id.c_str(),
       mqtt_username,
       mqtt_password,
-      statusTopic().c_str(),
-      1,
+      statusTopic().c_str(),  // last will topic
+      1,                      // qos
       true,
-      "offline");
+      "offline"  // message to be sent on topic
+    );
 
     if (conn_status) {
       Serial.println("Connected to MQTT broker");
 
-      client.subscribe(controlTopic().c_str());  // we will get commands to esp32 from here
+      client.subscribe(controlTopic().c_str());  // commands to esp32 from unity
+      client.subscribe(demoTopic().c_str());     // for individual subcomp demo
+      client.publish(statusTopic().c_str(), "online");
 
-      client.publish(statusTopic().c_str(), "online", true);  // send health status to ultra96 from here
     } else {
       Serial.print("MQTT connect failed, state=");
       Serial.println(client.state());
@@ -63,9 +95,74 @@ void connectMQTT() {
   }
 }
 
+void publishIMUWindow(int16_t ax, int16_t ay, int16_t az,
+                 int16_t gx, int16_t gy, int16_t gz) {
+                  
+  StaticJsonDocument<128> doc; // for 6 axis values exactly
+  doc["ax"] = ax;
+  doc["ay"] = ay;
+  doc["az"] = az;
+  doc["gx"] = gx;
+  doc["gy"] = gy;
+  doc["gz"] = gz;
+  static char out[128];  // static = no stack churn
+  size_t n = serializeJson(doc, out);
+  client.publish(imuTopic().c_str(), out, n);
+}
+
+// paused -> isPaused == 1; resume -> isPaused == 0
+void publishPause(int isPaused) {
+  if(isPaused) {
+    client.publish(statusTopic().c_str(), "paused");
+  } else {
+    client.publish(statusTopic().c_str(), "resumed");
+  }
+}
+
+// Any actuator logic needs to be handled from here
+void callback(char *topic, byte *payload, unsigned int length) {
+  // Copy payload to a null-terminated string
+  char msg[length + 1];
+  memcpy(msg, payload, length);
+  msg[length] = '\0';
+
+  Serial.print("Message on topic: ");
+  Serial.println(topic);
+  Serial.print("Payload: ");
+  Serial.println(msg);
+
+  // Parse JSON
+  StaticJsonDocument<2048> doc;  // we will minimize size based on our JSON
+  DeserializationError error = deserializeJson(doc, msg);
+  if (error) {
+    Serial.print("Failed to parse JSON: ");
+    Serial.println(error.c_str());
+    return;
+  }
+
+  const char *device = doc["device"];
+  const char *action = doc["action"];
+
+  // Example mappings I thought of
+  if (strcmp(device, "buzzer") == 0 && strcmp(action, "successBuzz") == 0) {
+    successAction();
+  } else if(strcmp(device, "buzzer") == 0 && strcmp(action, "failureBuzz") == 0) {
+    failAction();
+  } else if (strcmp(device, "led") == 0 && strcmp(action, "lifeLost") == 0) {
+    lifeLostLED();
+  } else {
+    customAction(device, action);
+  }
+}
 
 void setup() {
   Serial.begin(115200);
+  delay(1500);
+  if (SCHOOL) {
+    Serial.println("wifi is school");
+    ssid = school_ssid;
+    password = school_password;
+  }
 
   WiFi.begin(ssid, password);
   int retries = 0;
@@ -85,58 +182,39 @@ void setup() {
   Serial.println("\nWiFi connected");
   Serial.print("IP address: ");
   Serial.println(WiFi.localIP());
+  configTime(0, 0, "pool.ntp.org", "time.nist.gov");
 
-  const char *mqtt_broker = mqtt_broker_school;  
+  // Waiting for time sync cos TLS validation checks current time against cert validity window
+  Serial.print("Waiting for NTP time sync");
+  while (time(nullptr) < 1700000000) {
+    Serial.print(".");
+    delay(500);
+  }
+  Serial.println("\nTime synced!");
+
+  const char *mqtt_broker = mqtt_broker_school;
 
   if (String(ssid) == "SINGTEL-A620") {
     mqtt_broker = mqtt_broker_home;
   }
 
+  client.setBufferSize(2048);
   client.setServer(mqtt_broker, mqtt_port);
   client.setCallback(callback);
 
+  // espClient.setInsecure();
+  espClient.setCACert(CA_CERT);
+  // espClient.setHandshakeTimeout(10);  // 10 second for debug
+
   connectMQTT();
-
-  client.publish(imuTopic().c_str(), "ESP32 online");
-}
-
-// Any actuator logic needs to be handled from here
-void callback(char *topic, byte *payload, unsigned int length) {
-  // Copy payload to a null-terminated string
-  char msg[length + 1];
-  memcpy(msg, payload, length);
-  msg[length] = '\0';
-
-  Serial.print("Message on topic: ");
-  Serial.println(topic);
-  Serial.print("Payload: ");
-  Serial.println(msg);
-
-  // Parse JSON
-  StaticJsonDocument<400> doc;  // adjust size based on your JSON
-  DeserializationError error = deserializeJson(doc, msg);
-  if (error) {
-    Serial.print("Failed to parse JSON: ");
-    Serial.println(error.c_str());
-    return;
-  }
-
-  const char* device = doc["device"];
-  const char* action = doc["action"];
-
-  // Example mappings I thought of
-  if (strcmp(device, "buzzer") == 0 && strcmp(action, "success") == 0) {
-    successBuzzer();
-  } else if (strcmp(device, "led") == 0 && strcmp(action, "lifeLost") == 0) {
-    lifeLostLED();
-  } else {
-    customAction(device, action);
-  }
+  hardwareSetup();
 }
 
 void loop() {
   if (!client.connected()) {
     connectMQTT();
   }
+
+  hardwareLoop(publishIMUWindow,publishPause);
   client.loop();
 }
