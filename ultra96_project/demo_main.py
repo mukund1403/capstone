@@ -1,28 +1,11 @@
 import paho.mqtt.client as mqtt
 from driver import MockPYNQDriver  # @jon swap with real PYNQDriver later
-from collections import deque
 import json
 import os
-import numpy as np
+from file_receive import FILE_START_TOPIC, FILE_END_TOPIC, FILE_CHUNK_TOPIC, FILE_ONE_TIME_TOPIC, handle_file_start, handle_file_end, handle_file_chunk, handle_file_one_time
 
 from dotenv import load_dotenv
 load_dotenv()
-
-# CONFIG
-WINDOW_SIZE = 20
-"""
-min stride = inference_time x sample_rate
-    E.g.
-        = 0.05s x 100Hz
-        = 5 samples minimum
-    
-    If stride = 1 then we are covering all possible windows
-    A lower stride means less chance of gesture falling in between windows BUT higher load on FPGA
-"""        
-STRIDE = 0.2*WINDOW_SIZE # 20% of window size for now
-
-# confidence level to accept the gesture
-CONFIDENCE_THRESHOLD = 0.7
 
 
 # Initialize driver
@@ -45,10 +28,6 @@ pub_sub_dict = {
     SENSOR_ATTACKER_TOPIC: GESTURE_ATTACKER_TOPIC
 }
 
-# per-topic buffers — sword/hand/attacker each need independent sliding windows
-buffers       = {topic: deque(maxlen=WINDOW_SIZE) for topic in pub_sub_dict}
-stride_counts = {topic: 0 for topic in pub_sub_dict}
-
 
 def parse_sensor_payload(payload) -> list:
     """
@@ -66,24 +45,38 @@ def parse_sensor_payload(payload) -> list:
 def on_message(client: mqtt.Client, userdata, msg):
     topic = msg.topic
 
-    # --- Sliding window ---
-    samples = parse_sensor_payload(msg.payload)
-    buf = buffers[topic]
+    # FILE TRANSFER LOGIC (FOR DEMO)
+    if topic == FILE_ONE_TIME_TOPIC:
+        handle_file_one_time(msg.payload)
+        return
 
-    for sample in samples:
-        buf.append(sample)
-        stride_counts[topic] += 1
+    if topic == FILE_START_TOPIC:
+        handle_file_start(msg.payload)
+        return
 
-    if len(buf) == WINDOW_SIZE and stride_counts[topic] >= STRIDE:
-        stride_counts[topic] = 0
-        window = np.array(buf, dtype=np.float32)  # shape: (Window_size, 6)
+    if topic == FILE_CHUNK_TOPIC:
+        handle_file_chunk(msg.payload)
+        return
 
-        gesture, confidence = driver.run(window, WINDOW_SIZE)
+    if topic == FILE_END_TOPIC:
+        handle_file_end(msg.payload)
+        return
 
-        if confidence >= CONFIDENCE_THRESHOLD and gesture != "idle":
-            gesture_msg = {"gesture": gesture, "confidence": confidence}
-            client.publish(pub_sub_dict[topic], json.dumps(gesture_msg), qos=0)
-            print(f"[MQTT] {topic} -> {gesture} ({confidence:.2f})")
+    # SENSOR LOGIC
+    sensor_data = parse_sensor_payload(msg.payload)
+    gesture = driver.run(sensor_data) # -> input: np.array; output: tuple (0, 0.9)
+
+    # this whole thing can be deleted and we should just json.dumps(gesture)
+    # json structure returned from driver.run should be {"gesture":str, "confidence":int}
+    gesture_msg = {
+        "gesture": gesture,
+        "confidence": 0.93
+    }
+    incoming_topic = topic
+    outgoing_topic = pub_sub_dict[incoming_topic]
+    client.publish(outgoing_topic, json.dumps(gesture_msg), qos=0)
+
+    print(f"[MQTT] Published gesture: {gesture}")
 
 
 def main():
@@ -97,7 +90,11 @@ def main():
     client.subscribe([
         (SENSOR_DEFENDER_SWORD_TOPIC, 0),
         (SENSOR_DEFENDER_HAND_TOPIC, 0),
-        (SENSOR_ATTACKER_TOPIC, 0)
+        (SENSOR_ATTACKER_TOPIC, 0),
+        (FILE_START_TOPIC, 1),
+        (FILE_CHUNK_TOPIC, 1),
+        (FILE_END_TOPIC, 1),
+        (FILE_ONE_TIME_TOPIC, 1),
     ])
 
     print("[MQTT] Connected and subscribed to sensor topics")
