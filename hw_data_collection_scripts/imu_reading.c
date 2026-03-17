@@ -53,7 +53,7 @@ void loop() {
   gy = (Wire.read() << 8) | Wire.read();
   gz = (Wire.read() << 8) | Wire.read();
 
-  Serial.printf("%d,%d,%d,%d,%d,%d\n", ax, ay, az, gx, gy, gz);
+  Serial.printf("0 %d %d %d %d %d %d\n", ax, ay, az, gx, gy, gz);
 
-  delay(10); // ~100 Hz
+  delay(20); // ~50 Hz
 }
