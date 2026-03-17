@@ -1,4 +1,4 @@
-# Ignore build output directory
+﻿# Ignore build output directory
 /build
 /export
 
@@ -21,8 +21,8 @@ _ide/logs
 _ide/.wsdata
 
 # Ignore local agent instruction files
-# AGENTS.md
-# **/AGENTS.md
+AGENTS.md
+**/AGENTS.md
 
 # Virtual Environment
 .venvcapstone/
@@ -36,3 +36,6 @@ __pycache__/
 
 # Vitis HLS generated artifacts
 ai/vitis_hls/hls_component/
+# Ignore Vitis HLS artifacts
+ai/vitis_hls/hls_component/
+ai/vitis_hls/_ide/
