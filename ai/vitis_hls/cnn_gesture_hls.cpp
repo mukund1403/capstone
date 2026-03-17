@@ -1,12 +1,10 @@
-#include <ap_fixed.h>
+﻿#include <ap_fixed.h>
 #include <ap_axi_sdata.h>
 #include <ap_int.h>
-#include <cstdint>
 #include <hls_math.h>
 #include <hls_stream.h>
 #include "weights.h"
 
-// Model dimensions (must match your Python model)
 #define SEQ_LENGTH 100
 #define FEATURES 6
 #define CONV1_FILTERS 32
@@ -14,29 +12,10 @@
 #define DENSE1_UNITS 128
 #define NUM_CLASSES 6
 #define KERNEL_SIZE 3
-#define BN_EPS 0.001f
 
 typedef ap_fixed<16, 6> data_t;
 typedef ap_fixed<32, 12> acc_t;
 typedef ap_axiu<32, 0, 0, 0> axis_t;
-
-static inline float bits_to_float(ap_uint<32> bits) {
-    union {
-        uint32_t u;
-        float f;
-    } cvt;
-    cvt.u = (uint32_t)bits;
-    return cvt.f;
-}
-
-static inline ap_uint<32> float_to_bits(float v) {
-    union {
-        uint32_t u;
-        float f;
-    } cvt;
-    cvt.f = v;
-    return (ap_uint<32>)cvt.u;
-}
 
 static inline data_t relu(data_t x) {
     return (x > 0) ? x : (data_t)0;
@@ -67,6 +46,7 @@ static void conv1_block(
                 int idx = t + k - 1; // padding='same'
                 if (idx >= 0 && idx < SEQ_LENGTH) {
                     for (int c = 0; c < FEATURES; c++) {
+#pragma HLS PIPELINE II=1
                         int wi = conv_index(k, c, f, FEATURES, CONV1_FILTERS);
                         sum += input[idx][c] * (data_t)conv1d_param_0[wi];
                     }
@@ -79,14 +59,10 @@ static void conv1_block(
             // Keras Conv1D has activation='relu'
             data_t act = relu((data_t)sum);
 
-            // BatchNorm (inference): gamma * (x-mean)/sqrt(var+eps) + beta
-            data_t gamma = (data_t)batch_normalization_param_0[f];
-            data_t beta = (data_t)batch_normalization_param_1[f];
-            data_t mean = (data_t)batch_normalization_param_2[f];
-            data_t var = (data_t)batch_normalization_param_3[f];
-
-            data_t norm = (act - mean) / (data_t)hls::sqrt((float)(var + (data_t)BN_EPS));
-            output[t][f] = gamma * norm + beta;
+            // BatchNorm folded to scale+bias: y = scale * act + bias
+            data_t scale = (data_t)batch_normalization_param_0[f];
+            data_t bias = (data_t)batch_normalization_param_1[f];
+            output[t][f] = scale * act + bias;
         }
     }
 }
@@ -99,6 +75,7 @@ static void maxpool1(
 
     for (int t = 0; t < SEQ_LENGTH / 2; t++) {
         for (int f = 0; f < CONV1_FILTERS; f++) {
+#pragma HLS PIPELINE II=1
             data_t a = input[t * 2][f];
             data_t b = input[t * 2 + 1][f];
             output[t][f] = (a > b) ? a : b;
@@ -120,6 +97,7 @@ static void conv2_block(
                 int idx = t + k - 1; // padding='same'
                 if (idx >= 0 && idx < SEQ_LENGTH / 2) {
                     for (int c = 0; c < CONV1_FILTERS; c++) {
+#pragma HLS PIPELINE II=1
                         int wi = conv_index(k, c, f, CONV1_FILTERS, CONV2_FILTERS);
                         sum += input[idx][c] * (data_t)conv1d_1_param_0[wi];
                     }
@@ -129,13 +107,9 @@ static void conv2_block(
             sum += (data_t)conv1d_1_param_1[f];
             data_t act = relu((data_t)sum);
 
-            data_t gamma = (data_t)batch_normalization_1_param_0[f];
-            data_t beta = (data_t)batch_normalization_1_param_1[f];
-            data_t mean = (data_t)batch_normalization_1_param_2[f];
-            data_t var = (data_t)batch_normalization_1_param_3[f];
-
-            data_t norm = (act - mean) / (data_t)hls::sqrt((float)(var + (data_t)BN_EPS));
-            output[t][f] = gamma * norm + beta;
+            data_t scale = (data_t)batch_normalization_1_param_0[f];
+            data_t bias = (data_t)batch_normalization_1_param_1[f];
+            output[t][f] = scale * act + bias;
         }
     }
 }
@@ -148,6 +122,7 @@ static void maxpool2(
 
     for (int t = 0; t < SEQ_LENGTH / 4; t++) {
         for (int f = 0; f < CONV2_FILTERS; f++) {
+#pragma HLS PIPELINE II=1
             data_t a = input[t * 2][f];
             data_t b = input[t * 2 + 1][f];
             output[t][f] = (a > b) ? a : b;
@@ -164,6 +139,7 @@ static void flatten(
     int idx = 0;
     for (int t = 0; t < SEQ_LENGTH / 4; t++) {
         for (int c = 0; c < CONV2_FILTERS; c++) {
+#pragma HLS PIPELINE II=1
             output[idx++] = input[t][c];
         }
     }
@@ -181,6 +157,7 @@ static void dense1(
         acc_t sum = (data_t)dense_param_1[o]; // bias
 
         for (int i = 0; i < in_dim; i++) {
+#pragma HLS PIPELINE II=1
             int wi = dense_index(i, o, DENSE1_UNITS);
             sum += input[i] * (data_t)dense_param_0[wi];
         }
@@ -199,31 +176,12 @@ static void dense2_logits(
         acc_t sum = (data_t)dense_1_param_1[o]; // bias
 
         for (int i = 0; i < DENSE1_UNITS; i++) {
+#pragma HLS PIPELINE II=1
             int wi = dense_index(i, o, NUM_CLASSES);
             sum += input[i] * (data_t)dense_1_param_0[wi];
         }
 
         output[o] = (data_t)sum;
-    }
-}
-
-static void softmax(data_t logits[NUM_CLASSES], data_t probs[NUM_CLASSES]) {
-#pragma HLS INLINE
-
-    data_t max_v = logits[0];
-    for (int i = 1; i < NUM_CLASSES; i++) {
-        if (logits[i] > max_v) max_v = logits[i];
-    }
-
-    data_t exps[NUM_CLASSES];
-    data_t sum = 0;
-    for (int i = 0; i < NUM_CLASSES; i++) {
-        exps[i] = (data_t)hls::exp((float)(logits[i] - max_v));
-        sum += exps[i];
-    }
-
-    for (int i = 0; i < NUM_CLASSES; i++) {
-        probs[i] = exps[i] / sum;
     }
 }
 
@@ -250,8 +208,7 @@ static void cnn_gesture_core(
 
     flatten(pool2_out, flat);
     dense1(flat, fc1);
-    dense2_logits(fc1, logits);
-    softmax(logits, output);
+    dense2_logits(fc1, output);
 }
 
 // Top function for AXI DMA integration (AXI4-Stream + AXI-Lite control).
@@ -271,8 +228,10 @@ void cnn_gesture_top(
         for (int c = 0; c < FEATURES; c++) {
 #pragma HLS PIPELINE II=1
             axis_t pkt = input_stream.read();
-            float in_f = bits_to_float(pkt.data);
-            input[t][c] = (data_t)in_f;
+            ap_uint<16> raw = pkt.data.range(15, 0);
+            data_t val;
+            val.range(15, 0) = raw;
+            input[t][c] = val;
         }
     }
 
@@ -281,7 +240,8 @@ void cnn_gesture_top(
     for (int i = 0; i < NUM_CLASSES; i++) {
 #pragma HLS PIPELINE II=1
         axis_t pkt;
-        pkt.data = float_to_bits((float)output[i]);
+        ap_uint<16> raw = output[i].range(15, 0);
+        pkt.data = (ap_uint<32>)raw;
         pkt.keep = -1;
         pkt.strb = -1;
         pkt.last = (i == NUM_CLASSES - 1) ? 1 : 0;

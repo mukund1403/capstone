@@ -1,4 +1,4 @@
-# Ignore build output directory
+﻿# Ignore build output directory
 /build
 /export
 
@@ -36,3 +36,6 @@ __pycache__/
 
 # Vitis HLS generated artifacts
 ai/vitis_hls/hls_component/
+# Ignore Vitis HLS artifacts
+ai/vitis_hls/hls_component/
+ai/vitis_hls/_ide/

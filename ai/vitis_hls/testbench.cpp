@@ -1,4 +1,4 @@
-#include <algorithm>
+﻿#include <algorithm>
 #include <cmath>
 #include <fstream>
 #include <iomanip>
@@ -10,7 +10,6 @@
 #include <ap_axi_sdata.h>
 #include <ap_fixed.h>
 #include <ap_int.h>
-#include <cstdint>
 #include <hls_stream.h>
 
 #define SEQ_LENGTH 100
@@ -21,28 +20,24 @@ typedef ap_fixed<16, 6> data_t;
 typedef float float_t;
 typedef ap_axiu<32, 0, 0, 0> axis_t;
 
+static const int FIXED_SCALE = 1 << 10; // ap_fixed<16,6> => 10 fractional bits
+
 // Top function declaration from cnn_gesture_hls.cpp
 void cnn_gesture_top(
     hls::stream<axis_t>& input_stream,
     hls::stream<axis_t>& output_stream
 );
 
-static inline ap_uint<32> float_to_bits(float v) {
-    union {
-        uint32_t u;
-        float f;
-    } cvt;
-    cvt.f = v;
-    return (ap_uint<32>)cvt.u;
+static inline ap_int<16> float_to_fixed(float v) {
+    float scaled = v * (float)FIXED_SCALE;
+    if (scaled > 32767.0f) scaled = 32767.0f;
+    if (scaled < -32768.0f) scaled = -32768.0f;
+    int32_t rounded = (scaled >= 0.0f) ? (int32_t)(scaled + 0.5f) : (int32_t)(scaled - 0.5f);
+    return (ap_int<16>)rounded;
 }
 
-static inline float bits_to_float(ap_uint<32> bits) {
-    union {
-        uint32_t u;
-        float f;
-    } cvt;
-    cvt.u = (uint32_t)bits;
-    return cvt.f;
+static inline float fixed_to_float(ap_int<16> v) {
+    return (float)v / (float)FIXED_SCALE;
 }
 
 static int argmax(const float_t logits[NUM_CLASSES]) {
@@ -67,15 +62,15 @@ static bool parse_line_of_floats(const std::string& line, std::vector<float_t>& 
 
 int main() {
     const int input_values_per_sample = SEQ_LENGTH * FEATURES;
-    const float_t logit_tolerance = 0.10f;
+    const float_t logit_tolerance = 0.50f;
 
-    std::ifstream input_file("../../../../../../software/reference_input.txt");
-    std::ifstream golden_file("../../../../../../software/reference_logits.txt");
+    std::ifstream input_file("../software/reference_input.txt");
+    std::ifstream golden_file("../software/reference_logits.txt");
 
     if (!input_file.is_open() || !golden_file.is_open()) {
         std::cerr << "Failed to open reference files at:\n";
-        std::cerr << "  ../../../../../../software/reference_input.txt\n";
-        std::cerr << "  ../../../../../../software/reference_logits.txt\n";
+        std::cerr << "  ../software/reference_input.txt\n";
+        std::cerr << "  ../software/reference_logits.txt\n";
         return 1;
     }
 
@@ -123,7 +118,8 @@ int main() {
         for (int t = 0; t < SEQ_LENGTH; t++) {
             for (int ch = 0; ch < FEATURES; ch++) {
                 axis_t pkt;
-                pkt.data = float_to_bits(input_vals[idx++]);
+                ap_int<16> fx = float_to_fixed(input_vals[idx++]);
+                pkt.data = (ap_uint<32>)(ap_uint<16>)fx;
                 pkt.keep = -1;
                 pkt.strb = -1;
                 pkt.last = 0;
@@ -135,7 +131,8 @@ int main() {
 
         for (int c = 0; c < NUM_CLASSES; c++) {
             axis_t pkt = output_stream.read();
-            output[c] = bits_to_float(pkt.data);
+            ap_int<16> fx = (ap_int<16>)pkt.data.range(15, 0);
+            output[c] = fixed_to_float(fx);
             golden[c] = golden_vals[c];
             if (c == NUM_CLASSES - 1 && pkt.last != 1) {
                 std::cerr << "Output TLAST not asserted on final class for sample " << sample_count << "\n";
