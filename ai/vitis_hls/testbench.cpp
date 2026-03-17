@@ -64,13 +64,13 @@ int main() {
     const int input_values_per_sample = SEQ_LENGTH * FEATURES;
     const float_t logit_tolerance = 0.50f;
 
-    std::ifstream input_file("../../../../../../software/reference_input.txt");
-    std::ifstream golden_file("../../../../../../software/reference_logits.txt");
+    std::ifstream input_file("../software/reference_input.txt");
+    std::ifstream golden_file("../software/reference_logits.txt");
 
     if (!input_file.is_open() || !golden_file.is_open()) {
         std::cerr << "Failed to open reference files at:\n";
-        std::cerr << "  ../../../../../../software/reference_input.txt\n";
-        std::cerr << "  ../../../../../../software/reference_logits.txt\n";
+        std::cerr << "  ../software/reference_input.txt\n";
+        std::cerr << "  ../software/reference_logits.txt\n";
         return 1;
     }
 

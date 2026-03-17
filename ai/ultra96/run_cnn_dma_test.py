@@ -1,4 +1,7 @@
 import argparse
+import time
+from pathlib import Path
+
 import numpy as np
 from pynq import Overlay, allocate
 
@@ -36,6 +39,25 @@ def load_reference_logits(path, sample_idx):
         raise ValueError(f"expected {NUM_CLASSES} logits per row, got {row.size}")
     return row.astype(np.float32)
 
+def load_norm_stats(path: str | None):
+    if not path:
+        return None
+    p = Path(path)
+    if not p.exists():
+        raise FileNotFoundError(f"norm_stats not found: {p}")
+    data = np.load(p, allow_pickle=True).item()
+    mean = np.array(data["mean"], dtype=np.float32)
+    std = np.array(data["std"], dtype=np.float32)
+    return mean, std
+
+def normalize_input(x: np.ndarray, norm_stats):
+    if norm_stats is None:
+        return x
+    mean, std = norm_stats
+    x2 = x.reshape(SEQ_LEN, FEATURES)
+    x2 = (x2 - mean) / std
+    return x2.reshape(-1).astype(np.float32)
+
 
 def main():
     parser = argparse.ArgumentParser(description="Run CNN IP via AXI DMA on Ultra96")
@@ -45,6 +67,7 @@ def main():
     parser.add_argument("--dma", default="axi_dma_0", help="DMA IP name in overlay")
     parser.add_argument("--ip", default="cnn_gesture_top_0", help="CNN IP name in overlay")
     parser.add_argument("--ref-logits", default=None, help="Optional reference_logits.txt for comparison")
+    parser.add_argument("--norm", default="norm_stats.npy", help="Path to norm_stats.npy (set '' to disable)")
     parser.add_argument("--timeout", type=float, default=5.0, help="DMA wait timeout in seconds")
     parser.add_argument("--no-download", action="store_true", help="Use already-loaded bitstream (skip PL reprogramming)")
     parser.add_argument("--no-dma", action="store_true", help="Skip FPGA/DMA and use reference logits only")
@@ -67,6 +90,9 @@ def main():
     ip = getattr(ol, args.ip)
 
     x = load_reference_input(args.input, args.sample)
+    norm_path = args.norm if args.norm != "" else None
+    norm_stats = load_norm_stats(norm_path) if norm_path is not None else None
+    x = normalize_input(x, norm_stats)
 
     x_fixed = np.clip(np.round(x * FIXED_SCALE), INT16_MIN, INT16_MAX).astype(np.int16)
 

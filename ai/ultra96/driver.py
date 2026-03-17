@@ -1,6 +1,7 @@
 import os
 import time
-from typing import Any, Dict
+from pathlib import Path
+from typing import Any, Tuple
 
 import numpy as np
 
@@ -30,6 +31,31 @@ GESTURE_LABELS = [
     "bomb",
     "slow",
 ]
+
+def _softmax(logits: np.ndarray) -> np.ndarray:
+    x = logits.astype(np.float32)
+    x = x - np.max(x)
+    exp = np.exp(x)
+    return exp / np.sum(exp)
+
+def _load_norm_stats(path: str | None):
+    if not path:
+        return None
+    p = Path(path)
+    if not p.exists():
+        return None
+    data = np.load(p, allow_pickle=True).item()
+    mean = np.array(data["mean"], dtype=np.float32)
+    std = np.array(data["std"], dtype=np.float32)
+    return mean, std
+
+def _normalize_window(x: np.ndarray, norm_stats):
+    if norm_stats is None:
+        return x
+    mean, std = norm_stats
+    x2 = x.reshape(SEQ_LEN, FEATURES)
+    x2 = (x2 - mean) / std
+    return x2.reshape(-1).astype(np.float32)
 
 
 def _normalize_input(input_data: Any) -> np.ndarray:
@@ -63,6 +89,7 @@ class PYNQDriver:
         dma_name: str = "axi_dma_0",
         ip_name: str = "cnn_gesture_top_0",
         download: bool = True,
+        norm_path: str | None = None,
     ):
         if Overlay is None or allocate is None:
             raise RuntimeError("pynq is not available. Run on Ultra96 with PYNQ.")
@@ -77,9 +104,14 @@ class PYNQDriver:
 
         self.in_buf = allocate(shape=(INPUT_LEN,), dtype=np.int16)
         self.out_buf = allocate(shape=(NUM_CLASSES,), dtype=np.int16)
+        if norm_path is None:
+            norm_path = str(Path(__file__).resolve().parent / "norm_stats.npy")
+        self.norm_stats = _load_norm_stats(norm_path)
 
-    def run(self, input_data: Any) -> Dict[str, float | str]:
-        x = _normalize_input(input_data)
+    def run(self, window: np.ndarray, window_size: int) -> Tuple[str, float]:
+        assert window.shape == (window_size, FEATURES), f"[Driver] bad input shape: {window.shape}"
+        x = _normalize_input(window)
+        x = _normalize_window(x, self.norm_stats)
         x_fixed = np.clip(np.round(x * FIXED_SCALE), INT16_MIN, INT16_MAX).astype(np.int16)
 
         self.in_buf[:] = x_fixed
@@ -95,11 +127,11 @@ class PYNQDriver:
 
         y_fixed = np.array(self.out_buf, dtype=np.int16)
         logits = y_fixed.astype(np.float32) / FIXED_SCALE
-
-        idx = int(np.argmax(logits))
-        confidence = float(np.max(logits))
+        probs = _softmax(logits)
+        idx = int(np.argmax(probs))
+        confidence = float(probs[idx])
         gesture = GESTURE_LABELS[idx] if idx < len(GESTURE_LABELS) else str(idx)
-        return {"gesture": gesture, "confidence": confidence}
+        return gesture, confidence
 
     def close(self) -> None:
         self.in_buf.freebuffer()
@@ -117,13 +149,13 @@ class MockPYNQDriver:
     def initialize(self) -> None:
         print("[Driver] Initialized mock PYNQ driver")
 
-    def run(self, input_data: Any) -> Dict[str, float | str]:
+    def run(self, window: np.ndarray, window_size: int) -> Tuple[str, float]:
         time.sleep(0.01)
         idx = int(np.random.randint(0, len(GESTURE_LABELS)))
         gesture = GESTURE_LABELS[idx]
         confidence = float(np.random.uniform(0.6, 0.99))
-        print(f"[Driver] Input: {type(input_data)} -> Gesture: {gesture}")
-        return {"gesture": gesture, "confidence": confidence}
+        print(f"[Driver] window {window.shape} -> {gesture} ({confidence:.2f})")
+        return gesture, confidence
 
     def close(self) -> None:
         print("[Driver] Closing driver")
