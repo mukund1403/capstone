@@ -1,58 +1,55 @@
-﻿import argparse
+﻿import os
 import time
 from pathlib import Path
+from typing import Any, Tuple
 
 import numpy as np
-from pynq import Overlay, allocate
+
+try:
+    from pynq import Overlay, allocate
+except Exception:
+    Overlay = None
+    allocate = None
 
 
-SEQ_LEN = 100
+SEQ_LEN = 75
 FEATURES = 6
 NUM_CLASSES = 6
 INPUT_LEN = SEQ_LEN * FEATURES
 
+# ap_fixed<16,6> => 10 fractional bits
 FIXED_SCALE = 1 << 10
 INT16_MIN = -32768
 INT16_MAX = 32767
 
+# Update labels to match your training classes
+GESTURE_LABELS = [
+    "slash1",
+    "slash2",
+    "slash3",
+    "slash4",
+    "bomb",
+    "slow",
+]
 
-def load_reference_input(path, sample_idx):
-    data = np.loadtxt(path, dtype=np.float32)
-    if data.ndim == 1:
-        data = data.reshape(1, -1)
-    if sample_idx < 0 or sample_idx >= data.shape[0]:
-        raise IndexError(f"sample {sample_idx} out of range, file has {data.shape[0]} rows")
-    row = data[sample_idx]
-    if row.size != INPUT_LEN:
-        raise ValueError(f"expected {INPUT_LEN} values per row, got {row.size}")
-    return row.astype(np.float32)
+def _softmax(logits: np.ndarray) -> np.ndarray:
+    x = logits.astype(np.float32)
+    x = x - np.max(x)
+    exp = np.exp(x)
+    return exp / np.sum(exp)
 
-
-def load_reference_logits(path, sample_idx):
-    data = np.loadtxt(path, dtype=np.float32)
-    if data.ndim == 1:
-        data = data.reshape(1, -1)
-    if sample_idx < 0 or sample_idx >= data.shape[0]:
-        raise IndexError(f"sample {sample_idx} out of range, file has {data.shape[0]} rows")
-    row = data[sample_idx]
-    if row.size != NUM_CLASSES:
-        raise ValueError(f"expected {NUM_CLASSES} logits per row, got {row.size}")
-    return row.astype(np.float32)
-
-
-def load_norm_stats(path: str | None):
+def _load_norm_stats(path: str | None):
     if not path:
         return None
     p = Path(path)
     if not p.exists():
-        raise FileNotFoundError(f"norm_stats not found: {p}")
+        return None
     data = np.load(p, allow_pickle=True).item()
     mean = np.array(data["mean"], dtype=np.float32)
     std = np.array(data["std"], dtype=np.float32)
     return mean, std
 
-
-def normalize_input(x: np.ndarray, norm_stats):
+def _normalize_window(x: np.ndarray, norm_stats):
     if norm_stats is None:
         return x
     mean, std = norm_stats
@@ -61,92 +58,100 @@ def normalize_input(x: np.ndarray, norm_stats):
     return x2.reshape(-1).astype(np.float32)
 
 
-def main():
-    parser = argparse.ArgumentParser(description="Run CNN IP via AXI DMA on Ultra96")
-    parser.add_argument("--bit", required=True, help="Path to .bit file (matching .hwh must be present)")
-    parser.add_argument("--input", default="reference_input.txt", help="Path to reference_input.txt")
-    parser.add_argument("--sample", type=int, default=0, help="Row index to run from input file")
-    parser.add_argument("--dma", default="axi_dma_0", help="DMA IP name in overlay")
-    parser.add_argument("--ip", default="cnn_gesture_top_0", help="CNN IP name in overlay")
-    parser.add_argument("--ref-logits", default=None, help="Optional reference_logits.txt for comparison")
-    parser.add_argument("--timeout", type=float, default=5.0, help="DMA wait timeout in seconds")
-    parser.add_argument("--no-download", action="store_true", help="Use already-loaded bitstream (skip PL reprogramming)")
-    parser.add_argument("--no-dma", action="store_true", help="Skip FPGA/DMA and use reference logits only")
-    parser.add_argument("--norm", default="norm_stats.npy", help="Path to norm_stats.npy (set '' to disable)")
-    args = parser.parse_args()
+def _normalize_input(input_data: Any) -> np.ndarray:
+    """
+    Convert incoming sensor payload to a flat float32 array of length 600.
+    Accepts:
+      - list/np.ndarray shape (100,6) or length 600
+      - dict with key "data" or "window" containing the above
+    """
+    if isinstance(input_data, dict):
+        if "data" in input_data:
+            input_data = input_data["data"]
+        elif "window" in input_data:
+            input_data = input_data["window"]
 
-    if args.no_dma:
-        if not args.ref_logits:
-            raise ValueError("--no-dma requires --ref-logits <file>")
-        y = load_reference_logits(args.ref_logits, args.sample)
-        pred = int(np.argmax(y))
-        print("Output (reference logits):", y.tolist())
-        print("Predicted class:", pred)
-        return
-
-    if not args.bit:
-        raise ValueError("--bit is required unless --no-dma is used")
-
-    ol = Overlay(args.bit, download=not args.no_download)
-    dma = getattr(ol, args.dma)
-    ip = getattr(ol, args.ip)
-
-    x = load_reference_input(args.input, args.sample)
-    norm_path = args.norm if args.norm != "" else None
-    norm_stats = load_norm_stats(norm_path) if norm_path is not None else None
-    x = normalize_input(x, norm_stats)
-
-    x_fixed = np.clip(np.round(x * FIXED_SCALE), INT16_MIN, INT16_MAX).astype(np.int16)
-
-    in_buf = allocate(shape=(INPUT_LEN,), dtype=np.int16)
-    out_buf = allocate(shape=(NUM_CLASSES,), dtype=np.int16)
-    in_buf[:] = x_fixed
-    out_buf[:] = 0
-
-    # ap_ctrl_hs start bit
-    ip.write(0x00, 0x01)
-
-    dma.recvchannel.transfer(out_buf)
-    dma.sendchannel.transfer(in_buf)
-
-    t0 = time.time()
-    while not dma.sendchannel.idle:
-        if (time.time() - t0) > args.timeout:
-            mm2s_dmasr = dma.mmio.read(0x04)
-            s2mm_dmasr = dma.mmio.read(0x34)
-            raise TimeoutError(
-                f"Timeout waiting sendchannel after {args.timeout:.2f}s "
-                f"(MM2S_DMASR=0x{mm2s_dmasr:08x}, S2MM_DMASR=0x{s2mm_dmasr:08x})"
-            )
-        time.sleep(0.001)
-
-    t1 = time.time()
-    while not dma.recvchannel.idle:
-        if (time.time() - t1) > args.timeout:
-            mm2s_dmasr = dma.mmio.read(0x04)
-            s2mm_dmasr = dma.mmio.read(0x34)
-            raise TimeoutError(
-                f"Timeout waiting recvchannel after {args.timeout:.2f}s "
-                f"(MM2S_DMASR=0x{mm2s_dmasr:08x}, S2MM_DMASR=0x{s2mm_dmasr:08x})"
-            )
-        time.sleep(0.001)
-
-    y_fixed = np.array(out_buf, dtype=np.int16)
-    y = y_fixed.astype(np.float32) / FIXED_SCALE
-    pred = int(np.argmax(y))
-    print("Output:", y.tolist())
-    print("Predicted class:", pred)
-
-    if args.ref_logits:
-        ref = load_reference_logits(args.ref_logits, args.sample)
-        err = np.abs(y - ref)
-        print("Reference class:", int(np.argmax(ref)))
-        print("Argmax match:", bool(np.argmax(ref) == pred))
-        print("Max abs error:", float(np.max(err)))
-
-    in_buf.freebuffer()
-    out_buf.freebuffer()
+    arr = np.array(input_data, dtype=np.float32)
+    if arr.size != INPUT_LEN:
+        arr = arr.reshape(INPUT_LEN)
+    return arr
 
 
-if __name__ == "__main__":
-    main()
+class PYNQDriver:
+    """
+    Real driver: runs CNN on Ultra96 and returns gesture + confidence.
+    Expects the HLS IP to use ap_fixed<16,6> interface and output logits.
+    """
+
+    def __init__(
+        self,
+        bit_path: str | None = None,
+        dma_name: str = "axi_dma_0",
+        ip_name: str = "cnn_gesture_top_0",
+        download: bool = True,
+        norm_path: str | None = None,
+    ):
+        if Overlay is None or allocate is None:
+            raise RuntimeError("pynq is not available. Run on Ultra96 with PYNQ.")
+
+        bit_path = bit_path or os.getenv("ULTRA96_BIT")
+        if not bit_path:
+            raise ValueError("bit_path is required (pass arg or set ULTRA96_BIT env var)")
+
+        self.ol = Overlay(bit_path, download=download)
+        self.dma = getattr(self.ol, dma_name)
+        self.ip = getattr(self.ol, ip_name)
+
+        self.in_buf = allocate(shape=(INPUT_LEN,), dtype=np.int16)
+        self.out_buf = allocate(shape=(NUM_CLASSES,), dtype=np.int16)
+        if norm_path is None:
+            norm_path = str(Path(__file__).resolve().parent / "norm_stats.npy")
+        self.norm_stats = _load_norm_stats(norm_path)
+
+    def run(self, window: np.ndarray, window_size: int) -> Tuple[str, float]:
+        assert window.shape == (window_size, FEATURES), f"[Driver] bad input shape: {window.shape}"
+        x = _normalize_input(window)
+        x = _normalize_window(x, self.norm_stats)
+        x_fixed = np.clip(np.round(x * FIXED_SCALE), INT16_MIN, INT16_MAX).astype(np.int16)
+
+        self.in_buf[:] = x_fixed
+        self.out_buf[:] = 0
+
+        # ap_ctrl_hs start bit
+        self.ip.write(0x00, 0x01)
+
+        self.dma.recvchannel.transfer(self.out_buf)
+        self.dma.sendchannel.transfer(self.in_buf)
+        self.dma.sendchannel.wait()
+        self.dma.recvchannel.wait()
+
+        y_fixed = np.array(self.out_buf, dtype=np.int16)
+        logits = y_fixed.astype(np.float32) / FIXED_SCALE
+        probs = _softmax(logits)
+        idx = int(np.argmax(probs))
+        confidence = float(probs[idx])
+        gesture = GESTURE_LABELS[idx] if idx < len(GESTURE_LABELS) else str(idx)
+        return gesture, confidence
+
+    def close(self) -> None:
+        self.in_buf.freebuffer()
+        self.out_buf.freebuffer()
+
+
+class MockPYNQDriver:
+    def __init__(self):
+        self.initialize()
+
+    def initialize(self) -> None:
+        print("[Driver] Initialized mock PYNQ driver")
+
+    def run(self, window: np.ndarray, window_size: int) -> Tuple[str, float]:
+        time.sleep(0.01)
+        idx = int(np.random.randint(0, len(GESTURE_LABELS)))
+        gesture = GESTURE_LABELS[idx]
+        confidence = float(np.random.uniform(0.6, 0.99))
+        print(f"[Driver] window {window.shape} -> {gesture} ({confidence:.2f})")
+        return gesture, confidence
+
+    def close(self) -> None:
+        print("[Driver] Closing driver")

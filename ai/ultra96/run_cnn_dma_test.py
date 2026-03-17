@@ -6,7 +6,7 @@ import numpy as np
 from pynq import Overlay, allocate
 
 
-SEQ_LEN = 100
+SEQ_LEN = 75
 FEATURES = 6
 NUM_CLASSES = 6
 INPUT_LEN = SEQ_LEN * FEATURES

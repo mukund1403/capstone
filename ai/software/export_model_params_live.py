@@ -8,7 +8,7 @@ from tensorflow.keras.layers import Conv1D, MaxPooling1D, Flatten, Dense, Dropou
 from tensorflow.keras.callbacks import EarlyStopping, ModelCheckpoint
 from sklearn.model_selection import train_test_split
 
-SEQ_LENGTH = 100 #window size, TODO: change when confirmed when bryan is done
+SEQ_LENGTH = 75  # window size (1.5s @ 50Hz)
 FEATURES   = 6
 NUM_CLASSES = 6
 OUTPUT_DIR = Path(__file__).resolve().parent

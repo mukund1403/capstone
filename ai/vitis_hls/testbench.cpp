@@ -12,7 +12,7 @@
 #include <ap_int.h>
 #include <hls_stream.h>
 
-#define SEQ_LENGTH 100
+#define SEQ_LENGTH 75
 #define FEATURES 6
 #define NUM_CLASSES 6
 

@@ -5,7 +5,7 @@
 #include <hls_stream.h>
 #include "weights.h"
 
-#define SEQ_LENGTH 100
+#define SEQ_LENGTH 75
 #define FEATURES 6
 #define CONV1_FILTERS 32
 #define CONV2_FILTERS 64
@@ -151,7 +151,7 @@ static void dense1(
 ) {
 #pragma HLS INLINE
 
-    const int in_dim = (SEQ_LENGTH / 4) * CONV2_FILTERS; // 1600
+    const int in_dim = (SEQ_LENGTH / 4) * CONV2_FILTERS; // 1152 when SEQ_LENGTH=75
 
     for (int o = 0; o < DENSE1_UNITS; o++) {
         acc_t sum = (data_t)dense_param_1[o]; // bias
