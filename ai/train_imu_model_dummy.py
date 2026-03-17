@@ -1,10 +1,13 @@
 import numpy as np
 import tensorflow as tf
+from pathlib import Path
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Conv1D, MaxPooling1D, Flatten, Dense, Dropout, BatchNormalization
 from tensorflow.keras.callbacks import EarlyStopping, ModelCheckpoint
 import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
+
+OUTPUT_DIR = Path(__file__).resolve().parent
 
 def create_shape_model(input_shape=(100, 6), num_classes=6):
     model = Sequential([
@@ -179,12 +182,26 @@ X_test, y_test = create_dummy_data(n_samples=test_samples, timesteps=100, n_clas
 predictions = model.predict(X_test)
 predicted_classes = np.argmax(predictions, axis=1)
 
-# Display results
-for i in range(test_samples):
+
+# Logits model (output before softmax) for HLS reference when softmax is removed.
+logits_model = tf.keras.Model(inputs=model.input, outputs=model.layers[-1].input)
+logits = logits_model.predict(X_test)
+
+# Export reference inputs/outputs for HLS/C++ testbench comparison.
+np.savetxt(OUTPUT_DIR / 'reference_input.txt', X_test.reshape(X_test.shape[0], -1), fmt='%.6f')
+np.savetxt(OUTPUT_DIR / 'reference_probs.txt', predictions, fmt='%.6f')
+np.savetxt(OUTPUT_DIR / 'reference_logits.txt', logits, fmt='%.6f')
+print("Saved reference inputs to reference_input.txt")
+print("Saved reference probs to reference_probs.txt")
+print("Saved reference logits to reference_logits.txt")
+
+for i in range(10):
     true_class = y_test[i]
     pred_class = predicted_classes[i]
     confidence = predictions[i][pred_class]
-    
-    print(f"Sample {i+1}: True={true_class}, Predicted={pred_class}, "
-          f"Confidence={confidence:.3f}, "
-          f"Correct={'✓' if true_class == pred_class else '✗'}")
+    mark = 'OK' if true_class == pred_class else 'NO'
+    print(
+        f"Sample {i + 1}: True={true_class}, Predicted={pred_class}, "
+        f"Confidence={confidence:.3f}, Correct={mark}"
+    )
+
