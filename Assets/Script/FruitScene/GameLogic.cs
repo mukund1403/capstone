@@ -9,6 +9,7 @@ public class GameLogic : MonoBehaviour
 {
     [SerializeField] private GameObject gamePlayCanvas;
     [SerializeField] private GameObject gameOverCanvas;
+    [SerializeField] private GameObject pauseText;
 
     public bool isGameOver;
     public int score;
@@ -23,7 +24,7 @@ public class GameLogic : MonoBehaviour
     {
         Time.timeScale = 0.3f;
         Time.fixedDeltaTime = 0.02f;
-        PauseGame();
+        //PauseGame();
     }
 
     public void ResetScore()
@@ -55,23 +56,22 @@ public class GameLogic : MonoBehaviour
 
     public void PauseGame()
     {
-        GameObject textObject = GameObject.Find("PauseText");
         ARTrackedImageManager aRTrackedImageManager = GameObject.Find("XR Origin").GetComponent<ARTrackedImageManager>();
-        if (StatusListener.statusInstance == null)
-        {
-            return;
-        }
 
-        bool attackerActive = StatusListener.statusInstance.attackerActive;
-        bool defenderActive = StatusListener.statusInstance.defenderActive;
-        while (!attackerActive || !defenderActive)
+        bool attackerActive = FindObjectOfType<StatusListener>().attackerActive;
+        bool defenderActive = FindObjectOfType<StatusListener>().defenderActive;
+
+        if (!attackerActive || !defenderActive)
         {
             Time.timeScale = 0;
-            textObject.SetActive(true);
+            pauseText.SetActive(true);
             aRTrackedImageManager.enabled = false;
         }
-        Time.timeScale = 0.3f;
-        textObject.SetActive(false);
-        aRTrackedImageManager.enabled = true;
+        else
+        {
+            Time.timeScale = 0.3f;
+            pauseText.SetActive(false);
+            aRTrackedImageManager.enabled = true;
+        }
     }
 }

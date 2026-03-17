@@ -7,6 +7,8 @@ using System.Text;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Collections;
+using UnityEngine.Networking;
 
 public class MqttService : MonoBehaviour
 {
@@ -45,13 +47,15 @@ public class MqttService : MonoBehaviour
         BuildSubTopics();
     }
 
-    void Start()
+    IEnumerator Start()
     {
-        // Load CA certificate
-        var caCertPath = Path.Combine(Application.dataPath, "Certificates/ca.crt");
-        var caCert = new X509Certificate2(caCertPath);
+        string path = Path.Combine(Application.streamingAssetsPath, "Certificates/ca.crt");
 
-        // Create TLS-enabled MQTT client
+        UnityWebRequest www = UnityWebRequest.Get(path);
+        yield return www.SendWebRequest();
+
+        var caCert = new X509Certificate2(www.downloadHandler.data);
+
         client = new MqttClient(
             "172.20.10.2",
             8883,
@@ -65,7 +69,7 @@ public class MqttService : MonoBehaviour
         client.MqttMsgPublishReceived += HandleMqttMessage;
 
         string clientId = Guid.NewGuid().ToString();
-        client.Connect(clientId, "unity", "capstone");   //commemtted out when doing indiv subtest
+        client.Connect(clientId, "unity", "capstone");
 
         client.Subscribe(subTopics, qos);
 

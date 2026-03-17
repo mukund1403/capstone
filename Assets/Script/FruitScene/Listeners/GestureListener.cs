@@ -9,14 +9,7 @@ public class GestureListener : BaseListener
     public string defSwordGesture;
     public string defHandGesture;
 
-    public static GestureListener gestureInstance;
-
-    private void Awake()
-    {
-        gestureInstance = this;
-    }
-
-    void HandleMqtt(string topic, string payload)
+    protected override void HandleMqtt(string topic, string payload)
     {
         if (!topic.StartsWith("fruitninja/defender/sword/gesture/detected") &&
             !topic.StartsWith("fruitninja/defender/hand/gesture/detected") &&

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ImuWinListener : BaseListener
 {
-    void HandleMqtt(string topic, string payload)
+    protected override void HandleMqtt(string topic, string payload)
     {
         if (!topic.StartsWith("fruitninja/defender/sword/imu/window") &&
             !topic.StartsWith("fruitninja/defender/hand/imu/window") &&

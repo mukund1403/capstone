@@ -12,14 +12,7 @@ public class StatusListener : BaseListener
     private bool swordActive;
     private bool handActive;
 
-    public static StatusListener statusInstance;
-
-    private void Awake()
-    {
-        statusInstance = this;
-    }
-
-    void HandleMqtt(string topic, string payload)
+    protected override void HandleMqtt(string topic, string payload)
     {
         if (!topic.StartsWith("fruitninja/defender/sword/status") &&
             !topic.StartsWith("fruitninja/defender/hand/status") &&

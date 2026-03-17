@@ -19,8 +19,10 @@ public class HandLogic : MonoBehaviour
     }
     void Update()
     {
-        string atkGesture = GestureListener.gestureInstance.atkHandGesture;
-        string defGesture = GestureListener.gestureInstance.defHandGesture;
+        //string atkGesture = GestureListener.gestureInstance.atkHandGesture;
+        //string defGesture = GestureListener.gestureInstance.defHandGesture;
+        string atkGesture = "randomSTR";
+        string defGesture = "randomSTR";
         string playerIdentity = PlayerStatusManager.Instance.GetIdentity();
         if (playerIdentity == "Attacker" && atkGesture != null)
         {
@@ -53,6 +55,7 @@ public class HandLogic : MonoBehaviour
         {
             DefendHandSkillRelease();
         }
+        MqttApi.BuzzSuccess();
     }
 
     private void AttackHandRelease()

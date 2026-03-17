@@ -49,7 +49,6 @@ public class CollideManager : MonoBehaviour
 
     public void OnCollisionEnter(Collision collision)
     {
-        MqttPubTest();
         if (collision.gameObject.CompareTag("Safe Object"))
         {
             Vector3 hitPos = collision.transform.position;
@@ -61,7 +60,7 @@ public class CollideManager : MonoBehaviour
 
             splash = Instantiate(splashPrefab, hitPos, Quaternion.identity);
 
-            string swordGesture = GestureListener.gestureInstance.defSwordGesture;
+            string swordGesture = FindObjectOfType<GestureListener>().defSwordGesture;
 
             if (circle != null)
             {
@@ -71,58 +70,49 @@ public class CollideManager : MonoBehaviour
                 if (gestureDetected == "circle")
                 {
                     AddSpecialAnimation("circle", hitPos);
+                    MqttApi.BuzzSuccess();
                 }
                 else
                 {
                     AddSpecialAnimation("wrong", hitPos);
                     logic.DeductScore();
+                    MqttApi.BuzzFailure();
                 }
             }
             else if (triangle != null)
             {
                 // dummy data input simulating AI gesture detection 
-                string tempGesture = Random.value < 0.5f ? "z" : "none";
+                string tempGesture = Random.value < 0.5f ? "triangle" : "none";
                 string gestureDetected = swordGesture;
-                if (gestureDetected == "z")
+                if (gestureDetected == "triangle")
                 {
                     AddSpecialAnimation("triangle", hitPos);
+                    MqttApi.BuzzSuccess();
                 }
                 else
                 {
                     AddSpecialAnimation("wrong", hitPos);
                     logic.DeductScore();
+                    MqttApi.BuzzFailure();
                 }
             }
             else if (rectangle != null)
             {
                 // dummy data input simulating AI gesture detection 
-                string tempGesture = Random.value < 0.5f ? "checkmark" : "none";
+                string tempGesture = Random.value < 0.5f ? "rectangle" : "none";
                 string gestureDetected = swordGesture;
-                if (gestureDetected == "checkmark")
+                if (gestureDetected == "rectangle")
                 {
                     AddSpecialAnimation("rectangle", hitPos);
+                    MqttApi.BuzzSuccess();
                 }
                 else
                 {
                     AddSpecialAnimation("wrong", hitPos);
                     logic.DeductScore();
+                    MqttApi.BuzzFailure();
                 }
             }
-            //else if (rectangle != null)
-            //{
-            //    // dummy data input simulating AI gesture detection 
-            //    string tempGesture = Random.value < 0.5f ? "caret" : "none";
-            //    string gestureDetected = swordGesture;
-            //    if (gestureDetected == "caret")
-            //    {
-            //        AddSpecialAnimation("rectangle", hitPos);
-            //    }
-            //    else
-            //    {
-            //        AddSpecialAnimation("wrong", hitPos);
-            //        logic.DeductScore();
-            //    }
-            //}
 
             logic.AddScore();
             Destroy(collision.gameObject);
@@ -131,12 +121,5 @@ public class CollideManager : MonoBehaviour
         {
             logic.GameOver();
         }
-    }
-
-    // Simulating topic publishing using MQTT
-    private void MqttPubTest()
-    {
-        MqttApi.BuzzSuccess();
-        MqttApi.SliceCollisionDetected();
     }
 }

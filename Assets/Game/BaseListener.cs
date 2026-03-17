@@ -5,33 +5,26 @@ using UnityEngine;
 // in the HandleMqtt part: make sure to filter out the exact topic name using the if (!topic.StartsWith)
 public class BaseListener : MonoBehaviour
 {
-    public static BaseListener Instance;
-    void Awake()
+    protected virtual void Awake()
     {
-        if (Instance != null && Instance != this)
-        {
-            Destroy(gameObject);
-            return;
-        }
-        Instance = this;
         DontDestroyOnLoad(gameObject);
     }
 
-    void OnEnable() {
+    protected virtual void OnEnable() {
         if (MqttService.Instance != null)
         {
             MqttService.Instance.OnMessageReceived += HandleMqtt;
         }
     }
     
-    void OnDisable() {
+    protected virtual void OnDisable() {
         if (MqttService.Instance != null)
         {
             MqttService.Instance.OnMessageReceived -= HandleMqtt;
         }
     }
 
-    void HandleMqtt (string topic, string payload) {
+    protected virtual void HandleMqtt (string topic, string payload) {
         if (!topic.StartsWith("fruitninja/")) return;
         Debug.Log($"[DummyListener] {topic}: {payload}");
     }

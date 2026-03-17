@@ -541,6 +541,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gamePlayCanvas: {fileID: 391458974}
   gameOverCanvas: {fileID: 25600698}
+  pauseText: {fileID: 1662519554}
   isGameOver: 0
   score: 0
 --- !u!1 &266379340
