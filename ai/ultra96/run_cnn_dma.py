@@ -14,7 +14,7 @@ except Exception:
 
 SEQ_LEN = 75
 FEATURES = 6
-NUM_CLASSES = 6
+NUM_CLASSES = 8
 INPUT_LEN = SEQ_LEN * FEATURES
 
 # ap_fixed<16,6> => 10 fractional bits
@@ -30,6 +30,8 @@ GESTURE_LABELS = [
     "slash4",
     "bomb",
     "slow",
+    "class6",
+    "class7",
 ]
 
 def _softmax(logits: np.ndarray) -> np.ndarray:

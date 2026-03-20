@@ -1,4 +1,5 @@
 ﻿import argparse
+import tempfile
 from pathlib import Path
 
 import numpy as np
@@ -10,7 +11,7 @@ from sklearn.model_selection import train_test_split
 
 SEQ_LENGTH = 75  # window size (1.5s @ 50Hz)
 FEATURES   = 6
-NUM_CLASSES = 6
+NUM_CLASSES = 8
 OUTPUT_DIR = Path(__file__).resolve().parent
 
 
@@ -113,6 +114,19 @@ def load_labeled_file(path: Path):
     return X, y
 
 
+def validate_labels(y: np.ndarray):
+    if y.size == 0:
+        raise ValueError("Dataset is empty.")
+
+    classes_seen = sorted(set(y.tolist()))
+    invalid = [label for label in classes_seen if label < 0 or label >= NUM_CLASSES]
+    if invalid:
+        raise ValueError(
+            f"Found labels outside valid range 0..{NUM_CLASSES - 1}: {invalid}. "
+            f"Classes seen: {classes_seen}"
+        )
+
+
 def main():
     parser = argparse.ArgumentParser(description="Train model from labeled IMU windows")
     parser.add_argument("--data",         required=True, help="Path to labeled data file")
@@ -126,6 +140,7 @@ def main():
         raise FileNotFoundError(f"Data file not found: {data_path}")
 
     X, y = load_labeled_file(data_path)
+    validate_labels(y)
     print(f"Loaded dataset: X={X.shape}, y={y.shape}")
     print(f"  Window size:  {SEQ_LENGTH} timesteps x {FEATURES} channels")
     print(f"  Classes seen: {sorted(set(y.tolist()))}")
@@ -139,12 +154,6 @@ def main():
     mean = X.mean(axis=(0, 1))   # shape (FEATURES,)
     std  = X.std(axis=(0, 1))    # shape (FEATURES,)
     std[std < 1e-8] = 1.0        # guard against constant channels
-
-    norm_stats_path = OUTPUT_DIR / 'norm_stats.npy'
-    np.save(norm_stats_path, {'mean': mean, 'std': std})
-    print(f"\nSaved normalisation stats → {norm_stats_path}")
-    print(f"  mean: {mean}")
-    print(f"  std:  {std}")
 
     X = (X - mean) / std         # normalise in-place before training
 
@@ -181,58 +190,83 @@ def main():
     print(f"  Training:   {X_train.shape[0]} samples")
     print(f"  Validation: {X_val.shape[0]} samples")
 
-    callbacks = [
-        EarlyStopping(
-            monitor='val_loss',
-            patience=5,
-            restore_best_weights=True,
-            verbose=1
-        ),
-        ModelCheckpoint(
-            str(OUTPUT_DIR / 'best_live_model.h5'),
-            monitor='val_accuracy',
-            save_best_only=True,
+    final_checkpoint_path = OUTPUT_DIR / 'best_live_model.h5'
+    norm_stats_path = OUTPUT_DIR / 'norm_stats.npy'
+    reference_input_path = OUTPUT_DIR / 'reference_input.txt'
+    reference_logits_path = OUTPUT_DIR / 'reference_logits.txt'
+
+    with tempfile.TemporaryDirectory(dir=OUTPUT_DIR) as tmp_dir_name:
+        tmp_dir = Path(tmp_dir_name)
+        checkpoint_path = tmp_dir / 'best_live_model.h5'
+
+        callbacks = [
+            EarlyStopping(
+                monitor='val_loss',
+                patience=5,
+                restore_best_weights=True,
+                verbose=1
+            ),
+            ModelCheckpoint(
+                str(checkpoint_path),
+                monitor='val_accuracy',
+                save_best_only=True,
+                verbose=1
+            )
+        ]
+
+        print("\nTraining model...")
+        model.fit(
+            X_train, y_train,
+            validation_data=(X_val, y_val),
+            epochs=args.epochs,
+            batch_size=args.batch,
+            callbacks=callbacks,
             verbose=1
         )
-    ]
 
-    print("\nTraining model...")
-    history = model.fit(
-        X_train, y_train,
-        validation_data=(X_val, y_val),
-        epochs=args.epochs,
-        batch_size=args.batch,
-        callbacks=callbacks,
-        verbose=1
-    )
+        model = tf.keras.models.load_model(checkpoint_path)
+        val_loss, val_acc = model.evaluate(X_val, y_val, verbose=0)
 
-    val_loss, val_acc = model.evaluate(X_val, y_val, verbose=0)
+        # ------------------------------------------------------------------
+        # Export HLS reference files (normalised inputs)
+        # reference_input.txt  → send directly to HLS testbench
+        # reference_logits.txt → compare against HLS output logits
+        # ------------------------------------------------------------------
+        print("\nTesting predictions on sample windows...")
+        test_samples = min(args.test_samples, X.shape[0])
+        X_test = X[:test_samples]
+        y_test = y[:test_samples]
+
+        predictions = model.predict(X_test)
+        predicted_classes = np.argmax(predictions, axis=1)
+
+        # Export true logits (pre-softmax) for HLS comparison.
+        feature_model = tf.keras.Model(inputs=model.inputs, outputs=model.layers[-2].output)
+        features = feature_model.predict(X_test)
+        final_kernel, final_bias = model.layers[-1].get_weights()
+        logits = features @ final_kernel + final_bias
+
+        tmp_norm_stats_path = tmp_dir / 'norm_stats.npy'
+        tmp_reference_input_path = tmp_dir / 'reference_input.txt'
+        tmp_reference_logits_path = tmp_dir / 'reference_logits.txt'
+
+        np.save(tmp_norm_stats_path, {'mean': mean, 'std': std})
+        np.savetxt(tmp_reference_input_path,
+                   X_test.reshape(X_test.shape[0], -1), fmt='%.6f')
+        np.savetxt(tmp_reference_logits_path,
+                   logits, fmt='%.6f')
+
+        checkpoint_path.replace(final_checkpoint_path)
+        tmp_norm_stats_path.replace(norm_stats_path)
+        tmp_reference_input_path.replace(reference_input_path)
+        tmp_reference_logits_path.replace(reference_logits_path)
+
+    print(f"\nSaved normalisation stats → {norm_stats_path}")
+    print(f"  mean: {mean}")
+    print(f"  std:  {std}")
     print(f"\nValidation Accuracy: {val_acc:.4f}")
     print(f"Validation Loss:     {val_loss:.4f}")
     print("Using best checkpoint only: best_live_model.h5")
-
-    # ------------------------------------------------------------------
-    # Export HLS reference files (normalised inputs)
-    # reference_input.txt  → send directly to HLS testbench
-    # reference_logits.txt → compare against HLS output logits
-    # ------------------------------------------------------------------
-    print("\nTesting predictions on sample windows...")
-    test_samples = min(args.test_samples, X.shape[0])
-    X_test = X[:test_samples]
-    y_test = y[:test_samples]
-
-    model = tf.keras.models.load_model(OUTPUT_DIR / 'best_live_model.h5')
-    predictions = model.predict(X_test)
-    predicted_classes = np.argmax(predictions, axis=1)
-
-    # Export true logits (pre-softmax) for HLS comparison.
-    logits_model = tf.keras.Model(inputs=model.input, outputs=model.layers[-1].input)
-    logits = logits_model.predict(X_test)
-
-    np.savetxt(OUTPUT_DIR / 'reference_input.txt',
-               X_test.reshape(X_test.shape[0], -1), fmt='%.6f')
-    np.savetxt(OUTPUT_DIR / 'reference_logits.txt',
-               logits, fmt='%.6f')
     print("Saved reference_input.txt  (normalised — feed directly to HLS testbench)")
     print("Saved reference_logits.txt (true pre-softmax logits for comparison)")
 

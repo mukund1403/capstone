@@ -8,7 +8,7 @@ from pynq import Overlay, allocate
 
 SEQ_LEN = 75
 FEATURES = 6
-NUM_CLASSES = 6
+NUM_CLASSES = 8
 INPUT_LEN = SEQ_LEN * FEATURES
 
 FIXED_SCALE = 1 << 10

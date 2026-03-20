@@ -39,3 +39,5 @@ ai/vitis_hls/hls_component/
 # Ignore Vitis HLS artifacts
 ai/vitis_hls/hls_component/
 ai/vitis_hls/_ide/
+
+ai/vitis_clean
