@@ -6,8 +6,8 @@
 #define PIN_VIBRO       25
 #define PIN_BUZZER      26
 #define PIN_LED_R       27
-#define PIN_LED_G       9
-#define PIN_BTN_PAUSE   10
+#define PIN_LED_G       15 // changed from9
+#define PIN_BTN_PAUSE   13 //changed from 10
 
 // --- MPU6050 I2C Address ---
 #define MPU_ADDR        0x68
