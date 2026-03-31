@@ -1,5 +1,4 @@
 #include <Wire.h>
-#include <math.h>
 
 // --- Pin Definitions ---
 #define PIN_SDA           21
@@ -80,16 +79,9 @@ GravityEstimate_t gravityEst = {0.0f, 0.0f, 1.0f};
 
 Vec3f_t linearAcc = {0.0f, 0.0f, 0.0f};
 
-float gyroMag = 0.0f;
-float linAccMag = 0.0f;
-
 // ============================================================
 // Utility
 // ============================================================
-float vecMagnitude(float x, float y, float z) {
-  return sqrtf(x * x + y * y + z * z);
-}
-
 float lowPass(float prev, float curr, float alpha) {
   return alpha * prev + (1.0f - alpha) * curr;
 }
@@ -99,14 +91,14 @@ float lowPass(float prev, float curr, float alpha) {
 // ============================================================
 void initMPU(TwoWire &bus, uint8_t addr) {
   bus.beginTransmission(addr);
-  bus.write(0x6B);
-  bus.write(0x00);
+  bus.write(0x6B);   // PWR_MGMT_1
+  bus.write(0x00);   // Wake up MPU6050
   bus.endTransmission();
 }
 
 void readMPU(TwoWire &bus, uint8_t addr, IMURaw_t *raw) {
   bus.beginTransmission(addr);
-  bus.write(0x3B);
+  bus.write(0x3B);   // ACCEL_XOUT_H
   bus.endTransmission(false);
   bus.requestFrom(addr, (uint8_t)14);
 
@@ -189,38 +181,22 @@ void computeLinearAcceleration(const IMUFiltered_t *filtered,
   linAccOut->z = filtered->az_g - grav->gz;
 }
 
-void computeMagnitudes(const IMUFiltered_t *filtered,
-                       const Vec3f_t *linAccOut,
-                       float *gyroMagOut,
-                       float *linAccMagOut) {
-  *gyroMagOut = vecMagnitude(filtered->gx_dps, filtered->gy_dps, filtered->gz_dps);
-  *linAccMagOut = vecMagnitude(linAccOut->x, linAccOut->y, linAccOut->z);
-}
-
 // ============================================================
-// Output (ONLY 8 DATA POINTS)
+// Output (ONLY 6 DATA POINTS)
 // ============================================================
 void publishProcessedData(const IMUFiltered_t *filtered,
-                          const Vec3f_t *linAccOut,
-                          float gyroMagIn,
-                          float linAccMagIn) {
-  Serial.print("IMU | ");
+                          const Vec3f_t *linAccOut) {
+  // linAcc
+  Serial.print(linAccOut->x, 3); Serial.print(" ");
+  Serial.print(linAccOut->y, 3); Serial.print(" ");
+  Serial.print(linAccOut->z, 3); Serial.print(" ");
 
-  Serial.print("Gyro(dps):");
-  Serial.print(filtered->gx_dps, 3); Serial.print(",");
-  Serial.print(filtered->gy_dps, 3); Serial.print(",");
+  // gyro
+  Serial.print(filtered->gx_dps, 3); Serial.print(" ");
+  Serial.print(filtered->gy_dps, 3); Serial.print(" ");
   Serial.print(filtered->gz_dps, 3);
 
-  Serial.print(" | LinAcc(g):");
-  Serial.print(linAccOut->x, 3); Serial.print(",");
-  Serial.print(linAccOut->y, 3); Serial.print(",");
-  Serial.print(linAccOut->z, 3);
-
-  Serial.print(" | GyroMag:");
-  Serial.print(gyroMagIn, 3);
-
-  Serial.print(" | LinAccMag:");
-  Serial.println(linAccMagIn, 3);
+  Serial.println();
 }
 
 // ============================================================
@@ -252,8 +228,7 @@ void loop() {
     filterIMU(&scaled, &imuFiltered);
     updateGravityEstimate(&imuFiltered, &gravityEst);
     computeLinearAcceleration(&imuFiltered, &gravityEst, &linearAcc);
-    computeMagnitudes(&imuFiltered, &linearAcc, &gyroMag, &linAccMag);
 
-    publishProcessedData(&imuFiltered, &linearAcc, gyroMag, linAccMag);
+    publishProcessedData(&imuFiltered, &linearAcc);
   }
 }
