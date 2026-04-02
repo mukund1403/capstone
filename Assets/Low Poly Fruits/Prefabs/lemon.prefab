@@ -159,7 +159,7 @@ GameObject:
   - component: {fileID: 7668868127791496115}
   - component: {fileID: 5623343747697456240}
   m_Layer: 0
-  m_Name: triSprite
+  m_Name: caretSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -174,7 +174,7 @@ Transform:
   m_GameObject: {fileID: 4997328940456017454}
   serializedVersion: 2
   m_LocalRotation: {x: 0.6434014, y: -0.2933167, z: 0.2933167, w: 0.6434014}
-  m_LocalPosition: {x: -0.00006829942, y: 0.00026103656, z: 6.2088175e-11}
+  m_LocalPosition: {x: -0.0043, y: 0, z: 0.0002}
   m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -221,12 +221,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 587ab37c9b611e3429ad9775ee08865d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3f1531d758debe5408734334a4e3bde4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 10.24, y: 10.24}
+  m_Size: {x: 5.47, y: 3.24}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1

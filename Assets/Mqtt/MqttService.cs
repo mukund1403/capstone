@@ -120,7 +120,7 @@ public class MqttService : MonoBehaviour
         Publish(topicString, json, qosLevel);
     }
 
-    private void Publish(string topic, string payload, byte qosLevel)
+    public void Publish(string topic, string payload, byte qosLevel)
     {
         if (client == null || !client.IsConnected)
         {

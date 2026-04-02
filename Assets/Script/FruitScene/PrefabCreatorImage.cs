@@ -164,7 +164,7 @@ public class PrefabCreatorImage : MonoBehaviour
         {
             instance.transform.localScale = new Vector3(0.3f, 0.3f, 0.3f);
             instance.transform.localPosition += prefabOffsetHand;
-            instance.transform.localRotation = Quaternion.Euler(0, -90, 0);
+            instance.transform.localRotation = Quaternion.Euler(0, -90, -90);
         }
     }
 }

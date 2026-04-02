@@ -3,23 +3,28 @@ using System.Collections.Generic;
 using Unity.XR.CoreUtils;
 using UnityEngine;
 using TMPro;
+using static GestureListener;
 
 // Manage katana prefab's collision during gameplay
 public class CollideManager : MonoBehaviour
 {
     [SerializeField] private GameObject splashPrefab;
     [SerializeField] private GameObject wrongSignPrefab;
-    [SerializeField] private GameObject triPrefab;
-    [SerializeField] private GameObject rectPrefab;
+    [SerializeField] private GameObject zPrefab;
+    [SerializeField] private GameObject chkPrefab;
+    [SerializeField] private GameObject caretPrefab;
+    [SerializeField] private GameObject infPrefab;
     [SerializeField] private GameObject cirPrefab;
     private GameLogic logic;
     private GestureListener gestureListener;
 
-    private GameObject splash;
-    private GameObject wrongMark;
-    private GameObject triangle;
-    private GameObject rectangle;
-    private GameObject circle;
+    private GameObject splashObj;
+    private GameObject wrongMarkObj;
+    private GameObject zObj;
+    private GameObject chkObj;
+    private GameObject caretObj;
+    private GameObject infObj;
+    private GameObject cirObj;
 
     void Start()
     {
@@ -31,19 +36,27 @@ public class CollideManager : MonoBehaviour
         Vector3 offset = Camera.main.transform.forward * 0.02f;
         if (type == "wrong")
         {
-            wrongMark = Instantiate(wrongSignPrefab, pos - offset, Quaternion.identity);
+            wrongMarkObj = Instantiate(wrongSignPrefab, pos - offset, Quaternion.identity);
         }
-        else if (type == "triangle")
+        else if (type == "z")
         {
-            triangle = Instantiate(triPrefab, pos - offset, Quaternion.identity);
+            zObj = Instantiate(zPrefab, pos - offset, Quaternion.identity);
         }
-        else if (type == "rectangle")
+        else if (type == "checkmark")
         {
-            rectangle = Instantiate(rectPrefab, pos - offset, Quaternion.identity);
+            chkObj = Instantiate(chkPrefab, pos - offset, Quaternion.identity);
+        }
+        else if (type == "caret")
+        {
+            caretObj = Instantiate(caretPrefab, pos - offset, Quaternion.identity);
+        }
+        else if (type == "infinity")
+        {
+            infObj = Instantiate(infPrefab, pos - offset, Quaternion.identity);
         }
         else if (type == "circle")
         {
-            circle = Instantiate(cirPrefab, pos - offset, Quaternion.identity);
+            cirObj = Instantiate(cirPrefab, pos - offset, Quaternion.identity);
         }
     }
 
@@ -54,19 +67,21 @@ public class CollideManager : MonoBehaviour
             Vector3 hitPos = collision.transform.position;
 
             // check if the object collided has special child object
+            Transform z = collision.transform.Find("zSprite");
+            Transform checkmark = collision.transform.Find("checkSprite");
+            Transform caret = collision.transform.Find("caretSprite");
+            Transform infinity = collision.transform.Find("infinitySprite");
             Transform circle = collision.transform.Find("circleSprite");
-            Transform triangle = collision.transform.Find("triSprite");
-            Transform rectangle = collision.transform.Find("rectSprite");
 
-            splash = Instantiate(splashPrefab, hitPos, Quaternion.identity);
+            splashObj = Instantiate(splashPrefab, hitPos, Quaternion.identity);
 
-            string swordGesture = FindObjectOfType<GestureListener>().defSwordGesture;
+            GestureMsg gestureMsg = FindObjectOfType<GestureListener>().takeFirstMsg("defSword");
 
             if (circle != null)
             {
                 // dummy data input simulating AI gesture detection  
                 string tempGesture = Random.value < 0.5f ? "circle" : "none";
-                string gestureDetected = swordGesture;
+                string gestureDetected = gestureMsg == null ? "none" : gestureMsg.gesture;
                 if (gestureDetected == "circle")
                 {
                     AddSpecialAnimation("circle", hitPos);
@@ -79,14 +94,14 @@ public class CollideManager : MonoBehaviour
                     MqttApi.BuzzFailure();
                 }
             }
-            else if (triangle != null)
+            else if (infinity != null)
             {
                 // dummy data input simulating AI gesture detection 
-                string tempGesture = Random.value < 0.5f ? "triangle" : "none";
-                string gestureDetected = swordGesture;
-                if (gestureDetected == "triangle")
+                string tempGesture = Random.value < 0.5f ? "infinity" : "none";
+                string gestureDetected = gestureMsg == null ? "none" : gestureMsg.gesture;
+                if (gestureDetected == "infinity")
                 {
-                    AddSpecialAnimation("triangle", hitPos);
+                    AddSpecialAnimation("infinity", hitPos);
                     MqttApi.BuzzSuccess();
                 }
                 else
@@ -96,14 +111,48 @@ public class CollideManager : MonoBehaviour
                     MqttApi.BuzzFailure();
                 }
             }
-            else if (rectangle != null)
+            else if (caret != null)
             {
                 // dummy data input simulating AI gesture detection 
-                string tempGesture = Random.value < 0.5f ? "rectangle" : "none";
-                string gestureDetected = swordGesture;
-                if (gestureDetected == "rectangle")
+                string tempGesture = Random.value < 0.5f ? "caret" : "none";
+                string gestureDetected = gestureMsg == null ? "none" : gestureMsg.gesture;
+                if (gestureDetected == "caret")
                 {
-                    AddSpecialAnimation("rectangle", hitPos);
+                    AddSpecialAnimation("caret", hitPos);
+                    MqttApi.BuzzSuccess();
+                }
+                else
+                {
+                    AddSpecialAnimation("wrong", hitPos);
+                    logic.DeductScore();
+                    MqttApi.BuzzFailure();
+                }
+            }
+            else if (checkmark != null)
+            {
+                // dummy data input simulating AI gesture detection 
+                string tempGesture = Random.value < 0.5f ? "checkmark" : "none";
+                string gestureDetected = gestureMsg == null ? "none" : gestureMsg.gesture;
+                if (gestureDetected == "checkmark")
+                {
+                    AddSpecialAnimation("checkmark", hitPos);
+                    MqttApi.BuzzSuccess();
+                }
+                else
+                {
+                    AddSpecialAnimation("wrong", hitPos);
+                    logic.DeductScore();
+                    MqttApi.BuzzFailure();
+                }
+            }
+            else if (z != null)
+            {
+                // dummy data input simulating AI gesture detection 
+                string tempGesture = Random.value < 0.5f ? "z" : "none";
+                string gestureDetected = gestureMsg == null ? "none" : gestureMsg.gesture;
+                if (gestureDetected == "z")
+                {
+                    AddSpecialAnimation("z", hitPos);
                     MqttApi.BuzzSuccess();
                 }
                 else

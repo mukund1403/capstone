@@ -14,6 +14,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FruitScene.unity
     guid: 9db714fb949d512449271b944a5b6823
+  - enabled: 0
+    path: Assets/Scenes/FruitTutorialScene.unity
+    guid: 68b41ec29273cf84184a3e4c9653be2e
+  - enabled: 0
+    path: Assets/Scenes/FruitCheatScene.unity
+    guid: bbff485b4053aaa40a7bd7ec09a42e15
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 5ec5205daf4d46a4193ae1b76c30a8d2, type: 2}
     com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: 45be8890ba56f854e88ae210374d0d59, type: 2}

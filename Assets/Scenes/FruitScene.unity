@@ -2961,6 +2961,7 @@ MonoBehaviour:
   applePrefab: {fileID: 1829371231341652, guid: 426b44a7575f71e479fab4f4e8431989, type: 3}
   watermelonPrefab: {fileID: 1125202155953082, guid: 573bb482e4baeec4386587db7cc07515, type: 3}
   peachPrefab: {fileID: 1541859410316496, guid: 4fe5a7bcbee1651418ea031a87ff53e4, type: 3}
+  cherryPrefab: {fileID: 1802840387486672, guid: 8f38e57a49b1c844081ad6bb3c553f13, type: 3}
   bombPrefab: {fileID: 4244544703068471477, guid: 3b5a28db09a60f0479da5f8cdf8d7039, type: 3}
 --- !u!4 &1954967876
 Transform:

@@ -11,13 +11,18 @@ public class ButtonLogic : MonoBehaviour
     [SerializeField] private GameObject gameOverCanvas;
     private bool isLoadingScene = false;
 
-    public void LoadGameScene()
+    public void LoadGameScene(string sceneName)
     {
         if (!helpMenu.activeSelf && !isLoadingScene)
         {
-            SceneManager.LoadScene("FruitScene");
+            SceneManager.LoadScene(sceneName);
             isLoadingScene = true;
         }
+    }
+
+    public void LoadMainPageScene()
+    {
+        SceneManager.LoadScene("FruitStartScene");
     }
 
     public void QuitGameScene1()

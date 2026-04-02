@@ -34,7 +34,7 @@ public class AttackerHandController : MonoBehaviour
                 return;
             }
 
-            MqttPubTest();
+            //MqttPubTest();
             Grab(collision.gameObject);
             canHold = false;
         }

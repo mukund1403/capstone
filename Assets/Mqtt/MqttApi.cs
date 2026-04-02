@@ -1,5 +1,6 @@
 // Visualiser adds new functions which are called from game in here
 using UnityEngine;
+using UnityEngine.XR.ARSubsystems;
 
 
 public static class MqttApi
@@ -63,6 +64,25 @@ public static class MqttApi
         new ImuControlMessage("imuWindow", "pickUpStart")
         );
         Debug.Log("pick message sent");
+    }
+
+    public static void DummyGesture(string input, string topic)
+    {
+        string msg = $"{{\"gesture\":\"{input}\",\"confidence\":0.92}}";
+        string fullTopic = "";
+        if (topic == "defHand")
+        {
+            fullTopic = "fruitninja/defender/hand/gesture/detected";
+        }
+        if (topic == "atkHand")
+        {
+            fullTopic = "fruitninja/attacker/gesture/detected";
+        }
+        if (topic == "defSword")
+        {
+            fullTopic = "fruitninja/defender/sword/gesture/detected";
+        }
+        MqttService.Instance.Publish(fullTopic, msg, 0);
     }
 
     //// Player's role defined

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using static GestureListener;
 
 // triggers different hand prefab's actions according to player's role
 public class HandLogic : MonoBehaviour
@@ -19,16 +20,16 @@ public class HandLogic : MonoBehaviour
     }
     void Update()
     {
-        //string atkGesture = GestureListener.gestureInstance.atkHandGesture;
-        //string defGesture = GestureListener.gestureInstance.defHandGesture;
-        string atkGesture = "randomSTR";
-        string defGesture = "randomSTR";
+        GestureMsg atkGestureMsg = FindObjectOfType<GestureListener>().takeFirstMsg("atkHand");
+        GestureMsg defGestureMsg = FindObjectOfType<GestureListener>().takeFirstMsg("defHand");
+        string atkGesture = atkGestureMsg == null ? "none" : atkGestureMsg.gesture;
+        string defGesture = defGestureMsg == null ? "none" : defGestureMsg.gesture;
         string playerIdentity = PlayerStatusManager.Instance.GetIdentity();
-        if (playerIdentity == "Attacker" && atkGesture != null)
+        if (playerIdentity == "Attacker" && atkGesture == "throw")
         {
             AttackHandRelease();
         }
-        else if (playerIdentity == "Defender" && defGesture != null)
+        else if (playerIdentity == "Defender" && defGesture == "block")
         {
             DefendHandSkillRelease();
         }
@@ -49,10 +50,12 @@ public class HandLogic : MonoBehaviour
         string playerIdentity = PlayerStatusManager.Instance.GetIdentity();
         if (playerIdentity == "Attacker")
         {
+            //MqttApi.DummyGesture("throw", "atkHand");
             AttackHandRelease();
         }
         else if (playerIdentity == "Defender")
         {
+            //MqttApi.DummyGesture("block" ,"defHand");
             DefendHandSkillRelease();
         }
         MqttApi.BuzzSuccess();

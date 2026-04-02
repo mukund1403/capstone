@@ -5,6 +5,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
+using static GestureListener;
 
 // Manage fruit prefab spawning logic when playing as defender
 public class FruitSpawn : MonoBehaviour
@@ -22,14 +23,19 @@ public class FruitSpawn : MonoBehaviour
     private bool isImageScanned;
     private Vector3 storedImagePos;
 
-    [SerializeField] private GameObject lemonPrefab, pearPrefab, strawberryPrefab, applePrefab, watermelonPrefab, peachPrefab;
+    private bool attackerActive;
+
+    [SerializeField] private GameObject lemonPrefab, pearPrefab, strawberryPrefab, applePrefab, watermelonPrefab, peachPrefab, cherryPrefab;
     [SerializeField] private GameObject bombPrefab;
     private GameObject[] fruits;
-    private ARTrackedImage currentImage;
+    private ARTrackedImage currentFruitImage;
+    private ARTrackedImage currentAttackerImage;
 
 
     private enum Direction
     {
+        Forward,
+        Backward,
         Left,
         Right,
         Up,
@@ -41,6 +47,7 @@ public class FruitSpawn : MonoBehaviour
         aRTrackedImageManager = origin.GetComponent<ARTrackedImageManager>();
         isActive = false;
         isImageScanned = false;
+        attackerActive = false;
         timer = 0;
         fruits = new GameObject[]
         {
@@ -49,7 +56,8 @@ public class FruitSpawn : MonoBehaviour
             strawberryPrefab, 
             applePrefab, 
             watermelonPrefab, 
-            peachPrefab
+            peachPrefab,
+            cherryPrefab
         };
         isFrozen = false;
     }
@@ -79,14 +87,22 @@ public class FruitSpawn : MonoBehaviour
         {
             if (image.referenceImage.name == "NUSLogo")
             {
-                currentImage = image;
+                currentFruitImage = image;
+            }
+            else if (image.referenceImage.name == "BombOmbThrower")
+            {
+                currentAttackerImage = image;
             }
         }
         foreach (ARTrackedImage image in obj.updated)
         {
             if (image.referenceImage.name == "NUSLogo")
             {
-                currentImage = image;
+                currentFruitImage = image;
+            }
+            else if (image.referenceImage.name == "BombOmbThrower")
+            {
+                currentAttackerImage = image;
             }
         }
     }
@@ -121,10 +137,10 @@ public class FruitSpawn : MonoBehaviour
             SetMessage("Scan disabled for your role.");
             return;
         }
-        if (currentImage.referenceImage.name == "NUSLogo" && currentImage.trackingState == TrackingState.Tracking)
+        if (currentFruitImage.referenceImage.name == "NUSLogo" && currentFruitImage.trackingState == TrackingState.Tracking)
         {
             isImageScanned = true;
-            storedImagePos = currentImage.transform.position;
+            storedImagePos = currentFruitImage.transform.position;
             string message = "Image Scanned. \n" + storedImagePos.ToString();
             SetMessage(message);
         } 
@@ -132,6 +148,24 @@ public class FruitSpawn : MonoBehaviour
         {
             string message = "No Image Found. \n" + storedImagePos.ToString();
             SetMessage(message);
+        }
+    }
+
+    public void AttackerThrowItem()
+    {
+        if (PlayerStatusManager.Instance.GetIdentity() != "Defender")
+        {
+            return;
+        }
+
+        float force = 5;
+        GestureMsg gestureMsg = FindObjectOfType<GestureListener>().takeFirstMsg("atkHand");
+        string attakerGesture = gestureMsg == null ? "none" : gestureMsg.gesture;
+        if (attakerGesture == "throw")
+        {
+            Vector3 position = currentAttackerImage.transform.position;
+            GameObject bombThrown = Instantiate(bombPrefab, position, Quaternion.identity);
+            applyPhysics(bombThrown, force, Direction.Backward);
         }
     }
 
@@ -159,6 +193,7 @@ public class FruitSpawn : MonoBehaviour
                 timer = 0;
             }
         }
+        AttackerThrowItem();
     }
 
     // throw fruit prefabs in the direction
@@ -179,6 +214,12 @@ public class FruitSpawn : MonoBehaviour
                 break;
             case Direction.Up:
                 rb.AddForce(Vector3.up * force, ForceMode.Impulse);
+                rb.AddTorque(Random.insideUnitSphere * spinForce, ForceMode.Impulse);
+                break;
+            case Direction.Backward:
+                Vector3 camPos = Camera.main.transform.position;
+                Vector3 backwardDir = (camPos - item.transform.position).normalized;
+                rb.AddForce(backwardDir * force, ForceMode.Impulse);
                 rb.AddTorque(Random.insideUnitSphere * spinForce, ForceMode.Impulse);
                 break;
         }

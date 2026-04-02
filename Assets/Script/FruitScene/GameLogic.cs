@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 using UnityEngine.XR.ARFoundation;
 
@@ -9,6 +10,7 @@ public class GameLogic : MonoBehaviour
 {
     [SerializeField] private GameObject gamePlayCanvas;
     [SerializeField] private GameObject gameOverCanvas;
+    [SerializeField] private GameObject tutorialCanvas;
     [SerializeField] private GameObject pauseText;
 
     public bool isGameOver;
@@ -24,7 +26,10 @@ public class GameLogic : MonoBehaviour
     {
         Time.timeScale = 0.3f;
         Time.fixedDeltaTime = 0.02f;
-        //PauseGame();
+        //if (FindObjectOfType<StatusListener>() != null)
+        //{
+        //    PauseGame();
+        //}
     }
 
     public void ResetScore()
@@ -54,23 +59,46 @@ public class GameLogic : MonoBehaviour
         gameOverCanvas.SetActive(true);
     }
 
+    public void EnableGameplay()
+    {
+        gamePlayCanvas.SetActive(true);
+    }
+
+    public void SetGameplayOnClick(bool isActive)
+    {
+        Button[] buttons = FindObjectsOfType<Button>();
+
+        foreach (Button btn in buttons)
+        {
+            if (btn.transform.IsChildOf(tutorialCanvas.transform))
+            {
+                continue;
+            }
+            btn.interactable = isActive;
+        }
+    }
+
     public void PauseGame()
     {
         ARTrackedImageManager aRTrackedImageManager = GameObject.Find("XR Origin").GetComponent<ARTrackedImageManager>();
 
         bool attackerActive = FindObjectOfType<StatusListener>().attackerActive;
         bool defenderActive = FindObjectOfType<StatusListener>().defenderActive;
+        bool playersOnline = FindObjectOfType<StatusListener>().playersOnline;
 
-        if (!attackerActive || !defenderActive)
+        if (!playersOnline || !attackerActive || !defenderActive)
         {
             Time.timeScale = 0;
             pauseText.SetActive(true);
+            pauseText.GetComponent<TMP_Text>().text = playersOnline ? "Game Paused" : "Player's Connection Lost";
+            gamePlayCanvas.SetActive(false);
             aRTrackedImageManager.enabled = false;
         }
         else
         {
             Time.timeScale = 0.3f;
             pauseText.SetActive(false);
+            gamePlayCanvas.SetActive(true);
             aRTrackedImageManager.enabled = true;
         }
     }

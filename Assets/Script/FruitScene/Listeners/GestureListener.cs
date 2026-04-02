@@ -5,9 +5,34 @@ using UnityEngine;
 public class GestureListener : BaseListener
 {
     private string[] allGestures = {"rectangle", "circle", "triangle"};
-    public string atkHandGesture;
-    public string defSwordGesture;
-    public string defHandGesture;
+
+    private Queue<GestureMsg> atkHandQueue = new Queue<GestureMsg>();
+    private Queue<GestureMsg> defHandQueue = new Queue<GestureMsg>();
+    private Queue<GestureMsg> defSwordQueue = new Queue<GestureMsg>();
+
+    [System.Serializable]
+    public class GestureMsg
+    {
+        public string gesture;
+        public float confidence;
+    }
+
+    public GestureMsg takeFirstMsg(string name)
+    {
+        Queue<GestureMsg> selected = name switch
+        {
+            "atkHand" => atkHandQueue,
+            "defHand" => defHandQueue,
+            "defSword" => defSwordQueue,
+            _ => null
+        };
+
+        if (selected != null && selected.Count > 0)
+        {
+            return selected.Dequeue();
+        }
+        return null;
+    }
 
     protected override void HandleMqtt(string topic, string payload)
     {
@@ -18,25 +43,22 @@ public class GestureListener : BaseListener
             return;
         }
 
+        GestureMsg inputMsg = JsonUtility.FromJson<GestureMsg>(payload);
+
         if (topic.StartsWith("fruitninja/attacker/gesture/detected"))
         {
-            atkHandGesture = payload;
-            defSwordGesture = null;
-            defHandGesture = null;
+            atkHandQueue.Enqueue(inputMsg);
 }
 
         if (topic.StartsWith("fruitninja/defender/sword/gesture/detected"))
         {
-            defSwordGesture = payload;
-            atkHandGesture = null;
-            defHandGesture = null;
+            defSwordQueue.Enqueue(inputMsg);
         }
 
         if (topic.StartsWith("fruitninja/defender/hand/gesture/detected"))
         {
-            defHandGesture = payload;
-            defSwordGesture = null;
-            atkHandGesture = null;
+            defHandQueue.Enqueue(inputMsg);
         }
+        //Debug.Log("Def Sword Gesture is: " + "\n" + takeFirstMsg("defSword").gesture);
     }
 }

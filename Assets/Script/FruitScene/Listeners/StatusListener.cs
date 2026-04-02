@@ -5,12 +5,18 @@ using UnityEngine;
 
 public class StatusListener : BaseListener
 {
+    public bool attackerOnline;
+    public bool swordOnline;
+    public bool handOnline;
+    public bool playersOnline;
 
     public bool attackerActive;
     public bool defenderActive;
 
     private bool swordActive;
     private bool handActive;
+
+    private List<string> validMsgs = new List<string> { "online", "offline", "paused", "resumed" };
 
     protected override void HandleMqtt(string topic, string payload)
     {
@@ -20,50 +26,32 @@ public class StatusListener : BaseListener
         {
             return;
         }
+
         if (topic.StartsWith("fruitninja/attacker/status"))
         {
-            if (payload == "online")
-            {
-                attackerActive = true;
-            }
-            else if (payload == "offline")
-            {
-                attackerActive = false;
-            }
+            attackerOnline = validMsgs.Contains(payload) && payload != "offline" ? true : false;
         }
 
-        if (topic.StartsWith("fruitninja/defender/sword/status"))
+        if (topic.StartsWith("fruitninja/defender/sword/status"))//only sword send paused/resumed
         {
-            if (payload == "online")
-            {
-                swordActive = true;
-            }
-            else if (payload == "offline")
+            swordOnline = validMsgs.Contains(payload) && payload != "offline" ? true : false;
+
+            if (swordActive == false && payload == "paused")
             {
                 swordActive = false;
+            }
+            else if (swordActive == false && payload == "resumed")
+            {
+                swordActive = true;
             }
         }
 
         if (topic.StartsWith("fruitninja/defender/hand/status"))
         {
-            if (payload == "online")
-            {
-                handActive = true;
-            }
-            else if (payload == "offline")
-            {
-                handActive = false;
-            }
+            handOnline = validMsgs.Contains(payload) && payload != "offline" ? true : false;
         }
 
-        if (swordActive && handActive)
-        {
-            defenderActive = true;
-        }
-        else
-        {
-            defenderActive = false;
-        }
-
+        defenderActive = swordActive && handActive;
+        playersOnline = attackerOnline && swordOnline && handOnline;
     }
 }
