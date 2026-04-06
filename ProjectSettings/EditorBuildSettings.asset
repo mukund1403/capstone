@@ -14,7 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FruitScene.unity
     guid: 9db714fb949d512449271b944a5b6823
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/FruitTutorialScene.unity
     guid: 68b41ec29273cf84184a3e4c9653be2e
   - enabled: 0

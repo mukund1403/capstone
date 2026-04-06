@@ -26,10 +26,10 @@ public class GameLogic : MonoBehaviour
     {
         Time.timeScale = 0.3f;
         Time.fixedDeltaTime = 0.02f;
-        //if (FindObjectOfType<StatusListener>() != null)
-        //{
-        //    PauseGame();
-        //}
+        if (FindObjectOfType<StatusListener>() != null)
+        {
+            PauseGame();
+        }
     }
 
     public void ResetScore()
@@ -57,6 +57,10 @@ public class GameLogic : MonoBehaviour
     {
         gamePlayCanvas.SetActive(false);
         gameOverCanvas.SetActive(true);
+        if (tutorialCanvas != null)
+        {
+            tutorialCanvas.SetActive(false);
+        }
     }
 
     public void EnableGameplay()
@@ -82,15 +86,19 @@ public class GameLogic : MonoBehaviour
     {
         ARTrackedImageManager aRTrackedImageManager = GameObject.Find("XR Origin").GetComponent<ARTrackedImageManager>();
 
-        bool attackerActive = FindObjectOfType<StatusListener>().attackerActive;
-        bool defenderActive = FindObjectOfType<StatusListener>().defenderActive;
-        bool playersOnline = FindObjectOfType<StatusListener>().playersOnline;
+        //bool attackerActive = FindObjectOfType<StatusListener>().attackerActive;
+        //bool defenderActive = FindObjectOfType<StatusListener>().defenderActive;
+        //bool playersOnline = FindObjectOfType<StatusListener>().playersOnline;
+        bool gamePaused = FindObjectOfType<StatusListener>().gamePaused;
+        bool attackerActive = true;
+        bool defenderActive = true;
+        bool playersOnline = true;
 
-        if (!playersOnline || !attackerActive || !defenderActive)
+        if (!playersOnline || !attackerActive || !defenderActive || gamePaused)
         {
             Time.timeScale = 0;
             pauseText.SetActive(true);
-            pauseText.GetComponent<TMP_Text>().text = playersOnline ? "Game Paused" : "Player's Connection Lost";
+            pauseText.GetComponent<TMP_Text>().text = gamePaused ? "Game Paused" : "Player's Connection Lost";
             gamePlayCanvas.SetActive(false);
             aRTrackedImageManager.enabled = false;
         }

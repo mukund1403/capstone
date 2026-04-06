@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class DialogManager : MonoBehaviour
@@ -10,44 +11,97 @@ public class DialogManager : MonoBehaviour
     [TextArea]
     [SerializeField] private List<string> dialogueLines;
 
-    private int currentIndex = 0;
-    private bool isDialogueActive = true;
+    private int currentIndex;
+    private bool isDialogueActive;
+    private List<int> indexPaused = new List<int> { 3, 4, 5, 8, 11, 12, 16, 18 };
 
-    void Start()
+    private bool defenderSet;
+    private bool attackerSet;
+   
+    void Awake()
     {
+        currentIndex = 0;
+        isDialogueActive = true;
+        defenderSet = false;
+        attackerSet = false;
         if (dialogueLines.Count > 0)
         {
             dialogueText.text = dialogueLines[currentIndex];
         }
+        PlayerStatusManager.Instance.SetIdentity(null);
     }
 
     void Update()
     {
-        // Detect screen tap (mobile) OR mouse click (editor)
-        if (isDialogueActive && (Input.GetMouseButtonDown(0) || Input.touchCount > 0))
+        if (SceneManager.GetActiveScene().name != "FruitTutorialScene")
         {
-            NextDialogue();
+            return;
+        }
+        if (!indexPaused.Contains(currentIndex))
+        {
+            SetActive(true);
+        }
+        if (currentIndex == 2 && !defenderSet)
+        {
+            PlayerStatusManager.Instance.SetIdentity("Defender");
+            defenderSet = true;
+        }
+        if (currentIndex == 10)
+        {
+            FruitSpawnTut spawn = FindObjectOfType<FruitSpawnTut>();
+            spawn.SetShapeIncluded(true);
+        }
+        if (currentIndex == 14)
+        {
+            FruitSpawnTut spawn = FindObjectOfType<FruitSpawnTut>();
+            spawn.SetBombIncluded(true);
+        }
+        if (currentIndex == 15)
+        {
+            FruitSpawnTut spawn = FindObjectOfType<FruitSpawnTut>();
+            spawn.ResetSpawnSetting();
+            PlayerStatusManager.Instance.SetIdentity(null);
+            PrefabCreatorImage creator = FindObjectOfType<PrefabCreatorImage>();
+            if (creator != null)
+            {
+                creator.RemovePrefabs();
+            }
+        }
+        if (currentIndex == 16 && !attackerSet)
+        {
+            PlayerStatusManager.Instance.SetIdentity("Attacker");
+            attackerSet = true;
         }
     }
 
-    void NextDialogue()
+    public void SwitchDialog(int index)
     {
-        currentIndex++;
-
-        if (currentIndex < dialogueLines.Count)
-        {
-            dialogueText.text = dialogueLines[currentIndex];
-        }
-        else
-        {
-            EndDialogue();
-        }
+        currentIndex = index;
+        dialogueText.text = dialogueLines[currentIndex];
+        SetActive(false);
     }
 
-    void EndDialogue()
+    public void SetActive(bool input)
     {
-        isDialogueActive = false;
-        dialogueText.text = ""; // or keep last line
-        Debug.Log("Dialogue finished");
+        isDialogueActive = input;
+    }
+
+    public int getCurrentIndex()
+    {
+        return currentIndex;
+    }
+
+    public void NextDialogue()
+    {
+        if (isDialogueActive)
+        {
+            currentIndex++;
+
+            if (currentIndex < dialogueLines.Count)
+            {
+                dialogueText.text = dialogueLines[currentIndex];
+            }
+            SetActive(false);
+        }
     }
 }

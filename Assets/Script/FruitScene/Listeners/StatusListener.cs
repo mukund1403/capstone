@@ -9,6 +9,7 @@ public class StatusListener : BaseListener
     public bool swordOnline;
     public bool handOnline;
     public bool playersOnline;
+    public bool gamePaused;
 
     public bool attackerActive;
     public bool defenderActive;

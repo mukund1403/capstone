@@ -6,7 +6,7 @@ using static GestureListener;
 using Unity.VisualScripting;
 
 // triggers different hand prefab's actions according to player's role
-public class HandLogic : MonoBehaviour
+public class HandLogicTut : MonoBehaviour
 {
     [SerializeField] private TMP_Text text;
     private int clickCount = 0;
@@ -43,12 +43,8 @@ public class HandLogic : MonoBehaviour
 
     public void ApplyHandAction()
     {
-        clickCount++;
-        if (clickCount > 3)
-        {
-            clickCount = 0;
-        }
         string playerIdentity = PlayerStatusManager.Instance.GetIdentity();
+        SetMessage("button clicked, identity is: " + playerIdentity);
         if (playerIdentity == "Attacker")
         {
             //MqttApi.DummyGesture("throw", "atkHand");
@@ -60,6 +56,7 @@ public class HandLogic : MonoBehaviour
             DefendHandSkillRelease();
         }
         MqttApi.BuzzSuccess();
+        //Debug.Log($"ApplyHandAction called on: {gameObject.name} in scene: {UnityEngine.SceneManagement.SceneManager.GetActiveScene().name}");
     }
 
     private void AttackHandRelease()
@@ -71,7 +68,7 @@ public class HandLogic : MonoBehaviour
             controller.Release();
             bool isNull = controller.heldObject == null;
             SetMessage("hand released. is held object null: " + isNull);
-            UpdateTutDialog(20);
+            UpdateTutDialog();
         }
         else
         {
@@ -87,7 +84,7 @@ public class HandLogic : MonoBehaviour
             DefenderHandController controller = hand.GetComponent<DefenderHandController>();
             controller.ApplyFreezeSkill();
             SetMessage("skill released.");
-            UpdateTutDialog(9);
+            UpdateTutDialog();
         }
         else
         {
@@ -95,12 +92,19 @@ public class HandLogic : MonoBehaviour
         }
     }
 
-    private void UpdateTutDialog(int index)
+    private void UpdateTutDialog()
     {
         DialogManager dialogManager = FindObjectOfType<DialogManager>();
-        if (dialogManager != null)
+        int currentIndex = dialogManager.getCurrentIndex();
+        int nextIndex;
+        if (dialogManager == null)
         {
-            dialogManager.SwitchDialog(index);
+            return;
+        }
+        if (currentIndex == 8 || currentIndex == 18)
+        {
+            nextIndex = currentIndex + 1;
+            dialogManager.SwitchDialog(nextIndex);
         }
     }
 }

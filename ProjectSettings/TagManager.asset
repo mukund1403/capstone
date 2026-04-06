@@ -11,6 +11,7 @@ TagManager:
   - Defender AR Spawn
   - Orientation Data
   - Safe Object
+  - Defender AR Spawn Katana
   layers:
   - Default
   - TransparentFX

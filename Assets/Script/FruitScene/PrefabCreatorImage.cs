@@ -25,6 +25,7 @@ public class PrefabCreatorImage : MonoBehaviour
     private GameObject[] listToSpawn;
     private const int maxNumber = 5;
     private GameObject[] itemsToPick = new GameObject[maxNumber];
+    private bool atkBombSpawned;
 
     private void Awake()
     {
@@ -33,6 +34,7 @@ public class PrefabCreatorImage : MonoBehaviour
         {
             bombPrefab
         };
+        atkBombSpawned = false;
     }
 
     private void OnEnable()
@@ -48,6 +50,21 @@ public class PrefabCreatorImage : MonoBehaviour
         if (aRTrackedImageManager != null)
         {
             aRTrackedImageManager.trackedImagesChanged -= OnImageChanged;
+        }
+    }
+
+    public void RemovePrefabs()
+    {
+        // Destroy existing spawned objects
+        if (katana != null)
+        {
+            Destroy(katana);
+            katana = null;
+        }
+        if (hand != null)
+        {
+            Destroy(hand);
+            hand = null;
         }
     }
 
@@ -93,6 +110,34 @@ public class PrefabCreatorImage : MonoBehaviour
             }
         }
         usedPositions.Clear();
+        atkBombSpawned = true;
+    }
+
+    private void SpawnForImage(ARTrackedImage image, string identity)
+    {
+        // create katana for defender role
+        if (image.referenceImage.name == "WaterDragon" && identity == "Defender")
+        {
+            katana = Instantiate(katanaPrefab, image.transform);
+            InitializeContent(katana);
+        }
+        if (image.referenceImage.name == "Hand" && (identity == "Defender" || identity == "Attacker"))
+        {
+            hand = Instantiate(handPrefab, image.transform);
+            InitializeContent(hand);
+            if (identity == "Attacker")
+            {
+                hand.tag = "Attacker AR Spawn";
+            }
+            else if (identity == "Defender")
+            {
+                hand.tag = "Defender AR Spawn";
+            }
+        }
+        if (image.referenceImage.name == "NUSLogo" && identity == "Attacker" && !atkBombSpawned)
+        {
+            SpawnAroundImage(image);
+        }
     }
 
     private void OnImageChanged(ARTrackedImagesChangedEventArgs obj)
@@ -100,35 +145,44 @@ public class PrefabCreatorImage : MonoBehaviour
         string playerIdentity = PlayerStatusManager.Instance.GetIdentity();
         foreach (ARTrackedImage image in obj.added)
         {
-            // create katana for defender role
-            if (image.referenceImage.name == "WaterDragon" && playerIdentity == "Defender")
-            {
-                katana = Instantiate(katanaPrefab, image.transform);
-                InitializeContent(katana);
-            }
-            if (image.referenceImage.name == "Hand")
-            {
-                hand = Instantiate(handPrefab, image.transform);
-                InitializeContent(hand);
-                if (playerIdentity == "Attacker")
-                {
-                    hand.tag = "Attacker AR Spawn";
-                }
-                else if (playerIdentity == "Defender")
-                {
-                    hand.tag = "Defender AR Spawn";
-                }
-            }
-            if (image.referenceImage.name == "NUSLogo" && playerIdentity == "Attacker")
-            {
-                SpawnAroundImage(image);
-            }
+            //// create katana for defender role
+            //if (image.referenceImage.name == "WaterDragon" && playerIdentity == "Defender")
+            //{
+            //    katana = Instantiate(katanaPrefab, image.transform);
+            //    InitializeContent(katana);
+            //}
+            //if (image.referenceImage.name == "Hand")
+            //{
+            //    hand = Instantiate(handPrefab, image.transform);
+            //    InitializeContent(hand);
+            //    if (playerIdentity == "Attacker")
+            //    {
+            //        hand.tag = "Attacker AR Spawn";
+            //    }
+            //    else if (playerIdentity == "Defender")
+            //    {
+            //        hand.tag = "Defender AR Spawn";
+            //    }
+            //}
+            //if (image.referenceImage.name == "NUSLogo" && playerIdentity == "Attacker")
+            //{
+            //    SpawnAroundImage(image);
+            //}
+            SpawnForImage(image, playerIdentity);
         }
         foreach (ARTrackedImage image in obj.updated)
         {
-            if (hand == null)
+            if (image.referenceImage.name == "WaterDragon" && katana == null)
             {
-                return;
+                SpawnForImage(image, playerIdentity);
+            }
+            if (image.referenceImage.name == "Hand" && hand == null)
+            {
+                SpawnForImage(image, playerIdentity);
+            }
+            if (image.referenceImage.name == "NUSLogo")
+            {
+                SpawnForImage(image, playerIdentity);
             }
             if (image.referenceImage.name == "WaterDragon" && katana != null)
             {

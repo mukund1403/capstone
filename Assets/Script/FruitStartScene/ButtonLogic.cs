@@ -9,12 +9,32 @@ public class ButtonLogic : MonoBehaviour
     [SerializeField] private GameObject selectRoleMenu;
     [SerializeField] private GameObject gamePlayCanvas;
     [SerializeField] private GameObject gameOverCanvas;
+    [SerializeField] private GameObject tutorialCanvas;
     private bool isLoadingScene = false;
 
     public void LoadGameScene(string sceneName)
     {
         if (!helpMenu.activeSelf && !isLoadingScene)
         {
+            SceneManager.LoadScene(sceneName);
+            isLoadingScene = true;
+        }
+    }
+
+    public void AtkLoadGameScene(string sceneName)
+    {
+        if (!helpMenu.activeSelf && !isLoadingScene)
+        {
+            PlayerStatusManager.Instance.SetIdentity("Attacker");
+            SceneManager.LoadScene(sceneName);
+            isLoadingScene = true;
+        }
+    }
+    public void DefLoadGameScene(string sceneName)
+    {
+        if (!helpMenu.activeSelf && !isLoadingScene)
+        {
+            PlayerStatusManager.Instance.SetIdentity("Defender");
             SceneManager.LoadScene(sceneName);
             isLoadingScene = true;
         }
@@ -66,6 +86,10 @@ public class ButtonLogic : MonoBehaviour
 
     public void RestartGame()
     {
+        if (tutorialCanvas != null)
+        {
+            tutorialCanvas.SetActive(true);
+        }
         gamePlayCanvas.SetActive(true);
         gameOverCanvas.SetActive(false);
         GameLogic logic = GameObject.Find("GameLogic").GetComponent<GameLogic>();

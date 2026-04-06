@@ -37,6 +37,7 @@ public class AttackerHandController : MonoBehaviour
             //MqttPubTest();
             Grab(collision.gameObject);
             canHold = false;
+            UpdateTutDialog();
         }
     }
 
@@ -96,5 +97,21 @@ public class AttackerHandController : MonoBehaviour
     private void MqttPubTest()
     {
         MqttApi.PickCollisionDetected();
+    }
+
+    private void UpdateTutDialog()
+    {
+        DialogManager dialogManager = FindObjectOfType<DialogManager>();
+        int currentIndex = dialogManager.getCurrentIndex();
+        int nextIndex;
+        if (dialogManager == null)
+        {
+            return;
+        }
+        if (currentIndex == 16)
+        {
+            nextIndex = currentIndex + 1;
+            dialogManager.SwitchDialog(nextIndex);
+        }
     }
 }

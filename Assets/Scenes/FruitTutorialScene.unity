@@ -541,7 +541,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gamePlayCanvas: {fileID: 391458974}
   gameOverCanvas: {fileID: 25600698}
-  tutorialCanvas: {fileID: 0}
+  tutorialCanvas: {fileID: 984673045}
   pauseText: {fileID: 1662519554}
   isGameOver: 0
   score: 0
@@ -1188,7 +1188,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 695907442}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1818705789}
+        m_TargetAssemblyTypeName: DialogManager, Assembly-CSharp
+        m_MethodName: NextDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &695907442
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1710,8 +1722,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1954967875}
-        m_TargetAssemblyTypeName: FruitSpawn, Assembly-CSharp
+      - m_Target: {fileID: 1954967877}
+        m_TargetAssemblyTypeName: FruitSpawnTut, Assembly-CSharp
         m_MethodName: SetImageOnClick
         m_Mode: 1
         m_Arguments:
@@ -2261,7 +2273,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2.5307, y: -423}
+  m_AnchoredPosition: {x: -2.5307, y: -223}
   m_SizeDelta: {x: 1212.3, y: 129.4127}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1370655139
@@ -2469,6 +2481,7 @@ MonoBehaviour:
   selectRoleMenu: {fileID: 0}
   gamePlayCanvas: {fileID: 391458974}
   gameOverCanvas: {fileID: 25600698}
+  tutorialCanvas: {fileID: 984673045}
 --- !u!4 &1428267656
 Transform:
   m_ObjectHideFlags: 0
@@ -3028,7 +3041,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1689028535}
-  - component: {fileID: 1689028534}
+  - component: {fileID: 1689028536}
   m_Layer: 0
   m_Name: HandLogic
   m_TagString: Untagged
@@ -3036,19 +3049,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1689028534
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1689028533}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b6b47fc2875e3c84fb80a7deff36d0a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  text: {fileID: 987467746}
 --- !u!4 &1689028535
 Transform:
   m_ObjectHideFlags: 0
@@ -3065,6 +3065,19 @@ Transform:
   - {fileID: 2130221920}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1689028536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1689028533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 033861b36c690134e96b74fdc99115c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 987467746}
 --- !u!1 &1796869912
 GameObject:
   m_ObjectHideFlags: 0
@@ -3148,8 +3161,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1689028534}
-        m_TargetAssemblyTypeName: HandLogic, Assembly-CSharp
+      - m_Target: {fileID: 1689028536}
+        m_TargetAssemblyTypeName: HandLogicTut, Assembly-CSharp
         m_MethodName: ApplyHandAction
         m_Mode: 1
         m_Arguments:
@@ -3263,15 +3276,17 @@ MonoBehaviour:
   - Remember to have your hand's marker visible in camera as well. Do you see a hand
     in screen?
   - Try your hand's special skill!
+  - Nice job!
   - You may see special fruits with a shape sticked to them. Slice the fruit in the
     shape as indicated!
   - You will earn points with special splash. If you fail to slice in correct way,
     you will not earn points!
-  - Avoid bombs at all cost!
+  - Wrong slice, try another one!
+  - Nice job!
+  - Remember to avoid bombs at all cost!
   - Now let's check what attacker has to do.
   - Approach the NUS Logo again, for attacker bombs will automatically spawn at where
-    the logo is.
-  - Have your hand shown in camera, and approach where the bomb is.
+    the logo is. Have your hand shown in camera, and approach where the bomb is.
   - Great, you've grabbed a bomb!
   - Now, aim at the marker's position, make a "release" move!
   - Do you see your bomb flying in the right direction?
@@ -3540,8 +3555,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1954967875}
-        m_TargetAssemblyTypeName: FruitSpawn, Assembly-CSharp
+      - m_Target: {fileID: 1954967877}
+        m_TargetAssemblyTypeName: FruitSpawnTut, Assembly-CSharp
         m_MethodName: SetSpawnOnClick
         m_Mode: 1
         m_Arguments:
@@ -3812,7 +3827,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1954967876}
-  - component: {fileID: 1954967875}
+  - component: {fileID: 1954967877}
   m_Layer: 0
   m_Name: SpawnFruit
   m_TagString: Untagged
@@ -3820,28 +3835,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1954967875
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1954967874}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ccb870b85617c04fb28d2daf5d32561, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spawnRate: 0.6
-  origin: {fileID: 1831129359}
-  lemonPrefab: {fileID: 1638444836145330, guid: 031f4f4b1f7d8b7489da0919e18ceac3, type: 3}
-  pearPrefab: {fileID: 1763817136346132, guid: 0f3575c567ebe8241a4a6ad511fd7017, type: 3}
-  strawberryPrefab: {fileID: 1724972533694550, guid: 63e523ab5d9ce7348b431ae1d689a54d, type: 3}
-  applePrefab: {fileID: 1829371231341652, guid: 426b44a7575f71e479fab4f4e8431989, type: 3}
-  watermelonPrefab: {fileID: 1125202155953082, guid: 573bb482e4baeec4386587db7cc07515, type: 3}
-  peachPrefab: {fileID: 1541859410316496, guid: 4fe5a7bcbee1651418ea031a87ff53e4, type: 3}
-  cherryPrefab: {fileID: 1802840387486672, guid: 8f38e57a49b1c844081ad6bb3c553f13, type: 3}
-  bombPrefab: {fileID: 4244544703068471477, guid: 3b5a28db09a60f0479da5f8cdf8d7039, type: 3}
 --- !u!4 &1954967876
 Transform:
   m_ObjectHideFlags: 0
@@ -3857,6 +3850,29 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1954967877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1954967874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1129125300befb45bce000b3831c478, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnRate: 0.6
+  origin: {fileID: 1831129359}
+  dialogManager: {fileID: 1818705789}
+  lemonPrefab: {fileID: 1638444836145330, guid: 031f4f4b1f7d8b7489da0919e18ceac3, type: 3}
+  pearPrefab: {fileID: 1763817136346132, guid: 0f3575c567ebe8241a4a6ad511fd7017, type: 3}
+  strawberryPrefab: {fileID: 1724972533694550, guid: 63e523ab5d9ce7348b431ae1d689a54d, type: 3}
+  applePrefab: {fileID: 1829371231341652, guid: 426b44a7575f71e479fab4f4e8431989, type: 3}
+  watermelonPrefab: {fileID: 1125202155953082, guid: 573bb482e4baeec4386587db7cc07515, type: 3}
+  peachPrefab: {fileID: 1541859410316496, guid: 4fe5a7bcbee1651418ea031a87ff53e4, type: 3}
+  cherryPrefab: {fileID: 1802840387486672, guid: 8f38e57a49b1c844081ad6bb3c553f13, type: 3}
+  bombPrefab: {fileID: 4244544703068471477, guid: 3b5a28db09a60f0479da5f8cdf8d7039, type: 3}
 --- !u!1 &2130221919
 GameObject:
   m_ObjectHideFlags: 0

@@ -15,6 +15,8 @@ public class CollideManager : MonoBehaviour
     [SerializeField] private GameObject caretPrefab;
     [SerializeField] private GameObject infPrefab;
     [SerializeField] private GameObject cirPrefab;
+
+    private DialogManager dialogManager;
     private GameLogic logic;
     private GestureListener gestureListener;
 
@@ -26,13 +28,34 @@ public class CollideManager : MonoBehaviour
     private GameObject infObj;
     private GameObject cirObj;
 
+    private int sliceCount;
+
     void Start()
     {
         logic = GameObject.Find("GameLogic").GetComponent<GameLogic>();
+        dialogManager = FindObjectOfType<DialogManager>();
+    }
+
+    private void Awake()
+    {
+        sliceCount = 0;
     }
 
     public void AddSpecialAnimation(string type, Vector3 pos)
     {
+        if (dialogManager != null && 
+           (dialogManager.getCurrentIndex() == 11 || 
+           dialogManager.getCurrentIndex() == 12))
+        {
+            sliceCount++;
+            int dialogNum = type == "wrong" ? 12 : 13;
+            dialogManager.SwitchDialog(dialogNum);
+            if (sliceCount >= 3)
+            {
+                dialogManager.SwitchDialog(14);
+            }
+        }
+
         Vector3 offset = Camera.main.transform.forward * 0.02f;
         if (type == "wrong")
         {
@@ -162,7 +185,10 @@ public class CollideManager : MonoBehaviour
                     MqttApi.BuzzFailure();
                 }
             }
-
+            if (dialogManager != null && dialogManager.getCurrentIndex() == 5)
+            {
+                dialogManager.SwitchDialog(6);
+            }
             logic.AddScore();
             Destroy(collision.gameObject);
         }

@@ -81,7 +81,15 @@ public class DefenderHandController : MonoBehaviour
         }
 
         FruitSpawn spawn = GameObject.Find("SpawnFruit").GetComponent<FruitSpawn>();
-        spawn.SetFrozen(true);
+        FruitSpawnTut spawnTut = GameObject.Find("SpawnFruit").GetComponent<FruitSpawnTut>();
+        if (spawn != null && spawnTut == null)
+        {
+            spawn.SetFrozen(true);
+        }
+        else if (spawnTut != null && spawn == null)
+        {
+            spawnTut.SetFrozen(true);
+        }
 
         yield return new WaitForSecondsRealtime(duration);
 
@@ -97,7 +105,14 @@ public class DefenderHandController : MonoBehaviour
             }
         }
 
-        spawn.SetFrozen(false);
+        if (spawn != null && spawnTut == null)
+        {
+            spawn.SetFrozen(false);
+        }
+        else if (spawnTut != null && spawn == null)
+        {
+            spawnTut.SetFrozen(false);
+        }
 
         animator.SetBool("isFreezeSkill", false);
         animationOngoing = false;
