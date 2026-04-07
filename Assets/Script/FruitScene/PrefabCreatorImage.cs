@@ -26,6 +26,7 @@ public class PrefabCreatorImage : MonoBehaviour
     private const int maxNumber = 5;
     private GameObject[] itemsToPick = new GameObject[maxNumber];
     private bool atkBombSpawned;
+    private ARTrackedImage currentBombImage;
 
     private void Awake()
     {
@@ -71,6 +72,14 @@ public class PrefabCreatorImage : MonoBehaviour
     private void SetMessage(string message)
     {
         text.text = message;
+    }
+
+    public void SpawnBombByButton()
+    {
+        if (currentBombImage.referenceImage.name == "NUSLogo" && currentBombImage.trackingState == TrackingState.Tracking)
+        {
+            SpawnAroundImage(currentBombImage);
+        }
     }
 
     // spawn multiple prefabs randomly in an area centred around the tracked image's location
@@ -134,9 +143,13 @@ public class PrefabCreatorImage : MonoBehaviour
                 hand.tag = "Defender AR Spawn";
             }
         }
-        if (image.referenceImage.name == "NUSLogo" && identity == "Attacker" && !atkBombSpawned)
+        if (image.referenceImage.name == "NUSLogo" && identity == "Attacker")
         {
-            SpawnAroundImage(image);
+            currentBombImage = image;
+            if (!atkBombSpawned)
+            {
+                SpawnAroundImage(image);
+            }
         }
     }
 

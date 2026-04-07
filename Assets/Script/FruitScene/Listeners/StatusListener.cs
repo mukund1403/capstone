@@ -37,22 +37,20 @@ public class StatusListener : BaseListener
         {
             swordOnline = validMsgs.Contains(payload) && payload != "offline" ? true : false;
 
-            if (swordActive == false && payload == "paused")
+            if (payload == "paused")
             {
-                swordActive = false;
+                gamePaused = true;
             }
-            else if (swordActive == false && payload == "resumed")
+            if (gamePaused && payload == "resumed")
             {
-                swordActive = true;
+                gamePaused = false;
+            }
+
+            if (topic.StartsWith("fruitninja/defender/hand/status"))
+            {
+                handOnline = validMsgs.Contains(payload) && payload != "offline" ? true : false;
             }
         }
-
-        if (topic.StartsWith("fruitninja/defender/hand/status"))
-        {
-            handOnline = validMsgs.Contains(payload) && payload != "offline" ? true : false;
-        }
-
-        defenderActive = swordActive && handActive;
-        playersOnline = attackerOnline && swordOnline && handOnline;
+        playersOnline = handOnline && swordOnline && attackerOnline;
     }
 }

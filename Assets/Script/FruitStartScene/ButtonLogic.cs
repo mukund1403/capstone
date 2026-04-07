@@ -7,6 +7,7 @@ public class ButtonLogic : MonoBehaviour
 {
     [SerializeField] private GameObject helpMenu;
     [SerializeField] private GameObject selectRoleMenu;
+    [SerializeField] private GameObject selectModeMenu;
     [SerializeField] private GameObject gamePlayCanvas;
     [SerializeField] private GameObject gameOverCanvas;
     [SerializeField] private GameObject tutorialCanvas;
@@ -21,21 +22,12 @@ public class ButtonLogic : MonoBehaviour
         }
     }
 
-    public void AtkLoadGameScene(string sceneName)
+    public void LoadFruitSceneWMode(bool isGodMode)
     {
         if (!helpMenu.activeSelf && !isLoadingScene)
         {
-            PlayerStatusManager.Instance.SetIdentity("Attacker");
-            SceneManager.LoadScene(sceneName);
-            isLoadingScene = true;
-        }
-    }
-    public void DefLoadGameScene(string sceneName)
-    {
-        if (!helpMenu.activeSelf && !isLoadingScene)
-        {
-            PlayerStatusManager.Instance.SetIdentity("Defender");
-            SceneManager.LoadScene(sceneName);
+            PlayerStatusManager.Instance.SetGodMode(isGodMode);
+            SceneManager.LoadScene("FruitScene");
             isLoadingScene = true;
         }
     }
@@ -71,6 +63,24 @@ public class ButtonLogic : MonoBehaviour
         helpMenu.SetActive(false);
     }
 
+    public void AtkOpenSelectMode()
+    {
+        if (!helpMenu.activeSelf && !selectModeMenu.activeSelf)
+        {
+            PlayerStatusManager.Instance.SetIdentity("Attacker");
+            selectModeMenu.SetActive(true);
+        }
+    }
+    public void DefOpenSelectMode()
+    {
+        if (!helpMenu.activeSelf && !selectModeMenu.activeSelf)
+        {
+            PlayerStatusManager.Instance.SetIdentity("Defender");
+            selectModeMenu.SetActive(true);
+        }
+    }
+
+
     public void OpenSelectRole()
     {
         if (!helpMenu.activeSelf && !selectRoleMenu.activeSelf)
@@ -79,7 +89,7 @@ public class ButtonLogic : MonoBehaviour
         }
     }
 
-    public void CloseSelectRole()
+    public void CloseSelectMenu()
     {
         selectRoleMenu.SetActive(false);
     }

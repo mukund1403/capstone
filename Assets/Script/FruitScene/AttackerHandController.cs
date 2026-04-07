@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEngine.UI.Image;
 
 // Defines Hand Prefab's list of actions as an Attacker
 public class AttackerHandController : MonoBehaviour
@@ -75,6 +76,7 @@ public class AttackerHandController : MonoBehaviour
 
     public void Release()
     {
+        bool isGodMode = PlayerStatusManager.Instance.GetIfGodMode();
         if (heldObject == null)
         {
             return;
@@ -92,6 +94,19 @@ public class AttackerHandController : MonoBehaviour
         // wait for one second to prevent re-grabbing from collision
         StartCoroutine(WaitOneSecond());
     }
+
+    //private void ReleaseMultiple(GameObject obj, int num)
+    //{
+    //    Vector3 pos = obj.transform.position;
+    //    Quaternion rot = obj.transform.rotation;
+
+    //    for (int i = 0; i < num; i++)
+    //    {
+    //        GameObject clone = Instantiate(obj, pos, rot);
+    //        Rigidbody rb = clone.GetComponent<Rigidbody>();
+    //        applyPhysics(rb);
+    //    }
+    //}
 
     // Simulating topic publishing using MQTT
     private void MqttPubTest()

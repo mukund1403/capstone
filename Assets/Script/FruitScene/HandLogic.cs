@@ -51,12 +51,12 @@ public class HandLogic : MonoBehaviour
         string playerIdentity = PlayerStatusManager.Instance.GetIdentity();
         if (playerIdentity == "Attacker")
         {
-            //MqttApi.DummyGesture("throw", "atkHand");
+            MqttApi.DummyGesture("throw", "atkHand");
             AttackHandRelease();
         }
         else if (playerIdentity == "Defender")
         {
-            //MqttApi.DummyGesture("block" ,"defHand");
+            MqttApi.DummyGesture("block" ,"defHand");
             DefendHandSkillRelease();
         }
         MqttApi.BuzzSuccess();

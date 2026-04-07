@@ -11,7 +11,9 @@ public class GameLogic : MonoBehaviour
     [SerializeField] private GameObject gamePlayCanvas;
     [SerializeField] private GameObject gameOverCanvas;
     [SerializeField] private GameObject tutorialCanvas;
+    [SerializeField] private GameObject godModeCanvas;
     [SerializeField] private GameObject pauseText;
+    [SerializeField] private GameObject spawnBombButton;
 
     public bool isGameOver;
     public int score;
@@ -22,6 +24,33 @@ public class GameLogic : MonoBehaviour
         score = 0;
     }
 
+    private void Start()
+    {
+        if (spawnBombButton != null)
+        {
+            if (PlayerStatusManager.Instance.GetIdentity() != "Attacker")
+            {
+                spawnBombButton.SetActive(false);
+            }
+            else
+            {
+                spawnBombButton.SetActive(true);
+            }
+        }
+        if (godModeCanvas == null)
+        {
+            return;
+        }
+        if (PlayerStatusManager.Instance.GetIfGodMode())
+        {
+            godModeCanvas.SetActive(true);
+        }
+        else
+        {
+            godModeCanvas.SetActive(false);
+        }
+    }
+
     void Update()
     {
         Time.timeScale = 0.3f;
@@ -30,26 +59,27 @@ public class GameLogic : MonoBehaviour
         {
             PauseGame();
         }
+        Debug.Log("Timescale is " + Time.timeScale);
     }
 
     public void ResetScore()
     {
         score = 0;
-        TMP_Text text = GameObject.Find("ScoreText").GetComponent<TMP_Text>();
+        TMP_Text text = GameObject.Find("TotalScoreText").GetComponent<TMP_Text>();
         text.text = "Score: " + score.ToString();
     }
 
     public void AddScore()
     {
         score++;
-        TMP_Text text = GameObject.Find("ScoreText").GetComponent<TMP_Text>();
+        TMP_Text text = GameObject.Find("TotalScoreText").GetComponent<TMP_Text>();
         text.text = "Score: " + score.ToString();
     }
 
     public void DeductScore()
     {
         score--;
-        TMP_Text text = GameObject.Find("ScoreText").GetComponent<TMP_Text>();
+        TMP_Text text = GameObject.Find("TotalScoreText").GetComponent<TMP_Text>();
         text.text = "Score: " + score.ToString();
     }
 

@@ -9,6 +9,7 @@ public class PlayerStatusManager : MonoBehaviour
 {
     public static PlayerStatusManager Instance;
     private string playerIdentity;
+    private bool isGodMode;
 
     void Awake()
     {
@@ -44,7 +45,18 @@ public class PlayerStatusManager : MonoBehaviour
 
     void Update()
     {
-        Debug.Log("identity is: " + playerIdentity);
+        Debug.Log("identity is: " + playerIdentity + "\n");
+        Debug.Log("Is God Mode: " + isGodMode);
+    }
+
+    public void SetGodMode(bool input)
+    {
+        isGodMode = input;
+    }
+
+    public bool GetIfGodMode()
+    {
+        return isGodMode;
     }
 
     public void SetIdentity(string role)

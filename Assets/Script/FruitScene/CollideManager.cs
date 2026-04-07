@@ -69,7 +69,7 @@ public class CollideManager : MonoBehaviour
         {
             chkObj = Instantiate(chkPrefab, pos - offset, Quaternion.identity);
         }
-        else if (type == "caret")
+        else if (type == "carat")
         {
             caretObj = Instantiate(caretPrefab, pos - offset, Quaternion.identity);
         }
@@ -85,6 +85,7 @@ public class CollideManager : MonoBehaviour
 
     public void OnCollisionEnter(Collision collision)
     {
+        bool isGodMode = PlayerStatusManager.Instance.GetIfGodMode();
         if (collision.gameObject.CompareTag("Safe Object"))
         {
             Vector3 hitPos = collision.transform.position;
@@ -105,7 +106,7 @@ public class CollideManager : MonoBehaviour
                 // dummy data input simulating AI gesture detection  
                 string tempGesture = Random.value < 0.5f ? "circle" : "none";
                 string gestureDetected = gestureMsg == null ? "none" : gestureMsg.gesture;
-                if (gestureDetected == "circle")
+                if (gestureDetected == "circle" || isGodMode)
                 {
                     AddSpecialAnimation("circle", hitPos);
                     MqttApi.BuzzSuccess();
@@ -122,7 +123,7 @@ public class CollideManager : MonoBehaviour
                 // dummy data input simulating AI gesture detection 
                 string tempGesture = Random.value < 0.5f ? "infinity" : "none";
                 string gestureDetected = gestureMsg == null ? "none" : gestureMsg.gesture;
-                if (gestureDetected == "infinity")
+                if (gestureDetected == "infinity" || isGodMode)
                 {
                     AddSpecialAnimation("infinity", hitPos);
                     MqttApi.BuzzSuccess();
@@ -137,11 +138,11 @@ public class CollideManager : MonoBehaviour
             else if (caret != null)
             {
                 // dummy data input simulating AI gesture detection 
-                string tempGesture = Random.value < 0.5f ? "caret" : "none";
+                string tempGesture = Random.value < 0.5f ? "carat" : "none";
                 string gestureDetected = gestureMsg == null ? "none" : gestureMsg.gesture;
-                if (gestureDetected == "caret")
+                if (gestureDetected == "carat" || isGodMode)
                 {
-                    AddSpecialAnimation("caret", hitPos);
+                    AddSpecialAnimation("carat", hitPos);
                     MqttApi.BuzzSuccess();
                 }
                 else
@@ -156,7 +157,7 @@ public class CollideManager : MonoBehaviour
                 // dummy data input simulating AI gesture detection 
                 string tempGesture = Random.value < 0.5f ? "checkmark" : "none";
                 string gestureDetected = gestureMsg == null ? "none" : gestureMsg.gesture;
-                if (gestureDetected == "checkmark")
+                if (gestureDetected == "checkmark" || isGodMode)
                 {
                     AddSpecialAnimation("checkmark", hitPos);
                     MqttApi.BuzzSuccess();
@@ -173,7 +174,7 @@ public class CollideManager : MonoBehaviour
                 // dummy data input simulating AI gesture detection 
                 string tempGesture = Random.value < 0.5f ? "z" : "none";
                 string gestureDetected = gestureMsg == null ? "none" : gestureMsg.gesture;
-                if (gestureDetected == "z")
+                if (gestureDetected == "z" || isGodMode)
                 {
                     AddSpecialAnimation("z", hitPos);
                     MqttApi.BuzzSuccess();
@@ -189,12 +190,29 @@ public class CollideManager : MonoBehaviour
             {
                 dialogManager.SwitchDialog(6);
             }
+            if (isGodMode)
+            {
+                SetMessage("All slices registered correct");
+            }
             logic.AddScore();
             Destroy(collision.gameObject);
         }
         else
         {
-            logic.GameOver();
+            if (isGodMode)
+            {
+                SetMessage("You cut a bomb");
+            }
+            else
+            {
+                logic.GameOver();
+            }
         }
+    }
+
+    private void SetMessage(string message)
+    {
+        TMP_Text text = GameObject.Find("GameTrackingText").GetComponent<TMP_Text>();
+        text.text = message;
     }
 }
