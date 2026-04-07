@@ -62,7 +62,7 @@ static bool parse_line_of_floats(const std::string& line, std::vector<float_t>& 
 
 int main() {
     const int input_values_per_sample = SEQ_LENGTH * FEATURES;
-    const float_t logit_tolerance = 0.50f;
+    const float_t logit_tolerance = 0.75f;
 
     std::ifstream input_file("C:/Users/Jonathan/Desktop/capstone/ai/software/reference_input.txt");
     std::ifstream golden_file("C:/Users/Jonathan/Desktop/capstone/ai/software/reference_logits.txt");

@@ -16,6 +16,23 @@ INT16_MIN = -32768
 INT16_MAX = 32767
 
 
+def apply_preprocess(x: np.ndarray, preprocess: str) -> np.ndarray:
+    if preprocess == "none":
+        return x.astype(np.float32)
+    if preprocess == "mean_center":
+        return (x - x.mean(axis=0, keepdims=True)).astype(np.float32)
+    if preprocess == "delta":
+        out = np.zeros_like(x, dtype=np.float32)
+        out[1:, :] = x[1:, :] - x[:-1, :]
+        return out
+    if preprocess == "mean_center_delta":
+        centered = x - x.mean(axis=0, keepdims=True)
+        out = np.zeros_like(centered, dtype=np.float32)
+        out[1:, :] = centered[1:, :] - centered[:-1, :]
+        return out
+    raise ValueError(f"Unsupported preprocess mode: {preprocess}")
+
+
 def load_reference_input(path, sample_idx):
     data = np.loadtxt(path, dtype=np.float32)
     if data.ndim == 1:
@@ -48,13 +65,15 @@ def load_norm_stats(path: str | None):
     data = np.load(p, allow_pickle=True).item()
     mean = np.array(data["mean"], dtype=np.float32)
     std = np.array(data["std"], dtype=np.float32)
-    return mean, std
+    preprocess = str(data.get("preprocess", "mean_center"))
+    return mean, std, preprocess
 
 def normalize_input(x: np.ndarray, norm_stats):
     if norm_stats is None:
-        return x
-    mean, std = norm_stats
+        return x.reshape(-1).astype(np.float32)
+    mean, std, preprocess = norm_stats
     x2 = x.reshape(SEQ_LEN, FEATURES)
+    x2 = apply_preprocess(x2, preprocess)
     x2 = (x2 - mean) / std
     return x2.reshape(-1).astype(np.float32)
 
@@ -68,6 +87,12 @@ def main():
     parser.add_argument("--ip", default="cnn_gesture_top_0", help="CNN IP name in overlay")
     parser.add_argument("--ref-logits", default=None, help="Optional reference_logits.txt for comparison")
     parser.add_argument("--norm", default="norm_stats.npy", help="Path to norm_stats.npy (set '' to disable)")
+    parser.add_argument(
+        "--input-format",
+        choices=("normalized", "raw"),
+        default="normalized",
+        help="Use 'normalized' for exported reference_input.txt and 'raw' for sensor windows.",
+    )
     parser.add_argument("--timeout", type=float, default=5.0, help="DMA wait timeout in seconds")
     parser.add_argument("--no-download", action="store_true", help="Use already-loaded bitstream (skip PL reprogramming)")
     parser.add_argument("--no-dma", action="store_true", help="Skip FPGA/DMA and use reference logits only")
@@ -90,9 +115,10 @@ def main():
     ip = getattr(ol, args.ip)
 
     x = load_reference_input(args.input, args.sample)
-    norm_path = args.norm if args.norm != "" else None
-    norm_stats = load_norm_stats(norm_path) if norm_path is not None else None
-    x = normalize_input(x, norm_stats)
+    if args.input_format == "raw":
+        norm_path = args.norm if args.norm != "" else None
+        norm_stats = load_norm_stats(norm_path) if norm_path is not None else None
+        x = normalize_input(x, norm_stats)
 
     x_fixed = np.clip(np.round(x * FIXED_SCALE), INT16_MIN, INT16_MAX).astype(np.int16)
 
