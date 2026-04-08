@@ -3730,8 +3730,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ccb870b85617c04fb28d2daf5d32561, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnRate: 0.6
+  spawnRate: 0.8
   origin: {fileID: 1831129359}
+  splashPrefab: {fileID: 4084783424606406867, guid: 7e1f34d8f1f5929428bb0ed722eaf266, type: 3}
   lemonPrefab: {fileID: 1638444836145330, guid: 031f4f4b1f7d8b7489da0919e18ceac3, type: 3}
   pearPrefab: {fileID: 1763817136346132, guid: 0f3575c567ebe8241a4a6ad511fd7017, type: 3}
   strawberryPrefab: {fileID: 1724972533694550, guid: 63e523ab5d9ce7348b431ae1d689a54d, type: 3}

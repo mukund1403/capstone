@@ -57,7 +57,7 @@ public class MqttService : MonoBehaviour
         var caCert = new X509Certificate2(www.downloadHandler.data);
 
         client = new MqttClient(
-            "172.20.10.2",
+            "192.168.137.2",
             8883,
             true,
             caCert,

@@ -544,6 +544,7 @@ MonoBehaviour:
   tutorialCanvas: {fileID: 984673045}
   godModeCanvas: {fileID: 0}
   pauseText: {fileID: 1662519554}
+  spawnBombButton: {fileID: 0}
   isGameOver: 0
   score: 0
 --- !u!1 &266379340
@@ -3999,7 +4000,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1129125300befb45bce000b3831c478, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnRate: 0.6
+  spawnRate: 0.8
   origin: {fileID: 1831129359}
   dialogManager: {fileID: 1818705789}
   lemonPrefab: {fileID: 1638444836145330, guid: 031f4f4b1f7d8b7489da0919e18ceac3, type: 3}

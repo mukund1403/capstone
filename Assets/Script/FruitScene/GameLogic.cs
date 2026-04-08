@@ -53,8 +53,8 @@ public class GameLogic : MonoBehaviour
 
     void Update()
     {
-        Time.timeScale = 0.3f;
-        Time.fixedDeltaTime = 0.02f;
+        Time.timeScale = 0.1f;
+        Time.fixedDeltaTime = 0.055f * Time.timeScale;
         if (FindObjectOfType<StatusListener>() != null)
         {
             PauseGame();
@@ -134,7 +134,7 @@ public class GameLogic : MonoBehaviour
         }
         else
         {
-            Time.timeScale = 0.3f;
+            Time.timeScale = 0.1f;
             pauseText.SetActive(false);
             gamePlayCanvas.SetActive(true);
             aRTrackedImageManager.enabled = true;

@@ -101,91 +101,91 @@ public class CollideManager : MonoBehaviour
 
             GestureMsg gestureMsg = FindObjectOfType<GestureListener>().takeFirstMsg("defSword");
 
-            if (circle != null)
-            {
-                // dummy data input simulating AI gesture detection  
-                string tempGesture = Random.value < 0.5f ? "circle" : "none";
-                string gestureDetected = gestureMsg == null ? "none" : gestureMsg.gesture;
-                if (gestureDetected == "circle" || isGodMode)
-                {
-                    AddSpecialAnimation("circle", hitPos);
-                    MqttApi.BuzzSuccess();
-                }
-                else
-                {
-                    AddSpecialAnimation("wrong", hitPos);
-                    logic.DeductScore();
-                    MqttApi.BuzzFailure();
-                }
-            }
-            else if (infinity != null)
-            {
-                // dummy data input simulating AI gesture detection 
-                string tempGesture = Random.value < 0.5f ? "infinity" : "none";
-                string gestureDetected = gestureMsg == null ? "none" : gestureMsg.gesture;
-                if (gestureDetected == "infinity" || isGodMode)
-                {
-                    AddSpecialAnimation("infinity", hitPos);
-                    MqttApi.BuzzSuccess();
-                }
-                else
-                {
-                    AddSpecialAnimation("wrong", hitPos);
-                    logic.DeductScore();
-                    MqttApi.BuzzFailure();
-                }
-            }
-            else if (caret != null)
-            {
-                // dummy data input simulating AI gesture detection 
-                string tempGesture = Random.value < 0.5f ? "carat" : "none";
-                string gestureDetected = gestureMsg == null ? "none" : gestureMsg.gesture;
-                if (gestureDetected == "carat" || isGodMode)
-                {
-                    AddSpecialAnimation("carat", hitPos);
-                    MqttApi.BuzzSuccess();
-                }
-                else
-                {
-                    AddSpecialAnimation("wrong", hitPos);
-                    logic.DeductScore();
-                    MqttApi.BuzzFailure();
-                }
-            }
-            else if (checkmark != null)
-            {
-                // dummy data input simulating AI gesture detection 
-                string tempGesture = Random.value < 0.5f ? "checkmark" : "none";
-                string gestureDetected = gestureMsg == null ? "none" : gestureMsg.gesture;
-                if (gestureDetected == "checkmark" || isGodMode)
-                {
-                    AddSpecialAnimation("checkmark", hitPos);
-                    MqttApi.BuzzSuccess();
-                }
-                else
-                {
-                    AddSpecialAnimation("wrong", hitPos);
-                    logic.DeductScore();
-                    MqttApi.BuzzFailure();
-                }
-            }
-            else if (z != null)
-            {
-                // dummy data input simulating AI gesture detection 
-                string tempGesture = Random.value < 0.5f ? "z" : "none";
-                string gestureDetected = gestureMsg == null ? "none" : gestureMsg.gesture;
-                if (gestureDetected == "z" || isGodMode)
-                {
-                    AddSpecialAnimation("z", hitPos);
-                    MqttApi.BuzzSuccess();
-                }
-                else
-                {
-                    AddSpecialAnimation("wrong", hitPos);
-                    logic.DeductScore();
-                    MqttApi.BuzzFailure();
-                }
-            }
+            //if (circle != null)
+            //{
+            //    // dummy data input simulating AI gesture detection  
+            //    string tempGesture = Random.value < 0.5f ? "circle" : "none";
+            //    string gestureDetected = gestureMsg == null ? "none" : gestureMsg.gesture;
+            //    if (gestureDetected == "circle" || isGodMode)
+            //    {
+            //        AddSpecialAnimation("circle", hitPos);
+            //        MqttApi.BuzzSuccess();
+            //    }
+            //    else
+            //    {
+            //        AddSpecialAnimation("wrong", hitPos);
+            //        logic.DeductScore();
+            //        MqttApi.BuzzFailure();
+            //    }
+            //}
+            //else if (infinity != null)
+            //{
+            //    // dummy data input simulating AI gesture detection 
+            //    string tempGesture = Random.value < 0.5f ? "infinity" : "none";
+            //    string gestureDetected = gestureMsg == null ? "none" : gestureMsg.gesture;
+            //    if (gestureDetected == "infinity" || isGodMode)
+            //    {
+            //        AddSpecialAnimation("infinity", hitPos);
+            //        MqttApi.BuzzSuccess();
+            //    }
+            //    else
+            //    {
+            //        AddSpecialAnimation("wrong", hitPos);
+            //        logic.DeductScore();
+            //        MqttApi.BuzzFailure();
+            //    }
+            //}
+            //else if (caret != null)
+            //{
+            //    // dummy data input simulating AI gesture detection 
+            //    string tempGesture = Random.value < 0.5f ? "carat" : "none";
+            //    string gestureDetected = gestureMsg == null ? "none" : gestureMsg.gesture;
+            //    if (gestureDetected == "carat" || isGodMode)
+            //    {
+            //        AddSpecialAnimation("carat", hitPos);
+            //        MqttApi.BuzzSuccess();
+            //    }
+            //    else
+            //    {
+            //        AddSpecialAnimation("wrong", hitPos);
+            //        logic.DeductScore();
+            //        MqttApi.BuzzFailure();
+            //    }
+            //}
+            //else if (checkmark != null)
+            //{
+            //    // dummy data input simulating AI gesture detection 
+            //    string tempGesture = Random.value < 0.5f ? "checkmark" : "none";
+            //    string gestureDetected = gestureMsg == null ? "none" : gestureMsg.gesture;
+            //    if (gestureDetected == "checkmark" || isGodMode)
+            //    {
+            //        AddSpecialAnimation("checkmark", hitPos);
+            //        MqttApi.BuzzSuccess();
+            //    }
+            //    else
+            //    {
+            //        AddSpecialAnimation("wrong", hitPos);
+            //        logic.DeductScore();
+            //        MqttApi.BuzzFailure();
+            //    }
+            //}
+            //else if (z != null)
+            //{
+            //    // dummy data input simulating AI gesture detection 
+            //    string tempGesture = Random.value < 0.5f ? "z" : "none";
+            //    string gestureDetected = gestureMsg == null ? "none" : gestureMsg.gesture;
+            //    if (gestureDetected == "z" || isGodMode)
+            //    {
+            //        AddSpecialAnimation("z", hitPos);
+            //        MqttApi.BuzzSuccess();
+            //    }
+            //    else
+            //    {
+            //        AddSpecialAnimation("wrong", hitPos);
+            //        logic.DeductScore();
+            //        MqttApi.BuzzFailure();
+            //    }
+            //}
             if (dialogManager != null && dialogManager.getCurrentIndex() == 5)
             {
                 dialogManager.SwitchDialog(6);

@@ -3,9 +3,12 @@ using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Rendering;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
 using static GestureListener;
+using System.Linq;
+using Unity.VisualScripting;
 
 // Manage fruit prefab spawning logic when playing as defender
 public class FruitSpawn : MonoBehaviour
@@ -14,6 +17,8 @@ public class FruitSpawn : MonoBehaviour
 
     [SerializeField] private float spawnRate;
     [SerializeField] private GameObject origin;
+    [SerializeField] private GameObject splashPrefab;
+    private GameObject splashObj;
     private ARTrackedImageManager aRTrackedImageManager;
 
     private float timer;
@@ -28,9 +33,10 @@ public class FruitSpawn : MonoBehaviour
     [SerializeField] private GameObject lemonPrefab, pearPrefab, strawberryPrefab, applePrefab, watermelonPrefab, peachPrefab, cherryPrefab;
     [SerializeField] private GameObject bombPrefab;
     private GameObject[] fruits;
+    private GameObject[] fruitsWShape;
     private ARTrackedImage currentFruitImage;
     private ARTrackedImage currentAttackerImage;
-
+    private string gestureResult;
 
     private enum Direction
     {
@@ -48,7 +54,7 @@ public class FruitSpawn : MonoBehaviour
         isActive = false;
         isImageScanned = false;
         attackerActive = false;
-        timer = 0;
+        timer = spawnRate;
         fruits = new GameObject[]
         {
             lemonPrefab, 
@@ -59,6 +65,14 @@ public class FruitSpawn : MonoBehaviour
             peachPrefab,
             cherryPrefab
         };
+        fruitsWShape = new GameObject[]
+{
+            lemonPrefab,
+            pearPrefab,
+            applePrefab,
+            watermelonPrefab,
+            cherryPrefab
+};
         isFrozen = false;
     }
 
@@ -189,7 +203,7 @@ public class FruitSpawn : MonoBehaviour
             }
             else
             {
-                ThrowFromBottom();
+                StartCoroutine(ThrowFromBottom());
                 timer = 0;
             }
         }
@@ -226,7 +240,7 @@ public class FruitSpawn : MonoBehaviour
     }
 
     // Randomly spawn fruits and bombs bottom-up
-    private void ThrowFromBottom()
+    private IEnumerator ThrowFromBottom()
     {
         float force = 3;
         GameObject fruitChosen = fruits[Random.Range(0, fruits.Length)];
@@ -241,6 +255,11 @@ public class FruitSpawn : MonoBehaviour
             spawnedFruit.transform.localScale *= 0.067f;
             spawnedFruit.SetActive(true);
             applyPhysics(spawnedFruit, force, Direction.Up);
+            if (fruitsWShape.Contains(fruitChosen))
+            {
+                yield return StartCoroutine(ListeningShape(fruitChosen));
+                FruitSplash(spawnedFruit);
+            }
         }
         else if (isBomb)
         {
@@ -249,6 +268,67 @@ public class FruitSpawn : MonoBehaviour
             bomb.transform.localScale *= 0.067f;
             bomb.SetActive(true);
             applyPhysics(bomb, force, Direction.Up);
+        }
+    }
+
+    public void FruitSplash(GameObject fruit)
+    {
+        Vector3 hitPos = fruit.transform.position;
+        CollideManager manager = FindObjectOfType<CollideManager>();
+        GameLogic logic = GameObject.Find("GameLogic").GetComponent<GameLogic>();
+        splashObj = Instantiate(splashPrefab, hitPos, Quaternion.identity);
+        if (manager != null)
+        {
+            manager.AddSpecialAnimation(gestureResult, hitPos);
+        }
+        if (gestureResult != "wrong")
+        {
+            logic.AddScore();
+        }
+        Destroy(fruit);
+    }
+
+    IEnumerator ListeningShape(GameObject fruit)
+    {
+        string expectedOutput;
+        switch (fruit)
+        {
+            case var f when f == lemonPrefab:
+                expectedOutput = "carat";
+                break;
+            case var f when f == applePrefab:
+                expectedOutput = "circle";
+                break;
+            case var f when f == pearPrefab:
+                expectedOutput = "z";
+                break;
+            case var f when f == watermelonPrefab:
+                expectedOutput = "checkmark";
+                break;
+            case var f when f == cherryPrefab:
+                expectedOutput = "infinity";
+                break;
+            default:
+                expectedOutput = "null";
+                break;
+        }
+        float elapsed = 0f;
+        gestureResult = "wrong"; // default if timeout
+
+        while (elapsed < 4f)
+        {
+            elapsed += Time.unscaledDeltaTime;
+
+            GestureMsg gestureMsg = FindObjectOfType<GestureListener>().takeFirstMsg("defSword");
+            string gestureDetected = gestureMsg == null ? "none" : gestureMsg.gesture;
+
+            if (gestureDetected == expectedOutput)
+            {
+                gestureResult = gestureDetected;
+                yield break; // exit early, no need to wait further
+            }
+
+            yield return null; // wait one frame then check again
         }
     }
 }
