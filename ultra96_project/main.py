@@ -1,5 +1,5 @@
 import paho.mqtt.client as mqtt
-from driver import MockPYNQDriver  # @jon swap with real PYNQDriver later
+from driver import MockPYNQDriver, PYNQDriver  # @jon swap with real PYNQDriver later
 from collections import deque
 import json
 import os
@@ -9,7 +9,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # CONFIG
-WINDOW_SIZE = 20
+WINDOW_SIZE = 75
 """
 min stride = inference_time x sample_rate
     E.g.
@@ -19,14 +19,14 @@ min stride = inference_time x sample_rate
     If stride = 1 then we are covering all possible windows
     A lower stride means less chance of gesture falling in between windows BUT higher load on FPGA
 """        
-STRIDE = 0.2*WINDOW_SIZE # 20% of window size for now
+STRIDE = 1 #0.2*WINDOW_SIZE # 20% of window size for now
 
 # confidence level to accept the gesture
-CONFIDENCE_THRESHOLD = 0.7
+CONFIDENCE_THRESHOLD = 0.0
 
 
 # Initialize driver
-driver = MockPYNQDriver()  # @jon need to replace here also
+driver = PYNQDriver()  # @jon need to replace here also
 
 # MQTT configuration
 BROKER_HOST = "localhost"
@@ -37,7 +37,7 @@ SENSOR_ATTACKER_TOPIC = "fruitninja/attacker/imu/window"
 GESTURE_ATTACKER_TOPIC = "fruitninja/attacker/gesture/detected"
 GESTURE_DEFENDER_HAND_TOPIC = "fruitninja/defender/hand/gesture/detected"
 GESTURE_DEFENDER_SWORD_TOPIC = "fruitninja/defender/sword/gesture/detected"
-CA_CERT_PATH = "../ca.crt"
+CA_CERT_PATH = "ca.crt"
 
 pub_sub_dict = {
     SENSOR_DEFENDER_SWORD_TOPIC: GESTURE_DEFENDER_SWORD_TOPIC,
@@ -48,7 +48,6 @@ pub_sub_dict = {
 # per-topic buffers — sword/hand/attacker each need independent sliding windows
 buffers       = {topic: deque(maxlen=WINDOW_SIZE) for topic in pub_sub_dict}
 stride_counts = {topic: 0 for topic in pub_sub_dict}
-
 
 def parse_sensor_payload(payload) -> list:
     """
@@ -83,10 +82,16 @@ def on_message(client: mqtt.Client, userdata, msg):
         gesture, confidence = driver.run(window, WINDOW_SIZE)
 
         if confidence >= CONFIDENCE_THRESHOLD and gesture != "idle":
+            if topic == SENSOR_DEFENDER_SWORD_TOPIC and (gesture == "throw" or gesture == "block"):
+                return
+            if topic == SENSOR_DEFENDER_HAND_TOPIC and gesture != "block":
+                return
+            if topic == SENSOR_ATTACKER_TOPIC and gesture != "throw":
+                return
+
             gesture_msg = {"gesture": gesture, "confidence": confidence}
             client.publish(pub_sub_dict[topic], json.dumps(gesture_msg), qos=0)
             print(f"[MQTT] {topic} -> {gesture} ({confidence:.2f})")
-
 
 def main():
     client = mqtt.Client(client_id=os.getenv("ULTRA96_USERNAME"))

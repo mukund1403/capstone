@@ -71,7 +71,7 @@ def pretty_print(topic: str, payload: bytes):
     
 
     # GESTURE
-    elif topic.endswith("/gesture/detected"):
+    if topic.endswith("/gesture/detected"):
         colour = COLOURS["ultra"]
         print(
             f"{colour}[{user.upper()}|ULTRA] "

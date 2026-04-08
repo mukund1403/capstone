@@ -12,9 +12,9 @@ except Exception:
     allocate = None
 
 
-SEQ_LEN = 100
+SEQ_LEN = 75
 FEATURES = 6
-NUM_CLASSES = 6
+NUM_CLASSES = 8
 INPUT_LEN = SEQ_LEN * FEATURES
 
 # ap_fixed<16,6> => 10 fractional bits
@@ -24,12 +24,14 @@ INT16_MAX = 32767
 
 # Update labels to match your training classes
 GESTURE_LABELS = [
-    "slash1",
-    "slash2",
-    "slash3",
-    "slash4",
-    "bomb",
-    "slow",
+    "idle",
+    "block",
+    "throw",
+    "circle",
+    "z",
+    "checkmark",
+    "carat",
+    "infinity",
 ]
 
 def _softmax(logits: np.ndarray) -> np.ndarray:
@@ -57,7 +59,6 @@ def _normalize_window(x: np.ndarray, norm_stats):
     x2 = (x2 - mean) / std
     return x2.reshape(-1).astype(np.float32)
 
-
 def _normalize_input(input_data: Any) -> np.ndarray:
     """
     Convert incoming sensor payload to a flat float32 array of length 600.
@@ -76,7 +77,6 @@ def _normalize_input(input_data: Any) -> np.ndarray:
         arr = arr.reshape(INPUT_LEN)
     return arr
 
-
 class PYNQDriver:
     """
     Real driver: runs CNN on Ultra96 and returns gesture + confidence.
@@ -94,7 +94,7 @@ class PYNQDriver:
         if Overlay is None or allocate is None:
             raise RuntimeError("pynq is not available. Run on Ultra96 with PYNQ.")
 
-        bit_path = bit_path or os.getenv("ULTRA96_BIT")
+        bit_path = "design_1_wrapper.bit" or os.getenv("ULTRA96_BIT")
         if not bit_path:
             raise ValueError("bit_path is required (pass arg or set ULTRA96_BIT env var)")
 
@@ -108,7 +108,7 @@ class PYNQDriver:
             norm_path = str(Path(__file__).resolve().parent / "norm_stats.npy")
         self.norm_stats = _load_norm_stats(norm_path)
 
-    def run(self, window: np.ndarray, window_size: int) -> Tuple[str, float]:
+def run(self, window: np.ndarray, window_size: int) -> Tuple[str, float]:
         assert window.shape == (window_size, FEATURES), f"[Driver] bad input shape: {window.shape}"
         x = _normalize_input(window)
         x = _normalize_window(x, self.norm_stats)
@@ -133,9 +133,9 @@ class PYNQDriver:
         gesture = GESTURE_LABELS[idx] if idx < len(GESTURE_LABELS) else str(idx)
         return gesture, confidence
 
-    def close(self) -> None:
-        self.in_buf.freebuffer()
-        self.out_buf.freebuffer()
+def close(self) -> None:
+    self.in_buf.freebuffer()
+    self.out_buf.freebuffer()
 
 
 class MockPYNQDriver:
