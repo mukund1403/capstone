@@ -57,11 +57,11 @@ public class FruitSpawn : MonoBehaviour
         timer = spawnRate;
         fruits = new GameObject[]
         {
-            lemonPrefab, 
-            pearPrefab, 
-            strawberryPrefab, 
-            applePrefab, 
-            watermelonPrefab, 
+            lemonPrefab,
+            pearPrefab,
+            strawberryPrefab,
+            applePrefab,
+            watermelonPrefab,
             peachPrefab,
             cherryPrefab
         };
@@ -157,7 +157,7 @@ public class FruitSpawn : MonoBehaviour
             storedImagePos = currentFruitImage.transform.position;
             string message = "Image Scanned. \n" + storedImagePos.ToString();
             SetMessage(message);
-        } 
+        }
         else
         {
             string message = "No Image Found. \n" + storedImagePos.ToString();
@@ -290,6 +290,7 @@ public class FruitSpawn : MonoBehaviour
 
     IEnumerator ListeningShape(GameObject fruit)
     {
+        FindObjectOfType<GestureListener>().ClearQueue("defSword");
         string expectedOutput;
         switch (fruit)
         {

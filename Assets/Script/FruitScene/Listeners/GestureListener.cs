@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GestureListener : BaseListener
 {
-    private string[] allGestures = {"rectangle", "circle", "triangle"};
+    private string[] allGestures = { "rectangle", "circle", "triangle" };
 
     private Queue<GestureMsg> atkHandQueue = new Queue<GestureMsg>();
     private Queue<GestureMsg> defHandQueue = new Queue<GestureMsg>();
@@ -34,6 +34,16 @@ public class GestureListener : BaseListener
         return null;
     }
 
+    public void ClearQueue(string name)
+    {
+        switch (name)
+        {
+            case "atkHand": atkHandQueue.Clear(); break;
+            case "defHand": defHandQueue.Clear(); break;
+            case "defSword": defSwordQueue.Clear(); break;
+        }
+    }
+
     protected override void HandleMqtt(string topic, string payload)
     {
         if (!topic.StartsWith("fruitninja/defender/sword/gesture/detected") &&
@@ -48,7 +58,7 @@ public class GestureListener : BaseListener
         if (topic.StartsWith("fruitninja/attacker/gesture/detected"))
         {
             atkHandQueue.Enqueue(inputMsg);
-}
+        }
 
         if (topic.StartsWith("fruitninja/defender/sword/gesture/detected"))
         {
