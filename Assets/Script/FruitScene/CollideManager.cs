@@ -90,109 +90,11 @@ public class CollideManager : MonoBehaviour
         {
             Vector3 hitPos = collision.transform.position;
 
-            // check if the object collided has special child object
-            Transform z = collision.transform.Find("zSprite");
-            Transform checkmark = collision.transform.Find("checkSprite");
-            Transform caret = collision.transform.Find("caretSprite");
-            Transform infinity = collision.transform.Find("infinitySprite");
-            Transform circle = collision.transform.Find("circleSprite");
-
             splashObj = Instantiate(splashPrefab, hitPos, Quaternion.identity);
 
-            GestureMsg gestureMsg = FindObjectOfType<GestureListener>().takeFirstMsg("defSword");
-
-            //if (circle != null)
-            //{
-            //    // dummy data input simulating AI gesture detection  
-            //    string tempGesture = Random.value < 0.5f ? "circle" : "none";
-            //    string gestureDetected = gestureMsg == null ? "none" : gestureMsg.gesture;
-            //    if (gestureDetected == "circle" || isGodMode)
-            //    {
-            //        AddSpecialAnimation("circle", hitPos);
-            //        MqttApi.BuzzSuccess();
-            //    }
-            //    else
-            //    {
-            //        AddSpecialAnimation("wrong", hitPos);
-            //        logic.DeductScore();
-            //        MqttApi.BuzzFailure();
-            //    }
-            //}
-            //else if (infinity != null)
-            //{
-            //    // dummy data input simulating AI gesture detection 
-            //    string tempGesture = Random.value < 0.5f ? "infinity" : "none";
-            //    string gestureDetected = gestureMsg == null ? "none" : gestureMsg.gesture;
-            //    if (gestureDetected == "infinity" || isGodMode)
-            //    {
-            //        AddSpecialAnimation("infinity", hitPos);
-            //        MqttApi.BuzzSuccess();
-            //    }
-            //    else
-            //    {
-            //        AddSpecialAnimation("wrong", hitPos);
-            //        logic.DeductScore();
-            //        MqttApi.BuzzFailure();
-            //    }
-            //}
-            //else if (caret != null)
-            //{
-            //    // dummy data input simulating AI gesture detection 
-            //    string tempGesture = Random.value < 0.5f ? "carat" : "none";
-            //    string gestureDetected = gestureMsg == null ? "none" : gestureMsg.gesture;
-            //    if (gestureDetected == "carat" || isGodMode)
-            //    {
-            //        AddSpecialAnimation("carat", hitPos);
-            //        MqttApi.BuzzSuccess();
-            //    }
-            //    else
-            //    {
-            //        AddSpecialAnimation("wrong", hitPos);
-            //        logic.DeductScore();
-            //        MqttApi.BuzzFailure();
-            //    }
-            //}
-            //else if (checkmark != null)
-            //{
-            //    // dummy data input simulating AI gesture detection 
-            //    string tempGesture = Random.value < 0.5f ? "checkmark" : "none";
-            //    string gestureDetected = gestureMsg == null ? "none" : gestureMsg.gesture;
-            //    if (gestureDetected == "checkmark" || isGodMode)
-            //    {
-            //        AddSpecialAnimation("checkmark", hitPos);
-            //        MqttApi.BuzzSuccess();
-            //    }
-            //    else
-            //    {
-            //        AddSpecialAnimation("wrong", hitPos);
-            //        logic.DeductScore();
-            //        MqttApi.BuzzFailure();
-            //    }
-            //}
-            //else if (z != null)
-            //{
-            //    // dummy data input simulating AI gesture detection 
-            //    string tempGesture = Random.value < 0.5f ? "z" : "none";
-            //    string gestureDetected = gestureMsg == null ? "none" : gestureMsg.gesture;
-            //    if (gestureDetected == "z" || isGodMode)
-            //    {
-            //        AddSpecialAnimation("z", hitPos);
-            //        MqttApi.BuzzSuccess();
-            //    }
-            //    else
-            //    {
-            //        AddSpecialAnimation("wrong", hitPos);
-            //        logic.DeductScore();
-            //        MqttApi.BuzzFailure();
-            //    }
-            //}
             if (dialogManager != null && dialogManager.getCurrentIndex() == 5)
             {
                 dialogManager.SwitchDialog(6);
-            }
-            if (isGodMode)
-            {
-                SetMessage("All slices registered correct");
             }
             logic.AddScore();
             Destroy(collision.gameObject);

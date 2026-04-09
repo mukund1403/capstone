@@ -54,7 +54,7 @@ public class FruitSpawn : MonoBehaviour
         isActive = false;
         isImageScanned = false;
         attackerActive = false;
-        timer = spawnRate;
+        timer = 0;
         fruits = new GameObject[]
         {
             lemonPrefab, 
@@ -135,6 +135,7 @@ public class FruitSpawn : MonoBehaviour
         }
         else if (isImageScanned)
         {
+            timer = 0.5f;
             isActive = true;
         }
         else
@@ -173,14 +174,15 @@ public class FruitSpawn : MonoBehaviour
         }
 
         float force = 5;
-        GestureMsg gestureMsg = FindObjectOfType<GestureListener>().takeFirstMsg("atkHand");
-        string attakerGesture = gestureMsg == null ? "none" : gestureMsg.gesture;
-        if (attakerGesture == "throw")
+        GestureMsg gestureMsg = FindObjectOfType<GestureListener>().takeLatestMsg("atkHand");
+        string attackerGesture = gestureMsg == null ? "none" : gestureMsg.gesture;
+        if (attackerGesture == "throw")
         {
             Vector3 position = currentAttackerImage.transform.position;
             GameObject bombThrown = Instantiate(bombPrefab, position, Quaternion.identity);
             applyPhysics(bombThrown, force, Direction.Backward);
         }
+        SetMessage("Attacker gesture is: " + attackerGesture);
     }
 
     public void SetFrozen(bool value)
@@ -276,14 +278,20 @@ public class FruitSpawn : MonoBehaviour
         Vector3 hitPos = fruit.transform.position;
         CollideManager manager = FindObjectOfType<CollideManager>();
         GameLogic logic = GameObject.Find("GameLogic").GetComponent<GameLogic>();
-        splashObj = Instantiate(splashPrefab, hitPos, Quaternion.identity);
-        if (manager != null)
+        if (manager == null)
         {
-            manager.AddSpecialAnimation(gestureResult, hitPos);
+            return;
         }
+        splashObj = Instantiate(splashPrefab, hitPos, Quaternion.identity);
+        manager.AddSpecialAnimation(gestureResult, hitPos);
         if (gestureResult != "wrong")
         {
             logic.AddScore();
+            MqttApi.BuzzSuccess();
+        }
+        else
+        {
+            MqttApi.BuzzFailure();
         }
         Destroy(fruit);
     }
@@ -317,9 +325,12 @@ public class FruitSpawn : MonoBehaviour
 
         while (elapsed < 4f)
         {
-            elapsed += Time.unscaledDeltaTime;
+            if (!isFrozen)
+            {
+                elapsed += Time.unscaledDeltaTime;
+            }
 
-            GestureMsg gestureMsg = FindObjectOfType<GestureListener>().takeFirstMsg("defSword");
+            GestureMsg gestureMsg = FindObjectOfType<GestureListener>().takeLatestMsg("defSword");
             string gestureDetected = gestureMsg == null ? "none" : gestureMsg.gesture;
 
             if (gestureDetected == expectedOutput)

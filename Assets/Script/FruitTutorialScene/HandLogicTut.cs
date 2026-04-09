@@ -21,8 +21,8 @@ public class HandLogicTut : MonoBehaviour
     }
     void Update()
     {
-        GestureMsg atkGestureMsg = FindObjectOfType<GestureListener>().takeFirstMsg("atkHand");
-        GestureMsg defGestureMsg = FindObjectOfType<GestureListener>().takeFirstMsg("defHand");
+        GestureMsg atkGestureMsg = FindObjectOfType<GestureListener>().takeLatestMsg("atkHand");
+        GestureMsg defGestureMsg = FindObjectOfType<GestureListener>().takeLatestMsg("defHand");
         string atkGesture = atkGestureMsg == null ? "none" : atkGestureMsg.gesture;
         string defGesture = defGestureMsg == null ? "none" : defGestureMsg.gesture;
         string playerIdentity = PlayerStatusManager.Instance.GetIdentity();

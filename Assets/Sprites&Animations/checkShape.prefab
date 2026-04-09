@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7675234359248116326}
   - component: {fileID: 5292408531193834728}
   - component: {fileID: 4161319035254049958}
+  - component: {fileID: 7974626535522117855}
   m_Layer: 0
   m_Name: checkShape
   m_TagString: Untagged
@@ -106,3 +107,15 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &7974626535522117855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3228364487544413543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ac877568f3fc1f4b90bd341d7d91c8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

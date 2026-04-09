@@ -6,9 +6,9 @@ public class GestureListener : BaseListener
 {
     private string[] allGestures = {"rectangle", "circle", "triangle"};
 
-    private Queue<GestureMsg> atkHandQueue = new Queue<GestureMsg>();
-    private Queue<GestureMsg> defHandQueue = new Queue<GestureMsg>();
-    private Queue<GestureMsg> defSwordQueue = new Queue<GestureMsg>();
+    private Stack<GestureMsg> atkHandStack = new Stack<GestureMsg>();
+    private Stack<GestureMsg> defHandStack = new Stack<GestureMsg>();
+    private Stack<GestureMsg> defSwordStack = new Stack<GestureMsg>();
 
     [System.Serializable]
     public class GestureMsg
@@ -17,19 +17,21 @@ public class GestureListener : BaseListener
         public float confidence;
     }
 
-    public GestureMsg takeFirstMsg(string name)
+    public GestureMsg takeLatestMsg(string name)
     {
-        Queue<GestureMsg> selected = name switch
+        Stack<GestureMsg> selected = name switch
         {
-            "atkHand" => atkHandQueue,
-            "defHand" => defHandQueue,
-            "defSword" => defSwordQueue,
+            "atkHand" => atkHandStack,
+            "defHand" => defHandStack,
+            "defSword" => defSwordStack,
             _ => null
         };
 
         if (selected != null && selected.Count > 0)
         {
-            return selected.Dequeue();
+            GestureMsg latest = selected.Pop();
+            selected.Clear();
+            return latest;
         }
         return null;
     }
@@ -47,17 +49,17 @@ public class GestureListener : BaseListener
 
         if (topic.StartsWith("fruitninja/attacker/gesture/detected"))
         {
-            atkHandQueue.Enqueue(inputMsg);
+            atkHandStack.Push(inputMsg);
 }
 
         if (topic.StartsWith("fruitninja/defender/sword/gesture/detected"))
         {
-            defSwordQueue.Enqueue(inputMsg);
+            defSwordStack.Push(inputMsg);
         }
 
         if (topic.StartsWith("fruitninja/defender/hand/gesture/detected"))
         {
-            defHandQueue.Enqueue(inputMsg);
+            defHandStack.Push(inputMsg);
         }
         //Debug.Log("Def Sword Gesture is: " + "\n" + takeFirstMsg("defSword").gesture);
     }
