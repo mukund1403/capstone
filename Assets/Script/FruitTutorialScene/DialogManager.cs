@@ -58,6 +58,7 @@ public class DialogManager : MonoBehaviour
         }
         if (currentIndex == 15)
         {
+            VideoController.Instance.SwitchStep("stop");
             FruitSpawnTut spawn = FindObjectOfType<FruitSpawnTut>();
             spawn.ResetSpawnSetting();
             PlayerStatusManager.Instance.SetIdentity(null);

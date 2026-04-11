@@ -21,7 +21,7 @@ public static class MqttApi
     {
         MqttService.Instance.PublishImuControl(
             MqttService.PublishTopic.DEFENDER_SWORD_IMU_CONTROL_TOPIC,
-            new ImuControlMessage("buzzer", "failureBuzz")
+            new ImuControlMessage("buzzer", "failBuzz")
         );
         Debug.Log("buzz message sent");
     }
@@ -76,7 +76,8 @@ public static class MqttApi
         }
         if (topic == "atkHand")
         {
-            fullTopic = "fruitninja/attacker/gesture/detected";
+            //fullTopic = "fruitninja/attacker/gesture/detected";
+            fullTopic = "fruitninja/attacker/throw";
         }
         if (topic == "defSword")
         {
@@ -84,14 +85,4 @@ public static class MqttApi
         }
         MqttService.Instance.Publish(fullTopic, msg, 0);
     }
-
-    //// Player's role defined
-    //public static void DefineRole(string role)
-    //{
-    //    MqttService.Instance.PublishImuControl(
-    //    MqttService.PublishTopic.ATTACKER_IMU_CONTROL_TOPIC,
-    //    new ImuControlMessage("imuWindow", role)
-    //    );
-    //    Debug.Log("Player role message sent");
-    //}
 }

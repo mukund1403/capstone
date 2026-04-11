@@ -17,6 +17,7 @@ public class ButtonLogic : MonoBehaviour
     {
         if (!helpMenu.activeSelf && !isLoadingScene)
         {
+            PlayerStatusManager.Instance.SetGodMode(false);
             SceneManager.LoadScene(sceneName);
             isLoadingScene = true;
         }
@@ -89,11 +90,14 @@ public class ButtonLogic : MonoBehaviour
         }
     }
 
-    public void CloseSelectMenu()
+    public void CloseSelectRoleMenu()
     {
         selectRoleMenu.SetActive(false);
     }
-
+    public void CloseSelectModeMenu()
+    {
+        selectModeMenu.SetActive(false);
+    }
     public void RestartGame()
     {
         if (tutorialCanvas != null)

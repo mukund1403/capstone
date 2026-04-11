@@ -3623,7 +3623,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 62160301}
         m_TargetAssemblyTypeName: ButtonLogic, Assembly-CSharp
-        m_MethodName: CloseSelectMenu
+        m_MethodName: CloseSelectModeMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4950,7 +4950,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 62160301}
         m_TargetAssemblyTypeName: ButtonLogic, Assembly-CSharp
-        m_MethodName: CloseSelectMenu
+        m_MethodName: CloseSelectRoleMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

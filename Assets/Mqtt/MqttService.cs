@@ -21,6 +21,7 @@ public class MqttService : MonoBehaviour
         ATTACKER_IMU_CONTROL_TOPIC,
         DEFENDER_SWORD_IMU_CONTROL_TOPIC,
         DEFENDER_HAND_IMU_CONTROL_TOPIC,
+        ATTACKER_THROW,
     }
 
     // Roles and topic building
@@ -80,13 +81,6 @@ public class MqttService : MonoBehaviour
     {
         List<string> subTopicList = new List<string>();
 
-        // IMU topics
-        subTopicList.Add("fruitninja/attacker/imu/window");
-        foreach (var part in defenderParts)
-        {
-            subTopicList.Add($"fruitninja/defender/{part}/imu/window");
-        }
-
         // Status topics
         subTopicList.Add("fruitninja/attacker/status");
         foreach (var part in defenderParts)
@@ -99,6 +93,8 @@ public class MqttService : MonoBehaviour
         foreach (var part in defenderParts) {
             subTopicList.Add($"fruitninja/defender/{part}/gesture/detected");
         }
+
+        subTopicList.Add("fruitninja/attacker/throw");
 
         subTopics = subTopicList.ToArray();
         qos = Enumerable.Repeat(MqttMsgBase.QOS_LEVEL_AT_MOST_ONCE, subTopics.Length).ToArray();
@@ -114,6 +110,7 @@ public class MqttService : MonoBehaviour
             PublishTopic.ATTACKER_IMU_CONTROL_TOPIC => "fruitninja/attacker/control",
             PublishTopic.DEFENDER_SWORD_IMU_CONTROL_TOPIC => "fruitninja/defender/sword/control",
             PublishTopic.DEFENDER_HAND_IMU_CONTROL_TOPIC => "fruitninja/defender/hand/control",
+            PublishTopic.ATTACKER_THROW => "fruitninja/attacker/throw",
             _ => throw new ArgumentOutOfRangeException(nameof(topic), topic, null)
         };
 

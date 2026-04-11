@@ -91,22 +91,10 @@ public class AttackerHandController : MonoBehaviour
         heldObject = null;
 
         animator.SetBool("isHolding", false);
+        MqttApi.DummyGesture("bombThrown", "atkHand");
         // wait for one second to prevent re-grabbing from collision
         StartCoroutine(WaitOneSecond());
     }
-
-    //private void ReleaseMultiple(GameObject obj, int num)
-    //{
-    //    Vector3 pos = obj.transform.position;
-    //    Quaternion rot = obj.transform.rotation;
-
-    //    for (int i = 0; i < num; i++)
-    //    {
-    //        GameObject clone = Instantiate(obj, pos, rot);
-    //        Rigidbody rb = clone.GetComponent<Rigidbody>();
-    //        applyPhysics(rb);
-    //    }
-    //}
 
     // Simulating topic publishing using MQTT
     private void MqttPubTest()

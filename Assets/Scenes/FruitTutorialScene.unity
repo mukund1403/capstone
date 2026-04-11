@@ -4097,7 +4097,7 @@ GameObject:
   - component: {fileID: 2073131680}
   - component: {fileID: 2073131679}
   m_Layer: 5
-  m_Name: Video Player
+  m_Name: VideoPlayer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4142,7 +4142,6 @@ MonoBehaviour:
   - {fileID: 32900000, guid: a99b58292f5cdf4439e492212606e6c2, type: 3}
   - {fileID: 32900000, guid: 31c76a0e968c486448ab45ae369db6be, type: 3}
   - {fileID: 32900000, guid: 8d6618264ecdf1540a849f23fed132b9, type: 3}
-  videoDisplay: {fileID: 0}
 --- !u!328 &2073131680
 VideoPlayer:
   m_ObjectHideFlags: 0

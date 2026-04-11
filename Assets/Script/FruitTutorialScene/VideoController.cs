@@ -8,11 +8,19 @@ public class VideoController : MonoBehaviour
 {
     [SerializeField] private VideoPlayer videoPlayer;
     [SerializeField] private VideoClip[] clips;
-    [SerializeField] private RawImage videoDisplay;
+    private GameObject videoPlayerObject;
+
+    public static VideoController Instance;
 
     void Awake()
     {
-        videoDisplay.enabled = false;
+        Instance = this;
+        videoPlayerObject = GameObject.Find("VideoPlayer");
+        if (videoPlayerObject != null)
+        {
+            videoPlayerObject.SetActive(false);
+        }
+        videoPlayer.enabled = false;
     }
 
     public void SwitchStep(string input)
@@ -37,22 +45,26 @@ public class VideoController : MonoBehaviour
             default:
                 PlayClip(-1);
                 break;
-
         }
     }
 
     private void PlayClip(int index)
     {
+        if (videoPlayerObject == null)
+        {
+            return;
+        }
         videoPlayer.Stop();
         if (index < 0)
         {
             videoPlayer.clip = null;
-            videoDisplay.enabled = false;
+            videoPlayerObject.SetActive(false);
         }
         else
         {
+            videoPlayerObject.SetActive(true);
             videoPlayer.clip = clips[index];
-            videoDisplay.enabled = true;
+            videoPlayer.enabled = true;
             videoPlayer.Play();
         }
     }

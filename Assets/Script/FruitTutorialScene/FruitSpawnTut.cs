@@ -160,11 +160,13 @@ public class FruitSpawnTut : MonoBehaviour
         if (isActive)
         {
             isActive = false;
+            SetMessage("Spawn fruit stopped.");
         }
         else if (isImageScanned)
         {
             timer = 0.5f;
             isActive = true;
+            SetMessage("Spawn fruit active.");
             if (dialogManager.getCurrentIndex() == 4)
             {
                 dialogManager.SwitchDialog(5);
@@ -352,6 +354,7 @@ public class FruitSpawnTut : MonoBehaviour
             MqttApi.BuzzFailure();
         }
         Destroy(fruit);
+        VideoController.Instance.SwitchStep("stop");
     }
 
     IEnumerator ListeningShape(GameObject fruit)
@@ -380,6 +383,8 @@ public class FruitSpawnTut : MonoBehaviour
         }
         float elapsed = 0f;
         gestureResult = "wrong"; // default if timeout
+
+        VideoController.Instance.SwitchStep(expectedOutput);
 
         while (elapsed < 4f)
         {

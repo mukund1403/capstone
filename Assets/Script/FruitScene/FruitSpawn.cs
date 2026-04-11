@@ -25,10 +25,9 @@ public class FruitSpawn : MonoBehaviour
 
     private bool isActive;
     private bool isFrozen;
-    private bool isImageScanned;
-    private Vector3 storedImagePos;
-
-    private bool attackerActive;
+    private bool isFruitImageScanned;
+    private Vector3 storedFruitImagePos;
+    private Vector3 storedAtkerImagePos;
 
     [SerializeField] private GameObject lemonPrefab, pearPrefab, strawberryPrefab, applePrefab, watermelonPrefab, peachPrefab, cherryPrefab;
     [SerializeField] private GameObject bombPrefab;
@@ -37,6 +36,12 @@ public class FruitSpawn : MonoBehaviour
     private ARTrackedImage currentFruitImage;
     private ARTrackedImage currentAttackerImage;
     private string gestureResult;
+    [SerializeField] private TMP_Text debugMsgShape;
+    [SerializeField] private TMP_Text debugMsgAtk;
+    [SerializeField] private TMP_Text debugAtkGesture;
+
+    //private float timestamp = 0;
+    private string lastAttackerGesture = "none";
 
     private enum Direction
     {
@@ -52,8 +57,7 @@ public class FruitSpawn : MonoBehaviour
     {
         aRTrackedImageManager = origin.GetComponent<ARTrackedImageManager>();
         isActive = false;
-        isImageScanned = false;
-        attackerActive = false;
+        isFruitImageScanned = false;
         timer = 0;
         fruits = new GameObject[]
         {
@@ -66,13 +70,13 @@ public class FruitSpawn : MonoBehaviour
             cherryPrefab
         };
         fruitsWShape = new GameObject[]
-{
+        {
             lemonPrefab,
             pearPrefab,
             applePrefab,
             watermelonPrefab,
             cherryPrefab
-};
+        };
         isFrozen = false;
     }
 
@@ -103,7 +107,7 @@ public class FruitSpawn : MonoBehaviour
             {
                 currentFruitImage = image;
             }
-            else if (image.referenceImage.name == "BombOmbThrower")
+            if (image.referenceImage.name == "BombOmbThrower")
             {
                 currentAttackerImage = image;
             }
@@ -114,7 +118,7 @@ public class FruitSpawn : MonoBehaviour
             {
                 currentFruitImage = image;
             }
-            else if (image.referenceImage.name == "BombOmbThrower")
+            if (image.referenceImage.name == "BombOmbThrower")
             {
                 currentAttackerImage = image;
             }
@@ -132,11 +136,13 @@ public class FruitSpawn : MonoBehaviour
         if (isActive)
         {
             isActive = false;
+            SetMessage("Spawn fruit stopped.");
         }
-        else if (isImageScanned)
+        else if (isFruitImageScanned)
         {
-            timer = 0.5f;
+            timer = 0.7f;
             isActive = true;
+            SetMessage("Spawn fruit active.");
         }
         else
         {
@@ -147,42 +153,62 @@ public class FruitSpawn : MonoBehaviour
     // store image's last position detected by AR manager, this position is the anchor point to spawn fruit 
     public void SetImageOnClick()
     {
+        string message = "";
+        bool anyFound = false;
         if (PlayerStatusManager.Instance.GetIdentity() != "Defender")
         {
             SetMessage("Scan disabled for your role.");
             return;
         }
-        if (currentFruitImage.referenceImage.name == "NUSLogo" && currentFruitImage.trackingState == TrackingState.Tracking)
+        if (currentFruitImage != null && currentFruitImage.referenceImage.name == "NUSLogo" &&
+            currentFruitImage.trackingState == TrackingState.Tracking)
         {
-            isImageScanned = true;
-            storedImagePos = currentFruitImage.transform.position;
-            string message = "Image Scanned. \n" + storedImagePos.ToString();
-            SetMessage(message);
-        } 
-        else
-        {
-            string message = "No Image Found. \n" + storedImagePos.ToString();
-            SetMessage(message);
+            isFruitImageScanned = true;
+            storedFruitImagePos = currentFruitImage.transform.position;
+            message += "Fruit Image Scanned. \n" + storedFruitImagePos.ToString() + "\n";
+            anyFound = true;
         }
+        if (currentAttackerImage != null && currentAttackerImage.referenceImage.name == "BombOmbThrower" &&
+            currentAttackerImage.trackingState == TrackingState.Tracking)
+        {
+            storedAtkerImagePos = currentAttackerImage.transform.position;
+            message += "Attacker Image Scanned. \n" + storedAtkerImagePos.ToString();
+            anyFound = true;
+        }
+        if (!anyFound)
+        {
+            message = "No Image Found. \n" + storedFruitImagePos.ToString() + "\n" + 
+            storedAtkerImagePos.ToString();
+        }
+        SetMessage(message);
     }
 
     public void AttackerThrowItem()
     {
+        Debug.Log("Attack throw called");
         if (PlayerStatusManager.Instance.GetIdentity() != "Defender")
         {
             return;
         }
-
         float force = 5;
-        GestureMsg gestureMsg = FindObjectOfType<GestureListener>().takeLatestMsg("atkHand");
-        string attackerGesture = gestureMsg == null ? "none" : gestureMsg.gesture;
-        if (attackerGesture == "throw")
+        GestureMsg thrownMsg = FindObjectOfType<GestureListener>().takeLatestMsg("atkthrown");
+        if (thrownMsg != null)
         {
-            Vector3 position = currentAttackerImage.transform.position;
-            GameObject bombThrown = Instantiate(bombPrefab, position, Quaternion.identity);
-            applyPhysics(bombThrown, force, Direction.Backward);
+            lastAttackerGesture = thrownMsg.gesture;
         }
-        SetMessage("Attacker gesture is: " + attackerGesture);
+        string attackerGesture = thrownMsg == null ? "none" : thrownMsg.gesture;
+        Debug.Log(debugAtkGesture.text);
+        if (lastAttackerGesture == "bombThrown" && storedAtkerImagePos != null)
+        {
+            lastAttackerGesture = "none";
+            GameObject bombThrown = Instantiate(bombPrefab, storedAtkerImagePos, Quaternion.identity);
+            bombThrown.transform.SetParent(null);
+            bombThrown.transform.localScale *= 0.067f;
+            bombThrown.SetActive(true);
+            applyPhysics(bombThrown, force, Direction.Up);
+            Debug.Log("bomb is THROWN.");
+            debugAtkGesture.text = "BOMB IS THROWN";
+        }
     }
 
     public void SetFrozen(bool value)
@@ -193,6 +219,8 @@ public class FruitSpawn : MonoBehaviour
     // controls fruit spawn rate
     void Update()
     {
+        debugMsgShape.text = FindObjectOfType<GestureListener>().GetLastFiveGestures();
+        debugMsgAtk.text = FindObjectOfType<GestureListener>().GetLastFiveGesturesHand();
         if (isFrozen)
         {
             return;
@@ -248,7 +276,7 @@ public class FruitSpawn : MonoBehaviour
         GameObject fruitChosen = fruits[Random.Range(0, fruits.Length)];
         bool isBomb = Random.value < 0.1f;
         Vector3 offset = new Vector3(0, 0, 0);
-        Vector3 spawnPos = storedImagePos + offset;
+        Vector3 spawnPos = storedFruitImagePos + offset;
 
         if (fruitChosen != null && !isBomb)
         {
