@@ -41,24 +41,23 @@ public class HandLogicTut : MonoBehaviour
         text.text = message;
     }
 
+    // Apply hand action on button input
     public void ApplyHandAction()
     {
         string playerIdentity = PlayerStatusManager.Instance.GetIdentity();
         SetMessage("button clicked, identity is: " + playerIdentity);
         if (playerIdentity == "Attacker")
         {
-            //MqttApi.DummyGesture("throw", "atkHand");
             AttackHandRelease();
         }
         else if (playerIdentity == "Defender")
         {
-            //MqttApi.DummyGesture("block" ,"defHand");
             DefendHandSkillRelease();
         }
         MqttApi.BuzzSuccess();
-        //Debug.Log($"ApplyHandAction called on: {gameObject.name} in scene: {UnityEngine.SceneManagement.SceneManager.GetActiveScene().name}");
     }
 
+    // Apply the hand action for Attacker
     private void AttackHandRelease()
     {
         GameObject hand = GameObject.FindWithTag("Attacker AR Spawn");
@@ -76,6 +75,7 @@ public class HandLogicTut : MonoBehaviour
         }
     }
 
+    // Apply the hand action for Defender
     private void DefendHandSkillRelease()
     {
         GameObject hand = GameObject.FindWithTag("Defender AR Spawn");

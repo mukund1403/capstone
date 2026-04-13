@@ -23,6 +23,7 @@ public class VideoController : MonoBehaviour
         videoPlayer.enabled = false;
     }
 
+    // Switch animation based on new spawned fruit's assigned gesture
     public void SwitchStep(string input)
     {
         switch (input)

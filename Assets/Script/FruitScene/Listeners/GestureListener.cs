@@ -18,7 +18,6 @@ public class GestureListener : BaseListener
     {
         public string gesture;
         public float confidence;
-        //public float timestamp;
     }
 
     public string GetLastFiveGestures()
@@ -28,7 +27,6 @@ public class GestureListener : BaseListener
 
         StringBuilder sb = new StringBuilder();
 
-        // Stack enumerates from top ? bottom
         var lastFive = defSwordStack.Take(5);
 
         foreach (var msg in lastFive)
@@ -39,6 +37,7 @@ public class GestureListener : BaseListener
         return sb.ToString();
     }
 
+    // Read the last 5 gestures from Attacker hand message stack
     public string GetLastFiveGesturesHand()
     {
         if (atkHandStack == null || atkHandStack.Count == 0)
@@ -46,7 +45,6 @@ public class GestureListener : BaseListener
 
         StringBuilder sb = new StringBuilder();
 
-        // Stack enumerates from top ? bottom
         var lastFive = atkHandStack.Take(5);
 
         foreach (var msg in lastFive)
@@ -57,32 +55,7 @@ public class GestureListener : BaseListener
         return sb.ToString();
     }
 
-    //public GestureMsg takeLatestMsg(string name)
-    //{
-    //    Stack<GestureMsg> selected = name switch
-    //    {
-    //        "atkHand" => atkHandStack,
-    //        "defHand" => defHandStack,
-    //        "defSword" => defSwordStack,
-    //        _ => null
-    //    };
-
-    //    if (selected != null && selected.Count > 0)
-    //    {
-    //        if (name == "atkHand")
-    //        {
-    //            GestureMsg latest = selected.Peek();
-    //            return latest;
-    //        }
-    //        else
-    //        {
-    //            GestureMsg latest = selected.Pop();
-    //            selected.Clear();
-    //            return latest;
-    //        }
-    //    }
-    //    return null;
-    //}
+    // Take the last gesture message from indicated message stack
     public GestureMsg takeLatestMsg(string name)
     {
         Stack<GestureMsg> selected = name switch
@@ -158,6 +131,5 @@ public class GestureListener : BaseListener
             throwStack.Push(inputMsg);
             Debug.Log("Bomb throw pushed to stack.");
         }
-        //Debug.Log("Def Sword Gesture is: " + "\n" + takeFirstMsg("defSword").gesture);
     }
 }

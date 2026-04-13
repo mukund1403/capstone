@@ -158,29 +158,6 @@ public class PrefabCreatorImage : MonoBehaviour
         string playerIdentity = PlayerStatusManager.Instance.GetIdentity();
         foreach (ARTrackedImage image in obj.added)
         {
-            //// create katana for defender role
-            //if (image.referenceImage.name == "WaterDragon" && playerIdentity == "Defender")
-            //{
-            //    katana = Instantiate(katanaPrefab, image.transform);
-            //    InitializeContent(katana);
-            //}
-            //if (image.referenceImage.name == "Hand")
-            //{
-            //    hand = Instantiate(handPrefab, image.transform);
-            //    InitializeContent(hand);
-            //    if (playerIdentity == "Attacker")
-            //    {
-            //        hand.tag = "Attacker AR Spawn";
-            //    }
-            //    else if (playerIdentity == "Defender")
-            //    {
-            //        hand.tag = "Defender AR Spawn";
-            //    }
-            //}
-            //if (image.referenceImage.name == "NUSLogo" && playerIdentity == "Attacker")
-            //{
-            //    SpawnAroundImage(image);
-            //}
             SpawnForImage(image, playerIdentity);
         }
         foreach (ARTrackedImage image in obj.updated)

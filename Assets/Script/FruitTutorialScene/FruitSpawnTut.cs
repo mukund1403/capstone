@@ -204,6 +204,7 @@ public class FruitSpawnTut : MonoBehaviour
         }
     }
 
+    // spawn Attacker's thrown bomb at Defender's side
     public void AttackerThrowItem()
     {
         if (PlayerStatusManager.Instance.GetIdentity() != "Defender")
@@ -300,7 +301,7 @@ public class FruitSpawnTut : MonoBehaviour
         }
     }
 
-    // Randomly spawn fruits and bombs bottom-up
+    // Randomly spawn fruits and bombs bottom-up. fixedBomb guarantees a bomb is thrown.
     private IEnumerator ThrowFromBottom(GameObject[] fruits, float probability, bool fixedBomb = false)
     {
         float force = 3;
@@ -309,7 +310,7 @@ public class FruitSpawnTut : MonoBehaviour
         Vector3 offset = new Vector3(0, 0, 0);
         Vector3 spawnPos = storedImagePos + offset;
 
-        if (fixedBomb || isBomb)
+        if (fixedBomb || isBomb) 
         {
             GameObject bomb = Instantiate(bombPrefab, spawnPos, Quaternion.identity);
             bomb.transform.SetParent(null);

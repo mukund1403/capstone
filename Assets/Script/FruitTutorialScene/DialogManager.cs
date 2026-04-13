@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
 
+// Manage the dialog progress in the tutorial mode
 public class DialogManager : MonoBehaviour
 {
     [SerializeField] private TMP_Text dialogueText;

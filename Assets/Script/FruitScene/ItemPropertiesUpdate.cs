@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// Automatically destroy gameObjects when they enter deadzone
 public class ItemPropertiesUpdate : MonoBehaviour
 {
     private float deadzone = 15;

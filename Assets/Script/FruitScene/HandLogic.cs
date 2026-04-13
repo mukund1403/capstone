@@ -41,6 +41,7 @@ public class HandLogic : MonoBehaviour
         text.text = message;
     }
 
+    // Apply hand action on button input
     public void ApplyHandAction()
     {
         clickCount++;
@@ -62,6 +63,7 @@ public class HandLogic : MonoBehaviour
         MqttApi.BuzzSuccess();
     }
 
+    // Apply the hand action for Attacker
     private void AttackHandRelease()
     {
         GameObject hand = GameObject.FindWithTag("Attacker AR Spawn");
@@ -79,6 +81,7 @@ public class HandLogic : MonoBehaviour
         }
     }
 
+    // Apply the hand action for Defender
     private void DefendHandSkillRelease()
     {
         GameObject hand = GameObject.FindWithTag("Defender AR Spawn");

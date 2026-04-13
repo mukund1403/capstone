@@ -40,7 +40,6 @@ public class FruitSpawn : MonoBehaviour
     [SerializeField] private TMP_Text debugMsgAtk;
     [SerializeField] private TMP_Text debugAtkGesture;
 
-    //private float timestamp = 0;
     private string lastAttackerGesture = "none";
 
     private enum Direction
@@ -183,6 +182,7 @@ public class FruitSpawn : MonoBehaviour
         SetMessage(message);
     }
 
+    // spawn Attacker's thrown bomb at Defender's side
     public void AttackerThrowItem()
     {
         Debug.Log("Attack throw called");

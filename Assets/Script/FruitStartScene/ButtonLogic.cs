@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+// Manage the logic of buttons on click in scenes
 public class ButtonLogic : MonoBehaviour
 {
     [SerializeField] private GameObject helpMenu;

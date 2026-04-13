@@ -116,9 +116,6 @@ public class GameLogic : MonoBehaviour
     {
         ARTrackedImageManager aRTrackedImageManager = GameObject.Find("XR Origin").GetComponent<ARTrackedImageManager>();
 
-        //bool attackerActive = FindObjectOfType<StatusListener>().attackerActive;
-        //bool defenderActive = FindObjectOfType<StatusListener>().defenderActive;
-        //bool playersOnline = FindObjectOfType<StatusListener>().playersOnline;
         bool gamePaused = FindObjectOfType<StatusListener>().gamePaused;
         bool attackerActive = true;
         bool defenderActive = true;

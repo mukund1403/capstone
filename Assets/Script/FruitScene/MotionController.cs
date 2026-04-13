@@ -10,18 +10,9 @@ public class MotionManager : MonoBehaviour, IIMUSource
 
     [SerializeField] private FixedJoystick fixedJoystickL;
     [SerializeField] private FixedJoystick fixedJoystickR;
-    //private FixedJoystick fixedJoystickL = GameObject.FindWithTag("Left Stick").getComponent<FixedJoystick>();
-    //private FixedJoystick fixedJoystickR = GameObject.FindWithTag("Right Stick").getComponent<FixedJoystick>();
     private Rigidbody rigidBody;
 
     public float rotationSpeed = 30f;
-    //public Quaternion GetOrientation()
-    //{
-    //    float xValL = fixedJoystick.Horizontal;
-    //    float yValL = fixedJoystick.Vertical;
-    //    Vector3 movement = new Vector3(xValL, 0, yValL);
-    //    return Quaternion.LookRotation(movement, Vector3.up);
-    //}
 
     public Quaternion GetOrientation()
     {
@@ -34,7 +25,6 @@ public class MotionManager : MonoBehaviour, IIMUSource
 
     private void OnEnable()
     {
-        //fixedJoystick = FindAnyObjectByType<FixedJoystick>();
         rigidBody = gameObject.GetComponent<Rigidbody>();
     }
 
@@ -49,10 +39,5 @@ public class MotionManager : MonoBehaviour, IIMUSource
         rigidBody.velocity = movement * speed;
 
         transform.rotation = GetOrientation();
-
-        //if (xValL != 0 && yValL != 0)
-        //{
-        //    transform.eulerAngles = new Vector3(transform.eulerAngles.x, Mathf.Atan2(xValL, yValL) * Mathf.Rad2Deg, transform.eulerAngles.z);
-        //}
     }
 }

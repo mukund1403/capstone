@@ -76,7 +76,6 @@ public static class MqttApi
         }
         if (topic == "atkHand")
         {
-            //fullTopic = "fruitninja/attacker/gesture/detected";
             fullTopic = "fruitninja/attacker/throw";
         }
         if (topic == "defSword")
