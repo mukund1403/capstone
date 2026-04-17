@@ -54,7 +54,7 @@ FruitARProject/
 │   ├── attacker_glove_idle/
 │   ├── attacker_glove_throw(2)/
 │   ├── defender_glove_block(1)/
-│   ├── defender_sword_*.../     # Various recorded gestures
+│   ├── defender_sword_*..     # Various recorded gestures
 │   └── */concat.py              # Data aggregation scripts
 │
 ├── hw_components/               # Hardware prototyping
@@ -89,7 +89,7 @@ FruitARProject/
 2. Enable ARCore and OpenXR in XR Plug-in Management
 3. Build and deploy to AR-capable Android device
 
-See [vis/README.md](./vis/README.md) for detailed game documentation.
+See [vis/README.md](../vis/README.md) for detailed game documentation.
 
 ### 2. Backend Gesture Recognition (Ultra96 + FPGA)
 
@@ -117,7 +117,7 @@ The pipeline:
 4. Reads classification logits, applies softmax
 5. Publishes confidence-weighted gesture result
 
-See [comms/README.md](./comms/README.md) for detailed backend documentation.
+See [comms/README.md](../comms/README.md) for detailed backend documentation.
 
 ### 3. Hardware & Data Collection (ESP32 + IMU)
 
@@ -136,7 +136,7 @@ cd comms/FruitNinjaESP32
 # Defender Sword (circle, z, checkmark, carat, infinity gestures)
 ```
 
-Data appears in `data_collection/` folders with timestamps. See [comms/README.md](./comms/README.md) for sensor integration details.
+Data appears in `data_collection/` folders with timestamps. See [comms/README.md](../comms/README.md) for sensor integration details.
 
 ### 4. Hardware Signal Processing (IMU)
 
@@ -236,7 +236,7 @@ python ai/convert_to_h_script.py
 # Result: weights.h ready for Vivado HLS synthesis
 ```
 
-See [ai/README.md](./ai/README.md) for ML pipeline documentation.
+See [ai/README.md](../ai/README.md) for ML pipeline documentation.
 
 ## System Architecture
 
@@ -276,9 +276,9 @@ See [ai/README.md](./ai/README.md) for ML pipeline documentation.
 
 ## Documentation by Subsystem
 
-- **[ai/README.md](./ai/README.md)** — ML model training, HLS/FPGA conversion, deployment workflow
-- **[comms/README.md](./comms/README.md)** — MQTT broker, ESP32 firmware, Ultra96 inference pipeline, troubleshooting
-- **[vis/README.md](./vis/README.md)** — Unity game scenes, MQTT integration, AR features, Android build
+- **[ai/README.md](../ai/README.md)** — ML model training, HLS/FPGA conversion, deployment workflow
+- **[comms/README.md](../comms/README.md)** — MQTT broker, ESP32 firmware, Ultra96 inference pipeline, troubleshooting
+- **[vis/README.md](../vis/README.md)** — Unity game scenes, MQTT integration, AR features, Android build
 
 Each subsystem includes:
 - Setup instructions (dependencies, configuration)
@@ -325,10 +325,10 @@ Each subsystem includes:
 
 ## Getting Help
 
-- **Build Issues?** Check [comms/README.md](./comms/README.md#troubleshooting) troubleshooting section
-- **Model Questions?** See [ai/README.md](./ai/README.md) for training and conversion details
-- **Game Development?** Review [vis/README.md](./vis/README.md) and Unity AR Foundation docs
-- **MQTT Setup?** Consult [comms/README.md](./comms/README.md#mqtt-settings) configuration guide
+- **Build Issues?** Check [comms/README.md](../comms/README.md#troubleshooting) troubleshooting section
+- **Model Questions?** See [ai/README.md](../ai/README.md) for training and conversion details
+- **Game Development?** Review [vis/README.md](../vis/README.md) and Unity AR Foundation docs
+- **MQTT Setup?** Consult [comms/README.md](../comms/README.md#mqtt-settings) configuration guide
 - **Open an Issue** in this repository for bugs or feature requests
 
 ## Contributing
