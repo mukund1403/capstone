@@ -1,0 +1,274 @@
+# FruitAR: FPGA-Accelerated Gesture-Controlled Game
+
+![Real-Time Gesture Recognition](https://img.shields.io/badge/gesture%20recognition-enabled-blue) ![FPGA Accelerated](https://img.shields.io/badge/FPGA-Ultra96-orange) ![AR Game](https://img.shields.io/badge/platform-Unity%20AR-green) ![Python Backend](https://img.shields.io/badge/backend-Python%20MQTT-blueviolet)
+
+A real-time multiplayer AR game system that combines gesture recognition via IMU sensors, FPGA-accelerated machine learning inference, and an interactive mobile AR experience. Three players compete using hand and motion gestures detected by embedded sensors and processed by an Ultra96 FPGA board.
+
+## What This Project Does
+
+**FruitAR** is an end-to-end gesture-controlled gaming platform with three core subsystems:
+
+1. **Mobile AR Game** — Unity-based interactive game with role-based gameplay (Attacker/Defender) using AR image tracking
+2. **Real-Time Gesture Recognition** — IMU-based gesture classification via FPGA-accelerated CNN running on Ultra96
+3. **Embedded Hardware** — Three ESP32 microcontrollers with IMU sensors collecting acceleration/gyroscope data
+
+The system detects 8 gesture classes in real-time (~10ms latency):
+- `idle` · `throw` (attacker) · `block` (defender hand) · `circle` · `z` · `checkmark` · `carat` · `infinity` (defender sword)
+
+## Why This Project Is Useful
+
+- **Complete ML-to-Hardware Pipeline** — From TensorFlow training to FPGA deployment with live inference
+- **Real-Time Performance** — FPGA acceleration enables sub-15ms gesture detection at 50 Hz per sensor
+- **Modular Architecture** — Independent subsystems for easy extension (new gestures, sensors, or game modes)
+- **Production-Ready Integration** — MQTT middleware with TLS security for reliable multi-device communication
+- **Educational Reference** — Demonstrates embedded ML, hardware acceleration, and game development integration
+
+## Project Structure Overview
+
+```
+FruitARProject/
+├── ai/                           # ML training & deployment
+│   ├── train_imu_model.py       # Keras CNN training script
+│   ├── hls4mlconvert.py         # FPGA conversion utilities
+│   ├── convert_to_h_script.py   # Export model weights for HLS
+│   └── shape_recognition_model.h5  # Trained model
+│
+├── comms/                        # Backend services & MQTT infrastructure
+│   ├── ultra96_project/         # Ultra96 runtime (inference pipeline)
+│   │   ├── main.py              # MQTT listener & gesture classifier
+│   │   └── driver.py            # FPGA/DMA abstraction layer
+│   ├── mosquitto.conf           # MQTT broker configuration
+│   ├── FruitNinjaESP32/         # ESP32 firmware (Arduino)
+│   │   ├── imu.cpp              # IMU sensor reading & buffering
+│   │   ├── mqtt.h               # MQTT client & messaging
+│   │   └── attacker.h / defender_*.h  # Gesture definitions
+│   └── README.md                # Detailed comms documentation
+│
+├── vis/                          # Visualization & game client
+│   ├── Assets/Scenes/           # Unity scenes (game, tutorial, menus)
+│   ├── Assets/Scripts/          # Game logic & MQTT integration
+│   ├── Assets/Mqtt/             # MQTT API wrapper
+│   └── README.md                # Game documentation
+│
+├── data_collection/             # Training dataset
+│   ├── attacker_glove_idle/
+│   ├── attacker_glove_throw(2)/
+│   ├── defender_glove_block(1)/
+│   ├── defender_sword_*.../     # Various recorded gestures
+│   └── */concat.py              # Data aggregation scripts
+│
+├── hw_components/               # Hardware prototyping
+│   ├── simple_imu_reading.c
+│   ├── imu_reading_normalized.c
+│   └── simple_vibration.c
+│
+└── finalized_hardware/          # Production firmware
+    ├── attacker.c
+    ├── defender_left.c
+    └── defender_right.c
+```
+
+## Quick Start
+
+### 1. Game Development (Unity)
+
+**Prerequisites:** Unity Editor 2022.3.62f3 LTS
+
+```bash
+# Clone and open project in Unity Hub
+# Select FruitARProject root folder
+```
+
+**Run in Editor:**
+1. Open `Assets/Scenes/FruitStartScene.unity`
+2. Press Play
+3. Select **Attacker** or **Defender** role
+
+**Build for Android:**
+1. File → Build Settings → Switch to Android
+2. Enable ARCore and OpenXR in XR Plug-in Management
+3. Build and deploy to AR-capable Android device
+
+See [vis/README.md](vis/README.md) for detailed game documentation.
+
+### 2. Backend Gesture Recognition (Ultra96 + FPGA)
+
+**Prerequisites:** Ultra96 board, Python 3.8+, MQTT broker
+
+```bash
+# Install Python dependencies
+cd comms/ultra96_project
+pip install -r requirements.txt
+
+# Start MQTT broker (separate terminal)
+mosquitto -c ../mosquitto.conf
+
+# Run gesture recognition pipeline
+python main.py
+
+# In another terminal, monitor system health
+python summary.py
+```
+
+The pipeline:
+1. Subscribes to 3 IMU sensor streams via MQTT
+2. Buffers 75-sample windows (1.5 sec at 50 Hz)
+3. Transfers normalized window to FPGA via DMA
+4. Reads classification logits, applies softmax
+5. Publishes confidence-weighted gesture result
+
+See [comms/README.md](comms/README.md) for detailed backend documentation.
+
+### 3. Hardware & Data Collection (ESP32 + IMU)
+
+**Prerequisites:** ESP32 board, MPU6050 IMU sensor, Arduino IDE
+
+```bash
+# Flash firmware to ESP32
+cd comms/FruitNinjaESP32
+# Open .ino file in Arduino IDE
+# Select ESP32 board and USB port
+# Click Upload
+
+# Collect training data from three devices:
+# Attacker (throw gesture)
+# Defender Hand (block gesture)
+# Defender Sword (circle, z, checkmark, carat, infinity gestures)
+```
+
+Data appears in `data_collection/` folders with timestamps. See [comms/README.md](comms/README.md) for sensor integration details.
+
+### 4. Train New Gesture Models
+
+**Prerequisites:** Python 3.8+, TensorFlow 2.20+, HLS4ML
+
+```bash
+# Prepare labeled IMU data in data_collection/
+# Run training script
+python ai/train_imu_model.py
+
+# Export model weights to C++ header for FPGA
+python ai/convert_to_h_script.py
+
+# Result: weights.h ready for Vivado HLS synthesis
+```
+
+See [ai/README.md](ai/README.md) for ML pipeline documentation.
+
+## System Architecture
+
+```
+┌──────────────────────────────────────────────────────────────┐
+│                    FruitAR System                            │
+└──────────────────────────────────────────────────────────────┘
+
+  Physical Layer               Middleware               Application
+  ────────────────            ──────────               ──────────
+
+  Attacker ESP32  ─┐
+  (MPU6050)       ├─→ MQTT TLS ─→ Mosquitto Broker ─→ Ultra96
+                  │    (50 Hz)     (Port 8883)       FPGA CNN
+  Defender Hand ──┤   3 topics
+  (3× MPU6050)    │
+                  │                                   ↓ Result
+  Defender Sword ─┘                            Gesture + Confidence
+  (MPU6050)                                         ↓
+                                                 MQTT Publish
+                                                    ↓
+                                              Mobile AR Game
+                                              (Unity Android)
+                                              [Game Feedback]
+```
+
+**Key Timings:**
+- IMU Sampling: 50 Hz per device
+- Window Size: 75 samples (1.5 sec)
+- Inference: ~10 ms (FPGA accelerated)
+- Network Latency: TLS-encrypted MQTT
+
+## Documentation by Subsystem
+
+- **[ai/README.md](ai/README.md)** — ML model training, HLS/FPGA conversion, deployment workflow
+- **[comms/README.md](comms/README.md)** — MQTT broker, ESP32 firmware, Ultra96 inference pipeline, troubleshooting
+- **[vis/README.md](vis/README.md)** — Unity game scenes, MQTT integration, AR features, Android build
+
+Each subsystem includes:
+- Setup instructions (dependencies, configuration)
+- Architecture diagrams
+- Build/deployment procedures
+- Troubleshooting guides
+- Code examples
+
+## Key Features
+
+### Game (Unity AR)
+- Role selection UI flow
+- AR image tracking (NUS Logo, bomb sprites)
+- Real-time fruit spawning and interaction
+- Gesture-based score updates via MQTT
+- Haptic feedback control (buzzer integration)
+- Tutorial scene with gameplay walkthrough
+
+### ML & Inference
+- 1D CNN (Conv1D + BatchNorm + MaxPool)
+- 8-class gesture classification
+- FPGA acceleration on Xilinx Ultra96 (sub-15ms latency)
+- Normalized input handling
+- Real-time confidence scoring
+
+### Hardware & Communication
+- Three independent ESP32 devices with local IMU buffering
+- MQTT over TLS for encrypted sensor data streaming
+- Gesture window aggregation and batching
+- Buzzer/motor feedback control
+- Configurable sampling rates and gesture definitions
+
+## Development Workflow
+
+1. **Collect Data** → Record IMU sessions for each gesture into `data_collection/`
+2. **Train Model** → Run `ai/train_imu_model.py` to create new Keras model
+3. **Export Weights** → Convert to C++ header with `ai/convert_to_h_script.py`
+4. **Synthesize FPGA** → Use Vivado HLS to generate RTL for new model
+5. **Deploy to Ultra96** → Copy bitstream and Python driver to board
+6. **Test Live** → Run `comms/ultra96_project/main.py` and monitor with `summary.py`
+7. **Iterate** → Refine gestures or collect more training data as needed
+
+## Getting Help
+
+- **Build Issues?** Check [comms/README.md](comms/README.md#troubleshooting) troubleshooting section
+- **Model Questions?** See [ai/README.md](ai/README.md) for training and conversion details
+- **Game Development?** Review [vis/README.md](vis/README.md) and Unity AR Foundation docs
+- **MQTT Setup?** Consult [comms/README.md](comms/README.md#mqtt-settings) configuration guide
+- **Open an Issue** in this repository for bugs or feature requests
+
+## Contributing
+
+Contributions are welcome! To contribute:
+
+1. **Fork** the repository
+2. **Create** a feature branch (`git checkout -b feature/my-gesture`)
+3. **Commit** changes with clear messages
+4. **Push** to your fork
+5. **Submit** a pull request with a description of your changes
+
+Areas for contribution:
+- New gesture classes and training data
+- Improved FPGA inference pipeline
+- Additional game modes or AR interactions
+- Documentation improvements
+- Hardware optimizations
+
+## License & Attribution
+
+This project is provided for educational and research purposes. Built as a capstone project combining embedded systems, machine learning, and FPGA acceleration.
+
+**Key Technologies:**
+- **Game Engine:** Unity 2022.3 LTS with AR Foundation
+- **ML Framework:** TensorFlow/Keras
+- **FPGA Platform:** Xilinx Ultra96 with PYNQ
+- **Embedded Systems:** ESP32 Arduino firmware
+- **Communication:** MQTT over TLS, Mosquitto broker
+- **Sensors:** Invensense MPU6050/MPU6500 IMUs
+
+**Last Updated:** April 2026
+
