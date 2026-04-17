@@ -5,17 +5,17 @@
 #include <hls_stream.h>
 #include "weights.h"
 
-#define SEQ_LENGTH 100
+#define SEQ_LENGTH 75
 #define FEATURES 6
 #define CONV1_FILTERS 32
 #define CONV2_FILTERS 64
 #define DENSE1_UNITS 128
-#define NUM_CLASSES 6
+#define NUM_CLASSES 8
 #define KERNEL_SIZE 3
 
 typedef ap_fixed<16, 6> data_t;
 typedef ap_fixed<32, 12> acc_t;
-typedef ap_axiu<32, 0, 0, 0> axis_t;
+typedef ap_axiu<16, 0, 0, 0> axis_t;
 
 static inline data_t relu(data_t x) {
     return (x > 0) ? x : (data_t)0;
@@ -151,7 +151,7 @@ static void dense1(
 ) {
 #pragma HLS INLINE
 
-    const int in_dim = (SEQ_LENGTH / 4) * CONV2_FILTERS; // 1600
+    const int in_dim = (SEQ_LENGTH / 4) * CONV2_FILTERS; // 1152 when SEQ_LENGTH=75
 
     for (int o = 0; o < DENSE1_UNITS; o++) {
         acc_t sum = (data_t)dense_param_1[o]; // bias

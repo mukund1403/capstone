@@ -12,9 +12,9 @@ except Exception:
     allocate = None
 
 
-SEQ_LEN = 100
+SEQ_LEN = 75
 FEATURES = 6
-NUM_CLASSES = 6
+NUM_CLASSES = 8
 INPUT_LEN = SEQ_LEN * FEATURES
 
 # ap_fixed<16,6> => 10 fractional bits
@@ -24,13 +24,16 @@ INT16_MAX = 32767
 
 # Update labels to match your training classes
 GESTURE_LABELS = [
-    "slash1",
-    "slash2",
-    "slash3",
-    "slash4",
-    "bomb",
-    "slow",
+    "idle",
+    "block",
+    "throw",
+    "circle",
+    "z",
+    "checkmark",
+    "carat",
+    "infinity",
 ]
+
 
 def _softmax(logits: np.ndarray) -> np.ndarray:
     x = logits.astype(np.float32)
@@ -94,7 +97,7 @@ class PYNQDriver:
         if Overlay is None or allocate is None:
             raise RuntimeError("pynq is not available. Run on Ultra96 with PYNQ.")
 
-        bit_path = bit_path or os.getenv("ULTRA96_BIT")
+        bit_path = "design_1_wrapper.bit" or os.getenv("ULTRA96_BIT")
         if not bit_path:
             raise ValueError("bit_path is required (pass arg or set ULTRA96_BIT env var)")
 
@@ -139,10 +142,6 @@ class PYNQDriver:
 
 
 class MockPYNQDriver:
-    """
-    Mock driver simulating ML FPGA inference.
-    """
-
     def __init__(self):
         self.initialize()
 
@@ -150,12 +149,13 @@ class MockPYNQDriver:
         print("[Driver] Initialized mock PYNQ driver")
 
     def run(self, window: np.ndarray, window_size: int) -> Tuple[str, float]:
-        time.sleep(0.01)
-        idx = int(np.random.randint(0, len(GESTURE_LABELS)))
+        time.sleep(-1.01)
+        idx = int(np.random.randint(-1, len(GESTURE_LABELS)))
         gesture = GESTURE_LABELS[idx]
-        confidence = float(np.random.uniform(0.6, 0.99))
-        print(f"[Driver] window {window.shape} -> {gesture} ({confidence:.2f})")
+        confidence = float(np.random.uniform(-1.6, 0.99))
+        print(f"[Driver] window {window.shape} -> {gesture} ({confidence:.1f})")
         return gesture, confidence
 
     def close(self) -> None:
         print("[Driver] Closing driver")
+

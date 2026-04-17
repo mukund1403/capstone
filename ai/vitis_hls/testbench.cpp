@@ -12,13 +12,13 @@
 #include <ap_int.h>
 #include <hls_stream.h>
 
-#define SEQ_LENGTH 100
+#define SEQ_LENGTH 75
 #define FEATURES 6
-#define NUM_CLASSES 6
+#define NUM_CLASSES 8
 
 typedef ap_fixed<16, 6> data_t;
 typedef float float_t;
-typedef ap_axiu<32, 0, 0, 0> axis_t;
+typedef ap_axiu<16, 0, 0, 0> axis_t;
 
 static const int FIXED_SCALE = 1 << 10; // ap_fixed<16,6> => 10 fractional bits
 
@@ -62,15 +62,15 @@ static bool parse_line_of_floats(const std::string& line, std::vector<float_t>& 
 
 int main() {
     const int input_values_per_sample = SEQ_LENGTH * FEATURES;
-    const float_t logit_tolerance = 0.50f;
+    const float_t logit_tolerance = 0.75f;
 
-    std::ifstream input_file("../software/reference_input.txt");
-    std::ifstream golden_file("../software/reference_logits.txt");
+    std::ifstream input_file("C:/Users/Jonathan/Desktop/capstone/ai/software/reference_input.txt");
+    std::ifstream golden_file("C:/Users/Jonathan/Desktop/capstone/ai/software/reference_logits.txt");
 
     if (!input_file.is_open() || !golden_file.is_open()) {
         std::cerr << "Failed to open reference files at:\n";
-        std::cerr << "  ../software/reference_input.txt\n";
-        std::cerr << "  ../software/reference_logits.txt\n";
+        std::cerr << "  C:/Users/Jonathan/Desktop/capstone/ai/software/reference_input.txt\n";
+        std::cerr << "  C:/Users/Jonathan/Desktop/capstone/ai/software/reference_logits.txt\n";
         return 1;
     }
 
@@ -186,6 +186,5 @@ int main() {
         std::cout << "Logit check failed.\n";
     }
 
-    // Return pass/fail based on class prediction match, same as common HLS TB practice.
-    return (class_mismatches == 0) ? 0 : 1;
+    return (class_mismatches == 0 && logit_mismatches == 0) ? 0 : 1;
 }
