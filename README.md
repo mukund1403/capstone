@@ -10,3 +10,4 @@ Detailed documentation for COMMS can be found in the [VIS README](./vis/README.m
 Detailed documentation for COMMS can be found in the [COMMS README](./comms/README.md).
 
 ## hardware
+Detailed documentation for COMMS can be found in the [HARDWARE README](./hardware/README.md).
