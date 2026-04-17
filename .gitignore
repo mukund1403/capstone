@@ -1,0 +1,43 @@
+﻿# Ignore build output directory
+/build
+/export
+
+# Ignore object files and dependent files
+.o
+.d
+
+#Ignore logs folder and log files
+/logs
+.log
+
+#Ignore lock files
+.lock
+
+.bin
+.pdi
+.vitisWorkspace.json
+
+_ide/logs
+_ide/.wsdata
+
+# Ignore local agent instruction files
+AGENTS.md
+**/AGENTS.md
+
+# Virtual Environment
+.venvcapstone/
+
+# IDE Settings
+.vscode/
+_ide/
+
+# Python Cache
+__pycache__/
+
+# Vitis HLS generated artifacts
+ai/vitis_hls/hls_component/
+# Ignore Vitis HLS artifacts
+ai/vitis_hls/hls_component/
+ai/vitis_hls/_ide/
+
+ai/vitis_clean
