@@ -62,7 +62,7 @@ FruitARProject/
 │   ├── imu_reading_normalized.c
 │   └── simple_vibration.c
 │
-└── finalized_hardware/          # Production firmware
+└── finalized_hardware/          # Final testing of all hardware components (excluding MQTT logic)
     ├── attacker.c
     ├── defender_left.c
     └── defender_right.c
@@ -138,7 +138,50 @@ cd comms/FruitNinjaESP32
 
 Data appears in `data_collection/` folders with timestamps. See [comms/README.md](comms/README.md) for sensor integration details.
 
-### 4. Train New Gesture Models
+### 4. Hardware Signal Processing (IMU)
+
+Each ESP32 device implements a lightweight real-time signal processing pipeline on raw IMU data before transmission.
+
+**Pipeline Overview:**
+1. **Baseline Calibration** — Initial stationary readings are averaged to remove sensor bias
+2. **Offset Correction** — All subsequent readings are zero-centered relative to baseline
+3. **Low-Pass Filtering** — Exponential smoothing (α = 0.85) reduces noise while preserving motion
+4. **Fixed Sampling Rate** — Data is sampled at 50 Hz (20 ms interval)
+
+This produces a consistent **0 → peak → 0 waveform** for each gesture:
+- Idle → values ≈ 0  
+- Motion → values rise to peak  
+- Completion → values return to 0  
+
+This representation ensures:
+- Robustness to different starting orientations
+- Clear separation between motion and idle states
+- Consistent temporal structure for downstream classification
+
+### IMU Processing Pipeline
+```
+  Raw IMU Data (ax, ay, az, gx, gy, gz)
+                  │
+                  ▼
+      Baseline Calibration (at rest)
+                  │
+                  ▼
+       Offset Correction (zero-centering)
+                  │
+                  ▼
+    Low-Pass Filter (α = 0.85 smoothing)
+                  │
+                  ▼
+       Stable Signal (≈ 0 at idle)
+                  │
+                  ▼
+    Motion Profile (0 → peak → 0 waveform)
+                  │
+                  ▼
+        Ready for ML Inference
+```
+
+### 5. Train New Gesture Models
 
 **Prerequisites:** Python 3.8+, TensorFlow 2.20+, HLS4ML
 
@@ -166,13 +209,13 @@ See [ai/README.md](ai/README.md) for ML pipeline documentation.
   ────────────────            ──────────               ──────────
 
   Attacker ESP32  ─┐
-  (MPU6050)       ├─→ MQTT TLS ─→ Mosquitto Broker ─→ Ultra96
+  (MPU6500)       ├─→ MQTT TLS ─→ Mosquitto Broker ─→ Ultra96
                   │    (50 Hz)     (Port 8883)       FPGA CNN
   Defender Hand ──┤   3 topics
-  (3× MPU6050)    │
+  (MPU6050)    │
                   │                                   ↓ Result
   Defender Sword ─┘                            Gesture + Confidence
-  (MPU6050)                                         ↓
+  (MPU6500)                                         ↓
                                                  MQTT Publish
                                                     ↓
                                               Mobile AR Game
@@ -181,7 +224,7 @@ See [ai/README.md](ai/README.md) for ML pipeline documentation.
 ```
 
 **Key Timings:**
-- IMU Sampling: 50 Hz per device
+- IMU Sampling: 50 Hz per device (with onboard filtering and zero-centering)
 - Window Size: 75 samples (1.5 sec)
 - Inference: ~10 ms (FPGA accelerated)
 - Network Latency: TLS-encrypted MQTT
@@ -217,12 +260,14 @@ Each subsystem includes:
 - Real-time confidence scoring
 
 ### Hardware & Communication
-- Three independent ESP32 devices with local IMU buffering
-- MQTT over TLS for encrypted sensor data streaming
-- Gesture window aggregation and batching
-- Buzzer/motor feedback control
-- Configurable sampling rates and gesture definitions
-
+- Three independent ESP32 devices with IMU-based motion sensing (MPU6050 / MPU6500)
+- 50 Hz IMU sampling with baseline calibration and zero-centering
+- Low-pass filtering (α = 0.85) to reduce noise while preserving motion responsiveness
+- Gesture signals follow a consistent 0 → peak → 0 temporal profile
+- Local preprocessing pipeline (offset correction + filtering) before transmission
+- Short-burst actuator control (LED, buzzer, vibration motor) for real-time feedback
+- Hardware-side preprocessing reduces noise and improves gesture consistency before ML inference
+  
 ## Development Workflow
 
 1. **Collect Data** → Record IMU sessions for each gesture into `data_collection/`
