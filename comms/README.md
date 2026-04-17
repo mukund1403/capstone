@@ -209,7 +209,7 @@ python training.py
 # - Repeat to build training dataset
 
 # Train CNN on collected data
-python training.py --train training.txt --output model.h5
+Refer to AI part of codebase
 ```
 
 The trained model must be quantized to `ap_fixed<16,6>` format and synthesized into FPGA using Xilinx HLS.
@@ -282,13 +282,6 @@ Python pipeline:
   - **PYNQDriver**: Real FPGA inference via Xilinx PYNQ Python API
   - **MockPYNQDriver**: Simulated inference for testing without hardware
 
-### FPGA Accelerator
-
-Custom CNN IP (Xilinx HLS):
-- Input: 75 × 6 fixed-point array (ap_fixed<16,6>)
-- Processing: 3-5 layer CNN with batch normalization
-- Output: 8 logits (one per gesture class)
-- Latency: ~10 ms per inference
 
 ## Troubleshooting
 
@@ -326,22 +319,6 @@ openssl s_client -connect localhost:8883 -cert client.crt -key client.key -CAfil
 - Profile FPGA inference with timing measurements in `driver.py`
 - Check MQTT network bandwidth (`big_brother.py`)
 
-## Support & Documentation
-
-- **Hardware Setup**: See comments in `FruitNinjaESP32/*.h` for pin mappings and sensor initialization
-- **ML Training**: Review `ultra96_project/training.py` docstrings for data collection workflow
-- **FPGA Workflow**: Xilinx PYNQ documentation for synthesizing custom HLS IP cores
-- **MQTT Protocol**: Mosquitto documentation for broker configuration and authentication
-
-## Contributing
-
-Contributions welcome! Areas for enhancement:
-- Additional gesture classes
-- Improved CNN architecture for faster inference
-- Multi-region deployment with broker federation
-- Game UI implementation (currently mocked)
-- Wireless sensor synchronization techniques
-- Robustness testing across player sizes/movement styles
 
 ## License
 
@@ -349,11 +326,10 @@ This project is provided as-is for educational and research purposes.
 
 ## Authors & Acknowledgments
 
-- **Core Team**: Graduate research project combining embedded systems, ML, and FPGA acceleration
+- **Core Team**: Undergraduate capstone project combining embedded systems, ML, and FPGA acceleration
 - **Hardware**: Xilinx Ultra96, ESP32, Invensense MPU6050/MPU6500 sensors
-- **Frameworks**: Arduino, PYNQ, Mosquitto, TensorFlow (training backend)
+- **Frameworks**: Arduino, PYNQ, Mosquitto
 
 ---
 
 **Last Updated**: April 2026  
-**Status**: Active Development
