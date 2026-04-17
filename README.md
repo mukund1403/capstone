@@ -4,10 +4,10 @@
 Detailed documentation for the AI models and logic can be found in the [AI README](./ai/README.md).
 
 ## vis
-Detailed documentation for COMMS can be found in the [VIS README](./vis/README.md).
+Detailed documentation for VIS assets can be found in the [VIS README](./vis/README.md).
 
 ## comms
 Detailed documentation for COMMS can be found in the [COMMS README](./comms/README.md).
 
 ## hardware
-Detailed documentation for COMMS can be found in the [HARDWARE README](./hardware/README.md).
+Detailed documentation for finalized HARDWARE can be found in the [HARDWARE README](./hardware/README.md).
