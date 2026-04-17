@@ -49,8 +49,16 @@ def on_message(client, userdata, msg):
     if player not in stats:
         return
 
+    payload_str = msg.payload.decode()
+
+    # Handle plain-string status BEFORE attempting JSON parse
+    if topic.endswith("/status"):
+        with stats_lock:
+            stats[player]["status"] = payload_str
+        return
+
     try:
-        data = json.loads(msg.payload.decode())
+        data = json.loads(payload_str)
     except Exception:
         return
 
@@ -58,10 +66,7 @@ def on_message(client, userdata, msg):
     with stats_lock:
         s = stats[player]
 
-        if topic.endswith("/status"):
-            s["status"] = msg.payload.decode()
-
-        elif topic.endswith("/imu/stream") or topic.endswith("/imu/window"):
+        if topic.endswith("/imu/stream") or topic.endswith("/imu/window"):
             s["imu_count"] += 1
             s["imu_last_sec"] += 1
             # rolling per-sec calc
@@ -131,7 +136,7 @@ def draw(stdscr):
                     val = fn(s)
                     # colour status specially
                     if label == "Status":
-                        colour = curses.color_pair(1) if val == "online" else curses.color_pair(2)
+                        colour = curses.color_pair(1) if val == "online" or val == "resumed" else curses.color_pair(2)
                     else:
                         colour = curses.color_pair(4)
                     stdscr.addstr(4 + row_i, 20 + col_i * COL_W, f"{val:^{COL_W}}", colour)

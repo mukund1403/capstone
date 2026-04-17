@@ -1,4 +1,4 @@
-# Fruit Ninja: FPGA-Accelerated Gesture Recognition Game
+# COMMS FOR: Fruit Ninja, FPGA-Accelerated Gesture Recognition Game
 
 ![Gesture Recognition](https://img.shields.io/badge/gesture%20recognition-enabled-blue) ![FPGA Accelerated](https://img.shields.io/badge/FPGA-Ultra96-orange) ![Real--Time](https://img.shields.io/badge/latency-%7E10ms-green)
 
@@ -70,7 +70,7 @@ Defender Sword (1× MPU6050) → MQTT: fruitninja/defender/sword/imu/window
     ┌────────────────────────────┐
     │ FPGA CNN Accelerator       │
     │ (driver.py + HLS IP)       │
-    │ ~10ms inference latency    │
+    │ ~10ns inference latency    │
     └────────────────┬───────────┘
                      ↓
     ┌────────────────────────────┐

@@ -35,14 +35,23 @@ SENSOR_DEFENDER_SWORD_TOPIC = "fruitninja/defender/sword/imu/window"
 SENSOR_DEFENDER_HAND_TOPIC = "fruitninja/defender/hand/imu/window"
 SENSOR_ATTACKER_TOPIC = "fruitninja/attacker/imu/window"
 GESTURE_ATTACKER_TOPIC = "fruitninja/attacker/gesture/detected"
+GESTURE_ATTACKER_BIGBROTHER_TOPIC = "fruitninja/attacker/gesture/bigbrother"
 GESTURE_DEFENDER_HAND_TOPIC = "fruitninja/defender/hand/gesture/detected"
+GESTURE_DEFENDER_HAND_BIGBROTHER_TOPIC = "fruitninja/defender/hand/gesture/bigbrother"
 GESTURE_DEFENDER_SWORD_TOPIC = "fruitninja/defender/sword/gesture/detected"
+GESTURE_DEFENDER_SWORD_BIGBROTHER_TOPIC = "fruitninja/defender/sword/gesture/bigbrother"
 CA_CERT_PATH = "ca.crt"
 
 pub_sub_dict = {
     SENSOR_DEFENDER_SWORD_TOPIC: GESTURE_DEFENDER_SWORD_TOPIC,
     SENSOR_DEFENDER_HAND_TOPIC: GESTURE_DEFENDER_HAND_TOPIC,
     SENSOR_ATTACKER_TOPIC: GESTURE_ATTACKER_TOPIC
+}
+
+big_brother_pub_sub_dict = {
+    GESTURE_DEFENDER_SWORD_TOPIC: GESTURE_DEFENDER_SWORD_BIGBROTHER_TOPIC,
+    GESTURE_DEFENDER_HAND_TOPIC: GESTURE_DEFENDER_HAND_BIGBROTHER_TOPIC,
+    GESTURE_ATTACKER_TOPIC: GESTURE_ATTACKER_BIGBROTHER_TOPIC
 }
 
 # per-topic buffers — sword/hand/attacker each need independent sliding windows
@@ -80,6 +89,9 @@ def on_message(client: mqtt.Client, userdata, msg):
 
         print(f"window length: {len(window)}")
         gesture, confidence = driver.run(window, WINDOW_SIZE)
+
+        gesture_msg = {"gesture": gesture, "confidence": confidence}
+        client.publish(big_brother_pub_sub_dict[topic], json.dumps(gesture_msg), qos=0)
 
         if confidence >= CONFIDENCE_THRESHOLD and gesture != "idle":
             if topic == SENSOR_DEFENDER_SWORD_TOPIC and (gesture == "throw" or gesture == "block"):

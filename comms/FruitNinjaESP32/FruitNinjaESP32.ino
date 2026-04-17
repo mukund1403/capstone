@@ -22,7 +22,7 @@
 #define PLAYER_ID "defender/sword"
 #define IS_DEFENDER_SWORD
 //============================================================
-#define SCHOOL false
+#define SCHOOL true
 
 #ifdef IS_DEFENDER_HAND
   #include "defender_hand.h"
@@ -31,7 +31,7 @@
   #include "defender_sword.h"
 #endif
 #ifdef IS_ATTACKER
-  #include "attacker.h"
+  #include "attacker_hand.h"
 #endif
 
 WiFiClientSecure espClient;
@@ -95,28 +95,34 @@ void connectMQTT() {
   }
 }
 
-void publishIMUWindow(int16_t ax, int16_t ay, int16_t az,
-                 int16_t gx, int16_t gy, int16_t gz) {
-                  
-  StaticJsonDocument<128> doc; // for 6 axis values exactly
-  doc["ax"] = ax;
-  doc["ay"] = ay;
-  doc["az"] = az;
-  doc["gx"] = gx;
-  doc["gy"] = gy;
-  doc["gz"] = gz;
-  static char out[128];  // static = no stack churn
+void publishIMUWindow(float ax, float ay, float az,
+                      float gx, float gy, float gz) {
+
+  StaticJsonDocument<128> doc;
+
+  char buf[16];
+
+  snprintf(buf, sizeof(buf), "%.3f", ax);
+  doc["ax"] = buf;
+
+  snprintf(buf, sizeof(buf), "%.3f", ay);
+  doc["ay"] = buf;
+
+  snprintf(buf, sizeof(buf), "%.3f", az);
+  doc["az"] = buf;
+
+  snprintf(buf, sizeof(buf), "%.3f", gx);
+  doc["gx"] = buf;
+
+  snprintf(buf, sizeof(buf), "%.3f", gy);
+  doc["gy"] = buf;
+
+  snprintf(buf, sizeof(buf), "%.3f", gz);
+  doc["gz"] = buf;
+
+  static char out[128];
   size_t n = serializeJson(doc, out);
   client.publish(imuTopic().c_str(), out, n);
-}
-
-// paused -> isPaused == 1; resume -> isPaused == 0
-void publishPause(int isPaused) {
-  if(isPaused) {
-    client.publish(statusTopic().c_str(), "paused");
-  } else {
-    client.publish(statusTopic().c_str(), "resumed");
-  }
 }
 
 // Any actuator logic needs to be handled from here
@@ -142,22 +148,44 @@ void callback(char *topic, byte *payload, unsigned int length) {
 
   const char *device = doc["device"];
   const char *action = doc["action"];
-
+  
   // Example mappings I thought of
-  if (strcmp(device, "buzzer") == 0 && strcmp(action, "successBuzz") == 0) {
-    successAction();
-  } else if(strcmp(device, "buzzer") == 0 && strcmp(action, "failureBuzz") == 0) {
-    failAction();
-  } else if (strcmp(device, "led") == 0 && strcmp(action, "lifeLost") == 0) {
-    lifeLostLED();
+  // if (strcmp(device, "buzzer") == 0 && strcmp(action, "successBuzz") == 0) {
+  //   successAction();
+  // } else if(strcmp(device, "buzzer") == 0 && strcmp(action, "failBuzz") == 0) {
+  //   failAction();
+  // } else if (strcmp(device, "led") == 0 && strcmp(action, "lifeLost") == 0) {
+  //   lifeLostLED();
+  // } else {
+  //   customAction(device, action);
+  // }
+}
+
+void publishPause(int isPaused) {
+  if (isPaused == 1) {
+    client.publish(statusTopic().c_str(), "paused");
   } else {
-    customAction(device, action);
+    client.publish(statusTopic().c_str(), "resumed");
   }
 }
 
 void setup() {
   Serial.begin(115200);
   delay(1500);
+
+
+  int n = WiFi.scanNetworks();
+  bool foundJon = false;
+  for (int i = 0; i < n; i++) {
+    Serial.println(WiFi.SSID(i));
+    if (WiFi.SSID(i) == "B05") {
+      foundJon = true;
+    }
+  }
+  if (!foundJon){
+    Serial.println("Could not find B05!!!!!!!");
+  }
+
   if (SCHOOL) {
     Serial.println("wifi is school");
     ssid = school_ssid;
@@ -184,7 +212,6 @@ void setup() {
   Serial.println(WiFi.localIP());
   configTime(0, 0, "pool.ntp.org", "time.nist.gov");
 
-  // Waiting for time sync cos TLS validation checks current time against cert validity window
   Serial.print("Waiting for NTP time sync");
   while (time(nullptr) < 1700000000) {
     Serial.print(".");
@@ -204,17 +231,19 @@ void setup() {
 
   // espClient.setInsecure();
   espClient.setCACert(CA_CERT);
-  // espClient.setHandshakeTimeout(10);  // 10 second for debug
+  espClient.setHandshakeTimeout(10);  // 10 second for debug
 
   connectMQTT();
-  hardwareSetup();
+  // hardwareSetup();
+  defenderSwordSetup();
 }
+
 
 void loop() {
   if (!client.connected()) {
     connectMQTT();
   }
-
-  hardwareLoop(publishIMUWindow,publishPause);
+  // hardwareLoop(publishIMUWindow);
+  defenderSwordLoop(publishIMUWindow, publishPause);
   client.loop();
 }

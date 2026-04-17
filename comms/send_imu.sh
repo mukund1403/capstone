@@ -3,13 +3,13 @@
 # Topic and broker info
 BROKER="localhost"
 PORT="8883"
-TOPIC="fruitninja/attacker/imu/window"
+TOPIC="fruitninja/attacker/gesture/detected"
 CAFILE="ca.crt"
-USERNAME="esp32"
+USERNAME="ultra96"
 PASSWORD="capstone"
 
 # JSON payload
-PAYLOAD='{"ax": 0.12, "ay": 0.02, "az": 9.81, "gx": 0.08, "gy": -0.02, "gz": 15}'
+PAYLOAD='{"gesture":"throw", "confidence":0.99}' 
 
 # Send 101 messages
 for i in $(seq 1 101); do
