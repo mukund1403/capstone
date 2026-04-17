@@ -180,8 +180,48 @@ This representation ensures:
                   ▼
         Ready for ML Inference
 ```
+### 5. Actuator Control Logic (Defender Sword)
+The defender sword module provides real-time feedback using an LED, buzzer, and vibration motor. Actuators are triggered based on game events and follow a short burst activation pattern to ensure responsiveness while minimizing power consumption.
 
-### 5. Train New Gesture Models
+### Behaviour Design
+
+- **Success Event**
+  - Green LED blink  
+  - Fast buzzer tone sequence  
+  - Rapid vibration pattern  
+
+- **Failure Event**
+  - Red LED blink  
+  - Slower buzzer tones  
+  - Slower vibration pattern  
+
+### Design Considerations
+
+- **Pulsed activation** avoids continuous current draw  
+- **Distinct rhythms** improve user feedback clarity  
+- **Short duration signals** prevent interference with IMU readings  
+- **Synchronized patterns** (LED + buzzer + motor) enhance user experience  
+
+This design ensures that feedback is immediate, distinguishable, and energy-efficient while maintaining overall system stability.
+
+### Actuation Flow
+```
+  Event Trigger (e.g. success / failure)
+                  │
+                  ▼
+         Select Feedback Pattern
+                  │
+                  ▼
+    Activate Actuators (LED / Buzzer / Motor)
+                  │
+                  ▼
+    Maintain ON State (short duration)
+                  │
+                  ▼
+           Turn OFF Actuators
+```
+
+### 6. Train New Gesture Models
 
 **Prerequisites:** Python 3.8+, TensorFlow 2.20+, HLS4ML
 
@@ -208,19 +248,24 @@ See [ai/README.md](ai/README.md) for ML pipeline documentation.
   Physical Layer               Middleware               Application
   ────────────────            ──────────               ──────────
 
-  Attacker ESP32  ─┐
+  Attacker ESP32 ─┐
   (MPU6500)       ├─→ MQTT TLS ─→ Mosquitto Broker ─→ Ultra96
                   │    (50 Hz)     (Port 8883)       FPGA CNN
   Defender Hand ──┤   3 topics
-  (MPU6050)    │
-                  │                                   ↓ Result
+  (MPU6050)       │
+                  │                                 ↓ Result
   Defender Sword ─┘                            Gesture + Confidence
   (MPU6500)                                         ↓
                                                  MQTT Publish
                                                     ↓
                                               Mobile AR Game
                                               (Unity Android)
-                                              [Game Feedback]
+                                              [Game Logic]
+                                                    ↓
+                                            MQTT Control Signal
+                                                    ↓
+  Defender Sword   ◄────────────────────────────────
+  (LED / Buzzer / Motor Feedback)
 ```
 
 **Key Timings:**
